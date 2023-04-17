@@ -39,6 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid 2px #061971;
 }
 .container__logo {
   width: 20px;
