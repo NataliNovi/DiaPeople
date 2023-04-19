@@ -41,6 +41,8 @@ body {
   align-items: center;
   font-family: Georgia, "Times New Roman", serif;
   border: solid 1px #061971;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .container__slogan {
   width: 70vw;
@@ -61,32 +63,45 @@ body {
 }
 
 .container__nav {
-  width: 24vw;
+  width: 20vw;
   height: 100vh;
   line-height: 1.6;
   background-color: white;
   color: #061971;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .container__main {
   margin-top: 0;
-  width: 76vw;
-  background-image: url(../../assets/images/girl.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  width: 80vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
+  display: flex;
+  background-color: #061971;
 }
 
-.gete {
-  font-size: 2em;
+.container__main_photo {
+  width: 50%;
+}
+
+.main_photo {
+  width: 100%;
+}
+
+.container__main_info {
+  width: 50%;
+}
+
+.info_gete {
+  font-size: 18px;
   padding-left: 40px;
+  padding-top: 40px;
   margin-top: 0px;
   color: white;
+  font-size: 1.4rem;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .button {
