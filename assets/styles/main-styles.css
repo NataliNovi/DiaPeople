@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* Оригинальные переменные HOMEPAGE  */
+/* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: white;
+}
+
+.container__header {
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+  border-bottom: solid 1px #061971;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+  z-index: 150;
+  background-color: white;
+  padding-right: 20px;
+}
+.container__social-links {
+  width: 70vw;
+  color: #061971;
+  display: flex;
+  justify-content: space-between;
+}
+.container__button-header {
+  width: 90px;
+  display: flex;
+}
+.container__button-header_search {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+.container__button-header_donate {
+  width: 180px;
+}
+.container__nav {
+  width: 20vw;
+  height: 100vh;
+  line-height: 1.8;
+  background-color: white;
+  color: #061971;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  position: fixed;
+  top: 120px;
+  left: 0px;
+}
+.container__main {
+  margin-top: 0;
+  margin-left: 24vw;
+  width: 76vw;
+  display: flex;
+}
+.container__main_photo {
+  width: 60%;
+}
+.container__main_info {
+  width: 50%;
+}
+
+.logo_img {
+  height: 120px;
+}
+
+.nav-main-article {
+  display: grid;
+  margin-top: 120px;
+  z-index: 1;
+  margin-right: 40px;
+}
+
+.main_photo {
+  width: 100%;
+}
+
+.info__gete {
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  margin-top: 0px;
+  color: #061971;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  display: inline-block;
+}
+.info__gete_name {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+}
+
+.button {
+  background-color: rgb(239, 193, 11);
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.community-describe {
+  width: 76vw;
+  color: white;
+  margin-left: 24vw;
+  margin-top: -2px;
+  background-color: #061971;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.4;
+}
+.community-describe__diapeople-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.community-describe__form {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.community-describe__form_person-contact {
+  font-size: 18px;
+  width: 70%;
+  border-radius: 6px;
+  padding-left: 20px;
+  height: 40px;
+}
+.community-describe__form_submit-contact {
+  height: 40px;
+}/*# sourceMappingURL=main-styles.css.map */
