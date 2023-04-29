@@ -55,7 +55,7 @@ body {
   justify-content: space-between;
 }
 .container__button-header {
-  width: 90px;
+  width: 120px;
   display: flex;
 }
 .container__button-header_search {
@@ -284,6 +284,41 @@ a:hover {
 }
 
 .lgoty__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.hospitals__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.diabete_lifestyle__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.fakes__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.world_diabete__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.community__text-container {
   color: black;
   font-size: 1.5rem;
   margin-top: 150px;
