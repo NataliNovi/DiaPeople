@@ -36,7 +36,11 @@ body {
         width: 70vw;
         color: $blue-background;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
 
     }
 
@@ -98,6 +102,13 @@ body {
     }
 
 
+}
+
+.icon {
+    &__youtube {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 ul {
@@ -272,5 +283,18 @@ a:hover {
     border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+}
+
+.footer {
+    margin-bottom: 140px;
+    margin-left: 14rem;
+    width: calc(100% - 14rem);
+    background-color: $color-blue;
+    color: $color-main;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
 
 }

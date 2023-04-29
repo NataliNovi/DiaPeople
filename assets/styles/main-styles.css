@@ -52,7 +52,9 @@ body {
   width: 70vw;
   color: #022a59;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .container__button-header {
   width: 120px;
@@ -97,6 +99,11 @@ body {
 }
 .container__main_info {
   width: 40%;
+}
+
+.icon__youtube {
+  width: 50px;
+  height: 50px;
 }
 
 ul {
@@ -233,6 +240,17 @@ a:hover {
   border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.footer {
+  margin-bottom: 140px;
+  margin-left: 14rem;
+  width: calc(100% - 14rem);
+  background-color: #022a59;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .about_diabete__text-container {
