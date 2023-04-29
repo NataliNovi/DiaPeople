@@ -34,7 +34,7 @@ body {
 }
 
 .container__header {
-  width: 100vw;
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: space-between;
@@ -70,9 +70,9 @@ body {
   width: 180px;
 }
 .container__nav {
-  width: 20vw;
+  width: 14rem;
   height: 100vh;
-  line-height: 1.8;
+  line-height: 1.65;
   background-color: white;
   color: #061971;
   font-family: Georgia, "Times New Roman", serif;
@@ -83,29 +83,27 @@ body {
 }
 .container__main {
   margin-top: 0;
-  margin-left: 24vw;
-  width: 76vw;
+  overflow: hidden;
   display: flex;
 }
 .container__main_photo {
   width: 60%;
 }
 .container__main_info {
-  width: 50%;
+  width: 40%;
+}
+.container__nav-main-article {
+  margin-top: 120px;
+  margin-left: 14rem;
+  z-index: 1;
+  width: calc(100% - 14rem);
 }
 
-.logo_img {
+.logo__img {
   height: 120px;
 }
 
-.nav-main-article {
-  display: grid;
-  margin-top: 120px;
-  z-index: 1;
-  margin-right: 40px;
-}
-
-.main_photo {
+.main__photo {
   width: 100%;
 }
 
@@ -133,32 +131,109 @@ body {
   border-radius: 4px;
 }
 
-.community-describe {
-  width: 76vw;
+.article__community-describe {
+  overflow: hidden;
+  width: 102%;
   color: white;
-  margin-left: 24vw;
-  margin-top: -2px;
   background-color: #061971;
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   line-height: 1.4;
 }
-.community-describe__diapeople-name {
+.article__community-describe__diapeople-name {
   font-size: 18px;
   font-weight: bold;
 }
-.community-describe__form {
+.article__community-describe__form {
   display: flex;
   width: 50%;
   justify-content: space-between;
 }
-.community-describe__form_person-contact {
+.article__community-describe__form_person-contact {
   font-size: 18px;
   width: 70%;
   border-radius: 6px;
   padding-left: 20px;
   height: 40px;
 }
-.community-describe__form_submit-contact {
+.article__community-describe__form_submit-contact {
   height: 40px;
+}
+
+.about_diabete__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.what_is_diabete_text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.insulin__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 160px;
+  margin-left: 20vw;
+}
+
+.hypoglikemia__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.hyperglikemia__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.food__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.for_new_people__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.psyhology__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.gadgets__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.insulin_injection__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
+}
+
+.measure_devices__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 20vw;
 }/*# sourceMappingURL=main-styles.css.map */

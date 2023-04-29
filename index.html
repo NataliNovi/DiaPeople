@@ -15,7 +15,7 @@
 
         <div class = "container__logo">
 
-                <img class="logo_img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
+                <img class="logo__img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
                     title="Logo Dia People"/>
             </div>
 
@@ -35,31 +35,42 @@
     </header>
     <!-- header End -->
 
-    <div class = "nav-main-article">
+    <div class = "container__nav-main-article">
 
     <!-- nav Start -->
 
     <nav>
     <ul class="container__nav">
-       <li> <a href='/about_diabete/'>О диабете</a></li>
-       <li> <a href='/for_new_people/'>Новичкам</a></li>
-       <li> <a href='/psychology/'>Психологическая страничка</a></li>
-       <li> <a href='/gadgets/'>Устройства и гаджеты<i class = "sub_gadgets"></i></a>
+        <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
+       <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете</a>
+        <ul class="submenu">
+            <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
+            <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
+            <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
+            <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
+            <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+        </ul>
+    </li>
+       <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+
+       <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Психологическая страничка</a></li>
+
+       <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты<i class = "sub_gadgets"></i></a>
     <ul class="submenu">
-        <li><a href = '/insulin_injection/'>Введение инсулина</a></li>
-        <li><a href = '/measure'>Средства измерения</a></li>
+        <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
+        <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
     </ul>
     </li>
-       <li> <a href='/documents/'>Нормативная база <i class = "sub_documents"></i></a>
+       <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <i class = "sub_documents"></i></a>
         <ul class="submenu">
-            <li><a href = '/posobia/'>Пособия</a></li>
-            <li><a href = '/lgoty/'>Льготы</a></li>
+            <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
+            <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
         </ul></li>
-       <li> <a href='/hospitals/'>Медицинские учреждени</a></li>
-       <li> <a href='/diabete_lifestyle/'>Диабет как образ жизни</a></li>
-       <li> <a href='/fakes/'>Мифы, фейки, заблуждения</a></li>
-       <li> <a href='/world_diabete/'>Диабет в мире</a></li>
-       <li> <a href='/community/'>Сообщества, каналы, форумы </a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/hospitals.html/'>Медицинские учреждени</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
     </ul>
     </nav>
 
@@ -71,23 +82,15 @@
         <div class = "container__main">
 
             <div class = "container__main_photo">
-                <img class="main_photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
+                <img class="main__photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
                 title="Dia People"/>
             </div>
-
-            <!-- <div class="container__main_info">
-                <h5 class="info__gete">
-                    <div> &#171;Не тот велик, кто никогда не падал, </div>
-                    <div>   а тот велик - кто падал и вставал!&#187;</div>
-                    <p class = "info__gete_name">(Гёте)</p>
-                </h5>
-            </div> -->
 
               <div class="container__main_info">
                 <h5 class="info__gete">
                     <div> <q>Не тот велик, кто никогда не падал,
                      а тот велик - кто падал и вставал!</q></div>
-                    <p class = "info__gete_name">Гёте</p>
+                    <p class = "info__gete_name">Конфуций</p>
                 </h5>
             </div> 
 
@@ -98,7 +101,7 @@
         </div>
     </main>
 
-    <article class = "community-describe">
+    <article class = "article article__community-describe">
         <h3>О нас</h3>
         <p>
             <span class='community-describe__diapeople-name'>diapeople.by</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений, предрассудков и неравенства.
@@ -115,7 +118,7 @@
             <h3>Важно понимать</h3>
             Мы не пациентская организация, не горячая линия Минздрава и не профильный фонд, способный помочь деньгами (пока точно не сейчас). У нас все на равных правах и наши связи абсолютно горизонтальны. Да, мы многое прошли и немало знаем, с нами опыт, врачи и психологи. Но прежде чем взывать, пожалуйста полистайте этот сайт самостоятельно! Поверьте, на 90% он УЖЕ содержит нужную вам информацию.
             
-            <div>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </div>
+            <p>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </p>
             </p>
         </article>
 
