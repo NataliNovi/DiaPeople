@@ -160,8 +160,8 @@ a:hover {
     padding-top: 40px;
     margin-top: 0px;
     color: $color-blue;
-    font-size: $font-size-large;
     font-family: $font-family-serif;
+    font-size: $font-size-large;
     display: inline-block;
 
     &_name {
@@ -227,4 +227,50 @@ a:hover {
             }
         }
     }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 103%;
+        height: 300px;
+        background-color: #c2d5ec;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 103%;
+        background-color: white;
+    }
+}
+
+.link {
+    width: 14rem;
+    height: 10rem;
+    color: $color-blue;
+    font-size: $font-size-large;
+    font-family: $font-family-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.information {
+    width: 33rem;
+    height: 28rem;
+    border: dotted 1px $color-blue;
+    color: $color-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }

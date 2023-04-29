@@ -50,7 +50,7 @@ body {
 }
 .container__social-links {
   width: 70vw;
-  color: #061971;
+  color: #022a59;
   display: flex;
   justify-content: space-between;
 }
@@ -79,7 +79,7 @@ body {
   height: 100vh;
   line-height: 1.65;
   background-color: white;
-  color: #061971;
+  color: #022a59;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   position: fixed;
@@ -114,7 +114,7 @@ a {
 }
 
 a:hover {
-  background-color: #061971;
+  background-color: #022a59;
   color: #fff;
   padding: 5px;
   border-radius: 4px;
@@ -140,9 +140,9 @@ a:hover {
   padding-right: 40px;
   padding-top: 40px;
   margin-top: 0px;
-  color: #061971;
-  font-size: 24px;
+  color: #022a59;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
   display: inline-block;
 }
 .info__gete_name {
@@ -164,7 +164,7 @@ a:hover {
   overflow: hidden;
   width: 103%;
   color: white;
-  background-color: #061971;
+  background-color: #022a59;
   padding-right: 10px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -190,6 +190,49 @@ a:hover {
 }
 .article__community-describe__form_submit-contact {
   height: 40px;
+}
+.article__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 103%;
+  height: 300px;
+  background-color: #c2d5ec;
+}
+.article__information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 103%;
+  background-color: white;
+}
+
+.link {
+  width: 14rem;
+  height: 10rem;
+  color: #022a59;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.information {
+  width: 33rem;
+  height: 28rem;
+  border: dotted 1px #022a59;
+  color: #022a59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about_diabete__text-container {
@@ -319,6 +362,13 @@ a:hover {
 }
 
 .community__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.school__text-container {
   color: black;
   font-size: 1.5rem;
   margin-top: 150px;
