@@ -33,8 +33,8 @@ body {
   background-color: white;
 }
 
-.container__header {
-  width: 100%;
+.container-header {
+  width: 100vw;
   height: 140px;
   display: flex;
   justify-content: space-between;
@@ -48,57 +48,27 @@ body {
   background-color: white;
   padding-right: 20px;
 }
-.container__social-links {
+.container-header__social-links {
   width: 70vw;
-  color: #022a59;
+  color: #096265;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.container__button-header {
+.container-header__button-header {
   width: 120px;
   display: flex;
 }
-.container__button-header_search {
+.container-header__button-header_search {
   width: 360px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
 }
-.container__button-header_donate {
+.container-header__button-header_donate {
   width: 180px;
-}
-.container__nav-main-article {
-  margin-top: 140px;
-  margin-left: 14rem;
-  z-index: 1;
-  width: calc(100% - 14rem);
-}
-.container__nav {
-  width: 14rem;
-  height: 100vh;
-  line-height: 1.65;
-  background-color: white;
-  color: #022a59;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  position: fixed;
-  top: 150px;
-  left: 0px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.container__main {
-  overflow: hidden;
-  display: flex;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.container__main_photo {
-  width: 60%;
-}
-.container__main_info {
-  width: 40%;
 }
 
 .icon__youtube {
@@ -121,7 +91,7 @@ a {
 }
 
 a:hover {
-  background-color: #022a59;
+  background-color: #096265;
   color: #fff;
   padding: 5px;
   border-radius: 4px;
@@ -138,26 +108,6 @@ a:hover {
   background-color: #fff;
 }
 
-.main__photo {
-  width: 100%;
-}
-
-.info__gete {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  margin-top: 0px;
-  color: #022a59;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
-  display: inline-block;
-}
-.info__gete_name {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-}
-
 .button {
   background-color: rgb(239, 193, 11);
   width: 140px;
@@ -167,43 +117,81 @@ a:hover {
   font-size: 18px;
 }
 
-.article__community-describe {
+.container-nav-main-article {
+  margin-top: 140px;
+  margin-left: 14rem;
+  z-index: 1;
+  width: calc(100% - 14rem);
+}
+.container-nav-main-article__nav {
+  width: 14rem;
+  height: 100vh;
+  line-height: 1.65;
+  background-color: white;
+  color: #044151;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  position: fixed;
+  top: 150px;
+  left: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container-nav-main-article__main {
   overflow: hidden;
-  width: 103%;
-  color: white;
-  background-color: #022a59;
-  padding-right: 10px;
-  padding-left: 20px;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container-nav-main-article__main_photo {
+  width: 60%;
+  box-shadow: -8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+.container-nav-main-article__main_info {
+  width: 40%;
+}
+
+.photo {
+  width: 100%;
+}
+
+.info__confucii {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  margin-top: 0px;
+  color: #021e25;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+.info__confucii_name {
+  position: absolute;
+  right: 90px;
+  font-size: 24px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.article__community-describe {
+  color: #021e25;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-bottom: 20px;
   line-height: 1.4;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
-  margin-top: -3px;
 }
 .article__community-describe__diapeople-name {
   font-weight: bold;
-}
-.article__community-describe__form {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
-.article__community-describe__form_person-contact {
-  width: 70%;
-  border-radius: 6px;
-  padding-left: 20px;
-  height: 40px;
-}
-.article__community-describe__form_submit-contact {
-  height: 40px;
 }
 .article__links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 103%;
   height: 300px;
   background-color: #c2d5ec;
 }
@@ -212,14 +200,28 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 103%;
   background-color: white;
+}
+
+.subscribe {
+  width: 100%;
+  background-color: #044151;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-contact {
+  width: 40%;
+  height: 40px;
+  margin-right: 40px;
 }
 
 .link {
   width: 14rem;
   height: 10rem;
-  color: #022a59;
+  color: #044151;
   font-size: 24px;
   font-family: Georgia, "Times New Roman", serif;
   background-color: white;
@@ -232,8 +234,8 @@ a:hover {
 .information {
   width: 33rem;
   height: 28rem;
-  border: dotted 1px #022a59;
-  color: #022a59;
+  border: dotted 1px #044151;
+  color: #044151;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,7 +248,7 @@ a:hover {
   margin-bottom: 140px;
   margin-left: 14rem;
   width: calc(100% - 14rem);
-  background-color: #022a59;
+  background-color: #044151;
   color: white;
   height: 100px;
   display: flex;
@@ -391,4 +393,52 @@ a:hover {
   font-size: 1.5rem;
   margin-top: 150px;
   margin-left: 20vw;
+}
+
+.about_us__text-container {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-left: 20vw;
+}
+
+.about_us__container {
+  display: flex;
+  margin-top: 140px;
+  margin-left: 14rem;
+}
+.about_us__container__photo {
+  width: 55%;
+}
+.about_us__container__velik {
+  width: 45%;
+}
+.about_us__community-describe {
+  color: #021e25;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-left: 14rem;
+}
+
+.form {
+  background-color: #044151;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14rem;
+}
+.form__person-contact {
+  width: 40%;
+  height: 40px;
+  margin-right: 40px;
+}
+.form__submit-contact {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.photo-velik {
+  width: 100%;
 }/*# sourceMappingURL=main-styles.css.map */

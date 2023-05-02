@@ -10,69 +10,72 @@
 </head>
 <body>
 
-    <!-- header Start -->
-    <header class = "container__header">
+    <header class = "container-header">
 
-        <div class = "container__logo">
+        <div class = "container-header__logo">
 
-                <img class="logo__img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
-                    title="Logo Dia People"/>
+            <a class="logo__link" href='/index.html'><img class="logo__img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
+                title="Logo Dia People"/></a>
             </div>
 
-            <div class="container__social-links">
+            <div class="container-header__social-links">
+                DiaDzetka Channel
+                <a class="diadzetka-chanel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw"> <img class="icon__youtube" src="./assets/images/logo-youtube.jpg" alt="Channel DiaDzetka"/></a>
             </div>
 
-            <div class = "container__button-header_search">
+            <div class = "container-header__button-header_search">
                 <input type ="input" placeholder="Поиск на сайте" class = "button__search_header"></input>
                 <button class="button">Искать</button>
             </div>
 
-            <div class = "container__button-header_donate">
+            <div class = "container-header__button-header_donate">
                 <button class = "button button__donate_header">Donate</button>
             </div>
         </div>
 
     </header>
-    <!-- header End -->
 
     <div class = "container__nav-main-article">
 
     <!-- nav Start -->
 
     <nav>
-    <ul class="container__nav">
-        <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
-       <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете</a>
+        <ul class="container-nav-main-article__nav">
+            <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
+                <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
+    
+           <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете</a>
+            <ul class="submenu">
+                <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
+                <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
+                <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+            </ul>
+        </li>
+           <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+    
+           <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Психологическая страничка</a></li>
+    
+           <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты<i class = "sub_gadgets"></i></a>
         <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
-            <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
-            <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
-            <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
-            <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+            <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
+            <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
         </ul>
-    </li>
-       <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
-
-       <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Психологическая страничка</a></li>
-
-       <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты<i class = "sub_gadgets"></i></a>
-    <ul class="submenu">
-        <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Введение инсулина</a></li>
-        <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
-    </ul>
-    </li>
-       <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <i class = "sub_documents"></i></a>
-        <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
-            <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
-        </ul></li>
-       <li class = "nav__item nav__item_primary"> <a href='/hospitals.html/'>Медицинские учреждени</a></li>
-       <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
-       <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
-       <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
-       <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
-    </ul>
-    </nav>
+        </li>
+           <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <i class = "sub_documents"></i></a>
+            <ul class="submenu">
+                <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
+                <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
+            </ul></li>
+           <li class = "nav__item nav__item_primary"> <a href='/hospitals.html'>Медицинские учреждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
+           <li class = "nav__item nav__item_primary"> <a href='/school.html'>Медицинским работникам школ и детских садов </a></li>
+        </ul>
+        </nav>
 
      <!-- nav End -->
      <div class="psyhology__text-container">

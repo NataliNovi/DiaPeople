@@ -1,0 +1,57 @@
+.about_us__text-container {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 150px;
+    margin-left: 20vw;
+
+}
+
+.about_us {
+    &__container {
+        display: flex;
+        margin-top: 140px;
+        // width: 86rem;
+        margin-left: 14rem;
+
+        &__photo {
+            width: 55%;
+        }
+
+        &__velik {
+            width: 45%;
+        }
+
+    }
+
+    &__community-describe {
+        color: $color-dark-text;
+        font-size: $font-size-medium;
+        margin-bottom: 50px;
+        margin-left: 14rem;
+    }
+}
+
+
+.form {
+    background-color: $color-blue;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14rem;
+
+    &__person-contact {
+        width: 40%;
+        height: 40px;
+        margin-right: 40px;
+    }
+
+    &__submit-contact {
+        width: fit-content;
+    }
+}
+
+
+.photo-velik {
+    width: 100%;
+}

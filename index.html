@@ -11,25 +11,25 @@
 <body>
 
     <!-- header Start -->
-    <header class = "container__header">
+    <header class = "container-header">
 
-        <div class = "container__logo">
+        <div class = "container-header__logo">
 
             <a class="logo__link" href='/index.html'><img class="logo__img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
                 title="Logo Dia People"/></a>
             </div>
 
-            <div class="container__social-links">
+            <div class="container-header__social-links">
                 DiaDzetka Channel
                 <a class="diadzetka-chanel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw"> <img class="icon__youtube" src="./assets/images/logo-youtube.jpg" alt="Channel DiaDzetka"/></a>
             </div>
 
-            <div class = "container__button-header_search">
+            <div class = "container-header__button-header_search">
                 <input type ="input" placeholder="Поиск на сайте" class = "button__search_header"></input>
                 <button class="button">Искать</button>
             </div>
 
-            <div class = "container__button-header_donate">
+            <div class = "container-header__button-header_donate">
                 <button class = "button button__donate_header">Donate</button>
             </div>
         </div>
@@ -37,13 +37,15 @@
     </header>
     <!-- header End -->
 
-    <div class = "container__nav-main-article">
+    <div class = "container-nav-main-article">
 
     <!-- nav Start -->
 
     <nav>
-    <ul class="container__nav">
+    <ul class="container-nav-main-article__nav">
         <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
+            <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
+
        <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете</a>
         <ul class="submenu">
             <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
@@ -82,48 +84,58 @@
     <!-- main Start -->
 
     <main>
-        <div class = "container__main">
+        <div class = "container-nav-main-article__main">
 
-            <div class = "container__main_photo">
-                <img class="main__photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
-                title="Dia People"/>
+            <div class = "container-nav-main-article__main_photo">
+                <img class="photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
+                title="Dia People"/>         
             </div>
 
-              <div class="container__main_info">
-                <h5 class="info__gete">
+              <div class="container-nav-main-article__main_info">
+                <h5 class="info__confucii">
                     <div> <q>Не тот велик, кто никогда не падал,
                      а тот велик - кто падал и вставал!</q></div>
-                    <p class = "info__gete_name">Конфуций</p>
+                    <p class = "info__confucii_name">Конфуций</p>
                 </h5>
             </div> 
 
                 <!-- <div class = "container__button_main">
                     <button class = "button button__donate-main">Donate</button>
                 </div> -->
-  
+ 
         </div>
     </main>
 
     <article class = "article__community-describe">
-        <h3>О нас</h3>
-        <p>
-            <span class='community-describe__diapeople-name'>diapeople.by</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений, предрассудков и неравенства.
+       <div class="text-center"> <h3>О нас</h3></div>
+  
+            <span class='community-describe__diapeople-name'>ДиаЛюди</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений, предрассудков и неравенства.
     
             На этом ресурсе мы собираем проверенную нами актуальную информацию, делимся опытом, учимся, советуемся, объединяем силы, чтобы отстаивать свои интересы.
             
             За основу мы взяли первый тип сахарного диабета у детей, потому что это наиболее острая тема для нас. Но, основная информация может быть полезной для всех возрастных групп и для иных видов и типов диабета. Если вы полистаете сайт, то убедитесь в этом. <br>
             Если вы готовы активничать и вести соответствующую тему (“взрослый диабет”, СД2 и т.д.), наполнять наш ресурс проверенной информацией, то добро пожаловать! Можете оставить контакты ниже, мы с вами - свяжемся.
-            <div class="community-describe__form">
+            <!-- <div class="community-describe__form">
             <input class="community-describe__form_person-contact" type="text" placeholder="Ваш номер телефона или почта">
             <button class = "button community-describe__form_submit-contact">Сохранить</button>
-            </div>
+            </div> -->
             
-            <h3>Важно понимать</h3>
+            <div class="text-center"> <h3>Важно понимать</h3></div>
             Мы не пациентская организация, не горячая линия Минздрава и не профильный фонд, способный помочь деньгами (пока точно не сейчас). У нас все на равных правах и наши связи абсолютно горизонтальны. Да, мы многое прошли и немало знаем, с нами опыт, врачи и психологи. Но прежде чем взывать, пожалуйста полистайте этот сайт самостоятельно! Поверьте, на 90% он УЖЕ содержит нужную вам информацию.
             
             <p>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </p>
-            </p>
+           
         </article>
+
+        <!-- <div class="community-describe__form">
+            <input class="community-describe__form_person-contact" type="text" placeholder="Ваш номер телефона или почта">
+            <button class = "button community-describe__form_submit-contact">Сохранить</button>
+            </div> -->
+
+            <div class="subscribe">
+                <input class="subscribe-contact" type="text" placeholder="Ваш номер телефона или почта">
+                <button class = "button subscribe-submit">Сохранить</button>
+                </div>
 
 
         <article class = "article__links">
