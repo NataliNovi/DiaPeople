@@ -82,23 +82,8 @@ ul {
   padding-left: 20px;
 }
 
-li {
-  padding-left: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #096265;
-  color: #fff;
-  padding: 5px;
-  border-radius: 4px;
-}
-
 .logo__img {
-  height: 120px;
+  height: 116px;
 }
 .logo__link {
   background-color: white;
@@ -127,14 +112,11 @@ a:hover {
   width: 14rem;
   height: 100vh;
   line-height: 1.65;
-  background-color: white;
-  color: #044151;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
   position: fixed;
-  top: 150px;
+  top: 140px;
   left: 0px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container-nav-main-article__main {
   overflow: hidden;
@@ -147,6 +129,59 @@ a:hover {
 }
 .container-nav-main-article__main_info {
   width: 40%;
+}
+
+ul {
+  list-style: none;
+  background-color: white;
+  width: 200px;
+  color: #044151;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:hover {
+  background-color: white;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li:hover ul li ul {
+  display: none;
+}
+
+ul li a {
+  color: #044151;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  background-color: white;
+  border-top: solid 2px rgba(0, 0, 0, 0.25);
+  border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+
+ul li ul li:hover ul {
+  display: block;
+}
+
+ul li ul {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  display: none;
+  width: 300px;
+  background-color: white;
+  color: #044151;
+  padding-right: 20px;
 }
 
 .photo {
@@ -193,7 +228,8 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   height: 300px;
-  background-color: #c2d5ec;
+  background-color: #b8ecf6;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 .article__information {
   display: flex;
@@ -207,9 +243,12 @@ a:hover {
   width: 100%;
   background-color: #044151;
   height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 
 .subscribe-contact {
@@ -229,12 +268,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 
 .information {
   width: 33rem;
   height: 28rem;
-  border: dotted 1px #044151;
   color: #044151;
   display: flex;
   justify-content: center;
@@ -242,6 +281,7 @@ a:hover {
   border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 
 .footer {

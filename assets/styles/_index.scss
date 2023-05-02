@@ -73,20 +73,20 @@ ul {
 
 }
 
-li {
-    padding-left: 00px;
-}
+// li {
+//     padding-left: 00px;
+// }
 
-a {
-    text-decoration: none;
-}
+// a {
+//     text-decoration: none;
+// }
 
-a:hover {
-    background-color: $blue-background;
-    color: #fff;
-    padding: 5px;
-    border-radius: 4px;
-}
+// a:hover {
+//     background-color: $blue-background;
+//     color: $color-main;
+//     padding: 5px;
+
+// }
 
 
 // @media (max-width: 959px) {
@@ -98,7 +98,7 @@ a:hover {
 
 .logo {
     &__img {
-        height: 120px;
+        height: 116px;
     }
 
     &__link {
@@ -139,20 +139,22 @@ a:hover {
         width: 14rem;
         height: 100vh;
         line-height: 1.65;
-        background-color: $white-background;
-        color: $color-blue;
-        font-family: $font-family-serif;
+        // background-color: $white-background;
+        // color: $color-blue;
+        font-family: $font-family-sans-serif;
         font-size: $font-size-medium;
         position: fixed;
-        top: 150px;
+        top: 140px;
         left: 0px;
-        font-family: $font-family-sans-serif;
+        // box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
     }
 
     &__main {
         overflow: hidden;
         display: flex;
         font-family: $font-family-sans-serif;
+        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
 
         &_photo {
@@ -179,8 +181,74 @@ a:hover {
     }
 }
 
+
+ul {
+    list-style: none;
+    background-color: $color-main;
+    width: 200px;
+    // border: 1px solid $color-blue;
+    // border-radius: 4px;
+    // border-bottom: none;
+    color: $color-blue;
+}
+
+ul li {
+    // border-bottom: 1px solid #2a323f;
+    position: relative;
+    // border: 1px solid $color-blue;
+    // border-radius: 4px;
+    // border-bottom: 1px solid $color-light;
+
+}
+
+ul li:hover {
+    background-color: $color-main;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover ul li ul {
+    display: none;
+}
+
+ul li a {
+    color: $color-blue;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: $color-main;
+    border-top: solid 2px $color-gray;
+    border-bottom: solid 2px $color-gray;
+    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+    // border-radius: 6px;
+    // color: $color-dark-text;
+}
+
+ul li ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    display: none;
+    width: 300px;
+    background-color: $color-main;
+    color: $color-blue;
+    padding-right: 20px;
+}
+
+
 .photo {
     width: 100%;
+
 
 }
 
@@ -257,7 +325,9 @@ a:hover {
         align-items: center;
         // width: 103%;
         height: 300px;
-        background-color: #c2d5ec;
+        background-color: $color-light;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
     }
 
     &__information {
@@ -267,6 +337,7 @@ a:hover {
         align-items: center;
         // width: 103%;
         background-color: white;
+        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
     }
 }
 
@@ -274,9 +345,12 @@ a:hover {
     width: 100%;
     background-color: $color-blue;
     height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 }
 
 .subscribe-contact {
@@ -296,12 +370,12 @@ a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 }
 
 .information {
     width: 33rem;
     height: 28rem;
-    border: dotted 1px $color-blue;
     color: $color-blue;
     display: flex;
     justify-content: center;
@@ -309,6 +383,7 @@ a:hover {
     border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
 }
 
