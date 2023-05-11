@@ -127,6 +127,11 @@ body {
         flex-direction: column;
         justify-content: space-between;
 
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         @media screen and (max-width: $grid-breakpoint-md) {
             flex-direction: column;
             justify-content: space-between;
@@ -136,6 +141,114 @@ body {
 
 
     @media screen and (max-width: $grid-breakpoint-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        //grid-template-rows: 1fr 1fr;
+        max-width: 100vw;
+        height: 140px;
+        align-items: center;
+        font-family: $font-family-different;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        z-index: 150;
+        background: $color-light;
+        padding-right: 20px;
+        padding-left: 10px;
+
+        &__logo {
+
+            padding: 4px;
+            // grid-column: 1/2;
+
+
+
+            &_img:hover {
+                border: solid 1px $color-blue;
+            }
+        }
+
+
+        &__dialydi-header {
+            width: auto;
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+            margin-left: 1px;
+            //grid-column: 2/3;
+
+            &_dialydi-name {
+                color: $color-blue;
+                font-size: 28px;
+                font-family: $font-family-different;
+                font-weight: bold;
+                font-stretch: extra-expanded;
+
+            }
+        }
+
+        &__social-links {
+            color: $blue-background;
+            display: grid;
+            font-size: $font-size-small;
+            margin-right: 20px;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+
+            &_channel-box {
+                display: flex;
+                //justify-content: center;
+                //flex-direction: row;
+                //flex-wrap: wrap;
+                width: 80px;
+                background-color: $color-main;
+                padding: 4px;
+                border-radius: 6px;
+                //text-align: center;
+
+
+            }
+
+            &_channel-box:hover {
+
+                border: solid 1px $color-blue;
+            }
+
+            &_school-link {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            &_diadzetka-link {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+        &__button-header {
+            display: flex;
+
+            &_search {
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                align-items: center;
+                margin-left: 20px;
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         //grid-template-rows: 1fr 1fr;
@@ -320,6 +433,42 @@ body {
         }
 
     }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+
+        background-color: $color-button;
+        border: solid 1px $color-button;
+        height: 40px;
+        border-radius: 6px;
+        font-family: $font-family-different;
+        font-size: $font-size-medium;
+        height: 40px;
+
+        // -webkit-transition: all 150ms ease-in-out;
+        // transition: all 150ms ease-in-out;
+        //transition: all 0.5s;
+        position: relative;
+
+
+        &__button-donate {
+
+            width: 200px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-right: 0px;
+            font-weight: bold;
+        }
+
+
+        &__button-search {
+
+            width: 40px;
+            margin-left: 10px;
+
+
+        }
+
+    }
 }
 
 .button::before {
@@ -424,6 +573,18 @@ ul {
         top: 140px;
         left: 0px;
         // box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+
+            font-size: $font-size-medium;
+
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+
+            font-size: $font-size-small;
+        }
 
     }
 
@@ -553,6 +714,33 @@ ul li ul {
         font-size: $font-size-large;
 
     }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+
+        font-size: $font-size-medium;
+
+        &_name {
+            position: absolute;
+            right: 50px;
+            font-size: $font-size-medium;
+
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+
+            font-size: $font-size-small;
+
+            &_name {
+                position: absolute;
+                right: 50px;
+                font-size: $font-size-small;
+
+            }
+
+        }
+
+    }
 }
 
 .text-center {
@@ -582,25 +770,13 @@ ul li ul {
             font-weight: bold;
         }
 
-        // &__form {
-        //     display: flex;
-        //     width: 100%;
-        //     justify-content: space-between;
 
+        @media screen and (max-width: $grid-breakpoint-md) {
 
-        //     &_person-contact {
+            font-size: $font-size-small;
 
-        //         width: 100%;
-        //         border-radius: 6px;
-        //         padding-left: 20px;
-        //         height: 40px;
+        }
 
-        //     }
-
-        //     &_submit-contact {
-        //         height: 40px;
-        //     }
-        // }
     }
 
     &__links {
@@ -612,6 +788,19 @@ ul li ul {
         height: 300px;
         background: $color-light;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+
+            height: 250px;
+
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+
+            height: 200px;
+
+        }
 
     }
 
@@ -696,6 +885,24 @@ ul li ul {
         padding: 10px;
     }
 
+    @media screen and (max-width: $grid-breakpoint-lg) {
+
+        width: 10rem;
+        height: 8rem;
+        font-size: $font-size-small;
+
+    }
+
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+
+        width: 7rem;
+        height: 7rem;
+        font-size: $font-size-small;
+
+    }
+
+
 }
 
 .information {
@@ -715,20 +922,22 @@ ul li ul {
 .footer {
     margin-bottom: 140px;
     margin-left: 14rem;
-    // width: calc(100% - 14rem);
-    width: 100%;
+    width: calc(100% - 14rem);
+    //width: 100%;
     background-color: $color-blue;
     color: $color-main;
     height: 100px;
     display: grid;
-    //grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     height: 200px;
     text-align: center;
     align-content: center;
     align-items: center;
     font-size: $font-size-medium;
+
+
+
 
 
 
