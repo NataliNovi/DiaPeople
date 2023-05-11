@@ -178,9 +178,6 @@ body {
   }
   .container-header__social-links_channel-box {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 80px;
     background-color: white;
     padding: 4px;
@@ -191,13 +188,16 @@ body {
   }
   .container-header__social-links_school-link {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
   }
   .container-header__social-links_diadzetka-link {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
   }
   .container-header__button-header {
     display: flex;
-    grid-column: 4/5;
   }
   .container-header__button-header_search {
     width: 200px;
@@ -232,6 +232,9 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+.button__button-search_lupa {
+  width: 30px;
+}
 @media screen and (max-width: 768px) {
   .button {
     background-color: rgb(243, 228, 17);
@@ -247,7 +250,7 @@ body {
     width: 200px;
     margin-left: 20px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
     font-weight: bold;
   }
   .button__button-search {
@@ -450,16 +453,25 @@ ul li ul {
   background-color: white;
 }
 
-.subscribe {
-  width: 100%;
+.subscribe__form {
   background-color: #044151;
   height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+.subscribe__form_header {
+  font-size: 28px;
+}
+.subscribe__subscribe {
+  width: 40%;
+  height: 40px;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 
 .input {
@@ -469,11 +481,8 @@ ul li ul {
 .input__search {
   width: 100%;
 }
-.input__subscribe {
-  width: 40%;
-  height: 40px;
-  padding-left: 20px;
-  margin-right: 20px;
+.input__form_contact {
+  width: 340px;
 }
 
 .link {

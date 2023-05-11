@@ -191,15 +191,17 @@ body {
             grid-template-columns: 1fr 1fr;
             gap: 10px;
 
+
             &_channel-box {
                 display: flex;
-                justify-content: space-around;
-                flex-direction: row;
-                flex-wrap: wrap;
+                //justify-content: center;
+                //flex-direction: row;
+                //flex-wrap: wrap;
                 width: 80px;
                 background-color: $color-main;
                 padding: 4px;
                 border-radius: 6px;
+                //text-align: center;
 
 
             }
@@ -211,17 +213,21 @@ body {
 
             &_school-link {
                 text-decoration: none;
+                display: flex;
+                justify-content: center;
+
             }
 
             &_diadzetka-link {
                 text-decoration: none;
+                display: flex;
+                justify-content: center;
             }
 
         }
 
         &__button-header {
             display: flex;
-            grid-column: 4/5;
 
             &_search {
                 width: 200px;
@@ -272,6 +278,10 @@ body {
         margin-left: 10px;
         margin-right: 10px;
 
+        &_lupa {
+            width: 30px;
+        }
+
 
     }
 
@@ -296,7 +306,7 @@ body {
             width: 200px;
             margin-left: 20px;
             margin-bottom: 20px;
-            margin-right: 10px;
+            margin-right: 0px;
             font-weight: bold;
         }
 
@@ -616,28 +626,23 @@ ul li ul {
     }
 }
 
+
 .subscribe {
-    width: 100%;
-    background-color: $color-blue;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
-    //&__button {}
-}
+    &__form {
+        background-color: $color-blue;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
-.input {
-    border-radius: 4px;
-    height: 36px;
-
-    &__search {
-        width: 100%;
-
-        // margin-right: 40px;
+        &_header {
+            font-size: $font-size-large;
+        }
     }
 
     &__subscribe {
@@ -648,6 +653,22 @@ ul li ul {
 
     }
 }
+
+
+.input {
+    border-radius: 4px;
+    height: 36px;
+
+    &__search {
+        width: 100%;
+    }
+
+    &__form_contact {
+        width: 340px;
+    }
+}
+
+
 
 .link {
     width: 14rem;
