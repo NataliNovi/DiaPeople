@@ -553,6 +553,10 @@ ul li ul {
   }
 }
 
+.weather {
+  color: #044151;
+}
+
 .text-center {
   display: flex;
   justify-content: center;
