@@ -126,13 +126,9 @@
                 <!-- <div class = "container__button_main">
                     <button class = "button button__donate-main">Donate</button>
                 </div> -->
+
+            </div>
  
-        </div>
-        <p class="weather">Weather</p>
-
-        <h5 class="weather" id="fact"></h5>
-
-    </main>
 
     <article class = "article__community-describe">
        <div class="text-center"> <h3>О нас</h3></div>
@@ -141,7 +137,7 @@
     
             На этом ресурсе мы собираем проверенную нами актуальную информацию, делимся опытом, учимся, советуемся, объединяем силы, чтобы отстаивать свои интересы.
             
-            За основу мы взяли первый тип сахарного диабета у детей, потому что это наиболее острая тема для нас. Но, основная информация может быть полезной для всех возрастных групп и для иных видов и типов диабета. Если вы полистаете сайт, то убедитесь в этом. <br>
+            За основу мы взяли первый тип сахарного диабета (СД1) у детей, потому что это наиболее острая тема для нас. Но, основная информация может быть полезной для всех возрастных групп и для иных видов и типов диабета. Если вы полистаете сайт, то убедитесь в этом. <br>
             Если вы готовы активничать и вести соответствующую тему (“взрослый диабет”, СД2 и т.д.), наполнять наш ресурс проверенной информацией, то добро пожаловать! Можете оставить контакты ниже, мы с вами - свяжемся.
             <!-- <div class="community-describe__form">
             <input class="community-describe__form_person-contact" type="text" placeholder="Ваш номер телефона или почта">
@@ -180,8 +176,38 @@
             <div class="information information__events">Анонсы и фотоотчеты с событий сообщества</div>
         </article>
 
+        <div class="weather">
+            <p > Введите ключевое слово для поиска GIF</p>
+            <input  type = "text" id = "gifSearch">
+            <button  id="searchButton" onclick="onSearch()">Искать</button>
+            <div id="resultGif"></div>
+        </div>
+
+        <div class="wrapper">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <input type="radio" name="point" id="slide4">
+            <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
+                <div class="slides slide4"></div>
+                <div class="slides slide5"></div>
+            </div>	
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
+
 
     <!-- main End -->
+</main>
 </div>
 
 
@@ -209,7 +235,7 @@
 </footer>
 
  
-<script src="index.js"></script>
+<script src="./assets/js/index.js"></script>
   
     
 </body>
