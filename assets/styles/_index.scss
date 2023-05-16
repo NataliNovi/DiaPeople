@@ -576,6 +576,7 @@ ul {
         position: fixed;
         top: 140px;
         left: 0px;
+        box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
         // box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (max-width: $grid-breakpoint-lg) {
@@ -604,7 +605,7 @@ ul {
             //box-shadow: -8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
             box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
             padding: 30px;
-            margin: 10px 10px 10px 0;
+            margin: 20px 20px 20px 0;
             //border: -8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
             // overflow: hidden;
