@@ -62,12 +62,14 @@
     </header>
     <!-- header End -->
 
-    <div class = "container-nav-main-article">
+    <div class = "container-main-article">
 
     <!-- nav Start -->
 
     <nav aria-hidden="false" id="mainNav" role="navigation">
-    <ul class="container-nav-main-article__nav">
+        
+    <!-- <ul class="container-nav-main-article__nav"> -->
+        <ul class="container-nav">
         <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
             <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
 
@@ -108,14 +110,14 @@
     <!-- main Start -->
 
     <main>
-        <div class = "container-nav-main-article__main">
+        <div class = "container-main">
 
-            <div class = "container-nav-main-article__main_photo">
+            <div class = "container-main__main_photo">
                 <img class="photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
                 title="Dia People"/>         
             </div>
 
-              <div class="container-nav-main-article__main_info">
+              <div class="container-main__main_info">
                 <h5 class="info__confucii">
                     <div> <q>Не тот вЕлик, кто никогда не падал,
                      а тот вЕлик - кто падал и вставал!</q></div>
@@ -128,6 +130,8 @@
                 </div> -->
 
             </div>
+
+            <div class="articles">
  
 
     <article class = "article__community-describe">
@@ -176,6 +180,8 @@
             <div class="information information__events">Анонсы и фотоотчеты с событий сообщества</div>
         </article>
 
+    </div>
+
         <div class="weather">
             <p > Введите ключевое слово для поиска GIF</p>
             <input  type = "text" id = "gifSearch">
@@ -204,6 +210,36 @@
                 <label for="slide5"></label>
             </div>
         </div>
+
+
+
+        <div class="container">
+
+            <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+              <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                  <div class="itc-slider__item">
+                    <!-- Контент 1 слайда -->
+                  </div>
+                  <div class="itc-slider__item">
+                    <!-- Контент 2 слайда -->
+                  </div>
+                  <div class="itc-slider__item">
+                    <!-- Контент 3 слайда -->
+                  </div>
+                  <div class="itc-slider__item">
+                    <!-- Контент 4 слайда -->
+                  </div>
+                  <div class="itc-slider__item">
+                    <!-- Контент 5 слайда -->
+                  </div>
+                </div>
+              </div>
+              <button class="itc-slider__btn itc-slider__btn_prev">Next</button>
+              <button class="itc-slider__btn itc-slider__btn_next">Prev</button>
+            </div>
+          
+          </div>
 
 
     <!-- main End -->
@@ -236,6 +272,7 @@
 
  
 <script src="./assets/js/index.js"></script>
+<script src = "./assets/js/itc-slider.js"></script>
   
     
 </body>
