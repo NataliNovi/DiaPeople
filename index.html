@@ -11,18 +11,63 @@
 <body>
 
     <!-- header Start -->
+
+
     <header class = "container-header">
 
         <div class = "container-header__logo">
-
             <a class="container-header__logo_link" href='/index.html'><img class="container-header__logo_img" src="./assets/images/logo.jpg" class="img_responsive" alt="connect_people-img"
                 title="Logo Dia People"/></a>
             </div>
 
             <div class = "container-header__dialydi-header">
-
                <a class = "container-header__dialydi-header_dialydi-name">ДиаЛюди Беларусь</a>
                 </div>
+
+     <!--burger Start-->
+
+                <nav class="container-header__burger burger">
+                    <input id="burger-menu__toggle" type="checkbox" />
+                    <label class="burger-menu__btn" for="burger-menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="burger-menu__box">
+                    <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
+                        <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
+            
+                   <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете<span>&#8594;</span></a>
+                    <ul class="submenu">
+                        <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
+                        <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
+                        <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
+                        <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
+                        <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+                    </ul>
+                </li>
+                   <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+            
+                   <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Страничка психолога</a></li>
+            
+                   <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
+                <ul class="submenu">
+                    <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
+                    <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
+                </ul>
+                </li>
+                   <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
+                    <ul class="submenu">
+                        <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
+                        <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
+                    </ul></li>
+                   <li class = "nav__item nav__item_primary"> <a href='/hospitals.html'>Медицинские учреждения</a></li>
+                   <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
+                   <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
+                   <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
+                   <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
+                </ul>
+                </nav>
+            
+                <!--burger End-->
 
 
 
@@ -67,9 +112,7 @@
 
     <!-- nav Start -->
 
-    <nav aria-hidden="false" id="mainNav" role="navigation">
-        
-    <!-- <ul class="container-nav-main-article__nav"> -->
+    <nav class = "main-menu" aria-hidden="false" id="mainNav" role="navigation">
         <ul class="container-nav">
         <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
             <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
@@ -85,7 +128,7 @@
     </li>
        <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
 
-       <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Психологическая страничка</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Страничка психолога</a></li>
 
        <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
     <ul class="submenu">
@@ -107,6 +150,8 @@
     </nav>
 
      <!-- nav End -->
+
+
 
     <!-- main Start -->
 
@@ -132,17 +177,17 @@
 
             </div>
     
-            <div class="articles">
+        <div class="articles">
 
-    <article class = "article__community-describe">
+        <article class = "article__community-describe">
        <div class="text-center"> <h3>О нас</h3></div>
   
-            <span class='community-describe__diapeople-name'>ДиаЛюди</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений, предрассудков и неравенства.
+            <span class='community-describe__diapeople-name'>ДиаЛюди</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений и предрассудков.
     
             На этом ресурсе мы собираем проверенную нами актуальную информацию, делимся опытом, учимся, советуемся, объединяем силы, чтобы отстаивать свои интересы.
             
             За основу мы взяли первый тип сахарного диабета (СД1) у детей, потому что это наиболее острая тема для нас. Но, основная информация может быть полезной для всех возрастных групп и для иных видов и типов диабета. Если вы полистаете сайт, то убедитесь в этом. <br>
-            Если вы готовы активничать и вести соответствующую тему (“взрослый диабет”, СД2 и т.д.), наполнять наш ресурс проверенной информацией, то добро пожаловать! Можете оставить контакты ниже, мы с вами - свяжемся.
+            Если вы готовы активничать и вести соответствующую тему (“взрослый диабет”, СД2 и т.д.), наполнять наш ресурс проверенной информацией, то добро пожаловать! Можете оставить контакты ниже, мы с вами свяжемся.
             <!-- <div class="community-describe__form">
             <input class="community-describe__form_person-contact" type="text" placeholder="Ваш номер телефона или почта">
             <button class = "button community-describe__form_submit-contact">Сохранить</button>
@@ -155,15 +200,11 @@
            
         </article>
 
-        <!-- <div class="community-describe__form">
-            <input class="community-describe__form_person-contact" type="text" placeholder="Ваш номер телефона или почта">
-            <button class = "button community-describe__form_submit-contact">Сохранить</button>
-            </div> -->
             <div class="subscribe__form">
             <div class="subscribe__form_header">Будьте на связи!</div>
-            <div class="subscribe__form_contact-button">
+            <div class="subscribe__form_input-button">
                 <input class="input input__form_contact" type="text" placeholder="Ваш номер телефона или почта">
-                <button class = "button form_button">Сохранить</button>
+                <button class = "button input__form_button">Сохранить</button>
             </div>
         </div>
 
@@ -174,16 +215,18 @@
             <div class="link link__news"> <a class="link__link-button"  href='/for-school.html'>Медицинским работникам школ <br> и детских садов</a></div>
         </article>
 
-        <article class = "article article__information">
-            <div class=" information information__diadetka">Анонсы канала DiaDzetka</div>
-            <div class="information information__news"><a href='/news.html'>Новости и факты из мира диабета </a></div>
-            <div class="information information__events">Анонсы и фотоотчеты с событий сообщества</div>
+        <div class="line"></div>
+
+        <article class = "article article__news">
+            <div class="new article__news_diadetka">Анонсы канала DiaDzetka</div>
+            <div class="new article__news_worldnews"><a href='/news.html'>Новости и факты из мира диабета </a></div>
+            <div class="new article__news_events">Анонсы и фотоотчеты с событий сообщества</div>
         </article>
 
     </div>
 
 
-        <div class="test">
+        <!-- <div class="test">
         <div class="weather">
             <p > Введите ключевое слово для поиска GIF</p>
             <input  type = "text" id = "gifSearch">
@@ -221,19 +264,19 @@
               <div class="itc-slider__wrapper">
                 <div class="itc-slider__items">
                   <div class="itc-slider__item">
-                    <!-- Контент 1 слайда -->
+              
                   </div>
                   <div class="itc-slider__item">
-                    <!-- Контент 2 слайда -->
+                
                   </div>
                   <div class="itc-slider__item">
-                    <!-- Контент 3 слайда -->
+              
                   </div>
                   <div class="itc-slider__item">
-                    <!-- Контент 4 слайда -->
+                  
                   </div>
                   <div class="itc-slider__item">
-                    <!-- Контент 5 слайда -->
+                  
                   </div>
                 </div>
               </div>
@@ -243,7 +286,7 @@
           
           </div>
 
-        </div>
+        </div> -->
     <!-- main End -->
 </main>
 <!-- </div> -->
@@ -262,11 +305,11 @@
 
     <div class = footer__contacts>    Контакты:
         <br>
-        почта: diapeople@gmail.com
+       diapeople@gmail.com
         <br>
-        адрес: Республика Беларусь, г. Минск, улица Мира, 1/1
+      Республика Беларусь, г. Минск, улица Мира, 1/1
         <br>
-        телефон: +375 29 555 66 77
+      +375 29 555 66 77
     </div>
 
 

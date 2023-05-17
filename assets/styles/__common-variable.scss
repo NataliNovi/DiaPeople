@@ -5,8 +5,8 @@ $grid-breakpoint-lg: 992px;
 $grid-breakpoint-xl: 1280px;
 $grid-breakpoint-xxl: 1400px;
 
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 //$font-family-serif: Georgia, 'Times New Roman', serif;
@@ -73,6 +73,6 @@ body {
 }
 
 body {
-    max-width: 1920px;
+    //max-width: 1920px;
     margin: 0 auto;
 }
