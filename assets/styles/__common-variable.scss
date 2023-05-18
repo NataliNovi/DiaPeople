@@ -70,6 +70,7 @@ body {
     margin: 0;
     font-family: $font-family-sans-serif;
     color: $color-main;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {

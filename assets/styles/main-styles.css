@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
   color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -300,6 +301,12 @@ body {
   height: 30px;
 }
 
+@media screen and (max-width: 479px) {
+  .main-menu {
+    display: none;
+  }
+}
+
 .container-nav {
   width: 240px;
   height: calc(100vh - 140px);
@@ -329,6 +336,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .container-nav {
+    position: relative;
     display: none;
   }
 }
@@ -537,6 +545,14 @@ ul li ul {
     width: calc(100% - 180px);
   }
 }
+@media screen and (max-width: 479px) {
+  .container-main {
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+    margin-top: 240px;
+  }
+}
 .container-main__main {
   overflow: hidden;
   font-family: "IBM Plex Sans", sans-serif;
@@ -559,8 +575,18 @@ ul li ul {
     margin: 10px 10px 10px 0;
   }
 }
+@media screen and (max-width: 479px) {
+  .container-main__main_photo {
+    width: 100%;
+  }
+}
 .container-main__main_info {
   width: 40%;
+}
+@media screen and (max-width: 479px) {
+  .container-main__main_info {
+    width: 100%;
+  }
 }
 
 .photo {
@@ -590,29 +616,39 @@ ul li ul {
     padding-top: 20px;
   }
 }
+@media screen and (max-width: 479px) {
+  .info__confucii {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+}
 .info__confucii_name {
   position: absolute;
   right: 90px;
   font-size: 26px;
 }
 @media screen and (max-width: 992px) {
-  .info__confucii {
-    font-size: 18px;
-  }
   .info__confucii_name {
-    position: absolute;
     right: 50px;
     font-size: 18px;
   }
 }
-@media screen and (max-width: 992px) and (max-width: 768px) {
-  .info__confucii {
+@media screen and (max-width: 768px) {
+  .info__confucii_name {
     font-size: 14px;
   }
+}
+@media screen and (max-width: 479px) {
   .info__confucii_name {
-    position: absolute;
-    right: 50px;
-    font-size: 14px;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
   }
 }
 
@@ -631,6 +667,12 @@ ul li ul {
   .articles {
     margin-left: 180px;
     width: calc(100% - 180px);
+  }
+}
+@media screen and (max-width: 479px) {
+  .articles {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -879,6 +921,12 @@ ul li ul {
     margin-left: 180px;
     width: calc(100% - 190px);
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 

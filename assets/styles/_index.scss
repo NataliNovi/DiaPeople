@@ -332,6 +332,14 @@ body {
 }
 
 
+.main-menu {
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        display: none;
+
+    }
+
+}
+
 
 .container-nav {
     //width: 16rem;
@@ -362,7 +370,11 @@ body {
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
+        position: relative;
         display: none;
+
+
+
     }
 
 }
@@ -614,6 +626,14 @@ ul li ul {
         width: calc(100% - 180px);
     }
 
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-top: 240px;
+
+    }
+
 
 
     // &__nav {
@@ -646,7 +666,6 @@ ul li ul {
 
     &__main {
         overflow: hidden;
-
         font-family: $font-family-sans-serif;
 
         //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
@@ -687,11 +706,21 @@ ul li ul {
                 margin: 10px 10px 10px 0;
             }
 
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                width: 100%;
+            }
+
         }
 
         &_info {
             width: 40%;
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                width: 100%;
+            }
         }
+
+
     }
 }
 
@@ -725,20 +754,25 @@ ul li ul {
         padding-top: 20px;
     }
 
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+        display: flex;
+        text-align: center;
+        font-size: $font-size-medium;
+
+    }
 
     &_name {
         position: absolute;
         right: 90px;
         font-size: $font-size-large;
 
-    }
 
-    @media screen and (max-width: $grid-breakpoint-lg) {
 
-        font-size: $font-size-medium;
+        @media screen and (max-width: $grid-breakpoint-lg) {
 
-        &_name {
-            position: absolute;
             right: 50px;
             font-size: $font-size-medium;
 
@@ -749,17 +783,23 @@ ul li ul {
 
             font-size: $font-size-small;
 
-            &_name {
-                position: absolute;
-                right: 50px;
-                font-size: $font-size-small;
-
-            }
-
         }
 
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+
+            font-size: $font-size-medium;
+            position: relative;
+
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+
+        }
     }
+
 }
+
 
 .articles {
     margin-left: 240px;
@@ -778,6 +818,13 @@ ul li ul {
         margin-left: 180px;
         width: calc(100% - 180px);
     }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
 }
 
 .article {
@@ -1289,6 +1336,13 @@ ul li ul {
         font-size: $font-size-small;
 
     }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
 
 
 
