@@ -65,18 +65,22 @@ body {
 }
 @media screen and (max-width: 479px) {
   .container-header {
-    height: 240px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    height: 120px;
   }
 }
-.container-header__burger {
-  display: none;
+@media screen and (max-width: 992px) {
+  .container-header__burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-header__burger {
+    display: none;
+  }
 }
 @media screen and (max-width: 479px) {
   .container-header__burger {
-    display: inline-block;
+    display: flex;
   }
 }
 .container-header__logo {
@@ -96,6 +100,11 @@ body {
     height: 110px;
   }
 }
+@media screen and (max-width: 479px) {
+  .container-header__logo_img {
+    height: 80px;
+  }
+}
 .container-header__logo_link {
   height: 116px;
   border-radius: 6px;
@@ -106,6 +115,11 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .container-header__logo_link {
+    height: 110px;
+  }
+}
+@media screen and (max-width: 479px) {
   .container-header__logo_link {
     height: 110px;
   }
@@ -149,6 +163,11 @@ body {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 479px) {
+  .container-header__dialydi-header_dialydi-name {
+    display: none;
+  }
+}
 .container-header__social-links {
   color: #096265;
   display: grid;
@@ -165,6 +184,11 @@ body {
 @media screen and (max-width: 768px) {
   .container-header__social-links {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .container-header__social-links {
+    display: none;
   }
 }
 .container-header__social-links_channel-box {
@@ -251,8 +275,18 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+@media screen and (max-width: 479px) {
+  .button__button-search {
+    display: none;
+  }
+}
 .button__button-search_lupa {
   width: 30px;
+}
+@media screen and (max-width: 479px) {
+  .button__button-search_lupa {
+    display: none;
+  }
 }
 
 .button::before {
@@ -332,12 +366,6 @@ body {
     height: calc(100vh - 120px);
     width: 180px;
     font-size: 14px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .container-nav {
-    position: relative;
-    display: none;
   }
 }
 
@@ -423,7 +451,7 @@ ul li ul {
   align-items: center;
   position: absolute;
   top: 40px;
-  left: 20px;
+  right: 40px;
   width: 56px;
   height: 36px;
   cursor: pointer;
@@ -550,7 +578,7 @@ ul li ul {
     width: 100%;
     display: block;
     margin-left: 0px;
-    margin-top: 240px;
+    margin-top: 120px;
   }
 }
 .container-main__main {
@@ -619,36 +647,35 @@ ul li ul {
 @media screen and (max-width: 479px) {
   .info__confucii {
     width: 100%;
+    position: relative;
     margin: 0 auto;
     padding-left: 20px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    text-align: flex-start;
     font-size: 18px;
   }
 }
 .info__confucii_name {
-  position: absolute;
   right: 90px;
   font-size: 26px;
 }
 @media screen and (max-width: 992px) {
   .info__confucii_name {
     right: 50px;
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
   .info__confucii_name {
-    font-size: 14px;
+    right: 50px;
   }
 }
 @media screen and (max-width: 479px) {
   .info__confucii_name {
+    right: 50px;
     font-size: 18px;
-    position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-top: 40px;
   }
 }
 
@@ -866,6 +893,11 @@ ul li ul {
 @media screen and (max-width: 768px) {
   .input__search {
     width: 160px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .input__search {
+    display: none;
   }
 }
 .input__form_contact {

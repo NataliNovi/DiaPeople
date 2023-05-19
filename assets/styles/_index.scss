@@ -46,25 +46,40 @@ body {
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        height: 240px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-
+        height: 120px;
+        // display: flex;
+        // justify-content: space-between;
     }
 
     &__burger {
-        display: none;
 
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            display: inline-block;
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            display: none;
 
         }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: none;
+
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: flex;
+
+
+        }
+
     }
 
     &__logo {
         //width: 8vw;
         padding: 6px;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            //width: 60px;
+
+
+        }
 
 
         &_img {
@@ -80,6 +95,11 @@ body {
                 height: 110px;
 
             }
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                height: 80px;
+
+            }
         }
 
         &_link {
@@ -93,6 +113,11 @@ body {
             }
 
             @media screen and (max-width: $grid-breakpoint-md) {
+                height: 110px;
+
+            }
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
                 height: 110px;
 
             }
@@ -143,6 +168,11 @@ body {
                 font-size: $font-size-small;
             }
 
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                display: none;
+
+            }
+
         }
     }
 
@@ -168,6 +198,12 @@ body {
             //width: 15vw;
             font-size: $font-size-small;
         }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: none;
+
+        }
+
 
         &_channel-box {
             display: flex;
@@ -271,8 +307,16 @@ body {
         margin-left: 10px;
         margin-right: 10px;
 
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: none;
+        }
+
         &_lupa {
             width: 30px;
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                display: none;
+            }
         }
 
     }
@@ -369,13 +413,10 @@ body {
         font-size: $font-size-small;
     }
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        position: relative;
-        display: none;
-
-
-
-    }
+    // @media screen and (max-width: $grid-breakpoint-sm) {
+    //     position: relative;
+    //     display: none;
+    // }
 
 }
 
@@ -473,7 +514,7 @@ ul li ul {
     align-items: center;
     position: absolute;
     top: 40px;
-    left: 20px;
+    right: 40px;
     width: 56px;
     height: 36px;
     cursor: pointer;
@@ -630,7 +671,7 @@ ul li ul {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 240px;
+        margin-top: 120px;
 
     }
 
@@ -729,75 +770,71 @@ ul li ul {
 }
 
 
-.info__confucii {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    margin-top: 0px;
-    color: $color-dark-text;
-    font-family: $font-family-different;
-    font-size: $font-size-large;
+.info {
 
-    @media screen and (max-width: $grid-breakpoint-lg) {
-
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-
-    }
-
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        width: 100%;
-        margin: 0 auto;
-        padding-left: 20px;
-        display: flex;
-        text-align: center;
-        font-size: $font-size-medium;
-
-    }
-
-    &_name {
-        position: absolute;
-        right: 90px;
+    &__confucii {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        margin-top: 0px;
+        color: $color-dark-text;
+        font-family: $font-family-different;
         font-size: $font-size-large;
-
-
 
         @media screen and (max-width: $grid-breakpoint-lg) {
 
-            right: 50px;
-            font-size: $font-size-medium;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
 
         }
 
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
-            font-size: $font-size-small;
-
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
         }
-
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-
-            font-size: $font-size-medium;
+            width: 100%;
             position: relative;
-
+            margin: 0 auto;
+            padding-left: 20px;
             display: flex;
-            justify-content: flex-end;
-            margin-top: 40px;
+            flex-direction: column;
+            text-align: flex-start;
+            font-size: $font-size-medium;
 
         }
-    }
 
+        &_name {
+            right: 90px;
+            font-size: $font-size-large;
+
+
+
+            @media screen and (max-width: $grid-breakpoint-lg) {
+                right: 50px;
+            }
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                right: 50px;
+            }
+
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
+
+                right: 50px;
+                font-size: $font-size-medium;
+                display: flex;
+                justify-content: flex-end;
+
+            }
+        }
+
+    }
 }
 
 
@@ -1054,7 +1091,10 @@ ul li ul {
 
         @media screen and (max-width: $grid-breakpoint-md) {
             width: 160px;
+        }
 
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: none;
         }
     }
 
