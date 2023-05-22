@@ -24,9 +24,13 @@ $color-dark-text: #021e25;
 $color-button: rgb(243, 228, 17);
 // $color-light: #b8ecf6;
 //$color-light: rgb(162, 200, 236);
-$color-blue-gradient: linear-gradient(3600deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
-$color-blue-gradient-nav: linear-gradient(270deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
-$color-blue-gradient-sub-nav: linear-gradient(90deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
+$color-blue-gradient: rgb(187, 215, 243);
+//linear-gradient(3600deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
+$color-blue-gradient-nav: rgb(187, 215, 243);
+//linear-gradient(270deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
+$color-blue-gradient-sub-nav: rgb(187, 215, 243);
+
+//linear-gradient(90deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
 $color-gray: rgba(0, 0, 0, .25);
 //$gradient-light: linear-gradient(90deg, rgba(166, 236, 250, 1) 0%, rgba(255, 255, 255, 1) 93%);
 $back: rgb(212, 229, 246);
