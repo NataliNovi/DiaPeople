@@ -1,6 +1,6 @@
 $grid-breakpoint-xs: 0;
 $grid-breakpoint-sm: 479px;
-$grid-breakpoint-md: 768px;
+$grid-breakpoint-md: 767.9px;
 $grid-breakpoint-lg: 992px;
 $grid-breakpoint-xl: 1280px;
 $grid-breakpoint-xxl: 1400px;
@@ -19,12 +19,18 @@ $color-main: white;
 // $color-blue: #022a59;
 //$container-max-width: 1296px;
 
-$color-blue: #044151;
+//$color-blue: #044151;
+$color-blue: #04215c;
 $color-dark-text: #021e25;
-$color-button: rgb(243, 228, 17);
+//$color-button: rgb(243, 228, 17);
+$color-button: #fcee5d;
 // $color-light: #b8ecf6;
 //$color-light: rgb(162, 200, 236);
-$color-blue-gradient: rgb(187, 215, 243);
+//$color-blue-gradient: rgb(187, 215, 243);
+$color-blue-gradient: #ffe6bd;
+//$color-menu: rgb(124, 176, 228);
+$color-menu: #ffe6bd;
+
 //linear-gradient(3600deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
 $color-blue-gradient-nav: rgb(187, 215, 243);
 //linear-gradient(270deg, rgba(212, 229, 246, 1) 15%, rgba(187, 215, 241, 1) 40%, rgba(162, 200, 236, 1) 73%);
@@ -44,6 +50,7 @@ $white-background: white;
 $font-size-small: 14px;
 $font-size-medium: 18px;
 $font-size-large: 26px;
+$font-size-extra-large: 32px;
 
 
 $burger-color: #232323;
