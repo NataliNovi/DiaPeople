@@ -48,12 +48,16 @@ if (isMobile.any()) {
 
 const iconMenu = document.querySelector(".menu-burger__icon");
 const menuBody = document.querySelector(".menu-burger__body");
+const menuMobile = document.querySelector(
+  ".container-header__container-mobile"
+);
 
 if (iconMenu) {
   iconMenu.addEventListener("click", function (e) {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
+    menuMobile.classList.toggle("_inactive");
   });
 }
 
