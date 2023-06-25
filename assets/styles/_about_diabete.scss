@@ -1,8 +1,39 @@
 .about_diabete__text-container {
-    color: black;
-    font-size: 1.5rem;
-    margin-top: 150px;
-    margin-left: 20vw;
+
+
+    margin-top: 140px;
+    margin-left: 240px;
+    z-index: 1;
+    width: calc(100% - 240px);
+    display: flex;
+    color: $color-dark-text;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    // @media screen and (max-width: $grid-breakpoint-lg) {
+    @media only screen and (min-width: $grid-breakpoint-md) {
+        margin-top: 120px;
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+
+    //@media screen and (max-width: $grid-breakpoint-md) {
+    @media screen and (min-width: $grid-breakpoint-sm) {
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-top: 220px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-top: 210px;
+
+    }
+
 }
 
 //burger
