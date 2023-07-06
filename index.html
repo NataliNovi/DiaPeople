@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiaPeople</title>
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+
+      <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="simple-adaptive-slider.css">
+
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
@@ -318,7 +325,9 @@
         <article class = "article__community-describe">
 
             <div class="article-border">
-       <div class="text-center"> <h3>О нас</h3></div>
+       <!-- <div class="text-center"> </div> -->
+
+       <h3>О нас</h3>
   
             <span class='community-describe__diapeople-name'>ДиаЛюди</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений и предрассудков.
     
@@ -336,7 +345,9 @@
 
         <div class="article-border">
             
-            <div class="text-center"> <h3>Важно понимать</h3></div>
+            <!-- <div class="text-center"> </div> -->
+
+            <h3>Важно понимать</h3>
             Мы не пациентская организация, не горячая линия Минздрава и не профильный фонд, способный помочь деньгами (пока точно не сейчас). У нас все на равных правах и наши связи абсолютно горизонтальны. Да, мы многое прошли и немало знаем, с нами опыт, врачи и психологи. Но прежде чем взывать, пожалуйста полистайте этот сайт самостоятельно! Поверьте, на 90% он УЖЕ содержит нужную вам информацию.
             
             <p>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </p>
@@ -409,51 +420,155 @@
 
         </article>
 
-        <!-- анонсы, новости, фотоотчеты -->
-        <article class = "article__news">
+        <!-- анонсы Diadzetka-->
+        <article class = "article__diadzetka-news">
 
-            <div class="new article__news_diadetka" id="anons_diadzetka">
-                <h3>Анонсы канала DiaDzetka</h3>
+            <h3><a class = "article__diadzetka-news_diadzetka-name" href ="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">DiaDzetka - канал обо всём на свете <br> и о сахарном диабете</a> </h3>
+
+            <div class="new article__diadzetka-news_diadetka" >
+               
+                <div class="article__diadzetka-news_news-table">
 
                 <div class="new-describe">
                     <img class = "new-describe__new-photo" src = "./assets/images/diadzetka.jpeg">
                     <div class="new-describe__new-text">Скоро на канале новое видео про ботанический сад</div>
                 </div>
-          
 
                 <div class="new-describe">
                     <img class = "new-describe__new-photo" src = "./assets/images/diadzetka.jpeg">
                     <div class="new-describe__new-text">Скоро на канале новое видео из контактного зоопарка</div>
             </div>
 
+            <div class="new-describe">
+                <img class = "new-describe__new-photo" src = "./assets/images/diadzetka.jpeg">
+                <div class="new-describe__new-text">Скоро на канале новое видео про ботанический сад</div>
             </div>
 
-            <div class="new article__news_events">
-                <h3>Анонсы и фотоотчеты с событий сообщества</h3>
+            <div class="new-describe">
+                <img class = "new-describe__new-photo" src = "./assets/images/diadzetka.jpeg">
+                <div class="new-describe__new-text">Скоро на канале новое видео из контактного зоопарка</div>
+        </div>
 
-                <div class="event-anons">
-                    <img class = "event-anons__anons-photo" src = "./assets/images/diadzetka.jpeg">
-                    <div class="event-anons__anons-text">Следующая встреча состоится тогда-то</div>
-                </div>
-
-                <div class="event-describe">
-                    <img class = "event-describe__event-photo-gallery" src = "./assets/images/diadzetka.jpeg">
-                    <div class="event-describe__slider-prev-next"> <button>  &#8592;prev </button>  <button>next &#8594; </button></div>
-                    <div class="event-describe__event-text">19 июня ДиаМамы встретились пообщаться и отдохнуть, а папы и детки - веселись</div>
-                </div>
-
-                <div class="event-describe">
-                    <img class = "event-describe__event-photo-gallery" src = "./assets/images/diadzetka.jpeg">
-                    <div class="event-describe__slider-prev-next"> <button>  &#8592;prev </button>  <button>next &#8594; </button></div>
-                    <div class="event-describe__event-text">22 июля состоялась поездка в контактный зоопарк Диприз</div>
-                </div>
-
-                <button>Смотреть больше</button>
+        </div>
 
             </div>
+        </article>
+
+<!-- Анонсы сообщества -->
+
+            <article class="article__community-news">
+                <h3>Наши события</h3>
+
+
+            <div class="new article__community-news_community" >
+
+                <div class="article__community-news_news-table">
+
+                    <div class="event-describe">
+
+                      <div class="event-describe__event-text">19 июня ДиаМамы встретились пообщаться и отдохнуть, а папы и детки - веселись</div>
+
+                         <!-- Разметка слайдера -->
+  <div class="itcss1" id="slider-1">
+    <div class="itcss__wrapper">
+      <div class="itcss__items">
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/1.jpg" loading="lazy" alt="first slide"/></div>
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/2.jpg" loading="lazy" alt="2 slide"/></div>
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/3.jpg" loading="lazy" alt="3 slide"/></div>
+          
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/4.jpg" loading="lazy" alt="4 slide"/></div>
+        </div>
+
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/5.jpg" loading="lazy" alt="5 slide"/></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div>
+
+    <!-- <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button> -->
+        </div>
+  
+
+    
+</div>
+               <div class="event-describe">
+
+
+                <div class="event-describe__event-text">22 июля состоялась поездка в контактный зоопарк Диприз</div>
+
+                   <!-- Разметка слайдера -->
+  <div class="itcss2" id="slider-2">
+    <div class="itcss__wrapper">
+      <div class="itcss__items">
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/1.jpg" loading="lazy" alt="first slide"/></div>
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/2.jpg" loading="lazy" alt="2 slide"/></div>
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/3.jpg" loading="lazy" alt="3 slide"/></div>
+          
+        </div>
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/4.jpg" loading="lazy" alt="4 slide"/></div>
+        </div>
+
+        <div class="itcss__item">
+          <div><img width="100%" src="./assets/images/meets/5.jpg" loading="lazy" alt="5 slide"/></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div>
+
+    <!-- <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button> -->
+        </div>
+  
+
+                    <!-- <img class = "event-describe__event-photo-gallery" src = "./assets/images/diadzetka.jpeg">
+                    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev">  &#8592;prev </button>  <button class="event-describe__slider-next">next &#8594; </button></div> -->
+
+                </div>
+
+                </div>
+
+            <button class="article__community-news_anons-button">Смотреть больше</button>
+            <!-- </div> -->
+             
+               <div class = "community-next-meet">
+               <img class = "community-next-meet__anons-photo" src = "./assets/images/diadzetka.jpeg">
+               <div class="community-next-meet__anons-text">Следующая встреча состоится тогда-то</div>
+            </div>
+        </article>
+    
+
+            <!-- Школа диабета -->
+
+            <article class="article__diaschool">
+
+                <h3>Школа диабета</h3>
+
+                <a class = "article__diaschool_youtube-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">Учиться!</a>
+
+            </article>
             
             
-            <div class="new article__news_world-news">
+            <article class="article__world-news">
+            <div class="new article__world-news_some-new">
                 <h3>Новости и факты из мира диабета</h3>
 
                 <div class="world-new-describe">
@@ -526,31 +641,31 @@
 </footer>
 
 <script src="./assets/js/index.js"></script>
+
+      <!-- Подключаем JS слайдера -->
+      <script defer src="./assets/js/simple-adaptive-slider.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // активация слайдера
+          new ItcSimpleSlider('#slider-1', {
+            loop: true,
+            autoplay: false,
+            interval: 4000,
+            swipe: true
+          });
+
+          new ItcSimpleSlider('#slider-2', {
+            loop: true,
+            autoplay: false,
+            interval: 4000,
+            swipe: true
+          });
+        });
+      </script>
+
+
 <script src=".assets/js/form-processing.js"></script>
 
-<script>
-    /*
-      attachMaxItems: 3,
-      attachMaxFileSize: 128,
-      attachExt: ['png', 'jpg']
-    */
-
-    ItcSubmitForm.getOrCreateInstance('form');
-
-    document.addEventListener('itc.successSendForm', (e) => {
-      const el = e.target.closest('.form-container').querySelector('.form-success');
-      el.classList.remove('form-success_hide');
-    });
-
-    // при клике на .form-success__btn
-    document.querySelector('.form-success__btn').addEventListener('click', (e) => {
-      const el = e.target.closest('.form-container').querySelector('form');
-      const form = ItcSubmitForm.getOrCreateInstance(el);
-      form.reset();
-      e.target.closest('.form-container').querySelector('.form-success').classList.add('form-success_hide');
-    });
-
-  </script>
   
     
 </body>

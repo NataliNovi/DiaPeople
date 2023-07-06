@@ -1,9 +1,33 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "_form-processing.css";
+@font-face {
+  font-display: swap;
+  font-family: "OpenSans";
+  src: url("..//fonts/OpenSans/OpenSans-Regular.woff2");
+  src: url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("..//fonts/OpenSans/OpenSans-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Italic.woff2");
+  src: url("../fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Italic.eot") format("eot");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-display: swap;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Bold.woff2");
+  src: url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
 /* Оригинальные переменные HOMEPAGE  */
 /* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
-@import "_form-processing.css";
 * {
   box-sizing: border-box;
 }
@@ -13,7 +37,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
   color: white;
   -webkit-font-smoothing: antialiased;
 }
@@ -333,7 +356,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   left: 0;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
   z-index: 150;
-  background-color: #3963b6;
+  background-color: rgb(111, 201, 235);
   padding-right: 20px;
   padding-left: 10px;
 }
@@ -694,8 +717,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -824,7 +847,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -854,6 +877,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   left: 0px;
   box-shadow: 8px 0 14px 0 rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  z-index: 300;
 }
 @media screen and (max-width: 768px) {
   .container-nav {
@@ -914,8 +938,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
     width: 240px;
     background-color: white;
-    color: #9dbbfa;
     padding-right: 30px;
+    color: #28a745;
   }
 }
 .container-main {
@@ -1097,18 +1121,19 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   line-height: 1.4;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 18px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .article__community-describe__diapeople-name {
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .article__community-describe {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .article__subscribe {
@@ -1126,15 +1151,181 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 .article__viber-contact_saharok {
-  color: #fcee5d;
+  color: rgb(252, 238, 94);
   text-decoration: underline;
 }
-.article__news {
+.article__diadzetka-news {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  background: #ffe6bd;
+  color: #04215c;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  .article__diadzetka-news {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .article__diadzetka-news {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__diadzetka-news {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article__diadzetka-news {
+    font-size: 18px;
+  }
+}
+.article__diadzetka-news_diadzetka-name {
+  text-decoration: none;
+  color: #04215c;
+  cursor: pointer;
+}
+.article__diadzetka-news_diadzetka-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.article__diadzetka-news_news-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .article__diadzetka-news_news-table {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article__diadzetka-news_news-table {
+    grid-template-columns: 1fr;
+  }
+}
+.article__community-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #ffe6bd;
+  color: #04215c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  .article__community-news {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .article__community-news {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__community-news {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article__community-news {
+    font-size: 18px;
+  }
+}
+.article__community-news_news-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .article__community-news_news-table {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article__community-news_news-table {
+    grid-template-columns: 1fr;
+  }
+}
+.article__community-news_anons-button {
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
+  height: 40px;
+  border-radius: 6px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+}
+.article__community-news_anons-button:hover {
+  scale: 1.1;
+}
+.article__diaschool {
+  height: 200px;
+  color: white;
+  background-color: #04215c;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  .article__diaschool {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .article__diaschool {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__diaschool {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+}
+.article__diaschool_youtube-link {
+  width: 50%;
+  color: #04215c;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgb(252, 238, 94);
+  font-weight: 18px;
+}
+.article__world-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   background: #ffe6bd;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1142,37 +1333,31 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 992px) {
-  .article__news {
+  .article__world-news {
     font-size: 26px;
   }
 }
 @media screen and (max-width: 992px) {
-  .article__news {
+  .article__world-news {
     font-size: 26px;
   }
 }
 @media screen and (max-width: 768px) {
-  .article__news {
+  .article__world-news {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
-  .article__news {
+  .article__world-news {
     font-size: 18px;
   }
-}
-.article__news_diadzetka {
-  margin-bottom: 20px;
-}
-.article__news_events {
-  margin-bottom: 20px;
 }
 .article__links {
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  background: #3963b6;
+  background: #04215c;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 .article__confucius {
@@ -1188,36 +1373,37 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .article-border {
   border: solid 1px #04215c;
   padding: 10px;
-  margin-top: 20px;
+}
+
+.article-border:first-child {
+  margin-bottom: 20px;
 }
 
 .new {
   width: 90vw;
   color: #04215c;
   background-color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: block;
   border-radius: 4px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 20px;
   box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  .new {
+    width: 90vw;
+  }
 }
 @media screen and (max-width: 992px) {
   .new {
     width: 90vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
   .new {
     width: 90vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 
@@ -1228,28 +1414,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding: 20px;
   border: solid #04215c 1px;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 .new-describe__new-photo {
   width: 20%;
 }
 .new-describe__new-text {
-  width: 80%;
-}
-
-.event-anons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-  border: solid #04215c 1px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-.event-anons__anons-photo {
-  width: 20%;
-}
-.event-anons__anons-text {
   width: 80%;
 }
 
@@ -1260,13 +1429,72 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding: 20px;
   border: solid #04215c 1px;
   border-radius: 4px;
-  margin-bottom: 20px;
+  position: relative;
 }
-.event-describe__event-photo-gallery {
-  margin-bottom: 20px;
+@media screen and (min-width: 992px) {
+  .event-describe__event-text {
+    height: 140px;
+    font-size: 22px;
+  }
 }
-.event-describe__slider-prev-next {
+@media screen and (max-width: 992px) {
+  .event-describe__event-text {
+    height: 160px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .event-describe__event-text {
+    height: auto;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+.event-describe__slider-prev {
   margin-bottom: 20px;
+  width: 90px;
+  margin-top: 40px;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
+  height: 40px;
+  border-radius: 6px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+}
+.event-describe__slider-prev:hover {
+  scale: 1.1;
+}
+.event-describe__slider-next {
+  margin-bottom: 20px;
+  width: 90px;
+  margin-top: 40px;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
+  height: 40px;
+  border-radius: 6px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+}
+.event-describe__slider-next:hover {
+  scale: 1.1;
+}
+
+.community-next-meet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: #04215c;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.community-next-meet__anons-photo {
+  width: 20%;
+}
+.community-next-meet__anons-text {
+  width: 80%;
 }
 
 .world-new-describe {
@@ -1341,14 +1569,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
-.text-center {
-  display: flex;
-  justify-content: center;
-}
-
 .footer {
   margin-left: 240px;
-  width: calc(100% - 220px);
+  width: calc(100% - 240px);
   height: 200px;
   background-color: #04215c;
   color: white;
@@ -1361,8 +1584,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 992px) {
   .footer {
-    margin-left: 200px;
-    width: calc(100% - 210px);
+    margin-left: 240px;
+    width: calc(100% - 240px);
     font-size: 14px;
   }
 }
@@ -1725,7 +1948,7 @@ textarea.form-control {
 }
 
 .user-agreement {
-  color: #fcee5d;
+  color: rgb(252, 238, 94);
 }
 
 .is-invalid ~ .invalid-feedback,
@@ -2000,6 +2223,33 @@ button[type=submit]:not(:disabled):focus {
   background-color: transparent;
   display: inline;
   padding: 0;
+}
+
+/* slider */
+/* стили для элемента body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* дополнительные стили для этого примера */
+.itcss__items {
+  counter-reset: slide;
+}
+
+.itcss__item {
+  counter-increment: slide;
+}
+
+.itcss__item > div::before {
+  content: counter(slide);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .about_diabete__text-container {
@@ -2688,8 +2938,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -2818,7 +3068,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -3496,8 +3746,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -3626,7 +3876,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -4304,8 +4554,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -4434,7 +4684,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -5112,8 +5362,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -5242,7 +5492,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -5920,8 +6170,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -6050,7 +6300,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -6728,8 +6978,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -6858,7 +7108,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -7536,8 +7786,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -7666,7 +7916,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -8344,8 +8594,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -8474,7 +8724,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -9152,8 +9402,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -9282,7 +9532,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -9960,8 +10210,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -10090,7 +10340,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -10768,8 +11018,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -10898,7 +11148,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -11576,8 +11826,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -11706,7 +11956,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -12384,8 +12634,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -12514,7 +12764,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -13192,8 +13442,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -13322,7 +13572,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -14000,8 +14250,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -14130,7 +14380,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -14808,8 +15058,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -14938,7 +15188,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -15616,8 +15866,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -15746,7 +15996,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -16424,8 +16674,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -16554,7 +16804,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -17232,8 +17482,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -17362,7 +17612,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -18040,8 +18290,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -18170,7 +18420,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -18889,8 +19139,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -19019,7 +19269,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {
@@ -19709,8 +19959,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .button {
-  background-color: #fcee5d;
-  border: solid 1px #fcee5d;
+  background-color: rgb(252, 238, 94);
+  border: solid 1px rgb(252, 238, 94);
   height: 40px;
   border-radius: 6px;
   font-family: "Philosopher", sans-serif;
@@ -19839,7 +20089,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #fcee5d inset, 0 0 5px 4px #fcee5d;
+  box-shadow: 0 0 5px 0 rgb(252, 238, 94) inset, 0 0 5px 4px rgb(252, 238, 94);
 }
 
 .icon__youtube {

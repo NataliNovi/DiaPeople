@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../SliderJS/photo"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.multiRootWorkspaceName": "DiaPeople"
+  }
+}
