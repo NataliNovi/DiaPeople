@@ -85,3 +85,37 @@ function onSearch() {
 
     .catch((error) => console.log(error));
 }
+
+//кнопка читать больше
+
+function myFunctionAbout() {
+  var dotsAbout = document.getElementById("dots-about");
+  var moreTextAbout = document.getElementById("more-about");
+  var btnTextAbout = document.getElementById("myBtnAbout");
+
+  if (dotsAbout.style.display === "none") {
+    dotsAbout.style.display = "inline";
+    btnTextAbout.innerHTML = "О нас";
+    moreTextAbout.style.display = "none";
+  } else {
+    dotsAbout.style.display = "none";
+    btnTextAbout.innerHTML = "Свернуть";
+    moreTextAbout.style.display = "inline";
+  }
+}
+
+function myFunctionUnderstand() {
+  var dotsUnderstand = document.getElementById("dots-understand");
+  var moreTextUnderstand = document.getElementById("more-understand");
+  var btnTextUnderstand = document.getElementById("myBtnUnderstand");
+
+  if (dotsUnderstand.style.display === "none") {
+    dotsUnderstand.style.display = "inline";
+    btnTextUnderstand.innerHTML = "Важно понимать";
+    moreTextUnderstand.style.display = "none";
+  } else {
+    dotsUnderstand.style.display = "none";
+    btnTextUnderstand.innerHTML = "Свернуть";
+    moreTextUnderstand.style.display = "inline";
+  }
+}

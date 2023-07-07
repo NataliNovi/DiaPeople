@@ -220,7 +220,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   border-top: 20px solid white;
 }
 
-/*-----*/
 @media (max-width: 768px) {
   .menu-burger__icon {
     z-index: 5;
@@ -1117,7 +1116,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .article__community-describe {
   color: #021e25;
-  background-color: white;
+  background-color: #ffe6bd;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
@@ -1127,9 +1126,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 18px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
-}
-.article__community-describe__diapeople-name {
-  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .article__community-describe {
@@ -1373,10 +1369,85 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .article-border {
   border: solid 1px #04215c;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.article-border:first-child {
+#more-about {
+  display: none;
+}
+
+#more-understand {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .read-more__about-diapeople_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .read-more__about-diapeople_mobile {
+    display: block;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .read-more__about-diapeople_desktop {
+    display: block;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .read-more__about-diapeople_desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .read-more__for-understand_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .read-more__for-understand_mobile {
+    display: block;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .read-more__for-understand_desktop {
+    display: block;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .read-more__for-understand_desktop {
+    display: none;
+  }
+}
+
+.white-background {
+  background-color: white;
   margin-bottom: 20px;
+}
+
+.button-open-text {
+  height: 60px;
+  border-radius: 6px;
+  background-color: #3963b6;
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Philosopher", sans-serif;
+}
+
+.button-open-text:hover {
+  scale: 1.05;
 }
 
 .new {

@@ -19,11 +19,6 @@ body {
 
 }
 
-//кнопка читать больше
-
-#more {
-    display: none;
-}
 
 //burger
 
@@ -208,31 +203,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-
-
-/*-----*/
-
-
-// @media (min-width: $grid-breakpoint-md) {
-//     .menu-burger__list {
-//         display: flex;
-//         align-items: center;
-//     }
-
-
-//     .menu-burger__list>li {
-//         padding: 10px 0;
-//     }
-
-//     .menu-burger__sub-list {
-//         transform: translate(0px, 10px);
-//         opacity: 0;
-//         visibility: hidden;
-//         pointer-events: none;
-//         transition: all 0.3s ease 0s;
-
-//     }
-// }
 
 @media (max-width: $grid-breakpoint-md) {
     .menu-burger__icon {
@@ -1350,7 +1320,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__community-describe {
         color: $color-dark-text;
-        background-color: $color-main;
+        background-color: $color-beige;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
@@ -1368,6 +1338,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
 
+        // &_read-buttons {
+        //background-color: $color-main;
+        //padding: 20px;
+
+        //}
+
+        // &_read-buttons:first-child {
+        //     margin-bottom: 20px;
+
+        // }
     }
 
     &__subscribe {
@@ -1633,23 +1613,53 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .article-border {
     border: solid 1px $color-blue;
     padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.article-border:first-child {
-    margin-bottom: 20px;
+// .article-border:first-child {
+//     margin-bottom: 20px;
+// }
+
+//кнопка читать больше О нас и Важно понимать
+
+
+#more-about {
+    display: none;
+}
+
+#more-understand {
+    display: none;
 }
 
 .read-more {
 
-    &__about {
+    &__about-diapeople {
+
         &_mobile {
+
             @media screen and (min-width: $grid-breakpoint-md) {
 
                 display: none;
             }
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+
+                display: block;
+                padding: 20px;
+            }
         }
 
         &_desktop {
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+
+                display: block;
+                padding: 20px;
+
+            }
+
             @media screen and (max-width: $grid-breakpoint-md) {
 
                 display: none;
@@ -1660,13 +1670,28 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__for-understand {
         &_mobile {
+
             @media screen and (min-width: $grid-breakpoint-md) {
 
                 display: none;
             }
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+
+                display: block;
+                padding: 20px;
+            }
         }
 
         &_desktop {
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+
+                display: block;
+                padding: 20px;
+
+            }
+
             @media screen and (max-width: $grid-breakpoint-md) {
 
                 display: none;
@@ -1675,9 +1700,28 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
+.white-background {
+    background-color: $color-main;
+    margin-bottom: 20px;
+}
 
+.button-open-text {
+    height: 60px;
+    border-radius: 6px;
+    background-color: $color-bright-blue;
+    color: $color-main;
+    font-size: $font-size-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: $font-family-different;
+}
 
-
+.button-open-text:hover {
+    scale: 1.05;
+}
 
 
 .new {
