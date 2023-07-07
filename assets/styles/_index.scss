@@ -19,6 +19,12 @@ body {
 
 }
 
+//кнопка читать больше
+
+#more {
+    display: none;
+}
+
 //burger
 
 body._lock {
@@ -1356,11 +1362,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         text-align: center;
 
 
-        &__diapeople-name {
-            font-weight: bold;
-        }
-
-
         @media screen and (max-width: $grid-breakpoint-md) {
 
             font-size: $font-size-medium;
@@ -1637,6 +1638,45 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .article-border:first-child {
     margin-bottom: 20px;
 }
+
+.read-more {
+
+    &__about {
+        &_mobile {
+            @media screen and (min-width: $grid-breakpoint-md) {
+
+                display: none;
+            }
+        }
+
+        &_desktop {
+            @media screen and (max-width: $grid-breakpoint-md) {
+
+                display: none;
+            }
+        }
+    }
+
+
+    &__for-understand {
+        &_mobile {
+            @media screen and (min-width: $grid-breakpoint-md) {
+
+                display: none;
+            }
+        }
+
+        &_desktop {
+            @media screen and (max-width: $grid-breakpoint-md) {
+
+                display: none;
+            }
+        }
+    }
+}
+
+
+
 
 
 
