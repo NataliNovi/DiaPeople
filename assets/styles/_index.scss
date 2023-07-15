@@ -127,7 +127,7 @@ body._lock {
 }
 
 .menu-burger__sub-link {
-    color: aliceblue;
+    color: $color-sublink-burger;
     margin-top: 20px;
 }
 
@@ -199,7 +199,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     transform: rotate(-90deg);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 20px solid $color-main;
+    border-top: 20px solid $color-sublink-burger;
 
 }
 
@@ -313,6 +313,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     .menu-burger__list>li._active .menu-burger__sub-list {
         display: block;
+        background-color: $color-sublink-burger;
+        margin-left: 20px;
+
+
 
     }
 
@@ -333,15 +337,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin: 10px 0 0px 0;
         display: none;
 
+
+
     }
 
     .menu-burger__sub-link {
-        font-size: 20px;
+        font-size: $font-size-medium-plus;
         color: $color-blue;
         //padding: 20px;
         text-decoration: none;
         margin-top: 20px;
         padding-bottom: 200px;
+        background-color: $color-sublink-burger;
+
     }
 
 }
@@ -1014,7 +1022,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     ul li:hover {
-        background-color: $color-main;
+        background-color: $color-sublink-burger;
         padding-top: 3px;
         padding-bottom: 3px;
 
@@ -1053,10 +1061,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         top: -22px;
         display: none;
         width: 240px;
-        background-color: $color-main;
+        //background-color: $color-main;
         // color: #9dbbfa;
         padding-right: 30px;
-        color: #28a745;
+        background-color: $color-sublink-burger;
+        color: $color-blue;
 
 
     }
@@ -1850,6 +1859,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
+.event-describe-second {
+    @media screen and (max-width: $grid-breakpoint-md) {
+        display: none;
+    }
+}
+
 
 .community-next-meet {
     display: flex;
@@ -1861,6 +1876,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     margin-top: 30px;
     padding: 20px;
     text-align: center;
+    border: solid 1px $color-blue;
+    border-radius: 4px;
 
     // &__anons {}
 
@@ -1898,7 +1915,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     display: flex;
     width: 70vw;
     color: $color-blue;
-    font-size: $font-size-medium;
+    font-size: $font-size-large;
     font-family: $font-family-different;
     background-color: white;
     justify-content: center;
@@ -1907,6 +1924,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 20px;
     border-radius: 4px;
     box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        font-size: $font-size-medium-plus;
+
+    }
 
     &__partners {
         display: block;
@@ -1964,15 +1986,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .footer {
     margin-left: 240px;
     width: calc(100% - 240px);
-    height: 200px;
+    height: 310px;
     background-color: $color-blue;
     color: $color-main;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 30px 20px;
     text-align: center;
     align-items: center;
-    font-size: $font-size-medium;
+    font-size: $font-size-medium-plus;
+
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
@@ -1984,13 +2010,23 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
+        height: 240px;
         margin-left: 0px;
+        font-size: $font-size-medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         margin-left: 0px;
+        font-size: $font-size-small;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
     }
 
@@ -2071,6 +2107,10 @@ h1 {
     flex-wrap: wrap;
     margin-right: -5px;
     margin-left: -5px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        display: block;
+    }
 }
 
 @media (min-width: 576px) {
