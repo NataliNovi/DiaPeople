@@ -970,10 +970,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .container-nav {
     //width: 16rem;
-    width: 240px;
+    width: 280px;
     height: calc(100vh - 140px);
-    line-height: 1.4;
+    line-height: 1.3;
     font-family: $font-family-sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
     font-size: $font-size-medium;
     position: fixed;
     top: 140px;
@@ -1046,6 +1048,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
+
     ul li a:hover {
         background-color: #9dbbfa;
     }
@@ -1057,10 +1060,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     ul li ul {
         position: absolute;
-        left: 200px;
+        left: 245px;
         top: -22px;
         display: none;
-        width: 240px;
+        width: 280px;
         //background-color: $color-main;
         // color: #9dbbfa;
         padding-right: 30px;
@@ -1093,23 +1096,23 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .container-main {
     margin-top: 140px;
-    margin-left: 240px;
+    margin-left: 280px;
     z-index: 1;
-    width: calc(100% - 240px);
+    width: calc(100% - 280px);
     display: flex;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
         margin-top: 120px;
-        margin-left: 240px;
-        width: calc(100% - 240px);
+        margin-left: 280px;
+        width: calc(100% - 280px);
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
         margin-top: 120px;
-        margin-left: 240px;
-        width: calc(100% - 240px);
+        margin-left: 280px;
+        width: calc(100% - 280px);
     }
 
 
@@ -1176,30 +1179,35 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
 
-        &_info {
-            display: none;
-            // width: 40%;
-            // display: flex;
-            // flex-direction: column;
-            // align-items: stretch;
-            // margin-bottom: -50px;
-            // height: fit-content;
+        &_info-desktop {
+            //display: none;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin-bottom: -50px;
+            height: fit-content;
+            color: $color-dark-text;
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                display: none;
+            }
 
 
-            //     @media screen and (max-width: $grid-breakpoint-md) {
-            //         width: 100%;
-            //         margin-bottom: 20px;
-            //     }
+            @media screen and (max-width: $grid-breakpoint-md) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
-            //     @media screen and (max-width: $grid-breakpoint-sm) {
-            //         width: 100%;
-            //         margin-bottom: 20px;
-            //     }
-            // }
-
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
+
     }
 }
+
 
 .photo {
     width: 100%;
@@ -1289,21 +1297,21 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .articles {
-    margin-left: 240px;
+    margin-left: 280px;
     z-index: 1;
-    width: calc(100% - 240px);
+    width: calc(100% - 280px);
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
-        margin-left: 240px;
-        width: calc(100% - 240px);
+        margin-left: 280px;
+        width: calc(100% - 280px);
     }
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
-        margin-left: 240px;
-        width: calc(100% - 240px);
+        margin-left: 280px;
+        width: calc(100% - 280px);
     }
 
 
@@ -1324,8 +1332,42 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
+.white-background {
+    background-color: $color-main;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 20px;
+    height: fit-content;
+
+
+}
+
 
 .article {
+
+    // &__about-community-desktop {
+    //     background-color: $color-beige;
+    //     color: $color-dark-text;
+    //     display: flex;
+    //     flex-direction: row;
+    //     // display: grid;
+    //     // grid-template-columns: 1fr 1fr;
+    //     padding-right: 30px;
+    //     padding-left: 30px;
+    //     padding-bottom: 20px;
+    //     padding-top: 20px;
+    //     line-height: 1.4;
+    //     font-family: $font-family-sans-serif;
+    //     font-size: $font-size-medium;
+    //     box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+    //     text-align: center;
+
+
+    //     @media screen and (max-width: $grid-breakpoint-md) {
+    //         display: none;
+
+    //     }
+    // }
 
     &__community-describe {
         color: $color-dark-text;
@@ -1395,6 +1437,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         text-align: center;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
+        @media screen and (min-width: $grid-breakpoint-md) {
+
+            display: none;
+        }
+
         @media screen and (min-width: $grid-breakpoint-lg) {
             font-size: $font-size-large;
         }
@@ -1458,6 +1505,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding: 20px;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
+        @media screen and (min-width: $grid-breakpoint-md) {
+
+            display: none;
+        }
+
         @media screen and (min-width: $grid-breakpoint-lg) {
             font-size: $font-size-large;
         }
@@ -1482,6 +1534,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             gap: 20px;
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+
+                display: none;
+            }
 
 
             @media screen and (max-width: $grid-breakpoint-md) {
@@ -1517,18 +1574,28 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__diaschool {
-        height: 200px;
-        color: $color-main;
-        background-color: $color-blue;
-        display: block;
-        flex-direction: column;
-        justify-content: center;
+        //height: 360px;
+        color: $color-blue;
+        // background: url(../images/school1.jpg);
+        // background-size: 100%;
+        // background-repeat: no-repeat;
+        // background-origin: border-box;
+        background-color: $color-beige;
+        font-family: "Philosofer";
+        //display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        margin: auto;
         text-align: center;
-        align-items: center;
+        // align-content: space-around;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding: 20px;
         box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (min-width: $grid-breakpoint-md) {
+            display: none;
+        }
 
         @media screen and (min-width: $grid-breakpoint-lg) {
             margin-top: 10px;
@@ -1551,14 +1618,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
 
         &_youtube-link {
-            width: 50%;
+            width: 100%;
             color: $color-blue;
             text-decoration: none;
             border-radius: 4px;
             padding: 10px;
+            margin-top: 20px;
             background-color: $color-button;
             font-weight: $font-size-medium;
 
+        }
+
+        &_youtube-link:hover {
+            scale: 1.03;
         }
     }
 
@@ -1573,7 +1645,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
+        color: $color-blue;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (min-width: $grid-breakpoint-md) {
+
+            display: none;
+        }
 
         @media screen and (min-width: $grid-breakpoint-lg) {
             font-size: $font-size-large;
@@ -1600,9 +1678,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         align-items: center;
         background: $color-blue;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (min-width: $grid-breakpoint-md) {
+            display: none;
+
+        }
     }
 
     &__confucius {
@@ -1611,8 +1696,53 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         padding: 20px;
 
+        @media screen and (min-width: $grid-breakpoint-sm) {
+
+            display: none;
+        }
+
         &_confucius-photo {
             width: 100%;
+        }
+
+    }
+
+    &__four-boxes-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        background: $color-beige;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+
+            display: none;
+        }
+
+    }
+
+    &__three-boxes-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        background: $color-beige;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+
+            display: none;
         }
 
     }
@@ -1645,6 +1775,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .read-more {
 
     &__about-diapeople {
+        position: relative;
 
         &_mobile {
 
@@ -1678,6 +1809,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
     &__for-understand {
+        position: relative;
+
         &_mobile {
 
             @media screen and (min-width: $grid-breakpoint-md) {
@@ -1709,10 +1842,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-.white-background {
-    background-color: $color-main;
-    margin-bottom: 20px;
-}
+// .white-background {
+//     background-color: $color-main;
+//     margin-bottom: 20px;
+// }
 
 .button-open-text {
     height: 60px;
@@ -1860,6 +1993,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .event-describe-second {
+    display: none;
+
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
     }
@@ -1913,7 +2048,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .link {
 
     display: flex;
-    width: 70vw;
+    flex-direction: column;
+    width: 90vw;
+    height: 120px;
     color: $color-blue;
     font-size: $font-size-large;
     font-family: $font-family-different;
@@ -1921,6 +2058,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     justify-content: center;
     text-align: center;
     align-items: center;
+    align-content: center;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
@@ -1930,8 +2068,20 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
-    &__partners {
-        display: block;
+    &__partners {}
+
+    &__forums {
+        // display: block;
+        margin-top: 20px;
+    }
+
+    &__sovet {
+        // display: block;
+        margin-top: 20px;
+    }
+
+    &__for-school {
+        // display: block;
         margin-top: 20px;
     }
 
@@ -1984,8 +2134,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .footer {
-    margin-left: 240px;
-    width: calc(100% - 240px);
+    margin-left: 280px;
+    width: calc(100% - 280px);
     height: 310px;
     background-color: $color-blue;
     color: $color-main;
@@ -1997,20 +2147,20 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 20px 20px 30px 20px;
     text-align: center;
     align-items: center;
-    font-size: $font-size-medium-plus;
+    font-size: $font-size-medium;
 
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
-        margin-left: 240px;
-        width: calc(100% - 240px);
+        margin-left: 280px;
+        width: calc(100% - 280px);
         font-size: $font-size-small;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
-        height: 240px;
+        height: 280px;
         margin-left: 0px;
         font-size: $font-size-medium;
         display: flex;
@@ -2560,8 +2710,8 @@ button[type="submit"] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #007bff;
-    border: 1px solid #007bff;
+    background-color: $color-bright-blue;
+    border: 1px solid $color-bright-blue;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -2571,7 +2721,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:disabled {
-    opacity: 0.65;
+    opacity: 0.5;
 }
 
 button[type="submit"]:not(:disabled)::before {
@@ -2669,11 +2819,11 @@ button[type="submit"]:not(:disabled):focus {
 /* slider */
 
 /* стили для элемента body */
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-}
+// body {
+//     margin: 0;
+//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+//         sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+// }
 
 /* дополнительные стили для этого примера */
 .itcss__items {
