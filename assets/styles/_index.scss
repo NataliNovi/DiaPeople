@@ -1696,39 +1696,41 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_partners-desktop,
         &_sovet-desktop,
         &_medics-desktop {
-            width: 20%;
-            height: 200px;
+            width: 23%;
+            height: 280px;
             background-color: $color-main;
             color: $color-blue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+            display: block;
+            padding: 10px;
             font-size: $font-size-medium-plus;
             font-weight: 700;
-        }
 
-        &_diaschool-desktop {
-            flex-direction: column;
-            justify-content: space-between;
-
+            @media screen and (max-width: $grid-breakpoint-lg) {
+                font-size: $font-size-medium;
+            }
 
         }
 
-        &_diaschool-desktop-button {
-            width: 100%;
-            height: 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: $color-blue;
-            color: $color-main;
-            font-size: $font-size-medium;
-            font-weight: 400;
-            text-decoration: none;
+        // &_medics-desktop {
+        //     background-image: url("..//images/hand.jpg");
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // }
 
-        }
+        // &_diaschool-desktop-button {
+        //     width: 100%;
+        //     height: 40px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        //     background-color: $color-blue;
+        //     color: $color-main;
+        //     font-size: $font-size-medium;
+        //     font-weight: 400;
+        //     text-decoration: none;
+
+        // }
 
     }
 
@@ -1762,7 +1764,46 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             align-items: center;
             padding: 20px;
         }
+
+
     }
+}
+
+.wrapper {
+    width: 100%;
+    margin: 2px;
+    //border: 1px solid red;
+}
+
+.img-container {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 74%;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    margin: auto;
+}
+
+.medics {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60%;
 }
 
 
@@ -1858,6 +1899,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
     }
 }
+
+
 
 // .white-background {
 //     background-color: $color-main;
