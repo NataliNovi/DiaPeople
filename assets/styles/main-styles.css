@@ -930,14 +930,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     font-weight: bold;
   }
   ul li a:hover {
-    background-color: #9dbbfa;
+    background-color: #96b5f3;
   }
   ul li ul li:hover ul {
     display: block;
   }
   ul li ul {
     position: absolute;
-    left: 245px;
+    left: 241px;
     top: -22px;
     display: none;
     width: 280px;
@@ -1365,13 +1365,15 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diaschool_youtube-link {
   width: 100%;
-  color: #04215c;
+  color: white;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px;
   margin-top: 20px;
-  background-color: rgb(252, 238, 94);
-  font-weight: 18px;
+  background-color: #04215c;
+  border: solid 1px #04215c;
+  font-size: 26px;
+  font-weight: 700;
 }
 .article__diaschool_youtube-link:hover {
   scale: 1.03;
@@ -1462,6 +1464,35 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
   }
 }
+.article__four-boxes-desktop_diaschool-desktop, .article__four-boxes-desktop_partners-desktop, .article__four-boxes-desktop_sovet-desktop, .article__four-boxes-desktop_medics-desktop {
+  width: 20%;
+  height: 200px;
+  background-color: white;
+  color: #04215c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.article__four-boxes-desktop_diaschool-desktop {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article__four-boxes-desktop_diaschool-desktop-button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04215c;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
 .article__three-boxes-desktop {
   display: flex;
   flex-direction: row;
@@ -1479,6 +1510,16 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .article__three-boxes-desktop {
     display: none;
   }
+}
+.article__three-boxes-desktop_diadzetka-anons-desktop, .article__three-boxes-desktop_dianews-desktop, .article__three-boxes-desktop_community-anons-desktop {
+  width: 25%;
+  height: 200px;
+  background-color: white;
+  color: #04215c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .article-border {
@@ -1759,7 +1800,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .subscribe__form_header {
   font-size: 26px;
+  font-style: italic;
   text-align: center;
+  margin-bottom: 20px;
 }
 .subscribe__form_input-button {
   display: flex;
@@ -1886,7 +1929,6 @@ h1 {
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 4px;
-  margin-bottom: 2rem;
 }
 
 .form-row {
