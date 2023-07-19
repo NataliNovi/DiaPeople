@@ -31,7 +31,7 @@ body._lock {
 }
 
 
-.header-burger__container {
+.header-burger-container {
     max-width: 100vw;
     margin: 0px auto;
     display: flex;
@@ -49,7 +49,7 @@ body._lock {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: $color-bright-blue;
+    background-color: $color-main;
     padding-left: 6px;
 
     &__logo {
@@ -69,6 +69,21 @@ body._lock {
             width: 100px;
         }
     }
+
+    &__channel-box {
+        display: flex;
+        z-index: 102;
+        color: $color-dark-blue;
+
+        &_diadzetka-link {
+            cursor: pointer;
+            color: $color-dark-blue;
+
+        }
+    }
+
+
+
 }
 
 .menu-burger__icon {
@@ -89,9 +104,9 @@ body._lock {
 }
 
 .menu-burger__link {
-    color: aliceblue;
+    //color: $color-accent;
     font-size: 30px;
-    border-bottom: solid 0.6px #fff;
+    border-bottom: solid 0.6px $color-beige;
     margin-bottom: 6px;
     padding-bottom: 6px;
     text-decoration: none;
@@ -99,21 +114,18 @@ body._lock {
 }
 
 .menu-burger__link:hover {
-    border-bottom: solid 3px #fff;
+    border-bottom: solid 3px $color-dark-blue;
 
 }
-
 
 .menu-burger__sub-list {
     position: absolute;
     top: 100%;
     right: 0;
-    //background-color: rgb(34, 11, 110);
     padding: 20px;
     min-width: 200px;
     text-decoration: none;
     list-style: none;
-
 
 }
 
@@ -168,13 +180,16 @@ body._touch .menu-burger__arrow {
     transition: transform 0.3s ease 0s;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 20px solid $color-main;
+    border-top: 20px solid $color-beige;
 
 }
 
 
 body._touch .menu-burger__arrow:hover {
     transform: scale(1.3);
+    border-top: 20px solid $color-dark-blue;
+
+
 
 }
 
@@ -199,7 +214,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     transform: rotate(-90deg);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 20px solid $color-sublink-burger;
+    border-top: 20px solid $color-dark-blue;
 
 }
 
@@ -212,6 +227,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 34px;
         height: 22px;
         cursor: pointer;
+
     }
 
     .menu-burger__icon span,
@@ -222,7 +238,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         height: 10%;
         width: 100%;
         transition: all 0.3s ease 0s;
-        background-color: #fff;
+        background-color: $color-blue-burger;
     }
 
     .menu-burger__icon::before,
@@ -287,16 +303,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         top: 0;
         left: 0;
-        height: 90px;
-        background-color: $color-bright-blue;
+        //height: 90px;
+        background-color: $color-main;
         z-index: 2;
-
-        @media screen and (max-width: $grid-breakpoint-md) {
-            height: 100px;
-        }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             height: 90px;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            height: 100px;
         }
 
     }
@@ -316,34 +332,25 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         background-color: $color-sublink-burger;
         margin-left: 20px;
 
-
-
     }
 
-    // .menu-burger__sub-link._active {
-    //     margin: 130px;
-
-    // }
-
     .menu-burger .menu-burger__link {
-        font-size: 24px;
-        color: $color-blue;
+        font-size: 26px;
+        color: $color-dark-text;
     }
 
     .menu-burger__sub-list {
         position: relative;
-        background-color: white;
+        background-color: $color-dark-text;
         flex: 1 1 100%;
         margin: 10px 0 0px 0;
         display: none;
 
-
-
     }
 
     .menu-burger__sub-link {
-        font-size: $font-size-medium-plus;
-        color: $color-blue;
+        font-size: $font-size-large;
+        color: $color-dark-text;
         //padding: 20px;
         text-decoration: none;
         margin-top: 20px;
@@ -368,8 +375,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     left: 0;
     box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
     z-index: 150;
-    //background-color: $color-bright-blue;
-    background-color: rgb(111, 201, 235);
+    background-color: $color-main;
     padding-right: 20px;
     padding-left: 10px;
 
@@ -485,7 +491,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
 
         &_img:hover {
-            border: solid 1px $color-blue;
+            border: solid 1px $color-accent;
         }
     }
 
@@ -516,8 +522,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
         &_dialydi-name {
-            //color: $color-blue;
-            color: $color-main;
+            color: $color-dark-blue;
+            //color: $color-blue-burger;
             font-size: $font-size-extra-large;
             font-family: $font-family-different;
             font-weight: bold;
@@ -554,7 +560,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__social-links {
         //width: 15vw;
-        color: $blue-background;
+        color: $color-blue-burger;
         display: grid;
         font-size: $font-size-small;
         //margin-right: 20px;
@@ -563,10 +569,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         font-size: $font-size-medium;
         //margin-right: 20px;
 
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: none;
 
-        @media screen and (max-width: $grid-breakpoint-lg) {
-            //width: 15vw;
-            font-size: $font-size-medium;
         }
 
 
@@ -576,9 +581,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             display: none;
         }
 
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            display: none;
 
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            //width: 15vw;
+            font-size: $font-size-medium;
         }
 
 
@@ -589,6 +596,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             align-items: center;
             flex-wrap: wrap;
             background-color: $color-main;
+            color: $color-dark-blue;
             padding: 10px;
             border-radius: 6px;
             //width: 100px;
@@ -602,6 +610,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (max-width: $grid-breakpoint-md) {
                 display: none;
 
+
             }
 
             @media screen and (max-width: $grid-breakpoint-sm) {
@@ -612,17 +621,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_channel-box:hover {
 
-            border: solid 1px $color-blue;
+            border: solid 1px $color-accent;
         }
 
         &_school-link {
             text-decoration: none;
             text-align: center;
+            color: $color-dark-blue;
         }
 
         &_diadzetka-link {
             text-decoration: none;
             text-align: center;
+            color: $color-dark-blue;
         }
     }
 
@@ -660,9 +671,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         left: 0px;
         margin-top: 100px;
         font-family: $font-family-different;
+        background-color: $color-blue-burger;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         z-index: 10;
-        background: $color-main;
+        background-color: $color-blue-burger;
         padding-right: 20px;
         padding-left: 10px;
 
@@ -671,10 +683,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
 
+
         @media screen and (max-width: $grid-breakpoint-lg) {
             display: none;
 
         }
+
 
         @media screen and (max-width: $grid-breakpoint-md) {
             margin-top: 100px;
@@ -695,6 +709,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             z-index: 10;
 
         }
+
     }
 
     .container-header__container-mobile._inactive {
@@ -726,7 +741,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             }
 
             &_dialydi-name {
-                color: $color-blue;
+                color: $color-main;
                 font-family: $font-family-different;
                 font-weight: bold;
                 font-stretch: extra-expanded;
@@ -747,32 +762,32 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
                 }
             }
 
-            &__channel-box {
-                //display: flex;
-                //flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-                // flex-wrap: nowrap;
-                background-color: $color-main;
-                padding: 6px;
-                border-radius: 6px;
-                width: 100px;
-                text-align: center;
+            // &__channel-box {
+            //     display: inline;
+            //     flex-direction: row;
+            //     // justify-content: center;
+            //     // align-items: center;
+            //     // flex-wrap: nowrap;
+            //     background-color: $color-accent;
+            //     padding: 6px;
+            //     border-radius: 6px;
+            //     //width: 100px;
+            //     text-align: center;
 
-            }
+            // }
 
-            &_channel-box:hover {
+            // &_channel-box:hover {
 
-                border: solid 1px $color-blue;
-            }
+            //     border: solid 1px $color-accent;
+            // }
 
-            &_school-link {
-                text-decoration: none;
-            }
+            // &_school-link {
+            //     text-decoration: none;
+            // }
 
-            &_diadzetka-link {
-                text-decoration: none;
-            }
+            // &_diadzetka-link {
+            //     text-decoration: none;
+            // }
 
         }
     }
@@ -926,7 +941,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     z-index: 1;
     opacity: 0;
     transition: all 0.6s;
-    border: 1px solid $color-blue;
+    border: 1px solid $color-accent;
     border-radius: 6px;
     transform: scale(1.1, 1.1);
 }
@@ -979,14 +994,17 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     text-decoration: none;
     z-index: 300;
 
+    // @media screen and (max-width: $grid-breakpoint-sm) {
+    //     display: none;
+    // }
 
-    @media screen and (max-width: $grid-breakpoint-md) {
+    @media screen and (max-width:769px) {
         display: none;
     }
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        display: none;
-    }
+    // @media screen and (max-width: $grid-breakpoint-sm) {
+    //     display: none;
+    // }
 
 }
 
@@ -999,6 +1017,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding-left: 20px;
         padding-right: 20px;
         background-color: $color-blue-burger;
+
 
     }
 
@@ -1028,7 +1047,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     ul li a {
-        color: $color-blue;
+        //color: $color-blue;
+        color: $color-dark-text;
         padding: 10px 10px 10px 10px;
         display: block;
         text-decoration: none;
@@ -1039,6 +1059,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     ul li a:hover {
         //background-color: $color-sublink-burger;
         background-color: $color-blue-burger;
+        color: $color-main;
     }
 
     ul li ul li:hover ul {
@@ -1054,7 +1075,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 280px;
         padding-right: 30px;
         background-color: $color-sublink-burger;
-        color: $color-blue;
+        color: $color-accent;
     }
 }
 
@@ -1301,8 +1322,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     background-color: $color-main;
     margin-bottom: 20px;
     border-radius: 6px;
-    padding: 20px;
-    height: fit-content;
+    //padding: 20px;
+    // height: fit-content;
 
 
 }
@@ -1374,7 +1395,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         display: flex;
         flex-direction: column;
         height: auto;
-        background-color: $color-blue;
+        //background-color: $color-blue;
+        background-color: $color-connect;
+        color: $color-dark-text;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
@@ -1395,7 +1418,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         align-items: center;
         flex-wrap: wrap;
         background: $color-beige;
-        color: $color-blue;
+        color: $color-accent;
         // margin-top: 20px;
         //margin-bottom: 20px;
         padding: 20px;
@@ -1428,7 +1451,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_diadzetka-name {
             text-decoration: none;
-            color: $color-blue;
+            color: $color-accent;
             cursor: pointer;
         }
 
@@ -1464,7 +1487,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         flex-wrap: wrap;
         text-align: center;
         background: $color-beige;
-        color: $color-blue;
+        color: $color-accent;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
@@ -1540,12 +1563,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__diaschool {
         //height: 360px;
-        color: $color-blue;
+        color: $color-dark-text;
         // background: url(../images/school1.jpg);
         // background-size: 100%;
         // background-repeat: no-repeat;
         // background-origin: border-box;
-        background-color: $color-beige;
+        background-color: $color-accent;
         font-family: "Philosofer";
         //display: flex;
         // flex-direction: column;
@@ -1584,13 +1607,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_youtube-link {
             width: 100%;
-            color: $color-main;
+            color: $color-dark-text;
             text-decoration: none;
             border-radius: 4px;
             padding: 10px;
             margin-top: 20px;
-            background-color: $color-blue;
-            border: solid 1px $color-blue;
+            background-color: $color-button;
+            border: solid 1px $color-button;
             font-size: $font-size-large;
             font-weight: 700;
 
@@ -1612,7 +1635,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
-        color: $color-blue;
+        color: $color-accent;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
@@ -1648,7 +1671,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 20px;
         margin-bottom: 20px;
         align-items: center;
-        background: $color-blue;
+        background-color: $color-blue-burger;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
@@ -1699,7 +1722,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             width: 23%;
             height: 280px;
             background-color: $color-main;
-            color: $color-blue;
+            color: $color-accent;
             display: block;
             padding: 10px;
             font-size: $font-size-medium-plus;
@@ -1758,7 +1781,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             width: 25%;
             height: 200px;
             background-color: $color-main;
-            color: $color-blue;
+            color: $color-accent;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1808,7 +1831,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .article-border {
-    border: solid 1px $color-blue;
+    border: solid 1px $color-accent;
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -1910,7 +1933,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .button-open-text {
     height: 60px;
     border-radius: 6px;
-    background-color: $color-bright-blue;
+    background-color: $color-blue-burger;
     color: $color-main;
     font-size: $font-size-large;
     display: flex;
@@ -1919,6 +1942,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     cursor: pointer;
     width: 100%;
     font-family: $font-family-different;
+    margin-bottom: 20px;
 }
 
 .button-open-text:hover {
@@ -1928,7 +1952,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .new {
     width: 90vw;
-    color: $color-blue;
+    color: $color-accent;
     background-color: $color-main;
     //display: flex;
     justify-content: center;
@@ -1968,7 +1992,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    border: solid $color-blue 1px;
+    border: solid $color-accent 1px;
     border-radius: 4px;
     //margin-bottom: 20px;
 
@@ -1987,7 +2011,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: solid $color-blue 1px;
+    border: solid $color-accent 1px;
     border-radius: 4px;
     position: relative;
     //max-height: 400px;
@@ -2067,11 +2091,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     align-items: center;
     width: 100%;
     background-color: $color-main;
-    color: $color-blue;
+    color: $color-accent;
     margin-top: 30px;
     padding: 20px;
     text-align: center;
-    border: solid 1px $color-blue;
+    border: solid 1px $color-accent;
     border-radius: 4px;
 
     // &__anons {}
@@ -2092,7 +2116,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    border: solid $color-blue 1px;
+    border: solid $color-accent 1px;
     border-radius: 4px;
     margin-bottom: 20px;
 
@@ -2111,7 +2135,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     flex-direction: column;
     width: 90vw;
     height: 120px;
-    color: $color-blue;
+    color: $color-dark-text;
     font-size: $font-size-large;
     font-family: $font-family-different;
     background-color: white;
@@ -2149,26 +2173,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .zarga-medica {
     text-decoration: underline;
-    color: $color-blue;
+    color: $color-dark-text;
 }
 
 .subscribe {
 
     &__form {
-        background-color: $color-blue;
+        background-color: #F5CDBA;
+        //background-color: $color-blue;
         //height: 450px;
         margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
-        padding-top: 20px;
+        padding: 20px;
 
         &_header {
             font-size: $font-size-large;
             font-style: italic;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px 20px 0 20px;
 
         }
 
@@ -2198,8 +2223,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .footer {
     margin-left: 280px;
     width: calc(100% - 280px);
-    height: 310px;
-    background-color: $color-blue;
+    height: 280px;
+    background-color: $color-accent;
     color: $color-main;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
@@ -2307,7 +2332,7 @@ h1 {
 .form__wrapper {
     position: relative;
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, .125);
+    //border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 4px;
     // margin-bottom: 2rem;
 }
@@ -2772,8 +2797,8 @@ button[type="submit"] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: $color-bright-blue;
-    border: 1px solid $color-bright-blue;
+    background-color: $color-main;
+    border: 1px solid $color-main;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;

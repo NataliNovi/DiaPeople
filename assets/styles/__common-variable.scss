@@ -1,8 +1,12 @@
 $grid-breakpoint-xs: 0;
+$grid-breakpoint-before-sm: 576px;
 $grid-breakpoint-sm: 576px;
+$grid-breakpoint-before-md: 767px;
 $grid-breakpoint-md: 768px;
+$grid-breakpoint-before-lg: 991px;
 $grid-breakpoint-lg: 992px;
-$grid-breakpoint-xl: 1280px;
+$grid-breakpoint-before-xl: 1199px;
+$grid-breakpoint-xl: 1200px;
 $grid-breakpoint-xxl: 1400px;
 
 
@@ -68,23 +72,30 @@ $color-main: white;
 //$container-max-width: 1296px;
 
 //$color-blue: #044151;
-//$color-bright-blue: #5e8eed;
-$color-bright-blue: #3963b6;
-$color-blue-burger: #96b5f3;
-$color-sublink-burger: #d8e3f8;
+$color-main: #fff;
+$color-dark-blue: #2988BC;
+$color-blue-burger: #62B4E0;
+$color-sublink-burger: #9ACEEB;
+$color-accent: #ED8C72;
+$color-dark-text: #083750;
+$color-button: #FBD36C;
+$color-connect: #F5CDBA;
+$color-beige: #F4EADE;
+
+// $color-bright-blue: #3963b6;
+// $color-blue-burger: #96b5f3;
+
+//$color-sublink-burger: #d8e3f8;
 //$color-sublink-burger: #9dbbfa;
-$color-blue: #04215c;
-$color-dark-text: #021e25;
-$color-button: rgb(252, 238, 94);
-$color-beige: #ffe6bd;
-$color-menu: #ffe6bd;
-$back: rgb(212, 229, 246);
+
+//$color-blue: #064363;
+// $color-blue: #04215c;
 
 
-/* Оригинальные переменные HOMEPAGE  */
-// $blue-background: #022a59;
-$blue-background: #096265;
-$white-background: white;
+// $color-button: rgb(252, 238, 94);
+
+
+// $color-beige: #ffe6bd;
 
 $font-size-small: 14px;
 $font-size-medium: 18px;
@@ -106,7 +117,7 @@ body {
     padding: 0;
     margin: 0;
     //font-family: $font-family-sans-serif;
-    color: $color-main;
+    color: $color-dark-text;
     -webkit-font-smoothing: antialiased;
 }
 
