@@ -831,21 +831,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     position: relative;
 
     &__button-donate {
-        width: 300px;
+        width: 320px;
+        height: 48px;
+
+        @media screen and (min-width: $grid-breakpoint-lg) {
+            width: 200px;
+            font-size: $font-size-medium;
+        }
 
         @media screen and (max-width: $grid-breakpoint-lg) {
             width: 200px;
-            font-size: $font-size-small;
+            font-size: $font-size-medium;
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             width: 160px;
-            font-size: $font-size-small;
+            font-size: $font-size-medium;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            width: 120px;
-            font-size: $font-size-small;
+            width: 160px;
+            font-size: $font-size-medium;
         }
     }
 
@@ -1033,13 +1039,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     ul li:hover {
         background-color: $color-sublink-burger;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     ul li:hover ul {
         display: block;
         padding: 10px;
+        background-color: $color-sublink-burger;
     }
 
     ul li:hover ul li ul {
@@ -1418,7 +1425,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         align-items: center;
         flex-wrap: wrap;
         background: $color-beige;
-        color: $color-accent;
+        color: $color-dark-text;
         // margin-top: 20px;
         //margin-bottom: 20px;
         padding: 20px;
@@ -1451,7 +1458,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_diadzetka-name {
             text-decoration: none;
-            color: $color-accent;
+            color: $color-dark-text;
             cursor: pointer;
         }
 
@@ -1487,7 +1494,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         flex-wrap: wrap;
         text-align: center;
         background: $color-beige;
-        color: $color-accent;
+        color: $color-dark-text;
+        ;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
@@ -1568,7 +1576,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         // background-size: 100%;
         // background-repeat: no-repeat;
         // background-origin: border-box;
-        background-color: $color-accent;
+        background-color: $color-sublink-burger;
         font-family: "Philosofer";
         //display: flex;
         // flex-direction: column;
@@ -1635,7 +1643,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
-        color: $color-accent;
+        color: $color-dark-text;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
@@ -1671,7 +1679,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 20px;
         margin-bottom: 20px;
         align-items: center;
-        background-color: $color-blue-burger;
+        background-color: $color-beige;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
@@ -2234,8 +2242,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 20px 20px 30px 20px;
     text-align: center;
     align-items: center;
-    font-size: $font-size-medium;
+    font-size: $font-size-medium-plus;
 
+    @media screen and (min-width: $grid-breakpoint-lg) {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+        font-size: $font-size-small;
+
+    }
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
@@ -2249,7 +2263,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         height: 280px;
         margin-left: 0px;
-        font-size: $font-size-medium;
+        font-size: $font-size-medium-plus;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2259,13 +2274,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         margin-left: 0px;
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
         padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
     }
+
+
 
 }
 

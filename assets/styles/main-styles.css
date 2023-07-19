@@ -36,7 +36,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  color: #083750;
+  color: #0f4d6e;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -330,13 +330,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media (max-width: 768px) {
   .menu-burger .menu-burger__link {
     font-size: 26px;
-    color: #083750;
+    color: #0f4d6e;
   }
 }
 @media (max-width: 768px) {
   .menu-burger__sub-list {
     position: relative;
-    background-color: #083750;
+    background-color: #0f4d6e;
     flex: 1 1 100%;
     margin: 10px 0 0px 0;
     display: none;
@@ -345,7 +345,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media (max-width: 768px) {
   .menu-burger__sub-link {
     font-size: 26px;
-    color: #083750;
+    color: #0f4d6e;
     text-decoration: none;
     margin-top: 20px;
     padding-bottom: 200px;
@@ -724,24 +724,31 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   position: relative;
 }
 .button__button-donate {
-  width: 300px;
+  width: 320px;
+  height: 48px;
+}
+@media screen and (min-width: 992px) {
+  .button__button-donate {
+    width: 200px;
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 992px) {
   .button__button-donate {
     width: 200px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
   .button__button-donate {
     width: 160px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
   .button__button-donate {
-    width: 120px;
-    font-size: 14px;
+    width: 160px;
+    font-size: 18px;
   }
 }
 .button__button-search {
@@ -902,18 +909,19 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
   ul li:hover {
     background-color: #9ACEEB;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   ul li:hover ul {
     display: block;
     padding: 10px;
+    background-color: #9ACEEB;
   }
   ul li:hover ul li ul {
     display: none;
   }
   ul li a {
-    color: #083750;
+    color: #0f4d6e;
     padding: 10px 10px 10px 10px;
     display: block;
     text-decoration: none;
@@ -1015,7 +1023,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #083750;
+  color: #0f4d6e;
 }
 @media screen and (max-width: 768px) {
   .container-main__main_info-desktop {
@@ -1044,7 +1052,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-right: 40px;
   padding-top: 40px;
   margin-top: 0px;
-  color: #083750;
+  color: #0f4d6e;
   font-family: "Philosopher", sans-serif;
   font-size: 26px;
 }
@@ -1142,7 +1150,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .article__community-describe {
-  color: #083750;
+  color: #0f4d6e;
   background-color: #F4EADE;
   padding-right: 30px;
   padding-left: 30px;
@@ -1167,7 +1175,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   height: auto;
   background-color: #F5CDBA;
-  color: #083750;
+  color: #0f4d6e;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -1185,7 +1193,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   align-items: center;
   flex-wrap: wrap;
   background: #F4EADE;
-  color: #ED8C72;
+  color: #0f4d6e;
   padding: 20px;
   text-align: center;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1217,7 +1225,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diadzetka-news_diadzetka-name {
   text-decoration: none;
-  color: #ED8C72;
+  color: #0f4d6e;
   cursor: pointer;
 }
 .article__diadzetka-news_diadzetka-name:hover {
@@ -1248,7 +1256,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-wrap: wrap;
   text-align: center;
   background: #F4EADE;
-  color: #ED8C72;
+  color: #0f4d6e;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -1315,8 +1323,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   scale: 1.1;
 }
 .article__diaschool {
-  color: #083750;
-  background-color: #ED8C72;
+  color: #0f4d6e;
+  background-color: #9ACEEB;
   font-family: "Philosofer";
   margin: auto;
   text-align: center;
@@ -1353,7 +1361,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diaschool_youtube-link {
   width: 100%;
-  color: #083750;
+  color: #0f4d6e;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px;
@@ -1377,7 +1385,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  color: #ED8C72;
+  color: #0f4d6e;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
@@ -1412,7 +1420,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: center;
-  background-color: #62B4E0;
+  background-color: #F4EADE;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
@@ -1768,7 +1776,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   width: 90vw;
   height: 120px;
-  color: #083750;
+  color: #0f4d6e;
   font-size: 26px;
   font-family: "Philosopher", sans-serif;
   background-color: white;
@@ -1797,7 +1805,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .zarga-medica {
   text-decoration: underline;
-  color: #083750;
+  color: #0f4d6e;
 }
 
 .subscribe__form {
@@ -1846,7 +1854,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding: 20px 20px 30px 20px;
   text-align: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 22px;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 992px) {
   .footer {
@@ -1860,7 +1875,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 100%;
     height: 280px;
     margin-left: 0px;
-    font-size: 18px;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1870,7 +1885,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .footer {
     width: 100%;
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px;
     display: flex;
     flex-direction: column;
