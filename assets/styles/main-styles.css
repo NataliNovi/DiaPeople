@@ -907,6 +907,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     position: relative;
     border-bottom: solid 1px #fff;
   }
+  ul li:first-child {
+    border-top: solid 1px #fff;
+  }
   ul li:hover {
     background-color: #9ACEEB;
     padding-top: 1px;
@@ -942,7 +945,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 280px;
     padding-right: 30px;
     background-color: #9ACEEB;
-    color: #ED8C72;
   }
 }
 .container-main {
@@ -1178,12 +1180,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   color: #0f4d6e;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 32px;
   text-decoration: none;
+  font-size: 18px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 .article__viber-contact_saharok {
-  color: #FBD36C;
+  color: #62B4E0;
   text-decoration: underline;
 }
 .article__diadzetka-news {
@@ -1810,8 +1813,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .subscribe__form {
   background-color: #F5CDBA;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1821,7 +1822,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 26px;
   font-style: italic;
   text-align: center;
-  margin-bottom: 20px 20px 0 20px;
+  margin: 20px;
 }
 .subscribe__form_input-button {
   display: flex;
@@ -2242,7 +2243,8 @@ textarea.form-control {
 }
 
 .user-agreement {
-  color: #FBD36C;
+  color: #62B4E0;
+  text-decoration: none;
 }
 
 .is-invalid ~ .invalid-feedback,
