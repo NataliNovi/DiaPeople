@@ -813,6 +813,10 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
+.input {
+  height: 40px;
+}
+
 .button::before {
   content: "";
   position: absolute;
@@ -1171,6 +1175,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__subscribe {
   display: block;
+  margin-top: 20px;
 }
 .article__viber-contact {
   display: flex;
@@ -1186,7 +1191,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 .article__viber-contact_saharok {
-  color: #62B4E0;
+  color: #2988BC;
   text-decoration: underline;
 }
 .article__diadzetka-news {
@@ -1446,17 +1451,23 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   width: 100%;
 }
 .article__four-boxes-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  background: #F4EADE;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+  background-color: #F4EADE;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
+  text-align: center;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 992px) {
+  .article__four-boxes-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    background-color: #F4EADE;
+  }
 }
 @media screen and (max-width: 768px) {
   .article__four-boxes-desktop {
@@ -1464,32 +1475,29 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 .article__four-boxes-desktop_diaschool-desktop, .article__four-boxes-desktop_partners-desktop, .article__four-boxes-desktop_sovet-desktop, .article__four-boxes-desktop_medics-desktop {
-  width: 23%;
-  height: 280px;
+  width: 100%;
+  height: auto;
   background-color: #fff;
-  color: #ED8C72;
-  display: block;
+  color: #2988BC;
   padding: 10px;
   font-size: 22px;
   font-weight: 700;
 }
-@media screen and (max-width: 992px) {
-  .article__four-boxes-desktop_diaschool-desktop, .article__four-boxes-desktop_partners-desktop, .article__four-boxes-desktop_sovet-desktop, .article__four-boxes-desktop_medics-desktop {
-    font-size: 18px;
-  }
+.article__four-boxes-desktop_diaschool-desktop:active, .article__four-boxes-desktop_partners-desktop:active, .article__four-boxes-desktop_sovet-desktop:active, .article__four-boxes-desktop_medics-desktop:active {
+  color: yellow;
+}
+.article__four-boxes-desktop_diaschool-desktop:visited, .article__four-boxes-desktop_partners-desktop:visited, .article__four-boxes-desktop_sovet-desktop:visited, .article__four-boxes-desktop_medics-desktop:visited {
+  color: green;
 }
 .article__three-boxes-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  background: #F4EADE;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  background-color: #F4EADE;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .article__three-boxes-desktop {
@@ -1497,14 +1505,23 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 .article__three-boxes-desktop_diadzetka-anons-desktop, .article__three-boxes-desktop_dianews-desktop, .article__three-boxes-desktop_community-anons-desktop {
-  width: 25%;
-  height: 200px;
-  background-color: #fff;
-  color: #ED8C72;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  background-color: #ED8C72;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+@media screen and (min-width: 992px) {
+  .article__three-boxes-desktop_diadzetka-anons-desktop, .article__three-boxes-desktop_dianews-desktop, .article__three-boxes-desktop_community-anons-desktop {
+    font-size: 22px;
+  }
 }
 
 .wrapper {
@@ -1549,6 +1566,25 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.anons-icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 6px;
+}
+
+.link-style {
+  text-decoration: none;
+  cursor: pointer;
+}
+.link-style_four {
+  color: #2988BC;
+  text-decoration: none;
+}
+.link-style_three {
+  color: #fff;
+  text-decoration: none;
 }
 
 #more-about {
@@ -1822,7 +1858,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 26px;
   font-style: italic;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 .subscribe__form_input-button {
   display: flex;
@@ -1861,14 +1897,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .footer {
     margin-left: 280px;
     width: calc(100% - 280px);
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 992px) {
   .footer {
     margin-left: 280px;
     width: calc(100% - 280px);
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1940,15 +1976,6 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   max-width: 560px;
-}
-
-h1 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  text-align: center;
 }
 
 .form__wrapper {
@@ -2243,8 +2270,8 @@ textarea.form-control {
 }
 
 .user-agreement {
-  color: #62B4E0;
-  text-decoration: none;
+  color: #2988BC;
+  text-decoration: underline;
 }
 
 .is-invalid ~ .invalid-feedback,
@@ -2412,12 +2439,12 @@ button[type=submit] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #2988BC;
+  border: 1px solid #2988BC;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 6px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   position: relative;
 }
@@ -2461,8 +2488,8 @@ button[type=submit]:disabled::before {
 
 button[type=submit]:not(:disabled):hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #ED8C72;
+  border-color: #ED8C72;
 }
 
 button[type=submit]:not(:disabled):focus {

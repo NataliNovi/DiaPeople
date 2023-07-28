@@ -921,6 +921,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
+.input {
+    height: 40px;
+}
+
 
 .button::before {
     content: '';
@@ -1402,6 +1406,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__subscribe {
         display: block;
+        margin-top: 20px;
     }
 
     &__viber-contact {
@@ -1419,7 +1424,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         &_saharok {
-            color: $color-blue-burger;
+            color: $color-dark-blue;
             text-decoration: underline;
         }
     }
@@ -1501,7 +1506,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         text-align: center;
         background: $color-beige;
         color: $color-dark-text;
-        ;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
@@ -1710,17 +1714,23 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__four-boxes-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        background: $color-beige;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+        background-color: $color-beige;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
+        text-align: center;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2%;
+            background-color: $color-beige;
+        }
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -1731,56 +1741,41 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_partners-desktop,
         &_sovet-desktop,
         &_medics-desktop {
-            width: 23%;
-            height: 280px;
+            width: 100%;
+            height: auto;
             background-color: $color-main;
-            color: $color-accent;
-            display: block;
+            color: $color-dark-blue;
             padding: 10px;
             font-size: $font-size-medium-plus;
             font-weight: 700;
 
-            @media screen and (max-width: $grid-breakpoint-lg) {
-                font-size: $font-size-medium;
-            }
-
         }
 
-        // &_medics-desktop {
-        //     background-image: url("..//images/hand.jpg");
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        // }
+        &_diaschool-desktop:active,
+        &_partners-desktop:active,
+        &_sovet-desktop:active,
+        &_medics-desktop:active {
+            color: yellow;
+        }
 
-        // &_diaschool-desktop-button {
-        //     width: 100%;
-        //     height: 40px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     justify-content: center;
-        //     background-color: $color-blue;
-        //     color: $color-main;
-        //     font-size: $font-size-medium;
-        //     font-weight: 400;
-        //     text-decoration: none;
-
-        // }
+        &_diaschool-desktop:visited,
+        &_partners-desktop:visited,
+        &_sovet-desktop:visited,
+        &_medics-desktop:visited {
+            color: green;
+        }
 
     }
 
     &__three-boxes-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        background: $color-beige;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2%;
+        background-color: $color-beige;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
-        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        text-align: center;
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -1790,16 +1785,24 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_diadzetka-anons-desktop,
         &_dianews-desktop,
         &_community-anons-desktop {
-            width: 25%;
-            height: 200px;
-            background-color: $color-main;
-            color: $color-accent;
             display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            padding: 20px;
-        }
+            justify-content: space-around;
+            width: 100%;
+            height: auto;
+            background-color: $color-accent;
+            color: $color-main;
+            padding: 10px;
+            font-size: $font-size-medium;
+            font-weight: 700;
+            border-radius: 6px;
 
+
+            @media screen and (min-width: $grid-breakpoint-lg) {
+                font-size: $font-size-medium-plus;
+            }
+        }
 
     }
 }
@@ -1850,9 +1853,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     margin-bottom: 20px;
 }
 
-// .article-border:first-child {
-//     margin-bottom: 20px;
-// }
+.anons-icons {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+}
+
+.link-style {
+    text-decoration: none;
+    cursor: pointer;
+
+    &_four {
+        color: $color-dark-blue;
+        text-decoration: none;
+    }
+
+    &_three {
+        color: $color-main;
+        text-decoration: none;
+    }
+
+}
 
 //кнопка читать больше О нас и Важно понимать
 
@@ -2206,7 +2227,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             font-size: $font-size-large;
             font-style: italic;
             text-align: center;
-            margin: 20px;
+            margin: 10px;
 
 
         }
@@ -2253,7 +2274,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (min-width: $grid-breakpoint-lg) {
         margin-left: 280px;
         width: calc(100% - 280px);
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
 
     }
 
@@ -2261,7 +2282,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width: $grid-breakpoint-lg) {
         margin-left: 280px;
         width: calc(100% - 280px);
-        font-size: $font-size-small;
+        //font-size: $font-size-small;
+        font-size: $font-size-medium;
 
     }
 
@@ -2288,10 +2310,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
-
-
 }
-
 
 //форма
 
@@ -2343,14 +2362,14 @@ textarea {
     max-width: 560px;
 }
 
-h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: center;
-}
+// h1 {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     line-height: 1.2;
+//     text-align: center;
+// }
 
 .form__wrapper {
     position: relative;
@@ -2652,8 +2671,8 @@ textarea.form-control {
 }
 
 .user-agreement {
-    color: $color-blue-burger;
-    text-decoration: none;
+    color: $color-dark-blue;
+    text-decoration: underline;
 }
 
 .is-invalid~.invalid-feedback,
@@ -2822,12 +2841,12 @@ button[type="submit"] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: $color-main;
-    border: 1px solid $color-main;
+    background-color: $color-dark-blue;
+    border: 1px solid $color-dark-blue;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 6px;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     position: relative;
 }
@@ -2866,8 +2885,8 @@ button[type="submit"]:disabled::before {
 
 button[type="submit"]:not(:disabled):hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: $color-accent;
+    border-color: $color-accent;
 }
 
 button[type="submit"]:not(:disabled):focus {
