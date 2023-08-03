@@ -32,6 +32,13 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/main-styles.css">
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
 </head>
 <body>
 
@@ -302,9 +309,36 @@
 
     <main>
         <div class = "container-main">
-            <div class = "container-main__main_photo">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+             <div class="swiper-slide slide1"><button class = "button slider-button">Клац!<button></div>
+
+             <div class="swiper-slide slide2"><button class = "button slider-button">О канале<button></div>
+
+          <div class="swiper-slide slide3"><button class = "button slider-button">Наши события<button></div>
+
+     
+<!-- 
+              <div class="swiper-slide"><img src="./assets/images/swiper1.jpeg"></div>
+
+              <div class="swiper-slide"><img src="./assets/images/swiper2.jpeg"></div>
+
+              <div class="swiper-slide"><img src="./assets/images/swiper3.jpeg"></div> -->
+
+              <!-- <div class="swiper-slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg
+                "></div>
+              <div class="swiper-slide"><img src="https://img.freepik.com/premium-vector/minimalist-shape-background_112769-210.jpg"></div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+       
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+            <!-- <div class = "container-main__main_photo">
                 <img class="photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
-                title="Dia People"/>         
+                title="Dia People"/>          -->
+
+
                 <!-- <img class="photo" src="./assets/images/confucius.jpg" class="img_responsive" alt="girl-doctor"
                 title="Dia People"/>   -->
             </div>
@@ -527,44 +561,92 @@
           <div class="link link__forums">Сообщества, каналы, форумы:
               <p><a href="https://invite.viber.com/?g2=AQB9X8B28dMBCkiwRZi3FwVCsCHzdRGzv%2FCSCu%2FFfwzIYXxjefNnjXMUofMFUU%2Fl" target = "_blank" > <span class="zarga-medica">Сахарок. Беларусь</span></a></p>
               </div>
-          <!-- <div class="link link__sovet">Наш Совет</div> -->
-
-          <!-- <div class="link link__diabete-school"><a class="link__link-button" href='/diabet-school.html'>Школа диабета</a></div> -->
-          <!-- <div class="link link__partners"><a class="link__link-button" href='/partners.html'>Партнеры.<br> Что купить. <br>Где узнать. </a></div> -->
+    
 
           <div class="link link__sovet"><a class="link__link-button" href='/our-sovet.html'>Наш Совет</a></div>
           <div class="link link__for-school"> <a class="link__link-button"  href='/for-school.html'>Медработникам школ <br> и детских садов</a></div>
       </article>
 
+
         <article class="article__four-boxes-desktop">
-          <div class="article__four-boxes-desktop_diaschool-desktop"><a class="link-style_four" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="_blank">Школа диабета</a>
-            <div class = "wrapper img-container">
-            <img class="centered responsive-img" src="./assets/images/training.jpg"/></div>
-          </div>
+          <div class="article__four-boxes-desktop_diaschool-desktop">
 
-          <div class = "article__four-boxes-desktop_partners-desktop"><a class="link-style_four" href='/partners.html'>Партнёры </a>
-            <div class = "wrapper img-container">
-            <img class="centered responsive-img" src="./assets/images/hands.jpg"/></div>
-          </div>
+            <a href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="_blank">
+            <div class="link-style_four">Школа диабета</div>
+          </a>
           
-          <div class = "article__four-boxes-desktop_sovet-desktop"><a class="link-style_four" href='/our-sovet.html'>Наш Совет</a>
             <div class = "wrapper img-container">
-            <img class="centered responsive-img" src="./assets/images/doctors.jpg"/></div>
+              <a href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="_blank">
+            <img class="centered responsive-img" src="./assets/images/diaschool.png"/>
+          </a></div>
           </div>
 
 
-          <div class = "article__four-boxes-desktop_medics-desktop"><a class="link-style_four" href='/for-school.html'>В школу и детский сад</a>
+          <div class = "article__four-boxes-desktop_teachers-desktop">
+            <a href='/for-school.html'>
+            <div class="link-style_four" >Учителям и воспитателям</div>
+          </a>
             <div class = "wrapper img-container">
-            <img class="centered responsive-img" src="./assets/images/school-doctor.jpg"/></div>
+              <a href='/for-school.html'>
+            <img class="centered responsive-img" src="./assets/images/forschoolandgarden.png"/>
+          </a></div>
           </div>
+
+          <div class="article__four-boxes-desktop_dianews-desktop">
+
+            <a href='/diabete_news.html'>
+            <div class="link-style_four">Новости из мира диабета</div>
+          </a>
+          
+            <div class = "wrapper img-container">
+              <a href='/diabete_news.html'>
+            <img class="centered responsive-img" src=""/>
+          </a></div>
+          </div>
+
+
+          <div class = "article__four-boxes-desktop_diaproducts-desktop">
+            <a href='/dia-products.html'>
+            <div class="link-style_four" >Диа Товары</div>
+          </a>
+            <div class = "wrapper img-container">
+              <a href='/dia-products.html'>
+            <img class="centered responsive-img" src=""/>
+          </a></div>
+          </div>
+
+   
+          
+          <!-- <div class = "article__four-boxes-desktop_sovet-desktop">
+            <a href='/our-sovet.html'>
+            <div class="link-style_four" >Наш Совет</div>
+          </a>
+            <div class = "wrapper img-container">
+            <a href='/our-sovet.html'>
+               <img class="centered responsive-img" src="./assets/images/oursovet.png"/>
+            </a></div>
+          </div>
+
+
+          <div class = "article__four-boxes-desktop_partners-desktop">
+            <a href='/partners.html'>
+              <div class="link-style_four" >Партнёры </div>
+            </a>
+            <div class = "wrapper img-container">
+              <a href='/partners.html'>
+            <img class="centered responsive-img" src="./assets/images/partners.png"/>
+          </a></div>
+          </div> -->
+
+
+
         </article>
 
-        <article class="article__three-boxes-desktop">
-          <!-- <div class="article__three-boxes-desktop_diadzetka-anons-desktop"><img  class="anons-icons" src="./assets/images/youtube-icon.png"/><a class="link-style_three" href="https://instagram.com/diadzetka?igshid=MzRlODBiNWFlZA==" target="_blank">Анонсы канала DiaDzetka</a></div> -->
+        <article class="article__two-boxes-desktop">
 
-              <div class="article__three-boxes-desktop_diadzetka-anons-desktop">
+              <!-- <div class="article__three-boxes-desktop_diadzetka-anons-desktop">
 
-                <a  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="_blank">  <img  class="anons-icons" src="./assets/images/youtube-icon.png"/></a>
+                <a href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="_blank">  <img  class="anons-icons" src="./assets/images/youtube-icon.png"/></a>
 
               <a class="link-style_three" href="https://instagram.com/diadzetka?igshid=MzRlODBiNWFlZA==" target="_blank">Анонсы канала DiaDzetka</a></div>
 
@@ -580,7 +662,22 @@
 
             <a href = "https://instagram.com/diadzetka?igshid=MzRlODBiNWFlZA==" target="_blank"><img  class="anons-icons" src="./assets/images/inst-icon.png"/></a>
             
-            <a class="link-style_three" href="https://instagram.com/diadzetka?igshid=MzRlODBiNWFlZA==" target="_blank">Анонсы и фотоотчёты с событий сообщества</a></div>
+            <a class="link-style_three" href="https://instagram.com/diadzetka?igshid=MzRlODBiNWFlZA==" target="_blank">Анонсы и фотоотчёты с событий сообщества</a></div> -->
+
+            <div class = "article__two-boxes-desktop_partners-desktop">
+
+              <a href = '/partners.html'> <img  class="anons-icons" src="./assets/images/photo-icon.png"/></a>
+              
+              <a class="link-style_three" href='/partners.html'>Наши Партнёры</a></div>
+
+
+        <div class = "article__two-boxes-desktop_oursovet-desktop">
+
+          <a href = '/our-sovet.html'> <img  class="anons-icons" src="./assets/images/photo-icon.png"/></a>
+          
+          <a class="link-style_three" href='/our-sovet.html'>Наш Совет</a>
+        </div>
+
          
         </article>
 
@@ -799,8 +896,29 @@
         });
       </script>
 
+<!-- swiper  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+</script>
+
 
 <script src=".assets/js/form-processing.js"></script>
+
+
+
 
   
     
