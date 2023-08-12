@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 
       <!-- Подключаем CSS слайдера -->
-  <link rel="stylesheet" href="simple-adaptive-slider.css">
+      <link rel = "stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="simple-adaptive-slider.css"> -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
@@ -30,14 +31,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/main-styles.css">
+    <link rel="stylesheet" href="..//assets/styles/normalize.css">
+    <link rel="stylesheet" href="..//assets/styles/main-styles.css">
 
 
-    <link
+    <!-- <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
+  /> -->
 
 </head>
 <body>
@@ -51,7 +52,7 @@
             </div>
 
             <div class = "container-header__dialydi-header">
-               <a class = "container-header__dialydi-header_dialydi-name">ДиаЛюди.Беларусь</a>
+               <a class = "container-header__dialydi-header_dialydi-name">ДиаЛюди.<br>Беларусь</a>
                 </div>
 
                 <div class="container-header__social-links-with-button-complex">
@@ -259,6 +260,7 @@
 <!--burger End-->
     </header>
     <!-- header End -->
+    
 
     <!-- nav Start -->
 
@@ -279,7 +281,7 @@
     </li>
        <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
 
-       <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Страничка психолога</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='./pages/psychology.html'>Страничка психолога</a></li>
 
        <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
     <ul class="submenu">
@@ -312,11 +314,11 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
-             <div class="swiper-slide slide1"><button class = "button slider-button">Клац!<button></div>
+             <div class="swiper-slide slide1" style="background-image:URL(./assets/images/girl.jpg)"><a href="/about_us.html"><p class = "slider-button">Сообщество<span> &#8594;</span> <p></a></div>
 
-             <div class="swiper-slide slide2"><button class = "button slider-button">О канале<button></div>
+             <div class="swiper-slide slide2"><a href="/about_channel.html"><p class = "slider-button">О канале <span>&#8594;</span> <p></a></div>
 
-          <div class="swiper-slide slide3"><button class = "button slider-button">Наши события<button></div>
+          <div class="swiper-slide slide3"><a href="/our_events.html"><p class = "slider-button">Наши события <span> &#8594;</span> </p></a></div>
 
      
 <!-- 
@@ -332,7 +334,7 @@
             </div>
             <div class="swiper-pagination"></div>
        
-          <div class="swiper-button-next"></div>
+          <div class="round"><div class="swiper-button-next"></div></div>
           <div class="swiper-button-prev"></div>
             <!-- <div class = "container-main__main_photo">
                 <img class="photo" src="./assets/images/girl.jpg" class="img_responsive" alt="girl-doctor"
@@ -378,37 +380,9 @@
     
         <div class="articles">
 
-
-          <!-- <article class = "article__about-community-desktop">
-
-              <div class="read-more__about-diapeople_desktop">
-                 <div class = "white-background">
-                <h2>О нас</h2>
-                     <span class='community-describe__diapeople-name'>ДиаЛюди</span> - сообщество родителей и детей с сахарным диабетом, объединенное одной целью - жить с диабетом полноценно, без ограничений и предрассудков.
-             
-                     На этом ресурсе мы собираем проверенную нами актуальную информацию, делимся опытом, учимся, советуемся, объединяем силы, чтобы отстаивать свои интересы.
-                     
-                     За основу мы взяли первый тип сахарного диабета (СД1) у детей, потому что это наиболее острая тема для нас. Но, основная информация может быть полезной для всех возрастных групп и для иных видов и типов диабета. Если вы полистаете сайт, то убедитесь в этом. <br>
-                     Если вы готовы активничать и вести соответствующую тему (“взрослый диабет”, СД2 и т.д.), наполнять наш ресурс проверенной информацией, то добро пожаловать! Можете оставить контакты ниже, мы с вами свяжемся.
-                 </div>
-              </div>
-
-              <div class = "white-background">
-
-                 <div class="read-more__for-understand_desktop">
-                  <h2>Важно понимать</h2>
-                  Мы не пациентская организация, не горячая линия Минздрава и не профильный фонд, способный помочь деньгами (пока точно не сейчас). У нас все на равных правах и наши связи абсолютно горизонтальны. Да, мы многое прошли и немало знаем, с нами опыт, врачи и психологи. Но прежде чем взывать, пожалуйста полистайте этот сайт самостоятельно! Поверьте, на 90% он УЖЕ содержит нужную вам информацию.
-                  
-                  <p>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </p>
-                  </div>
-
-            </div>
-
-          </article> -->
-
         <article class = "article__community-describe">
 
-        <div class = "white-background">
+        <div class = "white-background-mobile">
 
         <div class = "article__community-describe_read-buttons">
 
@@ -430,7 +404,10 @@
         <div class = "button-open-text" onclick="myFunctionAbout()" id="myBtnAbout">О нас<span>&#8594;</span></div>
   
       </div>
+   
     </div>
+
+    <div class = "white-background-desktop_about">
 
       <div class="read-more__about-diapeople_desktop">
          <h3>О нас</h3>
@@ -443,10 +420,12 @@
           </div>
 
         </div>
+      </div>
  
         <!--  закрыли белый бэк -->
 
-        <div class = "white-background">
+      
+          <div class = "white-background-mobile">
 
          <div class = "article__community-describe_read-buttons">
 
@@ -464,16 +443,19 @@
       
             <div class = "button-open-text" onclick="myFunctionUnderstand()" id="myBtnUnderstand">Важно понимать <span>&#8594;</span></div>
 
-            </div>
+          
+          </div>
+    
          </div>
 
-
+         <div class = "white-background-desktop_important">
             <div class="read-more__for-understand_desktop">
             <h3>Важно понимать</h3>
             Мы не пациентская организация, не горячая линия Минздрава и не профильный фонд, способный помочь деньгами (пока точно не сейчас). У нас все на равных правах и наши связи абсолютно горизонтальны. Да, мы многое прошли и немало знаем, с нами опыт, врачи и психологи. Но прежде чем взывать, пожалуйста полистайте этот сайт самостоятельно! Поверьте, на 90% он УЖЕ содержит нужную вам информацию.
             
             <p>* вся представленная информация носит рекомендательный характер и не является медицинской консультацией </p>
             </div>
+          </div>
 
         </div>
         <!-- </div> -->
@@ -545,27 +527,44 @@
            <!-- Школа диабета -->
 
            <article class="article__diaschool">
-            <h3>Школа диабета</h3>
-            <img src="./assets/images/school1.jpg" width="100%"/>
+            <h2>Школа диабета</h2>
+            <img src="./assets/images/diaschool-mobile.png" width="100%"/>
            <button class = "article__diaschool_youtube-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">Учиться!</button>
 
         </article>
 
 
-        <article class = "article__links">
+        <article class = "article__links_first">
 
-          <div class="link link__partners">Партнеры:
-          <p><a href="http://diabetica.by" target = "_blank" > <span class="zarga-medica">ООО «ЗАРГА Медика»</span></a></p>
-          </div>
+        
+          <div class="link link__for-school"> <a class="link__link-button"  href='/for-school.html'>Учителям, воспитателям, медработникам школ и детских садов</a></div>
 
-          <div class="link link__forums">Сообщества, каналы, форумы:
-              <p><a href="https://invite.viber.com/?g2=AQB9X8B28dMBCkiwRZi3FwVCsCHzdRGzv%2FCSCu%2FFfwzIYXxjefNnjXMUofMFUU%2Fl" target = "_blank" > <span class="zarga-medica">Сахарок. Беларусь</span></a></p>
-              </div>
-    
+           
+          <div class="link link__dia-news"> <a class="link__link-button"  href='/diabete_news.html'>Новости из мира диабета</a></div>
 
-          <div class="link link__sovet"><a class="link__link-button" href='/our-sovet.html'>Наш Совет</a></div>
-          <div class="link link__for-school"> <a class="link__link-button"  href='/for-school.html'>Медработникам школ <br> и детских садов</a></div>
+           
+          <div class="link link__dia-shops"> <a class="link__link-button"  href='/dia_shops'>Диа Товары</a></div>
+     
       </article>
+
+
+      <article class = "article__links_second">
+
+        <div class="link link__partners">Наши Партнеры:
+        <p><a href="http://diabetica.by" target = "_blank" > <span class="zarga-medica">ООО «ЗАРГА Медика»</span></a></p>
+        </div>
+
+        <div class="link link__sovet">
+        <a href="/our-sovet.html">Наш Совет</a>
+          </div>
+<!-- 
+        <div class="link link__forums">Сообщества, каналы, форумы:
+            <p><a href="https://invite.viber.com/?g2=AQB9X8B28dMBCkiwRZi3FwVCsCHzdRGzv%2FCSCu%2FFfwzIYXxjefNnjXMUofMFUU%2Fl" target = "_blank" > <span class="zarga-medica">Сахарок. Беларусь</span></a></p>
+            </div>
+   -->
+
+
+    </article>
 
 
         <article class="article__four-boxes-desktop">
@@ -682,7 +681,7 @@
         </article>
 
         <!-- анонсы Diadzetka-->
-        <article class = "article__diadzetka-news">
+        <!-- <article class = "article__diadzetka-news">
 
             <h3><a class = "article__diadzetka-news_diadzetka-name" href ="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">DiaDzetka - канал обо всём на свете <br> и о сахарном диабете</a> </h3>
 
@@ -713,12 +712,12 @@
         </div>
 
             </div>
-        </article>
+        </article> -->
 
 
            <!-- Новости из мира диабета -->
 
-        <article class="article__world-news">
+        <!-- <article class="article__world-news">
           <h3>Новости и факты из мира диабета</h3>
           <div class="new article__world-news_some-new">
              
@@ -737,11 +736,11 @@
               <button>Читать больше</button>
           
           </div>
-      </article>
+      </article> -->
 
 <!-- Анонсы сообщества -->
 
-            <article class="article__community-news">
+            <!-- <article class="article__community-news">
                 <h3>Наши события</h3>
 
 
@@ -751,10 +750,10 @@
 
                     <div class="event-describe event-describe-first">
 
-                      <div class="event-describe__event-text">19 июня ДиаМамы встретились пообщаться и отдохнуть, а папы и детки - веселись</div>
+                      <div class="event-describe__event-text">19 июня ДиаМамы встретились пообщаться и отдохнуть, а папы и детки - веселись</div> -->
 
                          <!-- Разметка слайдера -->
-  <div class="itcss1" id="slider-1">
+  <!-- <div class="itcss1" id="slider-1">
     <div class="itcss__wrapper">
       <div class="itcss__items">
         <div class="itcss__item">
@@ -778,11 +777,11 @@
       </div>
     </div>
 
-    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div>
+    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div> -->
 
     <!-- <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
     <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button> -->
-        </div>
+        <!-- </div>
   
 
     
@@ -790,10 +789,10 @@
                <div class="event-describe event-describe-second">
 
 
-                <div class="event-describe__event-text">22 июля состоялась поездка в контактный зоопарк Диприз</div>
+                <div class="event-describe__event-text">22 июля состоялась поездка в контактный зоопарк Диприз</div> -->
 
                    <!-- Разметка слайдера -->
-  <div class="itcss2" id="slider-2">
+  <!-- <div class="itcss2" id="slider-2">
     <div class="itcss__wrapper">
       <div class="itcss__items">
         <div class="itcss__item">
@@ -817,7 +816,7 @@
       </div>
     </div>
 
-    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div>
+    <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev itcss__btn itcss__btn_prev" role="button" data-slide="prev">  &#8592;prev </button>  <button class="event-describe__slider-next itcss__btn itcss__btn_next" role="button" data-slide="next">next &#8594; </button></div> -->
 
     <!-- <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
     <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button> -->
@@ -827,14 +826,14 @@
                     <!-- <img class = "event-describe__event-photo-gallery" src = "./assets/images/diadzetka.jpeg">
                     <div class="event-describe__slider-prev-next"> <button class="event-describe__slider-prev">  &#8592;prev </button>  <button class="event-describe__slider-next">next &#8594; </button></div> -->
 
-                </div>
+                <!-- </div>
 
                 </div>
 
-            <button class="article__community-news_anons-button">Смотреть больше</button>
+            <button class="article__community-news_anons-button">Смотреть больше</button> -->
             <!-- </div> -->
              
-               <div class = "community-next-meet">
+               <!-- <div class = "community-next-meet">
                <img class = "community-next-meet__anons-photo" src = "./assets/images/diadzetka.jpeg">
                <div class="community-next-meet__anons-text">Следующая встреча состоится тогда-то</div>
             </div>
@@ -844,7 +843,7 @@
             <img class="article__confucius_confucius-photo" src="./assets/images/confucius.jpg" class="img_responsive" alt="Confucius"/>
         </article>
     </div>
-        </div>
+        </div> -->
   
 </main>
 
@@ -897,7 +896,8 @@
       </script>
 
 <!-- swiper  -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+<script src="./assets/js/swiper-bundle.min.js"></script>
 
 <script>
   var swiper = new Swiper(".mySwiper", {

@@ -506,8 +506,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         @media screen and (max-width: $grid-breakpoint-lg) {
             //width: 15vw;
-            margin-left: 10vw;
-            margin-right: 10vw;
+            margin-left: 1vw;
+            margin-right: 1vw;
 
         }
 
@@ -525,15 +525,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_dialydi-name {
             color: $color-dark-blue;
             //color: $color-blue-burger;
-            font-size: $font-size-extra-large;
+            font-size: $font-size-large;
             font-family: $font-family-different;
-            font-weight: bold;
+            //font-weight: bold;
             font-stretch: extra-expanded;
             display: flex;
             flex-wrap: wrap;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
-                font-size: $font-size-medium;
+                font-size: $font-size-medium-plus;
             }
 
 
@@ -603,7 +603,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             //width: 100px;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
-                width: 70px;
+                //width: 70px;
 
             }
 
@@ -744,7 +744,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             &_dialydi-name {
                 color: $color-main;
                 font-family: $font-family-different;
-                font-weight: bold;
+                //font-weight: bold;
                 font-stretch: extra-expanded;
                 display: flex;
                 flex-wrap: wrap;
@@ -1103,7 +1103,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     z-index: 1;
     width: calc(100% - 280px);
     display: flex;
-    background-color: $color-beige;
+    // background-color: $color-beige;
 
 
     @media screen and (min-width: $grid-breakpoint-lg) {
@@ -1341,13 +1341,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     background-color: $color-beige;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    //background-position: center center;
+    background-position: 50% 50%;
+    position: relative;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         padding-top: 20px;
         padding-bottom: 40px;
 
     }
+}
+
+
+.swiper-slide :after {
+    content: "";
+    display: block;
+    padding: 0 0 80%;
 }
 
 .slide1 {
@@ -1364,19 +1373,44 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .slider-button {
-    margin-top: 30px;
+    //margin-top: 30px;
     background-color: $color-main;
     border: solid 1px $color-main;
+    border-radius: 6px;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: $color-dark-text;
+    font-size: $font-size-medium-plus;
+    font-family: $font-family-different;
+    box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
+    display: flex;
+    padding-top: 5px;
+    //align-items: center;
+    justify-content: center;
+
+
+    @media screen and (min-width: $grid-breakpoint-md) {
+        height: 60px;
+        width: 300px;
+        padding-top: 12px;
+        font-size: $font-size-large;
+
+    }
 
 
     @media screen and (max-width: $grid-breakpoint-md) {
-        margin-top: 0;
+        //margin-top: 0;
+        height: 40px;
 
     }
 }
 
 .slider-button:hover {
     cursor: pointer;
+    scale: 1.05;
 }
 
 
@@ -1449,15 +1483,42 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-.white-background {
-    background-color: $color-main;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    //padding: 20px;
-    // height: fit-content;
+.white-background-desktop {
+    &_about {
+        background-color: $color-main;
+        margin-bottom: 20px;
+        border-radius: 6px;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: none;
+
+        }
+    }
+
+    &_important {
+        background-color: $color-main;
+
+        border-radius: 6px;
 
 
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: none;
+
+        }
+    }
 }
+
+// .white-background-mobile {
+//     background-color: $color-main;
+//     margin-bottom: 20px;
+//     border-radius: 6px;
+
+//     @media screen and (min-width: $grid-breakpoint-md) {
+//         display: none;
+
+//     }
+// }
+
 
 
 .article {
@@ -1684,11 +1745,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         //display: flex;
         // flex-direction: column;
         // justify-content: center;
-        margin: auto;
+        //margin: auto;
         text-align: center;
         // align-content: space-around;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        //margin-top: 20px;
+        margin-bottom: 20px;
         padding: 20px;
         box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
@@ -1696,19 +1757,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             display: none;
         }
 
-        @media screen and (min-width: $grid-breakpoint-lg) {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: $font-size-large;
+        // @media screen and (min-width: $grid-breakpoint-lg) {
+        //     margin-top: 10px;
+        //     margin-bottom: 10px;
+        //     font-size: $font-size-large;
 
-        }
+        // }
 
-        @media screen and (max-width: $grid-breakpoint-lg) {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: $font-size-large;
+        // @media screen and (max-width: $grid-breakpoint-lg) {
+        //     margin-top: 10px;
+        //     margin-bottom: 10px;
+        //     font-size: $font-size-large;
 
-        }
+        // }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             margin-top: 10px;
@@ -1778,18 +1839,43 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__links {
         display: flex;
         flex-direction: column;
-        padding: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 20px;
+
         align-items: center;
-        background-color: $color-beige;
+
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
             display: none;
 
         }
+
+        &_first {
+            margin-top: 20px;
+            padding: 1px 20px 20px 20px;
+            background-color: $color-beige;
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+                display: none;
+
+            }
+
+        }
+
+        &_second {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: $color-sublink-burger;
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+                display: none;
+
+            }
+        }
     }
+
 
     &__confucius {
         margin-top: 20px;
@@ -2279,22 +2365,35 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
-    &__partners {}
-
-    &__forums {
-        // display: block;
+    &__for-school {
+        display: block;
         margin-top: 20px;
     }
+
+    &__dia-news {
+        display: block;
+        margin-top: 20px;
+    }
+
+    &__dia-shops {
+        display: block;
+        margin-top: 20px;
+    }
+
+
+
+    &__partners {}
+
+    // &__forums {
+    //     // display: block;
+    //     margin-top: 20px;
+    // }
 
     &__sovet {
         // display: block;
         margin-top: 20px;
     }
 
-    &__for-school {
-        // display: block;
-        margin-top: 20px;
-    }
 
 }
 

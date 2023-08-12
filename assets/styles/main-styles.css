@@ -480,8 +480,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 992px) {
   .container-header__dialydi-header {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -496,16 +496,15 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .container-header__dialydi-header_dialydi-name {
   color: #2988BC;
-  font-size: 32px;
+  font-size: 26px;
   font-family: "Philosopher", sans-serif;
-  font-weight: bold;
   font-stretch: extra-expanded;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 992px) {
   .container-header__dialydi-header_dialydi-name {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -556,11 +555,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   color: #2988BC;
   padding: 10px;
   border-radius: 6px;
-}
-@media screen and (max-width: 992px) {
-  .container-header__social-links_channel-box {
-    width: 70px;
-  }
 }
 @media screen and (max-width: 768px) {
   .container-header__social-links_channel-box {
@@ -679,7 +673,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .container-header .container-mobile__dialydi-mobile_dialydi-name {
   color: #fff;
   font-family: "Philosopher", sans-serif;
-  font-weight: bold;
   font-stretch: extra-expanded;
   display: flex;
   flex-wrap: wrap;
@@ -957,7 +950,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   z-index: 1;
   width: calc(100% - 280px);
   display: flex;
-  background-color: #F4EADE;
 }
 @media screen and (min-width: 992px) {
   .container-main {
@@ -1149,13 +1141,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   background-color: #F4EADE;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 50%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .swiper-slide {
     padding-top: 20px;
     padding-bottom: 40px;
   }
+}
+
+.swiper-slide :after {
+  content: "";
+  display: block;
+  padding: 0 0 80%;
 }
 
 .slide1 {
@@ -1171,18 +1170,39 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .slider-button {
-  margin-top: 30px;
   background-color: #fff;
   border: solid 1px #fff;
+  border-radius: 6px;
+  width: 220px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #0f4d6e;
+  font-size: 22px;
+  font-family: "Philosopher", sans-serif;
+  box-shadow: 8px 0 14px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .slider-button {
+    height: 60px;
+    width: 300px;
+    padding-top: 12px;
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider-button {
-    margin-top: 0;
+    height: 40px;
   }
 }
 
 .slider-button:hover {
   cursor: pointer;
+  scale: 1.05;
 }
 
 .swiper-slide img {
@@ -1230,10 +1250,24 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
-.white-background {
+.white-background-desktop_about {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .white-background-desktop_about {
+    display: none;
+  }
+}
+.white-background-desktop_important {
+  background-color: #fff;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .white-background-desktop_important {
+    display: none;
+  }
 }
 
 .article__community-describe {
@@ -1419,30 +1453,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   color: #0f4d6e;
   background-color: #9ACEEB;
   font-family: "Philosofer";
-  margin: auto;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px;
   box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
   .article__diaschool {
     display: none;
-  }
-}
-@media screen and (min-width: 992px) {
-  .article__diaschool {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .article__diaschool {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 26px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1509,15 +1527,34 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .article__links {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   align-items: center;
-  background-color: #F4EADE;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
   .article__links {
+    display: none;
+  }
+}
+.article__links_first {
+  margin-top: 20px;
+  padding: 1px 20px 20px 20px;
+  background-color: #F4EADE;
+}
+@media screen and (min-width: 768px) {
+  .article__links_first {
+    display: none;
+  }
+}
+.article__links_second {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #9ACEEB;
+}
+@media screen and (min-width: 768px) {
+  .article__links_second {
     display: none;
   }
 }
@@ -1917,13 +1954,19 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     font-size: 22px;
   }
 }
-.link__forums {
+.link__for-school {
+  display: block;
+  margin-top: 20px;
+}
+.link__dia-news {
+  display: block;
+  margin-top: 20px;
+}
+.link__dia-shops {
+  display: block;
   margin-top: 20px;
 }
 .link__sovet {
-  margin-top: 20px;
-}
-.link__for-school {
   margin-top: 20px;
 }
 
@@ -2658,4 +2701,62 @@ button[type=submit]:not(:disabled):focus {
   font-style: italic;
   font-size: 32px;
   font-weight: bold;
+}
+
+.psyhology__text-container {
+  width: 55%;
+  margin-top: 20px;
+  padding: 20px;
+}
+.psyhology__confucious {
+  width: 45%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.psyhology-articles {
+  margin-left: 280px;
+  z-index: 1;
+  width: calc(100% - 280px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  .psyhology-articles {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .psyhology-articles {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .psyhology-articles {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .psyhology-articles {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.psy-article {
+  height: 120px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  color: #0f4d6e;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #9ACEEB;
+  border: solid 1px #9ACEEB;
+  border-radius: 6px;
 }/*# sourceMappingURL=main-styles.css.map */
