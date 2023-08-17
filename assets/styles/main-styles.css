@@ -58,7 +58,7 @@ body {
   height: 100vh;
   background-color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body._lock {
@@ -871,7 +871,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   width: 280px;
   height: calc(100vh - 140px);
   line-height: 1.3;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
   font-size: 0.8rem;
   font-size: 18px;
@@ -983,7 +983,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .container-main__main {
   overflow: hidden;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container-main__main_photo {
   width: 100%;
@@ -1278,7 +1278,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-bottom: 20px;
   padding-top: 20px;
   line-height: 1.4;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -2707,21 +2707,37 @@ button[type=submit]:not(:disabled):focus {
   width: 55%;
   margin-top: 20px;
   padding: 20px;
+  font-size: 22px;
 }
 .psyhology__confucious {
   width: 45%;
   margin-top: 20px;
   padding: 20px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .psyhology__text-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .psyhology__confucious {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+  }
 }
 
 .psyhology-articles {
   margin-left: 280px;
   z-index: 1;
   width: calc(100% - 280px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
   padding: 10px;
+  line-height: 1.5;
 }
 @media screen and (min-width: 992px) {
   .psyhology-articles {
@@ -2747,16 +2763,62 @@ button[type=submit]:not(:disabled):focus {
     margin-left: 0px;
   }
 }
-
-.psy-article {
-  height: 120px;
+.psyhology-articles__psy-article {
   background-color: #fff;
+  border: solid 1px #62B4E0;
   margin: 10px;
   padding: 10px;
   color: #0f4d6e;
   text-decoration: none;
-  font-size: 18px;
-  background-color: #9ACEEB;
-  border: solid 1px #9ACEEB;
+  font-size: 22px;
   border-radius: 6px;
+}
+
+#read-more-article1 {
+  display: none;
+}
+
+#read-more-article2 {
+  display: none;
+}
+
+#read-more-article3 {
+  display: none;
+}
+
+#read-more-article4 {
+  display: none;
+}
+
+#read-more-article5 {
+  display: none;
+}
+
+#read-more-article6 {
+  display: none;
+}
+
+.button-read-article {
+  height: 60px;
+  border-radius: 6px;
+  border: solid 1px #62B4E0;
+  background-color: #62B4E0;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30%;
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .button-read-article {
+    width: 40%;
+  }
+}
+
+.button-read-article:hover {
+  scale: 1.02;
 }/*# sourceMappingURL=main-styles.css.map */

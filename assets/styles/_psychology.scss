@@ -3,12 +3,30 @@
         width: 55%;
         margin-top: 20px;
         padding: 20px;
+        font-size: $font-size-medium-plus;
     }
 
     &__confucious {
         width: 45%;
         margin-top: 20px;
         padding: 20px;
+        border-radius: 6px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+
+        &__text-container {
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        &__confucious {
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 6px;
+        }
     }
 
 }
@@ -18,6 +36,11 @@
     margin-left: 280px;
     z-index: 1;
     width: calc(100% - 280px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 10px;
+    line-height: 1.5;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
@@ -48,21 +71,67 @@
 
     }
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    padding: 10px;
+    &__psy-article {
+        //height: 120px;
+        background-color: $color-main;
+        border: solid 1px $color-blue-burger;
+        margin: 10px;
+        padding: 10px;
+        color: $color-dark-text;
+        text-decoration: none;
+        font-size: $font-size-medium-plus;
+        border-radius: 6px;
+    }
+
 }
 
-.psy-article {
-    height: 120px;
-    background-color: $color-main;
-    margin: 10px;
-    padding: 10px;
-    color: $color-dark-text;
-    text-decoration: none;
-    font-size: $font-size-medium;
-    background-color: $color-sublink-burger;
-    border: solid 1px $color-sublink-burger;
+#read-more-article1 {
+    display: none;
+}
+
+#read-more-article2 {
+    display: none;
+}
+
+#read-more-article3 {
+    display: none;
+}
+
+#read-more-article4 {
+    display: none;
+}
+
+#read-more-article5 {
+    display: none;
+}
+
+#read-more-article6 {
+    display: none;
+}
+
+.button-read-article {
+    height: 60px;
     border-radius: 6px;
+    border: solid 1px $color-blue-burger;
+    background-color: $color-blue-burger;
+    color: $color-main;
+    font-size: $font-size-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30%;
+    font-family: $font-family-different;
+    margin-bottom: 20px;
+
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 40%;
+
+
+    }
+}
+
+.button-read-article:hover {
+    scale: 1.02;
 }
