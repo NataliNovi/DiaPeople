@@ -26,21 +26,21 @@
   font-weight: 700;
   font-style: normal;
 }
-/* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
+/* классы и стили общие для всего проекта */
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
   color: #0f4d6e;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
 }
 
@@ -228,7 +228,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   border-top: 20px solid #2988BC;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger__icon {
     z-index: 5;
     display: block;
@@ -299,41 +299,41 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     z-index: 2;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 576px) {
-  .menu-burger__body::before {
-    height: 90px;
-  }
-}
 @media screen and (max-width: 768px) and (max-width: 768px) {
   .menu-burger__body::before {
     height: 100px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  .menu-burger__body::before {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
   .menu-burger__list > li {
     flex-wrap: wrap;
     margin: 0 0 30px 0;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger__list > li:last-child {
     margin-bottom: 0;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger__list > li._active .menu-burger__sub-list {
     display: block;
     background-color: #9ACEEB;
     margin-left: 20px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger .menu-burger__link {
     font-size: 26px;
     color: #0f4d6e;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger__sub-list {
     position: relative;
     background-color: #0f4d6e;
@@ -342,7 +342,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-burger__sub-link {
     font-size: 26px;
     color: #0f4d6e;
@@ -354,6 +354,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .container-header {
   width: 100vw;
+  max-width: 1920px;
   height: 140px;
   display: flex;
   flex-direction: row;
@@ -501,6 +502,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-stretch: extra-expanded;
   display: flex;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 @media screen and (max-width: 992px) {
   .container-header__dialydi-header_dialydi-name {
@@ -516,6 +518,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .container-header__dialydi-header_dialydi-name {
     display: none;
   }
+}
+.container-header__dialydi-header_dialydi-name:hover {
+  text-decoration: underline;
 }
 .container-header__social-links-with-button-complex {
   display: flex;
@@ -676,6 +681,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-stretch: extra-expanded;
   display: flex;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .container-header .container-mobile__dialydi-mobile_dialydi-name {
@@ -689,8 +695,17 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     font-size: 18px;
   }
 }
+.container-header .container-mobile__dialydi-mobile_dialydi-name:hover {
+  text-decoration: underline;
+}
 .container-header .button-header {
   display: flex;
+}
+.container-header .button-header_donate {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-weight: bold;
 }
 .container-header .button-header_search {
   display: flex;
@@ -698,12 +713,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   align-items: stretch;
   align-items: center;
   margin-left: 20px;
-}
-.container-header .button-header_donate {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  font-weight: bold;
 }
 
 .button {
@@ -745,7 +754,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 .button__button-search {
-  width: 40px;
+  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -763,9 +772,10 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 .button__button-search-sm {
-  width: 40px;
+  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: #62B4E0;
 }
 @media screen and (min-width: 992px) {
   .button__button-search-sm {
@@ -1958,16 +1968,32 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   display: block;
   margin-top: 20px;
 }
+.link__for-school_link-link-button {
+  color: #0f4d6e;
+  text-decoration: none;
+}
 .link__dia-news {
   display: block;
   margin-top: 20px;
+}
+.link__dia-news_link-link-button {
+  color: #0f4d6e;
+  text-decoration: none;
 }
 .link__dia-shops {
   display: block;
   margin-top: 20px;
 }
+.link__dia-shops_link-link-button {
+  color: #0f4d6e;
+  text-decoration: none;
+}
 .link__sovet {
   margin-top: 20px;
+}
+.link__sovet_link-sovet {
+  color: #0f4d6e;
+  text-decoration: none;
 }
 
 .zarga-medica {
@@ -2708,12 +2734,17 @@ button[type=submit]:not(:disabled):focus {
   margin-top: 20px;
   padding: 20px;
   font-size: 22px;
+  font-family: "Philosopher", sans-serif;
+  line-height: 1.3;
 }
-.psyhology__confucious {
+.psyhology__confucious-img-container {
   width: 45%;
   margin-top: 20px;
   padding: 20px;
   border-radius: 6px;
+}
+.psyhology__confucious-img-container_confucious {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .psyhology__text-container {
@@ -2721,7 +2752,7 @@ button[type=submit]:not(:disabled):focus {
     margin-top: 20px;
     padding: 20px;
   }
-  .psyhology__confucious {
+  .psyhology__confucious-img-container {
     width: 100%;
     margin-top: 20px;
     padding: 20px;
@@ -2737,7 +2768,6 @@ button[type=submit]:not(:disabled):focus {
   flex-direction: column;
   margin-top: 0px;
   padding: 10px;
-  line-height: 1.5;
 }
 @media screen and (min-width: 992px) {
   .psyhology-articles {
@@ -2770,7 +2800,8 @@ button[type=submit]:not(:disabled):focus {
   padding: 10px;
   color: #0f4d6e;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 1.5;
   border-radius: 6px;
 }
 
@@ -2815,7 +2846,7 @@ button[type=submit]:not(:disabled):focus {
 }
 @media screen and (max-width: 576px) {
   .button-read-article {
-    width: 40%;
+    width: 50%;
   }
 }
 

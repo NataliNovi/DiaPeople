@@ -20,6 +20,9 @@ body {
 
 }
 
+// .wrapper {
+//     padding: 220px;
+// }
 
 //burger
 
@@ -221,7 +224,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 
-@media (max-width: $grid-breakpoint-md) {
+@media screen and (max-width: $grid-breakpoint-md) {
     .menu-burger__icon {
         z-index: 5;
         display: block;
@@ -309,12 +312,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         background-color: $color-main;
         z-index: 2;
 
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            height: 90px;
-        }
-
         @media screen and (max-width: $grid-breakpoint-md) {
             height: 100px;
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            height: 90px;
         }
 
     }
@@ -366,6 +370,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .container-header {
 
     width: 100vw;
+    max-width: 1920px;
     height: 140px;
     display: flex;
     flex-direction: row;
@@ -383,6 +388,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         height: 140px;
+        // max-width: 1920px;
 
     }
 
@@ -532,6 +538,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             font-stretch: extra-expanded;
             display: flex;
             flex-wrap: wrap;
+            text-decoration: none;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
                 font-size: $font-size-medium-plus;
@@ -548,7 +555,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
                 display: none;
 
             }
+        }
 
+        &_dialydi-name:hover {
+            text-decoration: underline;
         }
     }
 
@@ -749,6 +759,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
                 font-stretch: extra-expanded;
                 display: flex;
                 flex-wrap: wrap;
+                text-decoration: none;
 
 
                 @media screen and (max-width: $grid-breakpoint-md) {
@@ -763,6 +774,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
                 }
             }
+
+            &_dialydi-name:hover {
+                text-decoration: underline;
+            }
+
 
             // &__channel-box {
             //     display: inline;
@@ -800,6 +816,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         display: flex;
 
+
+        &_donate {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
         &_search {
             //width: 360px;
             display: flex;
@@ -809,12 +833,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             margin-left: 20px;
         }
 
-        &_donate {
-            margin-left: 20px;
-            margin-bottom: 20px;
-            margin-right: 10px;
-            font-weight: bold;
-        }
+
     }
 }
 
@@ -859,7 +878,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__button-search {
 
-        width: 40px;
+        width: 50px;
         margin-left: 10px;
         margin-right: 10px;
 
@@ -880,9 +899,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__button-search-sm {
 
-        width: 40px;
+        width: 50px;
         margin-left: 10px;
         margin-right: 10px;
+        background-color: $color-blue-burger;
 
         @media screen and (min-width: $grid-breakpoint-lg) {
             display: none;
@@ -2369,16 +2389,31 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__for-school {
         display: block;
         margin-top: 20px;
+
+        &_link-link-button {
+            color: $color-dark-text;
+            text-decoration: none;
+        }
     }
 
     &__dia-news {
         display: block;
         margin-top: 20px;
+
+        &_link-link-button {
+            color: $color-dark-text;
+            text-decoration: none;
+        }
     }
 
     &__dia-shops {
         display: block;
         margin-top: 20px;
+
+        &_link-link-button {
+            color: $color-dark-text;
+            text-decoration: none;
+        }
     }
 
 
@@ -2393,6 +2428,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__sovet {
         // display: block;
         margin-top: 20px;
+
+        &_link-sovet {
+            color: $color-dark-text;
+            text-decoration: none;
+        }
     }
 
 

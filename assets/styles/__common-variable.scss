@@ -1,13 +1,16 @@
 $grid-breakpoint-xs: 0;
-$grid-breakpoint-before-sm: 576px;
+// $grid-breakpoint-before-sm: 576px;
 $grid-breakpoint-sm: 576px;
-$grid-breakpoint-before-md: 767px;
+// $grid-breakpoint-before-md: 767px;
 $grid-breakpoint-md: 768px;
-$grid-breakpoint-before-lg: 991px;
+// $grid-breakpoint-before-lg: 991px;
 $grid-breakpoint-lg: 992px;
-$grid-breakpoint-before-xl: 1199px;
+// $grid-breakpoint-before-xl: 1199px;
 $grid-breakpoint-xl: 1200px;
 $grid-breakpoint-xxl: 1400px;
+
+
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -56,23 +59,22 @@ $grid-breakpoint-xxl: 1400px;
 }
 
 
+
+$font-family-sans-serif: 'OpenSans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-family-different: 'Philosopher', sans-serif;
+
 //$font-family-serif: Georgia, 'Times New Roman', serif;
 //$font-family-sans-serif: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$font-family-sans-serif: 'OpenSans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-;
 
 //$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
 
 //$font-family-sans-serif: inherit;
-$font-family-different: 'Philosopher', sans-serif;
+
 
 
 
 $color-main: white;
-// $color-blue: #022a59;
 //$container-max-width: 1296px;
-
-//$color-blue: #044151;
 $color-main: #fff;
 $color-dark-blue: #2988BC;
 $color-blue-burger: #62B4E0;
@@ -83,20 +85,6 @@ $color-button: #FBD36C;
 $color-connect: #F5CDBA;
 $color-beige: #F4EADE;
 
-// $color-bright-blue: #3963b6;
-// $color-blue-burger: #96b5f3;
-
-//$color-sublink-burger: #d8e3f8;
-//$color-sublink-burger: #9dbbfa;
-
-//$color-blue: #064363;
-// $color-blue: #04215c;
-
-
-// $color-button: rgb(252, 238, 94);
-
-
-// $color-beige: #ffe6bd;
 
 $font-size-small: 14px;
 $font-size-medium: 18px;
@@ -105,7 +93,16 @@ $font-size-large: 26px;
 $font-size-extra-large: 32px;
 
 
-/* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
+
+
+$color-logo-orange: rgb(247, 178, 119);
+$color-logo-pink: rgb(247, 195, 212);
+$color-logo-blue: rgb(111, 201, 235);
+$color-logo-yellow: rgb(252, 238, 94);
+$color-logo-green: rgb(179, 208, 109);
+
+
+/* классы и стили общие для всего проекта */
 
 * {
     box-sizing: border-box;
@@ -114,22 +111,28 @@ $font-size-extra-large: 32px;
 
 html,
 body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    // height: 100%;
+    // padding: 0;
+    //margin: 0;
     //font-family: $font-family-sans-serif;
     color: $color-dark-text;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    //max-width: 1920px;
+
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    // max-width: 1920px;
     margin: 0 auto;
 }
 
+//$container-max-width: 1296px;
 
-$color-logo-orange: rgb(247, 178, 119);
-$color-logo-pink: rgb(247, 195, 212);
-$color-logo-blue: rgb(111, 201, 235);
-$color-logo-yellow: rgb(252, 238, 94);
-$color-logo-green: rgb(179, 208, 109);
+// header,
+// main,
+// article {
+//     max-width: $container-max-width;
+//     margin: 0 auto;
+// }
