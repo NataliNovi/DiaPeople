@@ -1917,7 +1917,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__four-boxes-desktop {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        //grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
         gap: 2%;
         background-color: $color-beige;
         margin-top: 20px;
@@ -1944,7 +1945,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_dianews-desktop,
         &_diaproducts-desktop {
             width: 100%;
-            height: auto;
+            //height: auto;
+            height: 100%;
             background-color: $color-main;
             color: $color-dark-blue;
             padding: 10px;
@@ -1994,10 +1996,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-.wrapper {
+.img-wrapper {
     width: 100%;
     margin: 2px;
-    //border: 1px solid red;
+
 }
 
 .img-container {
@@ -2056,18 +2058,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &_four {
         color: $color-dark-blue;
         text-decoration: underline;
-        //text-decoration: none;
     }
 
     &_four:hover {
         cursor: pointer;
         color: $color-dark-text;
     }
-
-    // &_four:visited {
-    //     text-decoration: none;
-    //     color: red;
-    // }
 
     &_three {
         color: $color-main;
@@ -2076,8 +2072,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-//кнопка читать больше О нас и Важно понимать
+.link-name {
+    background-color: $color-main;
+    height: 60px;
+}
 
+//кнопка читать больше О нас и Важно понимать
 
 #more-about {
     display: none;

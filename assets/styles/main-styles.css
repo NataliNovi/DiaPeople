@@ -1584,7 +1584,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__four-boxes-desktop {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
   gap: 2%;
   background-color: #F4EADE;
   margin-top: 20px;
@@ -1608,7 +1608,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__four-boxes-desktop_diaschool-desktop, .article__four-boxes-desktop_teachers-desktop, .article__four-boxes-desktop_dianews-desktop, .article__four-boxes-desktop_diaproducts-desktop {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #fff;
   color: #2988BC;
   padding: 10px;
@@ -1650,7 +1650,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
-.wrapper {
+.img-wrapper {
   width: 100%;
   margin: 2px;
 }
@@ -1717,6 +1717,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .link-style_three {
   color: #fff;
   text-decoration: none;
+}
+
+.link-name {
+  background-color: #fff;
+  height: 60px;
 }
 
 #more-about {
