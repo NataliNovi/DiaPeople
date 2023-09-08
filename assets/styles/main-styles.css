@@ -135,7 +135,7 @@ body._lock {
   margin-bottom: 6px;
   padding-bottom: 6px;
   text-decoration: none;
-  height: 40px;
+  line-height: 1.6;
 }
 
 .menu-burger__link:hover {
@@ -698,6 +698,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .container-header .container-mobile__dialydi-mobile_dialydi-name:hover {
   text-decoration: underline;
 }
+.container-header .container-mobile__button-mobile_search {
+  display: flex;
+}
 .container-header .button-header {
   display: flex;
 }
@@ -713,6 +716,26 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   align-items: stretch;
   align-items: center;
   margin-left: 20px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 103;
+  background-color: #62B4E0;
+  opacity: 1;
+  height: 50vw;
+}
+
+.flex-form-search {
+  display: flex;
+  justify-content: space-around;
 }
 
 .button {
@@ -749,12 +772,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 576px) {
   .button__button-donate {
-    width: 160px;
+    width: 130px;
     font-size: 18px;
   }
 }
 .button__button-search {
-  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -771,8 +793,24 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
   }
 }
+.button__button-search_mobile {
+  width: auto;
+  margin-left: 6px;
+}
+.button__button-search_button-close-search {
+  width: 40px;
+  height: 40px;
+  background-color: #62B4E0;
+  color: #fff;
+}
+.button__button-search_button-close-search:hover {
+  width: 40px;
+  height: 40px;
+  background-color: #ED8C72;
+  border-color: #ED8C72;
+  color: #fff;
+}
 .button__button-search-sm {
-  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
   background-color: #62B4E0;
@@ -797,6 +835,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: block;
   }
 }
+.button__button-search-sm_button-search-lupa {
+  width: auto;
+}
+.button__button-search-sm_button-search-lupa:hover {
+  background-color: #ED8C72;
+  border-color: #ED8C72;
+}
 .button__button-search-sm_lupa-sm {
   width: 30px;
 }
@@ -814,6 +859,40 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .button__button-search-sm_lupa-sm {
     display: block;
   }
+}
+
+.small-button {
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #2988BC;
+  border: 1px solid #2988BC;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+}
+
+.small-button :disabled {
+  opacity: 0.5;
+}
+
+.small-button :not(:disabled)::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+}
+
+.small-button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .input {
@@ -2594,7 +2673,6 @@ textarea.form-control.is-invalid {
 
 /* CSS для кнопки submit */
 button[type=submit] {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: 400;
@@ -2621,9 +2699,6 @@ button[type=submit]:not(:disabled)::before {
   content: "";
   width: 1rem;
   height: 1rem;
-  margin-right: 0.5rem;
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.333 512'%3E%3Cpath fill='%23fff' d='M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z'/%3E%3C/svg%3E") transparent no-repeat center center;
-  background-size: 100% 100%;
 }
 
 @-webkit-keyframes spinner-border {

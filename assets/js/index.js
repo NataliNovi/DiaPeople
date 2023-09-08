@@ -119,3 +119,12 @@ function myFunctionUnderstand() {
     moreTextUnderstand.style.display = "inline";
   }
 }
+
+//open/close search form in header
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

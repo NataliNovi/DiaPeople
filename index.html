@@ -88,10 +88,14 @@
             </div>
             <form>
             <div class = "button-header_search">
-                <input type ="text" placeholder="Поиск на сайте" class = "input input__search"></input>
+                <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
                 <button type="submit" class="button__button-search"><img class="button__button-search_lupa" src="./assets/images/white-lupa.png"/></button>
             </div>
           </form>
+
+          <!-- <script async src="https://cse.google.com/cse.js?cx=544d7c9d9fa1f45a4">
+          </script>
+          <div class="gcse-search"></div> -->
         </div>
 
         </div>
@@ -226,6 +230,7 @@
           <!--burger End-->
 
           <div class = "container-header__container-mobile">
+
             <a class = "container-mobile__dialydi-mobile_dialydi-name" href='./pages/about_project.html'>ДиаЛюди <br> Беларусь</a>
             <!-- <div class="container-mobile__channel-box">
                         <a class = "youtube container-mobile__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
@@ -243,14 +248,31 @@
                          <img class="icon__youtube" src="./assets/images/youtube.png" alt="About diabete"/></a></div>
                     </div>
          -->
+
                  <div class = "container-mobile__button-mobile_search">
-                    <button type="submit" class="button__button-search-sm"><img class="button__button-search-sm_lupa-sm" src="./assets/images/white-lupa.png"/></button>
+                    <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openForm()"><img class="button__button-search-sm_lupa-sm" src="./assets/images/white-lupa.png"/></button>
                 </div>
-        
+
                 <div class = "container-mobile__button-mobile_donate">
                     <button class = "button button__button-donate">Поддержать проект</button>
                 </div>
                 </div> 
+
+            
+                <div class="form-popup" id="myForm">
+                  <div class="flex-form-search">
+         
+
+                   <form>
+                    <div class = "button-header_search">
+                        <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+                        <button type="submit" class="button__button-search_mobile">Искать</button>
+                    </div>
+                  </form>
+
+                  <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+                </div>
+               </div>
     </div>
 
     </div>
@@ -860,6 +882,8 @@
 <!-- swiper  -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 <script src="./assets/js/swiper-bundle.min.js"></script>
+
+
 
 <script>
   var swiper = new Swiper(".mySwiper", {
