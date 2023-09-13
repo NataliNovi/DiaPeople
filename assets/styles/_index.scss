@@ -830,7 +830,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     background-color: $color-blue-burger;
     opacity: 1;
     //width: 90vw;
-    height: 50vw;
+    height: 100vw;
 
 }
 
@@ -1845,7 +1845,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         // background-size: 100%;
         // background-repeat: no-repeat;
         // background-origin: border-box;
-        background-color: $color-sublink-burger;
+        background-color: $color-sublink-burger-old;
         font-family: "Philosofer";
         //display: flex;
         // flex-direction: column;
@@ -1972,7 +1972,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             margin-top: 20px;
             margin-bottom: 20px;
             padding: 20px;
-            background-color: $color-sublink-burger;
+            background-color: $color-sublink-burger-old;
 
             @media screen and (min-width: $grid-breakpoint-md) {
                 display: none;

@@ -33,7 +33,7 @@
 
 html,
 body {
-  color: #0f4d6e;
+  color: #053e5d;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -161,7 +161,7 @@ body._lock {
 }
 
 .menu-burger__sub-link {
-  color: #9ACEEB;
+  color: #aedcf4;
   margin-top: 20px;
 }
 
@@ -323,20 +323,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 768px) {
   .menu-burger__list > li._active .menu-burger__sub-list {
     display: block;
-    background-color: #9ACEEB;
+    background-color: #aedcf4;
     margin-left: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .menu-burger .menu-burger__link {
     font-size: 26px;
-    color: #0f4d6e;
+    color: #053e5d;
   }
 }
 @media screen and (max-width: 768px) {
   .menu-burger__sub-list {
     position: relative;
-    background-color: #0f4d6e;
+    background-color: #053e5d;
     flex: 1 1 100%;
     margin: 10px 0 0px 0;
     display: none;
@@ -345,11 +345,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 768px) {
   .menu-burger__sub-link {
     font-size: 26px;
-    color: #0f4d6e;
+    color: #053e5d;
     text-decoration: none;
     margin-top: 20px;
     padding-bottom: 200px;
-    background-color: #9ACEEB;
+    background-color: #aedcf4;
   }
 }
 .container-header {
@@ -730,7 +730,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   z-index: 103;
   background-color: #62B4E0;
   opacity: 1;
-  height: 50vw;
+  height: 100vw;
 }
 
 .flex-form-search {
@@ -997,20 +997,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     border-top: solid 1px #fff;
   }
   ul li:hover {
-    background-color: #9ACEEB;
+    background-color: #aedcf4;
     padding-top: 1px;
     padding-bottom: 1px;
   }
   ul li:hover ul {
     display: block;
     padding: 10px;
-    background-color: #9ACEEB;
+    background-color: #aedcf4;
   }
   ul li:hover ul li ul {
     display: none;
   }
   ul li a {
-    color: #0f4d6e;
+    color: #053e5d;
     padding: 10px 10px 10px 10px;
     display: block;
     text-decoration: none;
@@ -1030,7 +1030,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
     width: 280px;
     padding-right: 30px;
-    background-color: #9ACEEB;
+    background-color: #aedcf4;
   }
 }
 .container-main {
@@ -1111,7 +1111,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #0f4d6e;
+  color: #053e5d;
 }
 @media screen and (max-width: 768px) {
   .container-main__main_info-desktop {
@@ -1140,7 +1140,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-right: 40px;
   padding-top: 40px;
   margin-top: 0px;
-  color: #0f4d6e;
+  color: #053e5d;
   font-family: "Philosopher", sans-serif;
   font-size: 26px;
 }
@@ -1267,7 +1267,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  color: #0f4d6e;
+  color: #053e5d;
   font-size: 22px;
   font-family: "Philosopher", sans-serif;
   box-shadow: 8px 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1360,7 +1360,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .article__community-describe {
-  color: #0f4d6e;
+  color: #053e5d;
   background-color: #F4EADE;
   padding-right: 30px;
   padding-left: 30px;
@@ -1386,7 +1386,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   height: auto;
   background-color: #F5CDBA;
-  color: #0f4d6e;
+  color: #053e5d;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 32px;
@@ -1399,7 +1399,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   text-decoration: underline;
 }
 .article__viber-contact_saharok:hover {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: underline;
 }
 .article__diadzetka-news {
@@ -1409,7 +1409,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   align-items: center;
   flex-wrap: wrap;
   background: #F4EADE;
-  color: #0f4d6e;
+  color: #053e5d;
   padding: 20px;
   text-align: center;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1441,7 +1441,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diadzetka-news_diadzetka-name {
   text-decoration: none;
-  color: #0f4d6e;
+  color: #053e5d;
   cursor: pointer;
 }
 .article__diadzetka-news_diadzetka-name:hover {
@@ -1472,7 +1472,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-wrap: wrap;
   text-align: center;
   background: #F4EADE;
-  color: #0f4d6e;
+  color: #053e5d;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -1539,7 +1539,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   scale: 1.1;
 }
 .article__diaschool {
-  color: #0f4d6e;
+  color: #053e5d;
   background-color: #9ACEEB;
   font-family: "Philosofer";
   text-align: center;
@@ -1561,7 +1561,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diaschool_youtube-link {
   width: 100%;
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px;
@@ -1585,7 +1585,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  color: #0f4d6e;
+  color: #053e5d;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
@@ -1791,7 +1791,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .link-style_four:hover {
   cursor: pointer;
-  color: #0f4d6e;
+  color: #053e5d;
 }
 .link-style_three {
   color: #fff;
@@ -2031,7 +2031,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   width: 90vw;
   height: 120px;
-  color: #0f4d6e;
+  color: #053e5d;
   font-size: 26px;
   font-family: "Philosopher", sans-serif;
   background-color: white;
@@ -2053,7 +2053,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__for-school_link-link-button {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
 }
 .link__dia-news {
@@ -2061,7 +2061,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__dia-news_link-link-button {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
 }
 .link__dia-shops {
@@ -2069,20 +2069,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__dia-shops_link-link-button {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
 }
 .link__sovet {
   margin-top: 20px;
 }
 .link__sovet_link-sovet {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
 }
 
 .zarga-medica {
   text-decoration: underline;
-  color: #0f4d6e;
+  color: #053e5d;
 }
 
 .subscribe__form {
@@ -2513,7 +2513,7 @@ textarea.form-control {
 }
 
 .user-agreement:hover {
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: underline;
 }
 
@@ -2878,7 +2878,7 @@ button[type=submit]:not(:disabled):focus {
   border: solid 1px #62B4E0;
   margin: 10px;
   padding: 10px;
-  color: #0f4d6e;
+  color: #053e5d;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.5;
