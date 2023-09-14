@@ -1,5 +1,15 @@
 .psyhology {
+
     &__text-container {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        font-family: $font-family-different;
+        font-size: $font-size-medium-plus;
+        line-height: 1.3;
+    }
+
+    &__entrance-part {
         width: 55%;
         margin-top: 20px;
         padding: 20px;
@@ -43,42 +53,7 @@
 
 .psyhology-articles {
 
-    margin-left: 280px;
-    z-index: 1;
-    width: calc(100% - 280px);
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
-    padding: 10px;
-
-    @media screen and (min-width: $grid-breakpoint-lg) {
-
-        margin-left: 280px;
-        width: calc(100% - 280px);
-    }
-
-
-    @media screen and (max-width: $grid-breakpoint-lg) {
-
-        margin-left: 280px;
-        width: calc(100% - 280px);
-    }
-
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-
-        // margin-left: 180px;
-        // width: calc(100% - 180px);
-
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        width: 100%;
-        margin-left: 0px;
-
-    }
+    font-family: $font-family-sans-serif;
 
     &__psy-article {
         //height: 120px;
@@ -144,4 +119,8 @@
 
 .button-read-article:hover {
     scale: 1.02;
+}
+
+.psyh1-img {
+    width: 94%;
 }

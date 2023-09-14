@@ -135,13 +135,13 @@
                 <ul class="menu-burger__list">
                    <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
                    <li>
-                    <a href='/about_diabete.html' class="menu-burger__link">О диабете </a>
+                    <a class="menu-burger__link dropbtn" onclick = "functionOpenSubmenu()" >О диабете </a>
 
                     <span class="menu-burger__arrow"></span>
                    
-                    <ul class="menu-burger__sub-list">
+                    <ul class="menu-burger__sub-list dropdown-content" id = "myDropdown">
                         <li>
-                            <a href='/what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
+                            <a href='./pages/what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
                         </li>
                         <li>
                             <a href='/insulin.html' class="menu-burger__sub-link">Инсулин</a>
@@ -168,7 +168,7 @@
 
 
                    <li>
-                    <a href='/gadgets.html' class="menu-burger__link">Устройства и гаджеты</a>
+                    <a class="menu-burger__link">Устройства и гаджеты</a>
                     <span class="menu-burger__arrow"></span>
                     <ul class="menu-burger__sub-list">
                         <li>
@@ -182,7 +182,7 @@
 
 
                    <li>
-                    <a href='/documents.html' class="menu-burger__link">Нормативная база </a>
+                    <a class="menu-burger__link">Нормативная база </a>
                     <span class="menu-burger__arrow"></span>
                     <ul class="menu-burger__sub-list">
                         <li>
@@ -289,26 +289,26 @@
         <ul class="container-nav">
         <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a></li>
             <!-- <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>О нас</a></li> -->
-            <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете<span>&#8594;</span></a>
+            <li class = "nav__item nav__item_primary"> <a>О диабете<span>&#8594;</span></a>
         <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
-            <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
+            <li class="nav__item nav__item_link"><a href = './pages/what_is_diabete.html'>Что такое диабет</a></li>
+            <li class="nav__item nav__item_link"><a href = './pages/insulin.html'>Инсулин</a></li>
             <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
             <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
             <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
         </ul>
     </li>
-       <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+       <li class = "nav__item nav__item_primary"> <a href='./pages/for_new_people.html'>Новичкам</a></li>
 
        <li class = "nav__item nav__item_primary"> <a href='./pages/psychology.html'>Страничка психолога</a></li>
 
-       <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
+       <li class = "nav__item nav__item_primary"> <a>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
     <ul class="submenu">
         <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
         <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
     </ul>
     </li>
-       <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
+       <li class = "nav__item nav__item_primary"> <a>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
         <ul class="submenu">
             <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
             <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
@@ -855,6 +855,27 @@
 </footer>
 
  </div>
+
+ <!-- <script>
+  function functionOpenSubmenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if
+    (!event.target.matches(".dropbtn")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i=0; i<dropdowns.length; i++) {
+        var openDrowdown = dropdowns[i];
+        if 
+        (openDrowdown.classList.contains("show")) {
+          openDrowdown.classList.remove("show");
+        }
+      }
+    }
+  }
+ </script> -->
 
 <script src="./assets/js/index.js"></script>
 <script src=".assets/js/form-processing.js"></script>

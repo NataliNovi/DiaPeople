@@ -33,7 +33,7 @@
 
 html,
 body {
-  color: #053e5d;
+  color: #032a3f;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -279,7 +279,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 100%;
     height: 100%;
     transform: translate(-100% 0px);
-    background-color: #62B4E0;
+    background-color: #7dc1e5;
     padding: 100px 30px 30px 30px;
     transition: all 0.3s ease 0s;
     overflow: auto;
@@ -330,13 +330,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 768px) {
   .menu-burger .menu-burger__link {
     font-size: 26px;
-    color: #053e5d;
+    color: #032a3f;
   }
 }
 @media screen and (max-width: 768px) {
   .menu-burger__sub-list {
     position: relative;
-    background-color: #053e5d;
+    background-color: #032a3f;
     flex: 1 1 100%;
     margin: 10px 0 0px 0;
     display: none;
@@ -345,7 +345,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 768px) {
   .menu-burger__sub-link {
     font-size: 26px;
-    color: #053e5d;
+    color: #032a3f;
     text-decoration: none;
     margin-top: 20px;
     padding-bottom: 200px;
@@ -1010,7 +1010,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     display: none;
   }
   ul li a {
-    color: #053e5d;
+    color: #032a3f;
     padding: 10px 10px 10px 10px;
     display: block;
     text-decoration: none;
@@ -1111,7 +1111,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #053e5d;
+  color: #032a3f;
 }
 @media screen and (max-width: 768px) {
   .container-main__main_info-desktop {
@@ -1140,7 +1140,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-right: 40px;
   padding-top: 40px;
   margin-top: 0px;
-  color: #053e5d;
+  color: #032a3f;
   font-family: "Philosopher", sans-serif;
   font-size: 26px;
 }
@@ -1267,7 +1267,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  color: #053e5d;
+  color: #032a3f;
   font-size: 22px;
   font-family: "Philosopher", sans-serif;
   box-shadow: 8px 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1360,7 +1360,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .article__community-describe {
-  color: #053e5d;
+  color: #032a3f;
   background-color: #F4EADE;
   padding-right: 30px;
   padding-left: 30px;
@@ -1386,7 +1386,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   height: auto;
   background-color: #F5CDBA;
-  color: #053e5d;
+  color: #032a3f;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 32px;
@@ -1399,7 +1399,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   text-decoration: underline;
 }
 .article__viber-contact_saharok:hover {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: underline;
 }
 .article__diadzetka-news {
@@ -1409,7 +1409,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   align-items: center;
   flex-wrap: wrap;
   background: #F4EADE;
-  color: #053e5d;
+  color: #032a3f;
   padding: 20px;
   text-align: center;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
@@ -1441,7 +1441,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diadzetka-news_diadzetka-name {
   text-decoration: none;
-  color: #053e5d;
+  color: #032a3f;
   cursor: pointer;
 }
 .article__diadzetka-news_diadzetka-name:hover {
@@ -1472,7 +1472,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-wrap: wrap;
   text-align: center;
   background: #F4EADE;
-  color: #053e5d;
+  color: #032a3f;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -1539,7 +1539,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   scale: 1.1;
 }
 .article__diaschool {
-  color: #053e5d;
+  color: #032a3f;
   background-color: #9ACEEB;
   font-family: "Philosofer";
   text-align: center;
@@ -1561,7 +1561,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .article__diaschool_youtube-link {
   width: 100%;
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px;
@@ -1585,7 +1585,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  color: #053e5d;
+  color: #032a3f;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
@@ -1791,7 +1791,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .link-style_four:hover {
   cursor: pointer;
-  color: #053e5d;
+  color: #032a3f;
 }
 .link-style_three {
   color: #fff;
@@ -2031,7 +2031,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   flex-direction: column;
   width: 90vw;
   height: 120px;
-  color: #053e5d;
+  color: #032a3f;
   font-size: 26px;
   font-family: "Philosopher", sans-serif;
   background-color: white;
@@ -2053,7 +2053,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__for-school_link-link-button {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
 }
 .link__dia-news {
@@ -2061,7 +2061,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__dia-news_link-link-button {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
 }
 .link__dia-shops {
@@ -2069,20 +2069,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
 }
 .link__dia-shops_link-link-button {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
 }
 .link__sovet {
   margin-top: 20px;
 }
 .link__sovet_link-sovet {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
 }
 
 .zarga-medica {
   text-decoration: underline;
-  color: #053e5d;
+  color: #032a3f;
 }
 
 .subscribe__form {
@@ -2513,7 +2513,7 @@ textarea.form-control {
 }
 
 .user-agreement:hover {
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: underline;
 }
 
@@ -2809,7 +2809,141 @@ button[type=submit]:not(:disabled):focus {
   font-weight: bold;
 }
 
+.what-is-diabete__text-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 22px;
+  font-family: "Philosopher", sans-serif;
+  line-height: 1.3;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.what-is-diabete__image-container {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+.what-is-diabete__image-container_what-is-diabete-img1 {
+  width: 98%;
+}
+@media screen and (max-width: 576px) {
+  .what-is-diabete__image-container_what-is-diabete-img1 {
+    display: none;
+  }
+}
+.what-is-diabete__image-container_what-is-diabete-img2 {
+  width: 98%;
+}
+@media screen and (max-width: 576px) {
+  .what-is-diabete__image-container_what-is-diabete-img2 {
+    display: none;
+  }
+}
+.what-is-diabete__image-container_what-is-diabete-img1mobile {
+  width: 98%;
+}
+@media screen and (min-width: 576px) {
+  .what-is-diabete__image-container_what-is-diabete-img1mobile {
+    display: none;
+  }
+}
+.what-is-diabete__image-container_what-is-diabete-img2mobile {
+  width: 98%;
+}
+@media screen and (min-width: 576px) {
+  .what-is-diabete__image-container_what-is-diabete-img2mobile {
+    display: none;
+  }
+}
+
+.insulin__text-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 22px;
+  font-family: "Philosopher", sans-serif;
+  line-height: 1.3;
+}
+
+.insulin-articles {
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.insulin-articles__ins-article {
+  background-color: #fff;
+  border: solid 1px #62B4E0;
+  margin: 10px;
+  padding: 10px;
+  color: #032a3f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 6px;
+}
+
+#read-more-article-ins1 {
+  display: none;
+}
+
+#read-more-article-ins2 {
+  display: none;
+}
+
+#read-more-article-ins3 {
+  display: none;
+}
+
+#read-more-article-ins4 {
+  display: none;
+}
+
+#read-more-article-ins5 {
+  display: none;
+}
+
+#read-more-article-ins6 {
+  display: none;
+}
+
+.button-read-article {
+  height: 60px;
+  border-radius: 6px;
+  border: solid 1px #62B4E0;
+  background-color: #62B4E0;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30%;
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .button-read-article {
+    width: 50%;
+  }
+}
+
+.button-read-article:hover {
+  scale: 1.02;
+}
+
 .psyhology__text-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.psyhology__entrance-part {
   width: 55%;
   margin-top: 20px;
   padding: 20px;
@@ -2841,44 +2975,14 @@ button[type=submit]:not(:disabled):focus {
 }
 
 .psyhology-articles {
-  margin-left: 280px;
-  z-index: 1;
-  width: calc(100% - 280px);
-  display: flex;
-  flex-direction: column;
-  margin-top: 0px;
-  padding: 10px;
-}
-@media screen and (min-width: 992px) {
-  .psyhology-articles {
-    margin-left: 280px;
-    width: calc(100% - 280px);
-  }
-}
-@media screen and (max-width: 992px) {
-  .psyhology-articles {
-    margin-left: 280px;
-    width: calc(100% - 280px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .psyhology-articles {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .psyhology-articles {
-    width: 100%;
-    margin-left: 0px;
-  }
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .psyhology-articles__psy-article {
   background-color: #fff;
   border: solid 1px #62B4E0;
   margin: 10px;
   padding: 10px;
-  color: #053e5d;
+  color: #032a3f;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.5;
@@ -2932,4 +3036,8 @@ button[type=submit]:not(:disabled):focus {
 
 .button-read-article:hover {
   scale: 1.02;
+}
+
+.psyh1-img {
+  width: 94%;
 }/*# sourceMappingURL=main-styles.css.map */

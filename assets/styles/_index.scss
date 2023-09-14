@@ -289,7 +289,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         height: 100%;
         transform: translate(-100% 0px);
-        background-color: $color-blue-burger;
+        background-color: $color-blue-burger-mobile;
         padding: 100px 30px 30px 30px;
         transition: all 0.3s ease 0s;
         overflow: auto;
@@ -367,6 +367,30 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
 }
+
+// .show {
+//     display: block;
+// }
+
+// .open-submenu:hover,
+// .open-submenu:focus {
+//     background-color: #28a745;
+
+// }
+
+// .sublist-dropdown {
+//     display: none;
+//     position: absolute;
+//     background-color: #0d6efd;
+//     min-width: 100vw;
+//     overflow: auto;
+//     z-index: 3;
+// }
+
+// .sublist-dropdown a {
+//     display: block;
+//     color: #03152e;
+// }
 
 .container-header {
 

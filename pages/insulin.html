@@ -5,243 +5,456 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiaPeople</title>
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/main-styles.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="..//assets/styles/main-styles.css">
 </head>
+
 <body>
+  <!-- header Start -->
+  <header class = "container-header">
 
-    <!-- header Start -->
-    <header class = "container-header">
+    <div class = "container-header__logo">
+        <a class="container-header__logo_link" href='/index.html'><img class="container-header__logo_img" src="../assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
+            title="Logo Dia People"/></a>
+        </div>
 
-        <div class = "container-header__logo">
-            <a class="container-header__logo_link" href='/index.html'><img class="container-header__logo_img" src="./assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
-                title="Logo Dia People"/></a>
+        <div class = "container-header__dialydi-header">
+           <a class = "container-header__dialydi-header_dialydi-name" href='about_project.html'>ДиаЛюди.<br>Беларусь</a>
             </div>
 
-            <div class = "container-header__dialydi-header">
-               <a class = "container-header__dialydi-header_dialydi-name">ДиаЛюди Беларусь</a>
+            <div class="container-header__social-links-with-button-complex">
+
+        <div class="container-header__social-links">
+
+            <div class="container-header__social-links_channel-box">
+                <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                    Канал <br>DiaDzetka </a>
+
+            <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                <img class="icon__youtube" src="../assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+            </div>
+
+
+                 <div class="container-header__social-links_channel-box">
+                    <a class = "youtube container-header__social-links_school-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                Про<br>диабет</a>
+
+                <a class="youtube school-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+                    <img class="icon__youtube" src="../assets/images/youtube.png" alt="About diabete"/></a>
                 </div>
 
-                <div class="container-header__social-links-with-button-complex">
-
-            <div class="container-header__social-links">
-                <div class="container-header__social-links_channel-box">
-                    <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                DiaDzetka <br>Channel</a>
+        </div>
                 
-                <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                     <img class="icon__youtube" src="./assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+
+        <div class="container-header__button-complex">
+
+        <div class = "button-header_donate">
+            <button class = "button button__button-donate">Поддержать проект</button>
+        </div>
+        <form>
+        <div class = "button-header_search">
+            <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+            <button type="submit" class="button__button-search"><img class="button__button-search_lupa" src="../assets/images/white-lupa.png"/></button>
+        </div>
+      </form>
+
+      <!-- <script async src="https://cse.google.com/cse.js?cx=544d7c9d9fa1f45a4">
+      </script>
+      <div class="gcse-search"></div> -->
+    </div>
+
+    </div>
+
+      <!--burger Start-->
+
+<div class = "container-header__wrapper-burger">
+<div class="header-burger">
+    <div class="header-burger-container">
+
+        <a class="header-burger__logo_link" href='/index.html'><img class="header-burger__logo_img" src="../assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
+            title="Logo Dia People"/></a>
+
+            <div class="header-burger__channel-box">
+              <a class = "youtube header-burger__channel-box_diadzetka-link" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+          Dia<br>Dzetka </a>
+          
+          <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+               <img class="icon__youtube" src="../assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+          </div>
+
+          <div class="header-burger__channel-box">
+              <a class = "youtube header-burger__channel-box_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+          Про <br> диабет </a>
+          
+          <div><a class="youtube diadzetka-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+               <img class="icon__youtube" src="../assets/images/youtube.png" alt="About diabete"/></a></div>
+          </div>
+
+
+ <div class="header-burger__menu-burger menu-burger">
+        <div class="menu-burger__icon">
+            <span></span>
+        </div>
+
+        <nav class="menu-burger__body">
+            <ul class="menu-burger__list">
+               <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
+               <li>
+                <a class="menu-burger__link">О диабете </a>
+
+                <span class="menu-burger__arrow"></span>
+               
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
+                    </li>
+                    <li>
+                        <a href='insulin.html' class="menu-burger__sub-link">Инсулин</a>
+                    </li>
+                    <li>
+                        <a href='hypoglikemia.html' class="menu-burger__sub-link">Гипогликемия</a>
+                    </li>
+                    <li>
+                        <a href='hyperglikemia.html' class="menu-burger__sub-link">Гипергликемия</a>
+                    </li>
+                    <li>
+                        <a href='food.html' class="menu-burger__sub-link">Питание</a>
+                    </li>
+                </ul>
+               </li>
+
+               <li>
+                <a href='for_new_people.html' class="menu-burger__link">Новичкам</a>
+               </li>
+
+               <li>
+                <a href='psychology.html' class="menu-burger__link">Страничка психолога</a>
+               </li>
+
+
+               <li>
+                <a class="menu-burger__link">Устройства и гаджеты</a>
+                <span class="menu-burger__arrow"></span>
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
+                    </li>
+                    <li>
+                        <a href= 'measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
+                    </li>
+                </ul>
+               </li>
+
+
+               <li>
+                <a class="menu-burger__link">Нормативная база </a>
+                <span class="menu-burger__arrow"></span>
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='posobia.html' class="menu-burger__sub-link">Пособия</a>
+                    </li>
+                    <li>
+                        <a href= 'lgoty.html' class="menu-burger__sub-link">Льготы</a>
+                    </li>
+                </ul>
+               </li>
+
+               <li>
+                <a href='hospitals.html' class="menu-burger__link">Медицинские учреждения</a>
+               </li>
+
+               <li>
+                <a href='for-school.html' class="menu-burger__link">Медработникам школ и детских садов</a>
+               </li>
+
+               <li>
+                <a href='diabete_lifestyle.html' class="menu-burger__link">Диабет как образ жизни</a>
+               </li>
+
+
+               <li>
+                <a href='celiakia.html' class="menu-burger__link">Диабет и целиакия</a>
+               </li>
+
+               <li>
+                <a href='fakes.html' class="menu-burger__link">Мифы, фейки, заблуждения</a>
+               </li>
+
+               <li>
+                <a href='world_diabete.html' class="menu-burger__link">Диабет в мире</a>
+               </li>
+
+               <li>
+                <a href='community.html' class="menu-burger__link">Сообщества, каналы, форумы</a>
+               </li>
+            </ul>
+        </nav>
+    </div>
+
+
+      <!--burger End-->
+
+      <div class = "container-header__container-mobile">
+
+        <a class = "container-mobile__dialydi-mobile_dialydi-name" href='./pages/about_project.html'>ДиаЛюди <br> Беларусь</a>
+
+             <div class = "container-mobile__button-mobile_search">
+                <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openForm()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
             </div>
 
-          
-
-            <div class="container-header__button-complex">
-
-            <div class = "button-header_donate">
+            <div class = "container-mobile__button-mobile_donate">
                 <button class = "button button__button-donate">Поддержать проект</button>
             </div>
-            
-            <div class = "button-header_search">
-                <input type ="text" placeholder="Поиск на сайте" class = "input input__search"></input>
-                <button class="button button__button-search"><img class="button__button-search_lupa" src="./assets/images/lupa.png"/></button>
-            </div>
-        </div>
+            </div> 
 
-        </div>
-   
-          <!--burger Start-->
-
-   <div class = "container-header__wrapper-burger">
-    <div class="header-burger">
-        <div class="header-burger__container">
-            <a class="header-burger__logo_link" href='/index.html'><img class="header-burger__logo_img" src="./assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
-                title="Logo Dia People"/></a>
-
-     <div class="header-burger__menu-burger menu-burger">
-            <div class="menu-burger__icon">
-                <span></span>
-            </div>
-
-            <nav class="menu-burger__body">
-                <ul class="menu-burger__list">
-                   <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
-
-                   <li><a href='/about_us.html' class = "menu-burger__link">ДиаЛюди</a></li>
-
-                   <li>
-                    <a href='/about_diabete.html' class="menu-burger__link">О диабете </a>
-
-                    <span class="menu-burger__arrow"></span>
-
-                
-                   
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
-                        </li>
-                        <li>
-                            <a href='/insulin.html' class="menu-burger__sub-link">Инсулин</a>
-                        </li>
-                        <li>
-                            <a href='/hypoglikemia.html' class="menu-burger__sub-link">Гипогликемия</a>
-                        </li>
-                        <li>
-                            <a href='/hyperglikemia.html' class="menu-burger__sub-link">Гипергликемия</a>
-                        </li>
-                        <li>
-                            <a href='/food.html' class="menu-burger__sub-link">Питание</a>
-                        </li>
-                    </ul>
-                   </li>
-
-                   <li>
-                    <a href='/for_new_people.html' class="menu-burger__link">Новичкам</a>
-                   </li>
-
-                   <li>
-                    <a href='/psychology.html' class="menu-burger__link">Страничка психолога</a>
-                   </li>
-
-
-                   <li>
-                    <a href='/gadgets.html' class="menu-burger__link">Устройства и гаджеты</a>
-                    <span class="menu-burger__arrow"></span>
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
-                        </li>
-                        <li>
-                            <a href= '/measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
-                        </li>
-                    </ul>
-                   </li>
-
-
-                   <li>
-                    <a href='/documents.html' class="menu-burger__link">Нормативная база </a>
-                    <span class="menu-burger__arrow"></span>
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/posobia.html' class="menu-burger__sub-link">Пособия</a>
-                        </li>
-                        <li>
-                            <a href= '/lgoty.html' class="menu-burger__sub-link">Льготы</a>
-                        </li>
-                    </ul>
-                   </li>
-
-                   <li>
-                    <a href='/hospitals.html' class="menu-burger__link">Медицинские учреждения</a>
-                   </li>
-
-                   <li>
-                    <a href='/diabete_lifestyle.html' class="menu-burger__link">Диабет как образ жизни</a>
-                   </li>
-
-
-                   <li>
-                    <a href='/celiakia.html' class="menu-burger__link">Диабет и целиакия</a>
-                   </li>
-
-                   <li>
-                    <a href='/fakes.html' class="menu-burger__link">Мифы, фейки, заблуждения</a>
-                   </li>
-
-                   <li>
-                    <a href='/world_diabete.html' class="menu-burger__link">Диабет в мире</a>
-                   </li>
-
-                   <li>
-                    <a href='/community.html' class="menu-burger__link">Сообщества, каналы, форумы</a>
-                   </li>
-                </ul>
-            </nav>
-        </div>
-
-
-          <!--burger End-->
-
-
-          <div class = "container-header__container-mobile">
-            <div class = "container-mobile__dialydi-mobile_dialydi-name">ДиаЛюди <br> Беларусь</div>
-            <div class="container-mobile__channel-box">
-                        <a class = "youtube container-mobile__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                    Dia<br>Dzetka </a>
-                    
-                    <div><a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                         <img class="icon__youtube" src="./assets/images/youtube.png" alt="Channel DiaDzetka"/></a></div>
-                    </div>
         
-                 <div class = "button-mobile_search">
-                    <button class="button button__button-search-sm"><img class="button__button-search-sm_lupa-sm" src="./assets/images/lupa.png"/></button>
-                </div>
-        
-                <div class = "button-mobile_donate">
-                    <button class = "button button__button-donate">Поддержать проект</button>
-                </div>
-                </div> 
-    </div>
+            <div class="form-popup" id="myForm">
+              <div class="flex-form-search">
+     
 
-    </div>
+               <form>
+                <div class = "button-header_search">
+                    <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+                    <button type="submit" class="button__button-search_mobile">Искать</button>
+                </div>
+              </form>
+
+              <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+            </div>
+           </div>
 </div>
 
-<!--burger End-->
-    </header>
-    <!-- header End -->
-         <!-- nav Start -->
+</div>
+</div>
+</header>
+<!-- header End -->
 
-         <nav class = "main-menu" aria-hidden="false" id="mainNav" role="navigation">
+
+       <!-- nav Start -->
+
+
+        <nav class = "main-menu" id="mainNav">
             <ul class="container-nav">
-            <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
-                <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
-    
-           <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете<span>&#8594;</span></a>
+            <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a></li>
+                <li class = "nav__item nav__item_primary"> <a> О диабете<span>&#8594;</span></a>
             <ul class="submenu">
-                <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
-                <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
-                <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+                <li class="nav__item nav__item_link"><a href = 'what_is_diabete.html'>Что такое диабет</a></li>
+                <li class="nav__item nav__item_link"><a href = 'insulin.html'>Инсулин</a></li>
+                <li class="nav__item nav__item_link"><a href = 'hypoglikemia.html'>Гипогликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'hyperglikemia.html'>Гипергликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'food.html'>Питание</a></li>
             </ul>
         </li>
-           <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='for_new_people.html'>Новичкам</a></li>
     
-           <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Страничка психолога</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='psychology.html'>Страничка психолога</a></li>
     
-           <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
+           <li class = "nav__item nav__item_primary"> <a>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
         <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
-            <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
+            <li class="nav__item nav__item_link"><a href = 'insulin_injection.html'>Средства введения инсулина</a></li>
+            <li class="nav__item nav__item_link"><a href = 'measure_devices.html'>Средства измерения</a></li>
         </ul>
         </li>
-           <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
+           <li class = "nav__item nav__item_primary"> <a>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
             <ul class="submenu">
-                <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
+                <li class="nav__item nav__item_link"><a href = 'posobia.html'>Пособия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'lgoty.html'>Льготы</a></li>
             </ul></li>
-           <li class = "nav__item nav__item_primary"> <a href='/hospitals.html'>Медицинские учреждения</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
+           <li class = "nav__item nav__item_primary"> <a href='hospitals.html'>Медицинские учреждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='for-school.html'>Медработникам школ и детских садов</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='diabete_lifestyle.html'>Диабет как образ жизни</a></li>
+           <li class = "nav__item nav__item_primary"><a href='celiakia.html'>Диабет и целиакия</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='fakes.html'>Мифы, фейки, заблуждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='world_diabete.html'>Диабет в мире</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='community.html'>Сообщества, каналы, форумы </a></li>
         </ul>
         </nav>
     
          <!-- nav End -->
-             <main>
-                <div class = "insulin__text-container ">
-                    Инсулин:
 
-Что такое инсулин
 
-Действия разных инсулинов - это будет таблица/картинка
-
-Таблица/схема правил ввода 
-
-                </div>
-             </main>
+         <main>
+            <div class = "container-main">
     
-             <script src="./assets/js/index.js"></script>
-         
-</body>
-</html>
+                <div class="insulin__text-container">
+    
+                    <h3 class="page-title">Инсулин</h3>
+        
+    
+            <div class="insulin-articles">
+    
+                <div class="insulin-articles__ins-article"><h3>Базовые правила хранения инсулина</h3>
+                
+                    <span id="dots-read-article-ins1"></span>
+    
+                <span id="read-more-article-ins1">
+   
+    <p>Пропущенная инъекция инсулина – прямая угроза здоровью и жизни диабетика. Нарушение условий хранения гормона может необратимо изменить его свойства, укол будет неэффективен. Поэтому к особенностям сбережения препарата следует относиться крайне внимательно. Основные рекомендации диабетикам были разработаны Министерством здравоохранения РФ, а также производителями инсулина.  Вот главные из них:</p>
+
+        Открытый инсулин (в форме картриджа, флакона или шприц-ручки) хранят не более одного месяца с момента распаковки и до конца срока годности, указанного на упаковке.</p>
+        
+        При температуре выше 30°С открытый инсулин следует хранить в холодильнике.
+        Необходимо избегать прямого попадания солнечных лучей на препарат, а также держать его как можно дальше от источников тепла.</p>
+        
+        Хранить большое количество инсулина следует при температуре от +2°С до +8°С. Воздействие низких температур на препарат так же опасно, как и перегрев. В температурных условиях от -20°С до -10°С инсулин может храниться не более 15 минут, от -10°С до -5°С – не более 30 минут, от -5°С до +2°С – не более 2 часов, от +8°С до +15°С – не более 4 суток, от +15°С до +30°С – не более 48 часов, от +30°С до +40°С – не более 6 часов.
+        
+    </p>
+    </span>
+    </p>
+    <div class="button-read-article button-read-article1" onclick="myFunctionReadArticleIns1()" id="myBtnReadArticleIns1">Читать<span>&#8594;</span></div>
+    </div>
+
+
+
+    <div class="insulin-articles__ins-article"><h3>Инсулин: мифы и реальность</h3>
+                
+        <span id="dots-read-article-ins2"></span>
+
+    <span id="read-more-article-ins2">
+
+<p> При сахарном диабете 1 типа введение инсулина является главным методом контроля гипогликемии, а людям с СД 2-го типа ее назначают, когда компенсация заболевания с  помощью диеты, рекомендованных физических нагрузок, лекарственной терапии становится затруднительной или невозможной.
+    Многие пациенты боятся начинать использовать инсулин, руководствуясь неверными представлениями о его действии и свойствах. Этот материал — попытка разобраться с основными мифами об инсулинотерапии.</p>
+    Мне назначили инсулин, значит мой диабет очень тяжелый</p>
+    Не верно.Инсулин назначается, когда клетки поджелудочной железы не вырабатывают достаточно инсулина или не вырабатывают его вовсе.Тяжесть диабета зависит не от факта введения инсулина,а от наличия последствий диабета,уровня глюкозы,гликированного гемоглобина,данных мониторинга глюкозы.</p>
+    Инсулин вреден для организма</p>
+    Это не так. Вреда организму инсулин при сахарном диабете не наносит. Он наоборот компенсирует нехватку этого важного гормона, поддерживает обмен веществ, нормализует уровень сахара в крови.Например, в  состоянии беременности тоже изменяется углеводный обмен,к сожалению не редко возникает гестационный диабет(диабет беременных) и единственный метод лечения,когда диета и образ жизни не дает нужных показателей глюкозы,введение инсулина и для плода инсулин является безопасным и не несет рисков.Важно соблюдать правила хранения,проведения инъекций и не использовать инсулин,если истек срок годности.</p>
+    Инсулин опасен и вызывает осложнения</p>
+    Осложнения при сахарном диабете возникают из-за скачков уровня глюкозы в крови, а инсулин как раз помогает удерживать уровень сахара в крови в рамках целевых значений, не допускать его падения или чрезмерного повышения. Лечение необходимо, чтобы высокий уровень сахара в крови не вызывал осложнений: нарушений функции почек, глаз, сосудов, «диабетической стопы», осложнений сердечно-сосудистых заболеваний.</p>
+    Уколы инсулина это больно</p>
+    Бояться делать инъекции -это нормально.Страх перед уколами испытывают многие, поэтому сегодня для инъекций рекомендуют использовать шприц-ручки,специальные инсулиновые шприцы.. Иглы у них очень тонкие, их длина такая, что дальше подкожной клетчатки (куда и должен попасть инсулин во время укола) препарат не пойдет. Благодаря этому инъекции инсулина безболезненны, страх перед уколами со временем проходит.Можно посоветоваться с врачом и узнать о возможности поставить инсулиновую помпу. Она самостоятельно подает инсулин через катетер, который устанавливается под кожу на длительный срок.</p>
+    А вдруг случится гипогликемия?</p>
+    Главная цель инсулинотерапии – оптимальный контроль гликемии. Это достигается двумя путями:<br>
+    Нормализация образа жизни – питание, двигательная активность, режим дня.<br>
+    Подбор врачом схемы введения лекарственных препаратов, в том числе инсулина. Она индивидуальна для каждого пациента, учитывает особенности организма, течение диабета, возраст, характер питания, привычки, другие данные<br>
+    Для самостоятельного управления заболеванием необходимо научиться самоконтролю уровня глюкозы в крови, проведению инъекций инсулина, а также правилам коррекции доз инсулин для достижения индивидуальных целевых показателей.<br>
+    В «Школе диабета» также учат узнавать признаки гипогликемии, что можно сделать, чтобы ее не допустить. Регулярные измерения глюкометром показателей уровня сахара в крови позволяют вовремя заметить снижение уровня гликемии и принять рекомендованные врачом меры.</p>
+    Уколы – это сложно</p>
+    Если вы используете шприц-ручку, то ампула с инсулином уже вставлена в нее, инъекция занимает не больше минуты, это позволяет сохранить высокое качество жизни пациентов, использующих инсулинотерапию. На специальных шприцах указаны и миллилитры, и единицы инсулина, а сам препарат упакован в небольшой флакон.</p>
+    Я буду вынужден колоть инсулин на виду у всех</p>
+    В большинстве случаев в день приходится делать от 1 до 4 уколов инсулина. Если время, когда нужно сделать укол, совпало с выходом «в свет», то можно выбрать комфортное для себя место, и сделать инъекцию там, не привлекая лишнего внимания.Если такой вопрос возникает у ребенка с диабетом ,то в школе можно договориться с медсестрой и делать инъекции у нее в кабинете.</p>
+    На моем теле будут точки от проколов, синяки</p>
+    Правильная техника введения может снизить вероятность появления следов от уколов. Иглы для введения инсулина очень тонкие, острые, с гладкой поверхностью. Они практически не травмируют кожу, если делать укол по инструкции к шприц-ручке или шприцу.</p>
+    Выбирайте для укола место, где подкожный слой толстый (живот, ягодицы). После укола лучше не вынимать иглу сразу и резко, а задержать ее на 10 секунд и извлекать спокойно.Важно чередовать места инъекций.</p>
+    Кто колет инсулин, тот может не соблюдать диету!</p>
+    При любом типе сахарного диабета важно поддерживать постоянный и приемлемый уровень глюкозы в крови с помощью диеты и физической активности. Если есть все подряд, то сахар в крови будет «скакать», провоцировать то гипер-, то гипогликемию. Соблюдение назначений, в том числе диеты и инсулинотерапии, позволяет эффективно управлять диабетом и сохранить высокое качество жизни.
+</p>
+</span>
+</p>
+<div class="button-read-article button-read-article2" onclick="myFunctionReadArticleIns2()" id="myBtnReadArticleIns2">Читать<span>&#8594;</span></div>
+</div>
+
+
+
+<div class="insulin-articles__ins-article"><h3>Что делать если перепутал инсулины!</h3>
+                
+    <span id="dots-read-article-ins3"></span>
+
+<span id="read-more-article-ins3">
+
+<p>Видов инсулина существует много.Они назначаются лечащим врачом.<br>
+
+    Важно понимать основные механизмы действия ,а точнее скорость действия и продолжительность действия.<br>
+    
+    Есть “длинные”  и “короткие” инсулины.</p>
+    
+    Цели введения различных видов инсулина:<br>
+    Короткие и аналоги коротких инсулинов вводяться перед едой, с целью помочь усвоиться глюкозе,которая попала с пищей.
+    Длинные инсулины и аналоги инсулина длительного действия поддерживают стабильный уровень глюкозы длительно,когда короткие не работают.</p>
+    
+    Инсулины короткого действия (Актрапид,Хумулин Регуляр,Генинсулин,Инсуман Рапид)начинают действовать через 30 минут до еды, действуют до 6-7 часов.<br>
+    Аналоги инсулина короткого действия (Апидра, Новорапид, ЛизПро, Хумалог) действуют еще быстрее - через 15-20 минут после проведенной инъекции,действуют до 4 часов.<br> Данные инсулины используются для помповой терапии.</p>
+    Инсулины средней продолжительности действия (Протофан,Хумулин НПХ) начало действия через 1.5-2 часа,продолжительность действия 12 часов.<br>
+    Аналоги инсулина длительного действия (Гларгин(Лантус), Детемир(Левемир), Деглудек(Тресиба) начинают действовать через час и действуют 24 часа.</p>
+    
+    В первое время после назначения базис-болюсной инсулинотерапии важно сразу четко запомнить какой у вас инсулин «длинный», а какой «короткий», чтобы не перепутать. Ведь у этих препаратов инсулина совершенно разные цели.</p>
+    
+    Если вы ввели "короткий" инсулин вместо "длинного", главное – предотвратить падение сахара крови. Для этого необходимо съесть медленно усваиваемые углеводы в соответствии с введенной дозой инсулина «короткого» действия и вашим углеводным коэффициентом (сколько вы обычно вводите инсулина на 1 ХЕ). Например, Вы случайно вместо 10 ЕД «длинного» укололи 10 ЕД «короткого» - в таком случае нужно поесть на 5-10 ХЕ преимущественно медленно усваиваемых углеводов (хлеб, картофель, макароны, крупы, фрукты). Затем измерить уровень глюкозы крови через 3-4 часа и в случае снижения глюкозы крови ниже 3,9 ммоль/л, дополнительно принять 1-2 ХЕ «быстрых углеводов – сахар, фруктовый сок, мед, варенье. Пропускать инъекцию «длинного» инсулина не нужно.</p>
+    
+    Если возникла обратная ситуация, и вы по ошибке ввели «длинный» инсулин вместо «короткого» перед едой, вы отметите повышение сахара крови после приема пищи и возможно тенденцию с низким значениям гликемии в течение последующих 24 часов (продолжительность такой тенденции зависит от конкретного препарата и дозы). В таком случае достаточно ввести коррекционный болюс «короткого» инсулина при повышении сахара крови. В последующие сутки необходимо измерять глюкозу крови каждые 1-2 часа, и при снижении сахара крови до 3,9 ммоль/л и ниже съедать 1-2 ХЕ медленноусваиваемых углеводов. Плановую инъекцию «длинного» инсулина в этот день стоит пропустить и возобновить только со следующего дня.</p>
+    
+    Информация, представленная в материале, не является медицинской консультацией и не может заменить визит к врачу.
+    <a href="https://www.instagram.com/satelliteonline/" target="_blank">Источник</a> 
+    
+
+</p>
+</span>
+</p>
+<div class="button-read-article button-read-article1" onclick="myFunctionReadArticleIns3()" id="myBtnReadArticleIns3">Читать<span>&#8594;</span></div>
+</div>
+
+
+
+
+
+
+
+
+   
+
+
+    <div>
+        <a href="https://www.test-poloska.ru/review/insulinpensvariety/" target="_blank">Какой инсулин подходит для какой шприц-ручки?</a>
+    </div>
+
+    <div>
+        <p><a href="../assets/documents/Памятка для пациентов, получающих инъекции инсулина.pdf" download>Памятка для пациентов, получающих инъекции инсулина. Скачать </a>
+            <p>
+    </div>
+    
+    
+          
+
+
+            </div>
+    
+        </main>
+    
+
+
+
+
+
+         <footer class="footer">
+
+            <br>
+               <div class = "footer__button-footer_donate">
+                   <button class = "button button__button-donate">Поддержать проект</button>
+               </div>
+           
+               <br>
+           
+               <div class = footer__contacts> 
+                 <div>Teл: +375 29 355-56-63, e-mail: diapeople.bel@gmail.com</div>  
+                 <div> Адрес: 220090, Минск, Логойский тракт, 22А, ПОМ.44, офис 1 </div>
+                
+               </div>
+           
+               <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+           
+           
+           </footer>
+        
+        
+           <script src="../assets/js/index.js"></script>
+           <script src="../assets/js/insulin.js"></script>
+                </body>
+            </html>
