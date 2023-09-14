@@ -1,5 +1,21 @@
 //стр инсулин кнопка читать статью
 
+function myFunctionReadArticleIns0() {
+  var dotsReadArticleIns0 = document.getElementById("dots-read-article-ins0");
+  var moreReadArticleIns0 = document.getElementById("read-more-article-ins0");
+  var btnReadArticleIns0 = document.getElementById("myBtnReadArticleIns0");
+
+  if (dotsReadArticleIns0.style.display === "none") {
+    dotsReadArticleIns0.style.display = "inline";
+    btnReadArticleIns0.innerHTML = "Читать";
+    moreReadArticleIns0.style.display = "none";
+  } else {
+    dotsReadArticleIns0.style.display = "none";
+    btnReadArticleIns0.innerHTML = "Свернуть";
+    moreReadArticleIns0.style.display = "inline";
+  }
+}
+
 function myFunctionReadArticleIns1() {
   var dotsReadArticleIns1 = document.getElementById("dots-read-article-ins1");
   var moreReadArticleIns1 = document.getElementById("read-more-article-ins1");
