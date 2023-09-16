@@ -2866,9 +2866,14 @@ button[type=submit]:not(:disabled):focus {
   width: 100%;
   margin-top: 20px;
   padding: 20px;
-  font-size: 22px;
+  font-size: 26px;
   font-family: "Philosopher", sans-serif;
   line-height: 1.3;
+}
+@media screen and (max-width: 768px) {
+  .insulin__text-container {
+    font-size: 22px;
+  }
 }
 
 .insulin-articles {
@@ -3002,6 +3007,11 @@ button[type=submit]:not(:disabled):focus {
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
+}
+
+.footer-hypoglikemia {
+  position: fixed;
+  bottom: 0;
 }
 
 .psyhology__text-container {

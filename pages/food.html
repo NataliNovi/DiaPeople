@@ -5,247 +5,592 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiaPeople</title>
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/main-styles.css">
-</head>
-<body>
-    <!-- header Start -->
-    <header class = "container-header">
 
-        <div class = "container-header__logo">
-            <a class="container-header__logo_link" href='/index.html'><img class="container-header__logo_img" src="./assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
-                title="Logo Dia People"/></a>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="..//assets/styles/main-styles.css">
+</head>
+
+<body>
+  <!-- header Start -->
+  <header class = "container-header">
+
+    <div class = "container-header__logo">
+        <a class="container-header__logo_link" href='/index.html'><img class="container-header__logo_img" src="../assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
+            title="Logo Dia People"/></a>
+        </div>
+
+        <div class = "container-header__dialydi-header">
+           <a class = "container-header__dialydi-header_dialydi-name" href='about_project.html'>ДиаЛюди.<br>Беларусь</a>
             </div>
 
-            <div class = "container-header__dialydi-header">
-               <a class = "container-header__dialydi-header_dialydi-name">ДиаЛюди Беларусь</a>
+            <div class="container-header__social-links-with-button-complex">
+
+        <div class="container-header__social-links">
+
+            <div class="container-header__social-links_channel-box">
+                <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                    Канал <br>DiaDzetka </a>
+
+            <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                <img class="icon__youtube" src="../assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+            </div>
+
+
+                 <div class="container-header__social-links_channel-box">
+                    <a class = "youtube container-header__social-links_school-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                Про<br>диабет</a>
+
+                <a class="youtube school-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+                    <img class="icon__youtube" src="../assets/images/youtube.png" alt="About diabete"/></a>
                 </div>
 
-                <div class="container-header__social-links-with-button-complex">
-
-            <div class="container-header__social-links">
-                <div class="container-header__social-links_channel-box">
-                    <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                DiaDzetka <br>Channel</a>
+        </div>
                 
-                <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                     <img class="icon__youtube" src="./assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+
+        <div class="container-header__button-complex">
+
+        <div class = "button-header_donate">
+            <button class = "button button__button-donate">Поддержать проект</button>
+        </div>
+        <form>
+        <div class = "button-header_search">
+            <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+            <button type="submit" class="button__button-search"><img class="button__button-search_lupa" src="../assets/images/white-lupa.png"/></button>
+        </div>
+      </form>
+
+      <!-- <script async src="https://cse.google.com/cse.js?cx=544d7c9d9fa1f45a4">
+      </script>
+      <div class="gcse-search"></div> -->
+    </div>
+
+    </div>
+
+      <!--burger Start-->
+
+<div class = "container-header__wrapper-burger">
+<div class="header-burger">
+    <div class="header-burger-container">
+
+        <a class="header-burger__logo_link" href='/index.html'><img class="header-burger__logo_img" src="../assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
+            title="Logo Dia People"/></a>
+
+            <div class="header-burger__channel-box">
+              <a class = "youtube header-burger__channel-box_diadzetka-link" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+          Dia<br>Dzetka </a>
+          
+          <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+               <img class="icon__youtube" src="../assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
+          </div>
+
+          <div class="header-burger__channel-box">
+              <a class = "youtube header-burger__channel-box_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+          Про <br> диабет </a>
+          
+          <div><a class="youtube diadzetka-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+               <img class="icon__youtube" src="../assets/images/youtube.png" alt="About diabete"/></a></div>
+          </div>
+
+
+ <div class="header-burger__menu-burger menu-burger">
+        <div class="menu-burger__icon">
+            <span></span>
+        </div>
+
+        <nav class="menu-burger__body">
+            <ul class="menu-burger__list">
+               <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
+               <li>
+                <a class="menu-burger__link">О диабете </a>
+
+                <span class="menu-burger__arrow"></span>
+               
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
+                    </li>
+                    <li>
+                        <a href='insulin.html' class="menu-burger__sub-link">Инсулин</a>
+                    </li>
+                    <li>
+                        <a href='hypoglikemia.html' class="menu-burger__sub-link">Гипогликемия</a>
+                    </li>
+                    <li>
+                        <a href='hyperglikemia.html' class="menu-burger__sub-link">Гипергликемия</a>
+                    </li>
+                    <li>
+                        <a href='food.html' class="menu-burger__sub-link">Питание</a>
+                    </li>
+                </ul>
+               </li>
+
+               <li>
+                <a href='for_new_people.html' class="menu-burger__link">Новичкам</a>
+               </li>
+
+               <li>
+                <a href='psychology.html' class="menu-burger__link">Страничка психолога</a>
+               </li>
+
+
+               <li>
+                <a class="menu-burger__link">Устройства и гаджеты</a>
+                <span class="menu-burger__arrow"></span>
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
+                    </li>
+                    <li>
+                        <a href= 'measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
+                    </li>
+                </ul>
+               </li>
+
+
+               <li>
+                <a class="menu-burger__link">Нормативная база </a>
+                <span class="menu-burger__arrow"></span>
+                <ul class="menu-burger__sub-list">
+                    <li>
+                        <a href='posobia.html' class="menu-burger__sub-link">Пособия</a>
+                    </li>
+                    <li>
+                        <a href= 'lgoty.html' class="menu-burger__sub-link">Льготы</a>
+                    </li>
+                </ul>
+               </li>
+
+               <li>
+                <a href='hospitals.html' class="menu-burger__link">Медицинские учреждения</a>
+               </li>
+
+               <li>
+                <a href='for-school.html' class="menu-burger__link">Медработникам школ и детских садов</a>
+               </li>
+
+               <li>
+                <a href='diabete_lifestyle.html' class="menu-burger__link">Диабет как образ жизни</a>
+               </li>
+
+
+               <li>
+                <a href='celiakia.html' class="menu-burger__link">Диабет и целиакия</a>
+               </li>
+
+               <li>
+                <a href='fakes.html' class="menu-burger__link">Мифы, фейки, заблуждения</a>
+               </li>
+
+               <li>
+                <a href='world_diabete.html' class="menu-burger__link">Диабет в мире</a>
+               </li>
+
+               <li>
+                <a href='community.html' class="menu-burger__link">Сообщества, каналы, форумы</a>
+               </li>
+            </ul>
+        </nav>
+    </div>
+
+
+      <!--burger End-->
+
+      <div class = "container-header__container-mobile">
+
+        <a class = "container-mobile__dialydi-mobile_dialydi-name" href='about_project.html'>ДиаЛюди <br> Беларусь</a>
+
+             <div class = "container-mobile__button-mobile_search">
+                <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openForm()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
             </div>
 
-          
-
-            <div class="container-header__button-complex">
-
-            <div class = "button-header_donate">
+            <div class = "container-mobile__button-mobile_donate">
                 <button class = "button button__button-donate">Поддержать проект</button>
             </div>
-            
-            <div class = "button-header_search">
-                <input type ="text" placeholder="Поиск на сайте" class = "input input__search"></input>
-                <button class="button button__button-search"><img class="button__button-search_lupa" src="./assets/images/lupa.png"/></button>
-            </div>
-        </div>
+            </div> 
 
-        </div>
-   
-          <!--burger Start-->
-
-   <div class = "container-header__wrapper-burger">
-    <div class="header-burger">
-        <div class="header-burger__container">
-            <a class="header-burger__logo_link" href='/index.html'><img class="header-burger__logo_img" src="./assets/images/DiaPeopleBelarusLogo.png" class="img_responsive" alt="connect_people-img"
-                title="Logo Dia People"/></a>
-
-     <div class="header-burger__menu-burger menu-burger">
-            <div class="menu-burger__icon">
-                <span></span>
-            </div>
-
-            <nav class="menu-burger__body">
-                <ul class="menu-burger__list">
-                   <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
-
-                   <li><a href='/about_us.html' class = "menu-burger__link">ДиаЛюди</a></li>
-
-                   <li>
-                    <a href='/about_diabete.html' class="menu-burger__link">О диабете </a>
-
-                    <span class="menu-burger__arrow"></span>
-
-                
-                   
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
-                        </li>
-                        <li>
-                            <a href='/insulin.html' class="menu-burger__sub-link">Инсулин</a>
-                        </li>
-                        <li>
-                            <a href='/hypoglikemia.html' class="menu-burger__sub-link">Гипогликемия</a>
-                        </li>
-                        <li>
-                            <a href='/hyperglikemia.html' class="menu-burger__sub-link">Гипергликемия</a>
-                        </li>
-                        <li>
-                            <a href='/food.html' class="menu-burger__sub-link">Питание</a>
-                        </li>
-                    </ul>
-                   </li>
-
-                   <li>
-                    <a href='/for_new_people.html' class="menu-burger__link">Новичкам</a>
-                   </li>
-
-                   <li>
-                    <a href='/psychology.html' class="menu-burger__link">Страничка психолога</a>
-                   </li>
-
-
-                   <li>
-                    <a href='/gadgets.html' class="menu-burger__link">Устройства и гаджеты</a>
-                    <span class="menu-burger__arrow"></span>
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
-                        </li>
-                        <li>
-                            <a href= '/measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
-                        </li>
-                    </ul>
-                   </li>
-
-
-                   <li>
-                    <a href='/documents.html' class="menu-burger__link">Нормативная база </a>
-                    <span class="menu-burger__arrow"></span>
-                    <ul class="menu-burger__sub-list">
-                        <li>
-                            <a href='/posobia.html' class="menu-burger__sub-link">Пособия</a>
-                        </li>
-                        <li>
-                            <a href= '/lgoty.html' class="menu-burger__sub-link">Льготы</a>
-                        </li>
-                    </ul>
-                   </li>
-
-                   <li>
-                    <a href='/hospitals.html' class="menu-burger__link">Медицинские учреждения</a>
-                   </li>
-
-                   <li>
-                    <a href='/diabete_lifestyle.html' class="menu-burger__link">Диабет как образ жизни</a>
-                   </li>
-
-
-                   <li>
-                    <a href='/celiakia.html' class="menu-burger__link">Диабет и целиакия</a>
-                   </li>
-
-                   <li>
-                    <a href='/fakes.html' class="menu-burger__link">Мифы, фейки, заблуждения</a>
-                   </li>
-
-                   <li>
-                    <a href='/world_diabete.html' class="menu-burger__link">Диабет в мире</a>
-                   </li>
-
-                   <li>
-                    <a href='/community.html' class="menu-burger__link">Сообщества, каналы, форумы</a>
-                   </li>
-                </ul>
-            </nav>
-        </div>
-
-
-          <!--burger End-->
-
-
-          <div class = "container-header__container-mobile">
-            <div class = "container-mobile__dialydi-mobile_dialydi-name">ДиаЛюди <br> Беларусь</div>
-            <div class="container-mobile__channel-box">
-                        <a class = "youtube container-mobile__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                    Dia<br>Dzetka </a>
-                    
-                    <div><a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
-                         <img class="icon__youtube" src="./assets/images/youtube.png" alt="Channel DiaDzetka"/></a></div>
-                    </div>
         
-                 <div class = "button-mobile_search">
-                    <button class="button button__button-search-sm"><img class="button__button-search-sm_lupa-sm" src="./assets/images/lupa.png"/></button>
-                </div>
-        
-                <div class = "button-mobile_donate">
-                    <button class = "button button__button-donate">Поддержать проект</button>
-                </div>
-                </div> 
+            <div class="form-popup" id="myForm">
+              <div class="flex-form-search">
+     
 
-    </div>
+               <form>
+                <div class = "button-header_search">
+                    <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+                    <button type="submit" class="button__button-search_mobile">Искать</button>
+                </div>
+              </form>
 
-    </div>
+              <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+            </div>
+           </div>
 </div>
 
-<!--burger End-->
-    </header>
-    <!-- header End -->
+</div>
+</div>
+</header>
+<!-- header End -->
 
-         <!-- nav Start -->
 
-         <nav class = "main-menu" aria-hidden="false" id="mainNav" role="navigation">
+       <!-- nav Start -->
+
+
+        <nav class = "main-menu" id="mainNav">
             <ul class="container-nav">
-            <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a>
-                <li class = "nav__item nav__item_primary"> <a href='/about_us.html'>ДиаЛюди</a>
-    
-           <li class = "nav__item nav__item_primary"> <a href='/about_diabete.html'>О диабете<span>&#8594;</span></a>
+            <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a></li>
+                <li class = "nav__item nav__item_primary"> <a> О диабете<span>&#8594;</span></a>
             <ul class="submenu">
-                <li class="nav__item nav__item_link"><a href = '/what_is_diabete.html'>Что такое диабет</a></li>
-                <li class="nav__item nav__item_link"><a href = '/insulin.html'>Инсулин</a></li>
-                <li class="nav__item nav__item_link"><a href = '/hypoglikemia.html'>Гипогликемия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/hyperglikemia.html'>Гипергликемия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/food.html'>Питание</a></li>
+                <li class="nav__item nav__item_link"><a href = 'what_is_diabete.html'>Что такое диабет</a></li>
+                <li class="nav__item nav__item_link"><a href = 'insulin.html'>Инсулин</a></li>
+                <li class="nav__item nav__item_link"><a href = 'hypoglikemia.html'>Гипогликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'hyperglikemia.html'>Гипергликемия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'food.html'>Питание</a></li>
             </ul>
         </li>
-           <li class = "nav__item nav__item_primary"> <a href='/for_new_people.html'>Новичкам</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='for_new_people.html'>Новичкам</a></li>
     
-           <li class = "nav__item nav__item_primary"> <a href='/psychology.html'>Страничка психолога</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='psychology.html'>Страничка психолога</a></li>
     
-           <li class = "nav__item nav__item_primary"> <a href='/gadgets.html'>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
+           <li class = "nav__item nav__item_primary"> <a>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
         <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = '/insulin_injection.html'>Средства введения инсулина</a></li>
-            <li class="nav__item nav__item_link"><a href = '/measure_devices.html'>Средства измерения</a></li>
+            <li class="nav__item nav__item_link"><a href = 'insulin_injection.html'>Средства введения инсулина</a></li>
+            <li class="nav__item nav__item_link"><a href = 'measure_devices.html'>Средства измерения</a></li>
         </ul>
         </li>
-           <li class = "nav__item nav__item_primary"> <a href='/documents.html'>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
+           <li class = "nav__item nav__item_primary"> <a>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
             <ul class="submenu">
-                <li class="nav__item nav__item_link"><a href = '/posobia.html'>Пособия</a></li>
-                <li class="nav__item nav__item_link"><a href = '/lgoty.html'>Льготы</a></li>
+                <li class="nav__item nav__item_link"><a href = 'posobia.html'>Пособия</a></li>
+                <li class="nav__item nav__item_link"><a href = 'lgoty.html'>Льготы</a></li>
             </ul></li>
-           <li class = "nav__item nav__item_primary"> <a href='/hospitals.html'>Медицинские учреждения</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/diabete_lifestyle.html'>Диабет как образ жизни</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/fakes.html'>Мифы, фейки, заблуждения</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/world_diabete.html'>Диабет в мире</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='/community.html'>Сообщества, каналы, форумы </a></li>
+           <li class = "nav__item nav__item_primary"> <a href='hospitals.html'>Медицинские учреждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='for-school.html'>Медработникам школ и детских садов</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='diabete_lifestyle.html'>Диабет как образ жизни</a></li>
+           <li class = "nav__item nav__item_primary"><a href='celiakia.html'>Диабет и целиакия</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='fakes.html'>Мифы, фейки, заблуждения</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='world_diabete.html'>Диабет в мире</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='community.html'>Сообщества, каналы, форумы </a></li>
         </ul>
         </nav>
     
          <!-- nav End -->
 
-     <main>
-        <div class="food__text-container">
-            Текст с картинками:
 
-Принцип здоровой тарелки
+         <main>
+            <div class = "container-main">
+    
+                <div class="insulin__text-container">
+    
+                    <h3 class="page-title">Питание</h3>
 
-Хлебные Единицы - что это
 
-Таблица хлебных единиц
 
-Таблица ГИ продуктов
 
-        </div>
-     </main>
+                    Питание всегда влияет на качество нашей жизни - либо в краткосрочной, либо в долгосрочной перспективе. Многие знают про 400 г овощей и фруктов, рекомендованных Всемирной организацией здравоохранения, с целью снижения сердечно-сосудистых и онкологических заболеваний. Но для сахарного диабета, рациональное питание - один из ключевых критериев успешного подбора дозы и снижения риска осложнений.
+                    Количество и качество углеводов, съеденных пациентом с диабетом 1-го типа или 2-го типа на инсулинотерапии, влияет на дозу инсулина.
+                </p>
+                    
+                    При сахарном диабете 1го типа каждый прием углеводов должен сопровождаться введением дозы инсулина. </p>
+                    
+                    В среднем 10-12 г углеводов повышают глюкозу на 2-2,8 ммоль/л (индивидуальный показатель, который обсуждается на приеме с лечащим врачом) </p>
+                    
+                    Чтобы было проще ориентироваться на данную величину существует термин “Хлебная единица”. </p>
+                    1 ХЕ = 10-12 г углеводов. </p>
+                     
+                    
+                    Понятие “Хлебная единица” помогает определиться с количеством съеденных углеводов. </p>
 
-     <script src="./assets/js/index.js"></script>
 
-</body>
-</html>
+                  <h3>Полезные ссылки и статьи:</h3>  </p>
+                    
+                    
+                    <a href="https://mgbsmp.by/informatsiya/shkola-sakharnogo-diabeta/558-tema-3-pitanie-pri-sakharnom-diabete-obshchie-printsipy" target="_blank"> <b> 1. Питание при сахарном диабете. Общие принципы</b></a>
+                     (источник: Учреждение здравоохранения "Могилевская городская больница скорой медицинской помощи")</p>
+                    
+                    <b>2. Тарелка Здорового Питания</b>, созданная экспертами по питанию Гарвардской школы общественного здравоохранения,  это руководство для здорового, сбалансированного питания – на тарелке или в вашей коробке для ланча. 
+            </p> Прикрепите копию на холодильник для ежедневного напоминания о здоровом, сбалансированном питании: 
+        </p>
+                    <a href = "https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/russian/" target="_blank">Читать подробнее о Тарелке Здорового Питания</a>
+
+                    <div>
+                        <p><a href="../assets/images/food/health-food-plate.webp" download>Скачать схему Тарелки Здорового Питания</a>
+                            <p>
+                    </div>
+                    
+                    (источник: Гарвардская школа общественного здравоохранения)</p>
+                    
+                    <b> 3. Калькулятор хлебных единиц: Собери свою тарелку</b></p>
+                    
+                        <b>4. Принципы питания при СД 1 типа, понятие об углеводной (хлебной) единице, правила их расчета</b> (источник: Учреждение здравоохранения "Витебский областной эндокринологический диспансер")</p>
+                    
+                            <b> 5. Таблица хлебных единиц </b>(источник: 1-я центральная районная клиническая поликлиника Центрального района г. Минска)</p>
+                    
+                                <b> 6. Гликемический индекс продуктов: Таблица единиц</b> (источник:34 Центральная районная клиническая поликлиника Советского района)</p>
+                    
+                                    <b> 7. Гипергликемическая кома - это</b> (источник: Городская поликлиника №7 г.Гродно)</p>
+                    
+                    
+                                    <b>   8. Еще полезные материалы:</b> </p>
+
+                    Нерекомендуемые продукты<br>
+                    Ограничиваемые продукты<br>
+                    Рекомендуемые продукты<br>
+                    Таблица Рустема 10 ХЕ<br>
+                    Углеводы, ХЕ и ГИ продуктов<br>
+                    (источник: УЗ "Могилевская городская больница скорой медицинской помощи")</p>
+
+                     <b> 9. Диета при сахарном диабете</b> (Школа диабета)</p>
+                        <b> 10. Рецепты и кухня </b>(*переход на раздел на нашем сайте)</p>
+                    
+                    
+                    
+                    
+
+
+
+
+
+        
+    
+            <div class="insulin-articles">
+
+
+
+                <div class="insulin-articles__ins-article">
+                    <h3>Гипергликемия и диабетический кетоацидоз</h3>
+                
+                    <span id="dots-read-article-ins0"></span>
+    
+                <span id="read-more-article-ins0">
+   
+    <p>
+       
+        Доктор  Андреас Фосселер (Dr. Andreas Vosseler), Германия
+    </p>
+
+        При гипергликемии уровень сахара в крови поднимается выше 250 мг/дл (13,9 ммоль/л). При очень высоких значениях речь идет об острой чрезвычайной ситуации. Это может привести к наступлению опасной для жизни диабетической комы.
+    </p>
+        Симптомы гипергликемии могут включать усталость, сильную жажду, учащенное мочеиспускание и тошноту. Причиной высокого уровня сахара в крови является, прежде всего, недостаток инсулина.
+    </p>
+        Гипергликемия встречается у людей с диабетом. Опасной ситуацией является диабетический кетоацидоз, который проявляется сладковатым запахом изо рта, углубленным дыханием и тошнотой и может возникать преимущественно при диабете 1-го типа. При диабете 2-го типа кетоацидозы встречаются реже. При этом может возникнуть гипергликемический гиперосмолярный синдром (ГГС) или кетоацидоз. Это также острая, угрожающая жизни чрезвычайная ситуация.
+    </p>
+        Как правило, люди с диабетом могут сами сбалансировать высокий уровень сахара в крови. Специалисты по диабету часто предоставляют людям, использующим инъекции инсулина, схему коррекции. Она показывает, при каких значениях уровня сахара в крови следует вводить корректирующий инсулин.
+    </p>
+        Внимание! Не вводите корректирующий инсулин слишком рано после еды. Это связано с риском гипогликемии, так как инсулин, введенный до еды, продолжает действовать в организме. Узнайте у специалистов по диабету, в какой момент после еды при повышенном уровне сахара в крови можно начинать применять корректирующий инсулин.
+    </p>
+        <b>1. Симптомы: как распознать гипергликемию?</b>
+</p>
+
+        <div class="hyperglikemia__image-container"> 
+            <img class="hyperglikemia__image-container_hyperglikemia-symptoms" src="../assets/images/hyperglikemia/hyperglikemia-symptoms.pdf"/>
+        </div> 
+        <br>
+        
+        Уровень сахара в крови, при котором появляются первые признаки гипергликемии, у разных людей различается. 
+        </p>
+    Частые симптомы высокого уровня сахара в крови:</p>
+        Сильная жажда  <br>
+        Усиление позывов к мочеиспусканию  <br>
+        Сухость во рту  <br>
+        Усталость  <br>
+        Нарушения зрения  <br>
+        Тошнота и рвота  <br>
+        Боли в животе  <br>
+        Отсутствие аппетита  <br>
+        Сладковатый запах выдыхаемого воздуха  <br>
+        Углубленное дыхание (дыхание Куссмауля)  <br>
+        Судороги  <br>
+        Измененное сознание  </p>
+        Углубленное дыхание и сладковатый запах изо рта могут быть признаками диабетического кетоацидоза. Это опасная ситуация, которая требует немедленных действий.
+    </p>
+        
+        Полезно знать:  </p>
+        Вы не уверены, вызвано ли это состояние гипергликемией или гипогликемией? .
+        <a href="https://www.youtube.com/watch?v=ehrNWD6-7XQ" target="_blank">Посмотрите это видео об острых чрезвычайных ситуациях при диабете</a>
+        (Видео сопровождается субтитрами на русском языке.)
+    </p>
+        
+       <b>2. Каковы причины гипергликемии?</b> </p>
+        Повышенный уровень сахара в крови может быть вызван разными ситуациями. Причины отчасти связаны с техникой проведения терапии. Например, если инфузионный набор инсулиновой помпы не менялся в течение длительного времени и инсулин перестал действовать должным образом. Свою роль может играть и контроль протекания болезни: например, если содержание углеводов в еде было недооценено и было введено слишком мало инсулина или если лекарства или инсулин не были приняты. Кроме того, уровень сахара в крови может повышаться при стрессе или болезни, поскольку потребность в инсулине возрастает. Изменение мест инъекции также может способствовать повышению уровня сахара в крови.</p>
+         
+        Ниже перечислены возможные причины высокого уровня сахара в крови.</p>
+        Диабет еще не обнаружен (первая манифестация).<br>
+        Больной забыл ввести инсулин или недооценил содержание углеводов в еде.<br>
+        Повышенная потребность в инсулине в результате инфекции или стресса.<br>
+        Инсулин перестал действовать в полной мере (например, из-за сильной жары).<br>
+        Дефект инсулиновой шприц-ручки, иглы, инсулиновой помпы или инфузионного набора.<br>
+        Изменение мест инъекции (липогипертрофия).<br>
+        Лекарства, снижающие чувствительность к инсулину (например, глюкокортикоиды) или вызывающие резкое повышение уровня глюкозы в крови.</p>
+        
+    <b>  3. Как можно предотвратить гипергликемию?</b> </p>
+        Тяжелую гипергликемию, а также гипогликемию можно предотвратить с помощью определенных мер. Например, имеет смысл всегда иметь при себе «аварийную аптечку диабетика». В такой аптечке должны находиться все принадлежности, необходимые для лечения диабета: глюкоза, инсулиновая шприц-ручка, дополнительная ампула инсулина и батарейки для инсулиновой помпы. Также имеет смысл информировать окружающих о заболевании. Тогда окружающие отнесутся с пониманием, если вам понадобится перерыв из-за высокого или низкого уровня сахара в крови. Если школьный класс или трудовой коллектив знает о возможных нарушениях обмена веществ, можно избежать более серьезных чрезвычайных ситуаций.</p>
+        
+        
+    <b> 4. Первая помощь при гипергликемии</b> </p>
+
+    <div class="hyperglikemia__image-container"> 
+        <img class="hyperglikemia__image-container_hyperglikemia-symptoms" src="../assets/images/hyperglikemia/hyperglikemia-help.pdf"/>
+    </div> 
+    <br>
+
+        
+       
+    <b>  5. Что такое диабетический кетоацидоз?</b> </p>
+        
+        При диабетическом кетоацидозе уровень сахара в крови может значительно превышать 250 мг/дл (13,9 ммоль/л). Он развивается в результате острого дефицита инсулина и требует немедленного лечения. Кетоацидоз в основном поражает людей с диабетом 1-го типа, поскольку их поджелудочная железа не вырабатывает инсулин или вырабатывает его очень мало. Но диабетический кетоацидоз может возникнуть и у людей с диабетом 2-го типа.</p>
+        
+        Что происходит при кетоацидозе?</p>
+        Инсулин — это необходимый для жизни гормон. Он обеспечивает поступление сахара (глюкозы) из крови в клетки организма для производства энергии.</p>
+        
+        Если в крови слишком мало инсулина, сахар не попадает в клетки и уровень сахара в крови повышается. Для того чтобы удовлетворить потребность в энергии по-другому, организм усиленно расщепляет жировые запасы. В результате этого процесса образуются кислые кетоновые тела. Они накапливаются в крови и могут привести к закислению организма — состоянию, называемому ацидозом.</p>
+        
+        Часть кетоновых тел выводится с мочой и выдыхается. При этом дыхание приобретает сладковатый запах. Значительное повышение сахара в крови приводит к усилению позывов к мочеиспусканию. Это приводит к большой потере жидкости и электролитов. Возникает риск обезвоживания и нарушения кровообращения. Поэтому пациенту с диабетическим кетоацидозом при лечении необходимо, прежде всего, большое количество жидкости. Без принятия необходимых мер и соответствующей терапии кетоацидоз приводит к диабетической коме и является опасным для жизни.</p>
+        
+        Какие симптомы встречаются при кетоацидозе?</p>
+        Диабетический кетоацидоз обычно сопровождается очень высоким уровнем сахара в крови: свыше 250 мг/дл (13,9 ммоль/л). Однако высокий уровень сахара в крови не означает автоматически наличие кетоацидоза.</p>
+        
+        Помимо типичных признаков гипергликемии (сильная жажда, усиление позывов к мочеиспусканию, сухость во рту), существуют симптомы, указывающие на диабетический кетоацидоз.</p>
+        
+        Боли в животе, тошнота и рвота<br>
+        Сладковатый запах выдыхаемого воздуха<br>
+        Углубленное дыхание (дыхание Куссмауля)<br>
+        Измененное сознание<br>
+        
+        Как проверить наличие кетоацидоза?</p>
+        Если люди с диабетом 1-го типа наблюдают у себя вышеперечисленные симптомы, им следует немедленно измерить уровень сахара в крови. Если значение превышает 250 мг/дл (13,9 ммоль/л), необходимо провести тест на кетоновые тела. Кетоны могут быть измерены в моче или крови. Рецепт на тест-полоски для определения кетонов в моче или крови можно получить у врача-диабетолога. Некоторые глюкометры могут также измерять содержание кетонов в крови с помощью специальных тест-полосок.</p>
+        
+        Полезно знать:</p>
+        При кетоацидозе не следует слишком быстро снижать уровень сахара в крови, чтобы предотвратить негативные последствия (например, отек головного мозга).</p>
+        
+        
+        Что делать при кетоацидозе?</p>
+        Если результат теста на наличие кетовых тел положительный, необходимо срочно принять соответствующие меры. Для того чтобы правильно действовать в чрезвычайной ситуации, люди с диабетом 1-го типа должны заранее обсудить это со своим врачом.</p>
+        
+        На начальном этапе диабетического кетоацидоза подготовленные пациенты обычно могут помочь себе сами. Важно много пить и вводить быстродействующий инсулин. Кроме того, следует проверять уровень сахара в крови через короткие промежутки времени (обычно каждые 2 часа) и избегать физических нагрузок. Если ни показатели, ни симптомы не улучшаются в течение нескольких часов или если уже наблюдаются тяжелые симптомы (такие как рвота, боль в животе, сонливость), следует немедленно вызвать врача. В случае очень плохого самочувствия или неуверенности в правильности принимаемых мер всегда обращайтесь к врачу.</p>
+        
+        Каковы причины диабетического кетоацидоза?</p>
+        Диабетический кетоацидоз может возникнуть по разным причинам. В этой ситуации инсулина уже нет или он почти отсутствует.</p>
+        
+        Диабет 1-го типа: кетоацидозы возникают в основном при диабете 1-го типа, когда гипергликемия долгое время не распознается и не лечится и развивается тяжелый дефицит инсулина.</p>
+        
+        Поскольку симптомы диабета 1-го типа часто остаются неизвестными, его первое проявление часто приводит к опасному кетоацидозу. Но диабетический кетоацидоз может возникнуть и при установленном диабете 1-го типа по следующим причинам:</p>
+        
+        Тяжелые инфекции<br>
+        Острые сердечно-сосудистые нарушения<br>
+        Введено слишком мало инсулина, или пациент забыл ввести инсулин<br>
+        Тяжелый дефицит инсулина из-за технических проблем</p>
+
+        Диабет 2-го типа:</p>
+        при диабете 2-го типа диабетические кетоацидозы встречаются редко. </p>
+        Причины могут быть следующими.</p>
+
+        Причиной дефицита инсулина также может быть, например, неисправность катетера инсулиновой помпы или недействующий инсулин.
+        <br>Другие причины смотрите выше, в разделе Каковы причины гипергликемии?</p>
+
+        
+        
+    <b>  6. Гипергликемический гиперосмолярный синдром (ГГС) при диабете 2-го типа</b> </p>
+        У людей с диабетом 2-го типа уровень сахара в крови также может резко подскочить, когда инсулина почти не остается или он не действует. Однако, поскольку у них поджелудочная железа обычно всегда вырабатывает хотя бы небольшое количество инсулина, массивного образования кетоновых тел, как при кетоацидозе, не происходит. Сокращение ГГС означает «гипергликемический гиперосмолярный синдром».</p>
+
+        
+        
+        Это нарушение обмена веществ очень опасно. У больных иногда наблюдается экстремальный уровень сахара в крови — более 600 мг/дл (33,3 ммоль/л) или даже 1000 мг/дл (55,5 ммоль/л). Кроме этого, наблюдается сильное обезвоживание.</p>
+
+        Гипергликемический гиперосмолярный синдром может быть спровоцирован следующими ситуациями.</p>
+
+        Инфекции <br>
+        Острые сердечно-сосудистые нарушения <br>
+        Рвота <br>
+        Сильная диарея <br>
+        Заболевания почек <br>
+        Большое количество напитков с высоким содержанием сахара (например, фруктовые соки или лимонад) <br>
+        Медикаменты, такие как диуретики, некоторые психотропные препараты и глюкокортикоиды </p>
+        Типичные признаки</p>
+        Сильная жажда<br>
+        Частое мочеиспускание<br>
+        Нарушения зрения<br>
+        Судороги икроножных мышц<br>
+        Усталость<br>
+        Учащенное сердцебиение<br>
+        Низкое артериальное давление<br>
+        Головокружение<br>
+        Приступы слабости<br>
+        Судороги</p>
+        Без принятия контрмер существует угроза развития гиперосмолярной комы. Пожилые люди с диабетом 2-го типа особенно подвержены риску. При наличии подозрений такие люди должны немедленно вызвать скорую помощь!</p>
+        
+        
+        Источники:<br>
+        https://www.diabinfo.de/<br>
+        American Diabetes Association: Diabetes & DKA (Ketoacidosis). (Letzter Abruf: 05.04.2023)<br>
+        Bundesärztekammer et al.: Nationale Versorgungsleitlinie Therapie des Typ-2-Diabetes. Langfassung. 1. Auflage. Version 4. 2014 (Gültigkeit abgelaufen, in Überarbeitung)<br>
+        Bundesärztekammer et al.: Nationale Versorgungsleitlinie Typ-2-Diabetes. Teilpublikation der Langfassung. 2. Auflage. Version 1. 2021<br>
+        Deutsche Diabetes Gesellschaft: S3-Leitlinie Therapie des Typ-1-Diabetes. 2. Auflage. 2018<br>
+        Häring, H.-U. et al. (2021): Diabetologie in Klinik und Praxis. 7. Auflage. Georg Thieme Verlag KG, ISBN: 9783132428911<br>
+        Hien, P. et al. (2013): Diabetes Handbuch. 7. Auflage. Springer-Verlag, Heidelberg, ISBN: 978-3-642-34944-7<br>
+        Kitabchi, A. E. et al.: Hyperglycemic Crises in Adult Patients With Diabetes. In: Diabetes Care, 2009, 32: 1335-1343<br>
+        Beipackzettel: Ketostix® Teststreifen. Bayer HealthCare<br>
+        Nyenwe, E. A. et al.: The evolution of diabetic ketoacidosis: An update of its etiology, pathogenesis and management. In: Metabolism, 2016, 65: 507-521
+        Состояние на: 05.04.2023
+        </p>
+     
+<br>
+      
+    </span>
+    </p>
+    <div class="button-read-article button-read-article" onclick="myFunctionReadArticleIns0()" id="myBtnReadArticleIns0">Читать<span>&#8594;</span></div>
+    </div>
+
+    <p>
+
+
+
+    </div>
+    
+          
+            </div>
+    
+        </main>
+    
+
+
+         <footer class="footer">
+
+            <br>
+               <div class = "footer__button-footer_donate">
+                   <button class = "button button__button-donate">Поддержать проект</button>
+               </div>
+           
+               <br>
+           
+               <div class = footer__contacts> 
+                 <div>Teл: +375 29 355-56-63, e-mail: diapeople.bel@gmail.com</div>  
+                 <div> Адрес: 220090, Минск, Логойский тракт, 22А, ПОМ.44, офис 1 </div>
+                
+               </div>
+           
+               <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+           
+           
+           </footer>
+        
+        
+           <script src="../assets/js/index.js"></script>
+           <script src="../assets/js/insulin.js"></script>
+                </body>
+            </html>
