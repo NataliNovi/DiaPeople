@@ -3128,4 +3128,28 @@ button[type=submit]:not(:disabled):focus {
 
 .comments {
   font-size: 22px;
+}
+
+.pages__images {
+  display: flex;
+  justify-content: center;
+}
+.pages__image-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .pages__image-container {
+    width: 96%;
+  }
+}
+.pages__image-container_fakes {
+  width: 80%;
+  border: solid 1px #032a3f;
+}
+@media screen and (max-width: 768px) {
+  .pages__image-container_fakes {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main-styles.css.map */
