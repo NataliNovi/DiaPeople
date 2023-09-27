@@ -1574,6 +1574,32 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
+// scroll-to-top
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#scrollButton {
+    font-size: $font-size-large;
+    background-color: $color-blue-burger;
+    opacity: 50%;
+    color: $color-dark-text;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#scrollButton.active {
+    display: block;
+}
 
 
 .articles {

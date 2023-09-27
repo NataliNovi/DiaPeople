@@ -86,6 +86,28 @@ if (iconMenu) {
 //     .catch((error) => console.log(error));
 // }
 
+//scroll to top
+
+//если прокуртка более 300пкс, показываем кнопку
+
+window.addEventListener("scroll", function () {
+  let scrollButton = this.document.getElementById("scrollButton");
+  if (this.window.scrollY > 300) {
+    scrollButton.classList.add("active");
+  } else {
+    scrollButton.classList.remove("active");
+  }
+});
+
+//добавляем обработчик события клика по енопе вверх
+
+document.getElementById("scrollButton").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 //кнопка читать больше
 
 function myFunctionAbout() {
