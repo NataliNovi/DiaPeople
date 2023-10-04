@@ -1110,17 +1110,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     text-decoration: none;
     z-index: 300;
 
-    // @media screen and (max-width: $grid-breakpoint-sm) {
-    //     display: none;
-    // }
-
     @media screen and (max-width:769px) {
         display: none;
     }
-
-    // @media screen and (max-width: $grid-breakpoint-sm) {
-    //     display: none;
-    // }
 
 }
 
@@ -1133,8 +1125,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding-left: 20px;
         padding-right: 20px;
         background-color: $color-blue-burger;
-
-
     }
 
     ul:first-child {
@@ -1197,7 +1187,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 280px;
         padding-right: 30px;
         background-color: $color-sublink-burger;
-        //color: $color-accent;
     }
 }
 
@@ -1208,8 +1197,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     z-index: 1;
     width: calc(100% - 280px);
     display: flex;
-    // background-color: $color-beige;
-
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
@@ -1224,7 +1211,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-left: 280px;
         width: calc(100% - 280px);
     }
-
 
     @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -1245,27 +1231,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__main {
         overflow: hidden;
         font-family: $font-family-sans-serif;
-        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
-
 
         &_photo {
             width: 100%;
-            //box-shadow: -8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
             box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
             padding: 20px;
             margin: 20px;
-            //border: -8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
-            // overflow: hidden;
-            // background-image: url(../images/bycicle.jpg);
-            // background-color: $color-blue;
-            // background-size: cover;
-            // background-position: center;
-            // -webkit-background-size: cover;
-            // -moz-background-size: cover;
-            // -o-background-size: cover;
-            // width: 50rem;
-            // height: 700px;
-            // margin-top: 20px;
 
             @media screen and (min-width: $grid-breakpoint-lg) {
                 padding: 10px;
@@ -1290,7 +1261,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
 
         &_info-desktop {
-            //display: none;
             width: 40%;
             display: flex;
             flex-direction: column;
@@ -1319,11 +1289,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
 .photo {
     width: 100%;
 }
-
 
 .info {
 
@@ -1401,10 +1369,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-// .photo-confucius {
-//     width: 80%;
-
-// }
 
 //swiper 
 .swiper {
@@ -1429,12 +1393,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-// .swiper-slide-img {
-//     height: 100%;
-//     width: 100%;
-//     object-fit: cover;
-//     border-radius: 6px;
-// }
 
 .swiper-slide {
     text-align: center;
@@ -1446,7 +1404,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     background-color: $color-beige;
     background-repeat: no-repeat;
     background-size: cover;
-    //background-position: center center;
     background-position: 50% 50%;
     position: relative;
 
@@ -1478,7 +1435,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .slider-button {
-    //margin-top: 30px;
     background-color: $color-main;
     border: solid 1px $color-main;
     border-radius: 6px;
@@ -1641,19 +1597,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-// .white-background-mobile {
-//     background-color: $color-main;
-//     margin-bottom: 20px;
-//     border-radius: 6px;
-
-//     @media screen and (min-width: $grid-breakpoint-md) {
-//         display: none;
-
-//     }
-// }
-
-
-
 .article {
 
     &__community-describe {
@@ -1669,23 +1612,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         text-align: center;
 
-
         @media screen and (max-width: $grid-breakpoint-md) {
 
             font-size: $font-size-medium;
 
         }
-
-        // &_read-buttons {
-        //background-color: $color-main;
-        //padding: 20px;
-
-        //}
-
-        // &_read-buttons:first-child {
-        //     margin-bottom: 20px;
-
-        // }
     }
 
     &__subscribe {
@@ -1704,7 +1635,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding: 32px;
         text-decoration: none;
         font-size: $font-size-medium;
-        //text-align: center;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         &_saharok {
@@ -1867,21 +1797,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__diaschool {
-        //height: 360px;
         color: $color-dark-text;
-        // background: url(../images/school1.jpg);
-        // background-size: 100%;
-        // background-repeat: no-repeat;
-        // background-origin: border-box;
         background-color: $color-sublink-burger-old;
         font-family: "Philosofer";
-        //display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        //margin: auto;
         text-align: center;
-        // align-content: space-around;
-        //margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
         box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
@@ -1889,20 +1808,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (min-width: $grid-breakpoint-md) {
             display: none;
         }
-
-        // @media screen and (min-width: $grid-breakpoint-lg) {
-        //     margin-top: 10px;
-        //     margin-bottom: 10px;
-        //     font-size: $font-size-large;
-
-        // }
-
-        // @media screen and (max-width: $grid-breakpoint-lg) {
-        //     margin-top: 10px;
-        //     margin-bottom: 10px;
-        //     font-size: $font-size-large;
-
-        // }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             margin-top: 10px;
@@ -2057,7 +1962,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_dianews-desktop,
         &_diaproducts-desktop {
             width: 100%;
-            //height: auto;
             height: 100%;
             background-color: $color-main;
             color: $color-dark-blue;
@@ -2124,7 +2028,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .responsive-img {
     width: 100%;
     height: auto;
-    //max-height: 240px;
     position: absolute;
     bottom: 20px;
 }
@@ -2214,7 +2117,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (max-width: $grid-breakpoint-md) {
 
                 display: block;
-                padding: 20px;
+                padding: 10px;
             }
         }
 
@@ -2223,7 +2126,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (min-width: $grid-breakpoint-md) {
 
                 display: block;
-                padding: 20px;
+                padding: 10px;
 
             }
 
@@ -2248,7 +2151,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (max-width: $grid-breakpoint-md) {
 
                 display: block;
-                padding: 20px;
+                padding: 10px;
             }
         }
 
@@ -2257,7 +2160,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (min-width: $grid-breakpoint-md) {
 
                 display: block;
-                padding: 20px;
+                padding: 10px;
 
             }
 
@@ -2269,12 +2172,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
-
-// .white-background {
-//     background-color: $color-main;
-//     margin-bottom: 20px;
-// }
 
 .button-open-text {
     height: 60px;
@@ -2300,7 +2197,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     width: 90vw;
     color: $color-accent;
     background-color: $color-main;
-    //display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -2319,16 +2215,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (max-width: $grid-breakpoint-lg) {
         width: 90vw;
-        //margin-top: 10px;
-        //margin-bottom: 10px;
-
     }
 
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 90vw;
-        //margin-top: 10px;
-        // margin-bottom: 10px;
     }
 }
 
@@ -2559,10 +2450,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__form {
         background-color: $color-connect;
-        //background-color: $color-blue;
-        //height: 450px;
-        // margin-top: 20px;
-        // margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
@@ -2604,7 +2491,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .footer {
     margin-left: 280px;
     width: calc(100% - 280px);
-    height: 280px;
+    //height: 280px;
     background-color: $color-accent;
     color: $color-main;
     // display: grid;
@@ -2635,7 +2522,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
-        height: 280px;
+        // height: 280px;
         margin-left: 0px;
         font-size: $font-size-medium-plus;
 

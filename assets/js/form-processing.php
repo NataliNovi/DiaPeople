@@ -23,9 +23,9 @@ define('LOG_FILE', 'logs/' . date('Y-m-d') . '.log');
 // писать предупреждения и ошибки в лог
 const HAS_WRITE_LOG = true;
 // проверять ли капчу
-const HAS_CHECK_CAPTCHA = true;
+const HAS_CHECK_CAPTCHA = false;
 // обязательно ли наличие файлов, прикреплённых к форме
-const HAS_ATTACH_REQUIRED = false;
+const HAS_ATTACH_REQUIRED = true;
 // разрешённые mime типы файлов
 const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/gif', 'image/png'];
 // максимально-допустимый размер файла
@@ -38,16 +38,16 @@ const HAS_SEND_EMAIL = true;
 // добавить ли прикреплённые файлы в тело письма в виде ссылок
 const HAS_ATTACH_IN_BODY = true;
 const EMAIL_SETTINGS = [
-  'addresses' => ['aquarel.novik@gmail.com'], // кому необходимо отправить письмо
-  'from' => ['no-reply@domain.com', 'Имя сайта'], // от какого email и имени необходимо отправить письмо
+  'addresses' => ['diapeople.bel@gmail.com'], // кому необходимо отправить письмо
+  'from' => ['no-reply@diapeople.by', 'Имя сайта'], // от какого email и имени необходимо отправить письмо
   'subject' => 'Сообщение с формы обратной связи', // тема письма
-  'host' => 'ssl://smtp.yandex.ru', // SMTP-хост
-  'username' => 'name@yandex.ru', // // SMTP-пользователь
-  'password' => '*********', // SMTP-пароль
+  'host' => 'ssl://smtp.gmail.com', // SMTP-хост
+  'username' => 'diapeople.bel@gmail.com', // // SMTP-пользователь
+  'password' => '193673611', // SMTP-пароль
   'port' => '465' // SMTP-порт
 ];
 const HAS_SEND_NOTIFICATION = false;
-const BASE_URL = 'https://domain.com';
+const BASE_URL = 'https://diapeople.by';
 const SUBJECT_FOR_CLIENT = 'Ваше сообщение доставлено';
 //
 const HAS_WRITE_TXT = true;

@@ -48,11 +48,11 @@ class ItcSubmitForm {
       ? `<img class="form-attach__image" src="${target.result}" alt="${file.name}"></img>`
       : "";
     return `<div class="form-attach__item" data-index="${id}" data-id="${id}">
-        ${itemImg}
-        <div class="form-attach__name">${file.name}</div>
-        <div class="form-attach__size">${(file.size / 1024).toFixed(1)}Кб</div>
-        <div class="form-attach__link" data-id="${id}">×</div>
-      </div>`;
+      ${itemImg}
+      <div class="form-attach__name">${file.name}</div>
+      <div class="form-attach__size">${(file.size / 1024).toFixed(1)}Кб</div>
+      <div class="form-attach__link" data-id="${id}">×</div>
+    </div>`;
   }
 
   // получение новой капчи
