@@ -78,6 +78,7 @@ body._lock {
         display: flex;
         z-index: 102;
         color: $color-dark-blue;
+        flex-direction: column;
 
         &_diadzetka-link {
             cursor: pointer;
@@ -210,7 +211,7 @@ body._touch .menu-burger__list>li._active .menu-burger__sub-list {
 
 body._touch .menu-burger__list li._active .menu-burger__sub-link {
     margin: 20px 0 20px 0;
-    font-size: 24px;
+    font-size: $font-size-medium-plus;
     padding-bottom: 20px;
 
 
@@ -342,7 +343,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     .menu-burger .menu-burger__link {
-        font-size: 26px;
+        font-size: $font-size-medium-plus;
         color: $color-dark-text;
     }
 
@@ -356,9 +357,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     .menu-burger__sub-link {
-        font-size: $font-size-large;
+        font-size: $font-size-medium-plus;
         color: $color-dark-text;
-        //padding: 20px;
         text-decoration: none;
         margin-top: 20px;
         padding-bottom: 200px;
@@ -367,30 +367,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
 }
-
-// .show {
-//     display: block;
-// }
-
-// .open-submenu:hover,
-// .open-submenu:focus {
-//     background-color: #28a745;
-
-// }
-
-// .sublist-dropdown {
-//     display: none;
-//     position: absolute;
-//     background-color: #0d6efd;
-//     min-width: 100vw;
-//     overflow: auto;
-//     z-index: 3;
-// }
-
-// .sublist-dropdown a {
-//     display: block;
-//     color: #03152e;
-// }
 
 .container-header {
 

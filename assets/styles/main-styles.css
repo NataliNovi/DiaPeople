@@ -106,6 +106,7 @@ body._lock {
   display: flex;
   z-index: 102;
   color: #2988BC;
+  flex-direction: column;
 }
 .header-burger__channel-box_diadzetka-link {
   cursor: pointer;
@@ -217,7 +218,7 @@ body._touch .menu-burger__list > li._active .menu-burger__sub-list {
 
 body._touch .menu-burger__list li._active .menu-burger__sub-link {
   margin: 20px 0 20px 0;
-  font-size: 24px;
+  font-size: 22px;
   padding-bottom: 20px;
 }
 
@@ -329,7 +330,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 768px) {
   .menu-burger .menu-burger__link {
-    font-size: 26px;
+    font-size: 22px;
     color: #032a3f;
   }
 }
@@ -344,7 +345,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 768px) {
   .menu-burger__sub-link {
-    font-size: 26px;
+    font-size: 22px;
     color: #032a3f;
     text-decoration: none;
     margin-top: 20px;
