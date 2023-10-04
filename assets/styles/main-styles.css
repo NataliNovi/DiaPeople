@@ -1331,7 +1331,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 #scrollButton.active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .articles {
