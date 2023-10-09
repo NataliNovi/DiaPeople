@@ -20,9 +20,10 @@ body {
 
 }
 
-// .wrapper {
-//     padding: 220px;
-// }
+
+.wrapper {
+    max-width: 1420px;
+}
 
 //burger
 
@@ -79,6 +80,7 @@ body._lock {
         z-index: 102;
         color: $color-dark-blue;
         flex-direction: column;
+        font-family: $font-family-different-serif;
 
         &_diadzetka-link {
             cursor: pointer;
@@ -123,7 +125,6 @@ body._lock {
     border-bottom: solid 3px $color-dark-blue;
 
 }
-
 
 .menu-burger__sub-list {
     position: absolute;
@@ -371,7 +372,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .container-header {
 
     width: 100vw;
-    max-width: 1920px;
+    max-width: 1420px;
     height: 140px;
     display: flex;
     flex-direction: row;
@@ -534,7 +535,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             color: $color-dark-blue;
             //color: $color-blue-burger;
             font-size: $font-size-large;
-            font-family: $font-family-different;
+            font-family: $font-family-different-serif;
             //font-weight: bold;
             font-stretch: extra-expanded;
             display: flex;
@@ -572,15 +573,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__social-links {
-        //width: 15vw;
         color: $color-blue-burger;
         display: grid;
         font-size: $font-size-small;
-        //margin-right: 20px;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         font-size: $font-size-medium;
-        //margin-right: 20px;
+        font-family: $font-family-different-serif;
+
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: none;
@@ -755,7 +755,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
             &_dialydi-name {
                 color: $color-main;
-                font-family: $font-family-different;
+                font-family: $font-family-different-serif;
                 //font-weight: bold;
                 font-stretch: extra-expanded;
                 display: flex;
@@ -785,11 +785,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             &_search {
                 display: flex;
             }
-
         }
     }
-
-
 
     .button-header {
 
@@ -811,8 +808,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             align-items: center;
             margin-left: 20px;
         }
-
-
     }
 }
 
@@ -846,7 +841,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     border: solid 1px $color-button;
     height: 40px;
     border-radius: 6px;
-    font-family: $font-family-different;
+    font-family: $font-family-different-serif;
     font-size: $font-size-medium;
     width: 140px;
     // -webkit-transition: all 150ms ease-in-out;
@@ -923,7 +918,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
-
     &__button-search-sm {
 
         // width: 50px;
@@ -956,10 +950,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             border-color: $color-accent;
         }
 
-
-
-
-
         &_lupa-sm {
             width: 30px;
 
@@ -974,12 +964,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             @media screen and (max-width: $grid-breakpoint-sm) {
                 display: block;
             }
-
         }
-
     }
-
-
 }
 
 .small-button {
@@ -1012,65 +998,58 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     content: "";
     width: 1rem;
     height: 1rem;
-    // margin-right: .5rem;
-    // background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.333 512'%3E%3Cpath fill='%23fff' d='M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z'/%3E%3C/svg%3E") transparent no-repeat center center;
-    // background-size: 100% 100%;
 }
-
-
-
 
 .small-button:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-
 .input {
     height: 40px;
 }
 
 
-.button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-}
+// .button::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     transition: all 0.3s;
+// }
 
-.button:hover::before {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-}
+// .button:hover::before {
+//     opacity: 0;
+//     transform: scale(0.5, 0.5);
+// }
 
-.button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.6s;
-    border: 1px solid $color-accent;
-    border-radius: 6px;
-    transform: scale(1.1, 1.1);
-}
+// .button::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     opacity: 0;
+//     transition: all 0.6s;
+//     border: 1px solid $color-accent;
+//     border-radius: 6px;
+//     transform: scale(1.1, 1.1);
+// }
 
-.button:hover::after {
-    opacity: 1;
-    transform: scale(1, 1);
+// .button:hover::after {
+//     opacity: 1;
+//     transform: scale(1, 1);
 
-}
+// }
 
 .button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 5px 0 $color-button inset, 0 0 5px 4px $color-button;
+    box-shadow: 0 0 3px 0 $color-button inset, 0 0 2px 2px $color-button;
 }
 
 .icon {
@@ -1084,24 +1063,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
-
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         display: none;
 
     }
-
 }
 
 
 .container-nav {
-    width: 280px;
+    width: 290px;
     height: calc(100vh - 140px);
     line-height: 1.3;
     font-family: $font-family-sans-serif;
-    font-style: italic;
-    font-size: 0.8rem;
+    //font-style: italic;
+    //@at-root: 1.8rem;
     font-size: $font-size-medium;
     position: fixed;
     top: 140px;
@@ -1161,10 +1138,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     ul li a {
         //color: $color-blue;
         color: $color-dark-text;
-        padding: 10px 10px 10px 10px;
+        padding: 8px 8px 8px 10px;
         display: block;
         text-decoration: none;
-        font-weight: bold;
+        //font-weight: bold;
 
     }
 
@@ -1193,23 +1170,24 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .container-main {
     margin-top: 140px;
-    margin-left: 280px;
+    margin-left: 290px;
     z-index: 1;
-    width: calc(100% - 280px);
+    width: calc(100% - 290px);
     display: flex;
+    background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
         margin-top: 120px;
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 290px;
+        width: calc(100% - 290px);
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
         margin-top: 120px;
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 290px;
+        width: calc(100% - 290px);
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
@@ -1513,12 +1491,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     bottom: 20px;
     right: 20px;
     z-index: 999;
+
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        left: 1340px;
+    }
 }
 
 #scrollButton {
     font-size: $font-size-large;
     background-color: $color-blue-burger;
-    opacity: 50%;
+    opacity: 60%;
     color: $color-dark-text;
     border: none;
     border-radius: 50%;
@@ -1526,6 +1508,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     height: 50px;
     cursor: pointer;
     display: none;
+
+    @media screen and (min-width: $grid-breakpoint-sm) {
+        opacity: 100%;
+    }
 
 }
 
@@ -1537,21 +1523,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .articles {
-    margin-left: 280px;
+    margin-left: 290px;
     z-index: 1;
-    width: calc(100% - 280px);
+    width: calc(100% - 290px);
+    background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 290px;
+        width: calc(100% - 290px);
     }
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 290px;
+        width: calc(100% - 290px);
     }
 
 
@@ -1602,6 +1589,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__community-describe {
         color: $color-dark-text;
         background-color: $color-beige;
+        //background-color: $color-main;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
@@ -1934,7 +1922,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__four-boxes-desktop {
         display: grid;
-        //grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
         gap: 2%;
         background-color: $color-beige;
@@ -1942,7 +1929,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-bottom: 20px;
         padding: 20px;
         text-align: center;
-        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        text-decoration: none;
+
 
         @media screen and (max-width: $grid-breakpoint-lg) {
 
@@ -1966,8 +1955,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             background-color: $color-main;
             color: $color-dark-blue;
             padding: 10px;
-            font-size: $font-size-medium-plus;
+            font-size: $font-size-medium;
             font-weight: 700;
+
+            box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+            // @media screen and (min-width: $grid-breakpoint-lg) {
+            //     font-size: $font-size-medium-plus;
+
+            // }
 
         }
 
@@ -1982,6 +1978,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-bottom: 20px;
         padding: 20px;
         text-align: center;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -2068,11 +2065,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .link-style {
-    text-decoration: none;
-
     &_four {
         color: $color-dark-blue;
-        text-decoration: underline;
     }
 
     &_four:hover {
@@ -2087,9 +2081,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
+.no-decor {
+    text-decoration: none;
+}
+
 .link-name {
     background-color: $color-main;
     height: 60px;
+
 }
 
 //кнопка читать больше О нас и Важно понимать
@@ -2172,13 +2171,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
 .button-open-text {
     height: 60px;
     border-radius: 6px;
     background-color: $color-blue-burger;
     color: $color-main;
-    font-size: $font-size-large;
+    font-size: $font-size-medium-plus;
     display: flex;
     align-items: center;
     justify-content: center;
