@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     border: 0;
-    //box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -15,14 +14,14 @@ body {
     height: 100vh;
     background-color: $color-main;
     margin: 0;
-    font-family: $font-family-sans-serif;
+    //font-family: $font-family-sans-serif;
     //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
 
 
 .wrapper {
-    max-width: 1420px;
+    //max-width: 1420px;
 }
 
 //burger
@@ -40,10 +39,12 @@ body._lock {
     max-width: 100vw;
     margin: 0px auto;
     display: flex;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 20px 0px 0px;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
-    min-height: 90px;
+    //min-height: 90px;
+    height: 80px;
 
 }
 
@@ -56,6 +57,7 @@ body._lock {
     z-index: 100;
     background-color: $color-main;
     padding-left: 6px;
+    //height: 80px;
 
     &__logo {
         &_link {
@@ -80,17 +82,18 @@ body._lock {
         z-index: 102;
         color: $color-dark-blue;
         flex-direction: column;
-        font-family: $font-family-different-serif;
+        font-family: $font-family-serif;
+        justify-content: center;
+        align-items: center;
+
 
         &_diadzetka-link {
             cursor: pointer;
             color: $color-dark-blue;
+            text-decoration: none;
 
         }
     }
-
-
-
 }
 
 .menu-burger__icon {
@@ -372,13 +375,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .container-header {
 
     width: 100vw;
-    max-width: 1420px;
-    height: 140px;
+    //height: 140px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: $font-family-different;
+    font-family: $font-family-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -389,19 +392,21 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding-left: 10px;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
-        height: 140px;
+        height: 90px;
         // max-width: 1920px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
-        height: 140px;
+        height: 90px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
 
-        height: 160px;
+        //height: 160px;
+        //height: 140px;
+        height: 120px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -410,7 +415,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        height: 140px;
+        //height: 140px;
+        height: 80px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -442,7 +448,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         //padding: 6px;
         background-color: #fff;
         border-radius: 6px;
-        height: 110px;
+        height: 80px;
 
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -457,11 +463,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
         &_img {
-            height: 110px;
+            height: 80px;
             border-radius: 6px;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
-                height: 110px;
+                height: 80px;
 
             }
 
@@ -506,15 +512,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__dialydi-header {
-        //width: 50vw;
         display: flex;
-        justify-content: stretch;
+        justify-content: center;
+        text-align: center;
         align-items: center;
-        //margin-left: 5rem;
-        //margin-right: 4rem;
 
         @media screen and (max-width: $grid-breakpoint-lg) {
-            //width: 15vw;
             margin-left: 1vw;
             margin-right: 1vw;
 
@@ -530,37 +533,33 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
 
-
         &_dialydi-name {
             color: $color-dark-blue;
-            //color: $color-blue-burger;
-            font-size: $font-size-large;
-            font-family: $font-family-different-serif;
-            //font-weight: bold;
+            font-size: $font-size-medium;
+            font-family: $font-family-serif;
             font-stretch: extra-expanded;
             display: flex;
             flex-wrap: wrap;
             text-decoration: none;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
-                font-size: $font-size-medium-plus;
+                font-size: $font-size-medium;
             }
 
-
             @media screen and (max-width: $grid-breakpoint-md) {
-                // font-size: $font-size-small;
                 display: none;
             }
 
             @media screen and (max-width: $grid-breakpoint-sm) {
-                // font-size: $font-size-small;
                 display: none;
 
             }
         }
 
         &_dialydi-name:hover {
-            text-decoration: underline;
+            border: solid 1px $color-accent;
+            padding: 10px;
+            border-radius: 6px;
         }
     }
 
@@ -568,72 +567,50 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        //width: 40vw;
 
     }
 
     &__social-links {
-        color: $color-blue-burger;
         display: grid;
-        font-size: $font-size-small;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         font-size: $font-size-medium;
-        font-family: $font-family-different-serif;
-
+        font-family: $font-family-serif;
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: none;
 
         }
 
-
         @media screen and (max-width: $grid-breakpoint-md) {
-            //width: 15vw;
-            // font-size: $font-size-small;
             display: none;
         }
 
-
-
         @media screen and (max-width: $grid-breakpoint-lg) {
-            //width: 15vw;
             font-size: $font-size-medium;
         }
 
 
         &_channel-box {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             background-color: $color-main;
             color: $color-dark-blue;
-            padding: 10px;
+            padding: 6px;
             border-radius: 6px;
-            //width: 100px;
-
-            @media screen and (max-width: $grid-breakpoint-lg) {
-                //width: 70px;
-
-            }
-
+            max-height: 80px;
+            width: 140px;
 
             @media screen and (max-width: $grid-breakpoint-md) {
                 display: none;
 
 
             }
-
-            @media screen and (max-width: $grid-breakpoint-sm) {
-                display: none;
-
-            }
         }
 
         &_channel-box:hover {
-
             border: solid 1px $color-accent;
         }
 
@@ -652,8 +629,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__button-complex {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: none;
@@ -667,6 +644,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__social-links-with-button-complex {
         display: flex;
+        margin-right: 20px;
     }
 
     //}
@@ -676,18 +654,17 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     //.container-header {
 
     &__container-mobile {
-
         width: 100vw;
-        height: 90px;
+        //height: 90px;
+        height: 80px;
         position: fixed;
         top: 0px;
         left: 0px;
-        margin-top: 100px;
-        font-family: $font-family-different;
+        margin-top: 0px;
+        font-family: $font-family-serif;
         background-color: $color-blue-burger;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         z-index: 10;
-        background-color: $color-blue-burger;
         padding-right: 20px;
         padding-left: 10px;
 
@@ -696,15 +673,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
 
-
         @media screen and (max-width: $grid-breakpoint-lg) {
             display: none;
 
         }
 
-
         @media screen and (max-width: $grid-breakpoint-md) {
-            margin-top: 100px;
+            margin-top: 90px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -718,11 +693,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            margin-top: 100px;
+            margin-top: 80px;
             z-index: 10;
 
         }
-
     }
 
     .container-header__container-mobile._inactive {
@@ -755,7 +729,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
             &_dialydi-name {
                 color: $color-main;
-                font-family: $font-family-different-serif;
+                font-family: $font-family-serif;
                 //font-weight: bold;
                 font-stretch: extra-expanded;
                 display: flex;
@@ -795,7 +769,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_donate {
             margin-left: 20px;
-            margin-bottom: 20px;
+            //margin-bottom: 20px;
             margin-right: 10px;
             font-weight: bold;
         }
@@ -814,18 +788,35 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 /* Всплывающая форма-скрыта по умолчанию */
 .form-popup {
-    display: none;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 103;
-    background-color: $color-blue-burger;
-    opacity: 1;
-    //width: 90vw;
-    height: 100vw;
+    &_mobile {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 103;
+        background-color: $color-blue-burger;
+        opacity: 1;
+        //width: 90vw;
+        height: 100vw;
+    }
+
+    &_desktop {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 200;
+        background-color: $color-blue-burger;
+        opacity: 1;
+        //width: 90vw;
+        height: 80px;
+    }
 
 }
 
@@ -841,7 +832,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     border: solid 1px $color-button;
     height: 40px;
     border-radius: 6px;
-    font-family: $font-family-different-serif;
+    font-family: $font-family-serif;
     font-size: $font-size-medium;
     width: 140px;
     // -webkit-transition: all 150ms ease-in-out;
@@ -883,17 +874,17 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-left: 10px;
         margin-right: 10px;
 
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            display: none;
-        }
+        // @media screen and (max-width: $grid-breakpoint-sm) {
+        //     display: none;
+        // }
 
 
         &_lupa {
             width: 30px;
 
-            @media screen and (max-width: $grid-breakpoint-sm) {
-                display: none;
-            }
+            // @media screen and (max-width: $grid-breakpoint-sm) {
+            //     display: none;
+            // }
         }
 
         &_mobile {
@@ -925,21 +916,21 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-right: 10px;
         background-color: $color-blue-burger;
 
-        @media screen and (min-width: $grid-breakpoint-lg) {
-            display: none;
-        }
+        // @media screen and (min-width: $grid-breakpoint-lg) {
+        //     display: none;
+        // }
 
-        @media screen and (max-width: $grid-breakpoint-lg) {
-            display: none;
-        }
+        // @media screen and (max-width: $grid-breakpoint-lg) {
+        //     display: none;
+        // }
 
-        @media screen and (max-width: $grid-breakpoint-md) {
-            display: block;
-        }
+        // @media screen and (max-width: $grid-breakpoint-md) {
+        //     display: block;
+        // }
 
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            display: block;
-        }
+        // @media screen and (max-width: $grid-breakpoint-sm) {
+        //     display: block;
+        // }
 
         &_button-search-lupa {
             width: auto;
@@ -953,9 +944,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_lupa-sm {
             width: 30px;
 
-            @media screen and (max-width: $grid-breakpoint-lg) {
-                display: none;
-            }
+            // @media screen and (max-width: $grid-breakpoint-lg) {
+            //     display: none;
+            // }
 
             @media screen and (max-width: $grid-breakpoint-md) {
                 display: block;
@@ -1007,6 +998,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .input {
     height: 40px;
+
+    @media screen and (min-width: $grid-breakpoint-sm) {
+        width: 50vw;
+    }
+
+
 }
 
 
@@ -1071,17 +1068,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
 .container-nav {
-    width: 290px;
-    height: calc(100vh - 140px);
+    width: 240px;
+    height: calc(100vh - 90px);
     line-height: 1.3;
-    font-family: $font-family-sans-serif;
-    //font-style: italic;
-    //@at-root: 1.8rem;
+    font-family: $font-family-serif;
     font-size: $font-size-medium;
     position: fixed;
-    top: 140px;
+    top: 90px;
     left: 0px;
     box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
     text-decoration: none;
@@ -1158,7 +1152,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     ul li ul {
         position: absolute;
-        left: 241px;
+        left: 201px;
         top: -22px;
         display: none;
         width: 280px;
@@ -1169,25 +1163,25 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .container-main {
-    margin-top: 140px;
-    margin-left: 290px;
+    margin-top: 90px;
+    margin-left: 240px;
     z-index: 1;
-    width: calc(100% - 290px);
+    width: calc(100% - 240px);
     display: flex;
     background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
-        margin-top: 120px;
-        margin-left: 290px;
-        width: calc(100% - 290px);
+        margin-top: 90px;
+        margin-left: 240px;
+        width: calc(100% - 240px);
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
-        margin-top: 120px;
-        margin-left: 290px;
-        width: calc(100% - 290px);
+        margin-top: 90px;
+        margin-left: 240px;
+        width: calc(100% - 240px);
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
@@ -1195,14 +1189,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 220px;
+        margin-top: 190px;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 190px;
+        margin-top: 180px;
 
     }
 
@@ -1279,7 +1273,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding-top: 40px;
         margin-top: 0px;
         color: $color-dark-text;
-        font-family: $font-family-different;
+        font-family: $font-family-serif;
         font-size: $font-size-large;
 
         @media screen and (max-width: $grid-breakpoint-lg) {
@@ -1347,30 +1341,26 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
 //swiper 
 .swiper {
     width: 100%;
     //height: auto;
-    height: 720px;
-    margin-top: 40px;
+    height: 420px;
+    margin-top: 20px;
     margin-bottom: 20px;
 
-
     @media screen and (max-width: $grid-breakpoint-md) {
-        margin-top: 210px;
+        margin-top: 100px;
         height: 420px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        margin-top: 210px;
+        margin-top: 140px;
         height: 320px;
 
     }
-
 }
-
 
 .swiper-slide {
     text-align: center;
@@ -1423,7 +1413,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     bottom: 20px;
     color: $color-dark-text;
     font-size: $font-size-medium-plus;
-    font-family: $font-family-different;
+    font-family: $font-family-serif;
     box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
     display: flex;
     padding-top: 5px;
@@ -1492,9 +1482,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     right: 20px;
     z-index: 999;
 
-    @media screen and (min-width: $grid-breakpoint-xxl) {
-        left: 1340px;
-    }
+    // @media screen and (min-width: $grid-breakpoint-xxl) {
+    //     left: 1340px;
+    // }
 }
 
 #scrollButton {
@@ -1523,22 +1513,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .articles {
-    margin-left: 290px;
+    margin-left: 240px;
     z-index: 1;
-    width: calc(100% - 290px);
+    width: calc(100% - 240px);
     background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
-        margin-left: 290px;
-        width: calc(100% - 290px);
+        margin-left: 240px;
+        width: calc(100% - 240px);
     }
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
 
-        margin-left: 290px;
-        width: calc(100% - 290px);
+        margin-left: 240px;
+        width: calc(100% - 240px);
     }
 
 
@@ -1773,7 +1763,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             border: solid 1px $color-button;
             height: 40px;
             border-radius: 6px;
-            font-family: $font-family-different;
+            font-family: $font-family-serif;
             font-size: $font-size-medium;
 
         }
@@ -1787,7 +1777,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__diaschool {
         color: $color-dark-text;
         background-color: $color-sublink-burger-old;
-        font-family: "Philosofer";
+        font-family: $font-family-serif;
         text-align: center;
         margin-bottom: 20px;
         padding: 20px;
@@ -1800,7 +1790,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (max-width: $grid-breakpoint-md) {
             margin-top: 10px;
             margin-bottom: 10px;
-            font-size: $font-size-large;
+            font-size: $font-size-medium-plus;
         }
 
         &_youtube-link {
@@ -1812,8 +1802,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             margin-top: 20px;
             background-color: $color-button;
             border: solid 1px $color-button;
-            font-size: $font-size-large;
-            font-weight: 700;
+            font-size: $font-size-medium-plus;
+            //font-weight: 700;
 
         }
 
@@ -1864,12 +1854,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__links {
         display: flex;
-        flex-direction: column;
+        //flex-direction: column;
         margin-top: 20px;
         margin-top: 20px;
-
         align-items: center;
-
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
@@ -1956,8 +1944,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             color: $color-dark-blue;
             padding: 10px;
             font-size: $font-size-medium;
-            font-weight: 700;
-
             box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
             // @media screen and (min-width: $grid-breakpoint-lg) {
@@ -2182,7 +2168,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     justify-content: center;
     cursor: pointer;
     width: 100%;
-    font-family: $font-family-different;
+    font-family: $font-family-serif;
     margin-bottom: 20px;
 }
 
@@ -2282,7 +2268,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         border: solid 1px $color-button;
         height: 40px;
         border-radius: 6px;
-        font-family: $font-family-different;
+        font-family: $font-family-serif;
         font-size: $font-size-medium;
 
     }
@@ -2300,7 +2286,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         border: solid 1px $color-button;
         height: 40px;
         border-radius: 6px;
-        font-family: $font-family-different;
+        font-family: $font-family-serif;
         font-size: $font-size-medium;
 
     }
@@ -2372,7 +2358,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     height: 120px;
     color: $color-dark-text;
     font-size: $font-size-large;
-    font-family: $font-family-different;
+    font-family: $font-family-serif;
     background-color: white;
     justify-content: center;
     text-align: center;
@@ -2393,7 +2379,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_link-link-button {
             color: $color-dark-text;
-            text-decoration: none;
+
         }
     }
 
@@ -2403,7 +2389,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_link-link-button {
             color: $color-dark-text;
-            text-decoration: none;
         }
     }
 
@@ -2413,10 +2398,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_link-link-button {
             color: $color-dark-text;
-            text-decoration: none;
         }
     }
-
 
 
     &__partners {}
@@ -2435,8 +2418,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             text-decoration: none;
         }
     }
+}
 
+.link {
 
+    &__for-school:hover,
+    &__dia-news:hover,
+    &__dia-shops:hover {
+        text-decoration: underline;
+    }
 }
 
 .zarga-medica {
@@ -2487,8 +2477,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .footer {
-    margin-left: 280px;
-    width: calc(100% - 280px);
+    margin-left: 240px;
+    width: calc(100% - 240px);
     //height: 280px;
     background-color: $color-accent;
     color: $color-main;
@@ -2503,16 +2493,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-size: $font-size-medium-plus;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 240px;
+        width: calc(100% - 240px);
         font-size: $font-size-medium;
 
     }
 
 
     @media screen and (max-width: $grid-breakpoint-lg) {
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 240px;
+        width: calc(100% - 240px);
         //font-size: $font-size-small;
         font-size: $font-size-medium;
 
