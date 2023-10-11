@@ -822,7 +822,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .flex-form-search {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -897,6 +897,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             height: 40px;
             background-color: $color-blue-burger;
             color: $color-main;
+            margin-right: 20px;
         }
 
         &_button-close-search:hover {
@@ -2355,7 +2356,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 120px;
     color: $color-dark-text;
     font-size: $font-size-large;
     font-family: $font-family-serif;
@@ -2376,6 +2376,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__for-school {
         display: block;
         margin-top: 20px;
+        height: 120px;
 
         &_link-link-button {
             color: $color-dark-text;
@@ -2386,6 +2387,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__dia-news {
         display: block;
         margin-top: 20px;
+        height: 120px;
+
 
         &_link-link-button {
             color: $color-dark-text;
@@ -2395,6 +2398,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__dia-shops {
         display: block;
         margin-top: 20px;
+        height: 120px;
 
         &_link-link-button {
             color: $color-dark-text;
@@ -2402,7 +2406,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
 
-    &__partners {}
+    &__partners {
+        &_company {
+            margin-bottom: 20px;
+        }
+    }
 
     // &__forums {
     //     // display: block;
@@ -2420,6 +2428,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
+.a1-logo {
+    width: 50px;
+    height: 50px;
+}
+
 .link {
 
     &__for-school:hover,
@@ -2430,8 +2443,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .zarga-medica {
-    text-decoration: underline;
     color: $color-dark-text;
+}
+
+.zarga-medica:hover {
+    text-decoration: underline;
+
 }
 
 .subscribe {
