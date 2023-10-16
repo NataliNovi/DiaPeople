@@ -1911,7 +1911,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__four-boxes-desktop {
         display: grid;
-        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+        grid-template-columns: 23.25% 23.25% 23.25% 23.25%;
         gap: 2%;
         background-color: $color-beige;
         margin-top: 20px;
@@ -1947,11 +1947,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             font-size: $font-size-medium;
             box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
-            // @media screen and (min-width: $grid-breakpoint-lg) {
-            //     font-size: $font-size-medium-plus;
-
-            // }
-
         }
 
     }
@@ -1975,16 +1970,18 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_partners-desktop,
         &_oursovet-desktop {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: space-around;
             width: 100%;
             height: auto;
-            background-color: $color-accent;
-            color: $color-main;
+            min-height: 200px;
+            background-color: $color-main;
+            color: $color-dark-text;
             padding: 10px;
             font-size: $font-size-medium-plus;
-            font-weight: 700;
+            font-family: $font-family-serif;
+            //font-weight: 700;
             border-radius: 6px;
 
 
@@ -2046,9 +2043,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .anons-icons {
-    width: 50px;
+    //width: 50px;
     height: 50px;
     margin-right: 6px;
+
 }
 
 .link-style {
@@ -2062,7 +2060,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &_three {
-        color: $color-main;
+        color: $color-dark-blue;
         text-decoration: none;
     }
 
@@ -2507,7 +2505,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 20px 20px 30px 20px;
     text-align: center;
     align-items: center;
-    font-size: $font-size-medium-plus;
+    font-size: $font-size-medium;
+    font-family: $font-family-serif;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         margin-left: 240px;
