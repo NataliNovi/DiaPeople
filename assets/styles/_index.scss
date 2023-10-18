@@ -1426,7 +1426,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         height: 60px;
         width: 300px;
         padding-top: 12px;
-        font-size: $font-size-large;
+        //font-size: $font-size-medium;
 
     }
 
@@ -1551,10 +1551,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .white-background-desktop {
+
     &_about {
         background-color: $color-main;
         margin-bottom: 20px;
         border-radius: 6px;
+        //width: 80%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 30px;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            width: 100%;
+            margin-right: 0%;
+
+        }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: none;
@@ -1564,9 +1576,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &_important {
         background-color: $color-main;
-
         border-radius: 6px;
+        //width: 80%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 30px;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            width: 100%;
+            margin-left: 0%;
+
+        }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: none;
@@ -1579,7 +1601,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     &__community-describe {
         color: $color-dark-text;
-        background-color: $color-beige;
+        //background-color: $color-beige;
         //background-color: $color-main;
         padding-right: 30px;
         padding-left: 30px;
@@ -1589,7 +1611,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         font-family: $font-family-sans-serif;
         font-size: $font-size-medium;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
-        text-align: center;
+        display: flex;
+        flex-direction: column;
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -1601,6 +1624,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__subscribe {
         display: block;
         margin-top: 20px;
+
     }
 
     &__viber-contact {
@@ -1615,6 +1639,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         text-decoration: none;
         font-size: $font-size-medium;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        width: 80%;
+        margin-left: 20%;
 
         &_saharok {
             color: $color-dark-blue;
@@ -1868,7 +1894,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_first {
             margin-top: 20px;
-            padding: 1px 20px 20px 20px;
+            padding: 1px 26px 20px 20px;
             background-color: $color-beige;
 
             @media screen and (min-width: $grid-breakpoint-md) {
@@ -1910,24 +1936,21 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__four-boxes-desktop {
-        display: grid;
-        grid-template-columns: 23.25% 23.25% 23.25% 23.25%;
-        gap: 2%;
-        background-color: $color-beige;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
         text-align: center;
         //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         text-decoration: none;
 
-
         @media screen and (max-width: $grid-breakpoint-lg) {
 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2%;
-            background-color: $color-beige;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -1939,28 +1962,48 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_teachers-desktop,
         &_dianews-desktop,
         &_diaproducts-desktop {
-            width: 100%;
-            height: 100%;
+            width: 22%;
             background-color: $color-main;
             color: $color-dark-blue;
             padding: 10px;
             font-size: $font-size-medium;
             box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+            border-radius: 6px;
+
+            @media screen and (max-width: $grid-breakpoint-lg) {
+                width: 48%;
+            }
 
         }
+
+        &_dianews-desktop,
+        &_diaproducts-desktop {
+            @media screen and (max-width: $grid-breakpoint-lg) {
+                margin-top: 20px;
+
+            }
+
+        }
+
+        // &_teachers-desktop,
+        // &_diaproducts-desktop {
+        //     margin-top: 50px;
+        // }
 
     }
 
     &__two-boxes-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2%;
-        background-color: $color-beige;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        //background-color: $color-beige;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
         padding: 20px;
         text-align: center;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        border-radius: 6px;
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
@@ -1973,15 +2016,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            width: 100%;
+            width: 48%;
             height: auto;
             min-height: 200px;
-            background-color: $color-main;
+            background-color: $color-connect;
             color: $color-dark-text;
             padding: 10px;
             font-size: $font-size-medium-plus;
-            font-family: $font-family-serif;
-            //font-weight: 700;
+            font-family: $font-family-sans-serif;
+            box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
             border-radius: 6px;
 
 
@@ -2044,7 +2087,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .anons-icons {
     //width: 50px;
-    height: 50px;
+    height: 80px;
     margin-right: 6px;
 
 }
@@ -2353,7 +2396,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    //width: 90vw;
     color: $color-dark-text;
     font-size: $font-size-large;
     font-family: $font-family-serif;
@@ -2457,6 +2500,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         flex-direction: column;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         padding: 20px;
+        width: 80%;
+        margin-right: 20%;
 
 
         &_header {
@@ -2611,9 +2656,8 @@ textarea {
 .form__wrapper {
     position: relative;
     padding: 1rem;
-    //border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 4px;
-    // margin-bottom: 2rem;
+
 
 }
 
@@ -2622,6 +2666,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-right: -5px;
     margin-left: -5px;
 
@@ -2808,51 +2853,51 @@ textarea.form-control {
 }
 
 /* Стили секции, в которой выводится капча */
-.form-captcha {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
+// .form-captcha {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 2rem;
+// }
 
-.form-captcha__image {
-    border-radius: 4px;
-    margin-right: 0.5rem;
-}
+// .form-captcha__image {
+//     border-radius: 4px;
+//     margin-right: 0.5rem;
+// }
 
-.form-captcha__refresh {
-    padding: 0.5rem 0.75rem;
-    line-height: 1;
-    border: 1px solid #ced4da;
-    margin-right: 0.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
+// .form-captcha__refresh {
+//     padding: 0.5rem 0.75rem;
+//     line-height: 1;
+//     border: 1px solid #ced4da;
+//     margin-right: 0.5rem;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
 
-.form-captcha__refresh:hover {
-    background-color: #eee;
-}
+// .form-captcha__refresh:hover {
+//     background-color: #eee;
+// }
 
-.form-captcha__input {
-    flex-grow: 1;
-    position: relative;
-    margin-bottom: 0;
-}
+// .form-captcha__input {
+//     flex-grow: 1;
+//     position: relative;
+//     margin-bottom: 0;
+// }
 
-@media (max-width: 400px) {
-    .form-captcha {
-        flex-wrap: wrap;
-    }
+// @media (max-width: 400px) {
+//     .form-captcha {
+//         flex-wrap: wrap;
+//     }
 
-    .form-captcha__input {
-        min-width: 200px;
-        margin-top: 0.5rem;
-    }
-}
+//     .form-captcha__input {
+//         min-width: 200px;
+//         margin-top: 0.5rem;
+//     }
+// }
 
-.form-captcha__input .invalid-feedback {
-    position: absolute;
-    bottom: -1.5rem;
-}
+// .form-captcha__input .invalid-feedback {
+//     position: absolute;
+//     bottom: -1.5rem;
+// }
 
 /* CSS для секции "Пользовтельское соглашение" */
 .form-check {
