@@ -1754,6 +1754,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     font-size: 22px;
   }
 }
+.article__two-boxes-desktop_partners-desktop:hover, .article__two-boxes-desktop_oursovet-desktop:hover {
+  text-decoration: underline;
+}
 
 .img-wrapper {
   width: 100%;

@@ -2033,6 +2033,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             }
         }
 
+        &_partners-desktop:hover,
+        &_oursovet-desktop:hover {
+            text-decoration: underline;
+        }
+
     }
 }
 
