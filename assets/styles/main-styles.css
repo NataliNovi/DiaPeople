@@ -1194,9 +1194,10 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding: 0 30px 0 30px;
   background-color: #F4EADE;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: auto;
+  background-position: 10% 100%;
   position: relative;
+  width: 50%;
 }
 @media screen and (max-width: 768px) {
   .swiper-slide {
@@ -1205,14 +1206,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
-.swiper-slide :after {
-  content: "";
-  display: block;
-  padding: 0 0 80%;
-}
-
 .slide1 {
-  background-image: url("..//images/girl.jpg");
+  background-image: url("..//images/dianews.png");
+  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
 
 .slide2 {
@@ -1221,6 +1217,48 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .slide3 {
   background-image: url("..//images/diaschool.png");
+}
+
+.dia-news-desktop {
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4EADE;
+  color: #032a3f;
+  justify-content: space-around;
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 55%;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .dia-news-desktop {
+    display: none;
+  }
+}
+
+.dia-news-item:hover {
+  text-decoration: underline;
+}
+
+.dia-news-item:visited {
+  color: #032a3f;
+}
+
+@media screen and (min-width: 768px) {
+  .dia-news-mobile {
+    display: none;
+  }
+}
+
+.dia-news-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
 }
 
 .slider-button {

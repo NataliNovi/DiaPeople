@@ -1372,9 +1372,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 0 30px 0 30px;
     background-color: $color-beige;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: auto;
+    background-position: 10% 100%;
     position: relative;
+    width: 50%;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         padding-top: 20px;
@@ -1384,14 +1385,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 
-.swiper-slide :after {
-    content: "";
-    display: block;
-    padding: 0 0 80%;
-}
+// .swiper-slide :after {
+//     content: "";
+//     display: block;
+//     padding: 0 0 80%;
+// }
 
 .slide1 {
-    background-image: url('..//images/girl.jpg');
+    background-image: url('..//images/dianews.png');
+    box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 }
 
 .slide2 {
@@ -1401,6 +1403,54 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .slide3 {
     background-image: url('..//images/diaschool.png');
 
+}
+
+.dia-news-desktop {
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-beige;
+    color: $color-dark-text;
+    justify-content: space-around;
+    //padding: 20px;
+    font-size: $font-size-medium;
+    font-family: $font-family-sans-serif;
+    //max-height: 50%;
+    max-width: 55%;
+    padding: 20px;
+    //border-radius: 6px;
+
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        display: none;
+
+    }
+
+}
+
+.dia-news-item:hover {
+    text-decoration: underline;
+}
+
+.dia-news-item:visited {
+    color: $color-dark-text;
+}
+
+.dia-news-mobile {
+    @media screen and (min-width: $grid-breakpoint-md) {
+        display: none;
+
+    }
+}
+
+.dia-news-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
 }
 
 .slider-button {
