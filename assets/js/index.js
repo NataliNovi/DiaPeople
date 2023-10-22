@@ -7178,22 +7178,21 @@ var Swiper = (function () {
 //# sourceMappingURL=swiper-bundle.min.js.map
 
 //slider activation
-document.addEventListener("DOMContentLoaded", () => {
-  // активация слайдера
-  new ItcSimpleSlider("#slider-1", {
-    loop: true,
-    autoplay: false,
-    interval: 4000,
-    swipe: true,
-  });
+// document.addEventListener("DOMContentLoaded", () => {
+//   new ItcSimpleSlider("#slider-1", {
+//     loop: true,
+//     autoplay: false,
+//     interval: 4000,
+//     swipe: true,
+//   });
 
-  new ItcSimpleSlider("#slider-2", {
-    loop: true,
-    autoplay: false,
-    interval: 4000,
-    swipe: true,
-  });
-});
+//   new ItcSimpleSlider("#slider-2", {
+//     loop: true,
+//     autoplay: false,
+//     interval: 4000,
+//     swipe: true,
+//   });
+// });
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
@@ -7201,6 +7200,10 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2000,
+  },
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },

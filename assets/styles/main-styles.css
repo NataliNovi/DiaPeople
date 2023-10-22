@@ -1168,6 +1168,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .swiper {
   width: 100%;
+  height: auto;
   height: 420px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1175,13 +1176,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 768px) {
   .swiper {
     margin-top: 100px;
-    height: 420px;
+    height: 620px;
   }
 }
 @media screen and (max-width: 576px) {
   .swiper {
     margin-top: 140px;
-    height: 320px;
+    height: 520px;
   }
 }
 
@@ -1189,41 +1190,66 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   text-align: center;
   font-size: 18px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
   padding: 0 30px 0 30px;
   background-color: #F4EADE;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 10% 100%;
-  position: relative;
-  width: 50%;
 }
 @media screen and (max-width: 768px) {
   .swiper-slide {
     padding-top: 20px;
     padding-bottom: 40px;
+    flex-direction: column;
   }
 }
 
 .slide1 {
-  background-image: url("..//images/dianews.png");
-  box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 44%;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px #fff;
+}
+@media screen and (max-width: 768px) {
+  .slide1 {
+    width: 100%;
+    height: 60%;
+    border-right: solid 1px #F4EADE;
+  }
 }
 
 .slide2 {
-  background-image: url("..//images/diadzetka.jpeg");
+  display: flex;
+  width: 44%;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px #fff;
+}
+@media screen and (max-width: 768px) {
+  .slide2 {
+    width: 100%;
+    border-right: solid 1px #F4EADE;
+  }
 }
 
 .slide3 {
-  background-image: url("..//images/diaschool.png");
+  display: flex;
+  width: 44%;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px #fff;
+}
+@media screen and (max-width: 768px) {
+  .slide3 {
+    width: 100%;
+    border-right: solid 1px #F4EADE;
+  }
+}
+
+.diadzetka-logo-slider {
+  height: 400px;
+  width: auto;
 }
 
 .dia-news-desktop {
-  position: absolute;
-  right: 0px;
-  bottom: -20px;
-  top: -20px;
   display: flex;
   flex-direction: column;
   background-color: #F4EADE;
@@ -1236,6 +1262,22 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 768px) {
   .dia-news-desktop {
+    display: none;
+  }
+}
+
+.dia-news-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4EADE;
+  color: #032a3f;
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 100%;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .dia-news-mobile {
     display: none;
   }
 }
@@ -1255,17 +1297,23 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .dia-news-item {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  color: #032a3f;
+  padding: 10px 20px 10px 20px;
+  text-align: start;
+}
+@media screen and (max-width: 992px) {
+  .dia-news-item {
+    font-size: 18px;
+  }
 }
 
 .slider-button {
   background-color: #fff;
   border: solid 1px #fff;
   border-radius: 6px;
-  width: 220px;
+  width: 200px;
   height: 50px;
   position: absolute;
   right: 20px;
@@ -1275,22 +1323,16 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-family: "Philosopher", sans-serif;
   box-shadow: 8px 0 14px 0 rgba(0, 0, 0, 0.25);
   display: flex;
-  padding-top: 5px;
+  align-items: center;
   justify-content: center;
+  align-content: center;
 }
 @media screen and (min-width: 768px) {
   .slider-button {
     height: 60px;
-    width: 300px;
-    padding-top: 12px;
+    width: 220px;
   }
 }
-@media screen and (max-width: 768px) {
-  .slider-button {
-    height: 40px;
-  }
-}
-
 .slider-button:hover {
   cursor: pointer;
   scale: 1.05;
@@ -1321,7 +1363,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 #scrollButton {
   font-size: 26px;
   background-color: #62B4E0;
-  opacity: 60%;
+  opacity: 90%;
   color: #032a3f;
   border: none;
   border-radius: 50%;
@@ -1332,7 +1374,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (min-width: 576px) {
   #scrollButton {
-    opacity: 100%;
+    opacity: 90%;
   }
 }
 
@@ -1415,8 +1457,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .article__community-describe {
   color: #032a3f;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
   line-height: 1.4;
@@ -1684,6 +1726,9 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-top: 20px;
   padding: 1px 26px 20px 20px;
   background-color: #F4EADE;
+  color: #032a3f;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .article__links_first {
@@ -1693,8 +1738,10 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .article__links_second {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px 26px 20px 20px;
   background-color: #9ACEEB;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .article__links_second {
@@ -2099,11 +2146,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 26px;
   font-family: "Philosopher", sans-serif;
   background-color: white;
-  justify-content: center;
   text-align: center;
   align-items: center;
-  align-content: center;
-  padding: 20px;
   border-radius: 4px;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
 }
@@ -2113,38 +2157,40 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 .link__for-school {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
+  padding: 0 10px 0 10px;
   height: 120px;
-}
-.link__for-school_link-link-button {
   color: #032a3f;
 }
 .link__dia-news {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   height: 120px;
-}
-.link__dia-news_link-link-button {
-  color: #032a3f;
 }
 .link__dia-shops {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   height: 120px;
 }
-.link__dia-shops_link-link-button {
-  color: #032a3f;
-}
 .link__partners_company {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 .link__sovet {
+  display: flex;
   margin-top: 20px;
 }
 .link__sovet_link-sovet {
   color: #032a3f;
   text-decoration: none;
+}
+.link__sovet_link-sovet:hover {
+  text-decoration: underline;
 }
 
 .a1-logo {
