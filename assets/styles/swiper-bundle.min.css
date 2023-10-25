@@ -291,9 +291,10 @@
     justify-content: center;
     color: white;
     background-color: #62B4E0;
+    opacity: 50%;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 
 
 
@@ -359,7 +360,8 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
+    /* font-size: var(--swiper-navigation-size); */
+    font-size: large;
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;

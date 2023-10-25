@@ -7201,12 +7201,13 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 2000,
+    delay: 3000,
   },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
+  speed: 400,
   mousewheel: true,
   keyboard: true,
 });

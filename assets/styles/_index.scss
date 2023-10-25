@@ -1368,10 +1368,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: $font-size-medium;
     display: flex;
     //justify-content: space-between;
-    padding: 0 30px 0 30px;
+    //padding: 0 30px 0 30px;
     background-color: $color-beige;
     // background-repeat: no-repeat;
     // background-size: auto;
@@ -1400,16 +1400,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     // background-size: auto;
     // background-position: 10% 50%;
     // position: relative;
-    // width: 100%;
+    //width: 100%;
     display: flex;
-    //width: 64%;
-    justify-content: center;
+    width: 64%;
+    //justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
-        height: 60%;
+        //height: 60%;
         //border-right: solid 1px $color-beige;
 
     }
@@ -1419,7 +1419,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .slide2 {
     // background-image: url('..//images/diadzetka.jpeg');
     display: flex;
-    //width: 64%;
+    width: 64%;
     justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
@@ -1434,7 +1434,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .slide3 {
     // background-image: url('..//images/diaschool.png');
     display: flex;
-    //width: 64%;
+    width: 64%;
     justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
@@ -1466,11 +1466,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     //padding: 20px;
     font-size: $font-size-medium;
     font-family: $font-family-sans-serif;
+    line-height: 1.3;
     //max-height: 50%;
     max-width: 40%;
-    //padding: 20px;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
     //border-radius: 6px;
-
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
@@ -1481,20 +1482,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 .dia-news-mobile {
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     background-color: $color-beige;
     color: $color-dark-text;
-    //justify-content: space-around;
-    //padding: 20px;
+    align-items: center;
+    justify-content: center;
     font-size: $font-size-medium;
+    line-height: 1.3;
     font-family: $font-family-sans-serif;
     //max-height: 50%;
     max-width: 100%;
-    height: 120px;
-    //padding: 20px;
+    height: 160px;
+    padding: 20px 20px 30px 20px;
 
     @media screen and (min-width: $grid-breakpoint-md) {
         display: none;
+
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        height: 180px;
+        font-size: $font-size-small-plus;
 
     }
 }
@@ -1533,16 +1541,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .slider-button {
-    background-color: $color-main;
-    border: solid 1px $color-main;
+    background-color: $color-button;
+    border: solid 1px $color-button;
     border-radius: 6px;
     width: 200px;
-    height: 50px;
+    height: 48px;
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 10px;
     color: $color-dark-text;
-    font-size: $font-size-medium-plus;
+    font-size: $font-size-medium;
     font-family: $font-family-serif;
     box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
     display: flex;
@@ -1552,19 +1560,18 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     align-content: center;
 
 
-    @media screen and (min-width: $grid-breakpoint-md) {
-        height: 60px;
-        width: 220px;
+    @media screen and (max-width: $grid-breakpoint-md) {
+        right: 24px;
+        height: 48px;
+        width: 160px;
         //padding-top: 12px;
         //font-size: $font-size-medium;
-
     }
 
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-        //margin-top: 0;
-        //height: 40px;
-
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        right: 24px;
+        height: 48px;
+        width: 130px;
     }
 }
 
@@ -1573,12 +1580,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     scale: 1.05;
 }
 
-
-
 .swiper-slide img {
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
+    margin: 0 0 auto;
 }
 
 .swiper-button-next {
@@ -2488,50 +2494,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 
-.community-next-meet {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-color: $color-main;
-    color: $color-accent;
-    margin-top: 30px;
-    padding: 20px;
-    text-align: center;
-    border: solid 1px $color-accent;
-    border-radius: 4px;
-
-    // &__anons {}
-
-
-    &__anons-photo {
-        width: 20%;
-    }
-
-    &__anons-text {
-        width: 80%;
-    }
-}
-
-
-.world-new-describe {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    border: solid $color-accent 1px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-
-    &__world-new-photo {
-        width: 20%;
-    }
-
-    &__world-new-text {
-        width: 80%;
-    }
-}
-
 .link {
 
     display: flex;
@@ -2587,14 +2549,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
     }
 
-    // &__forums {
-    //     // display: block;
-    //     margin-top: 20px;
-    // }
-
     &__sovet {
         display: flex;
-        // display: block;
         margin-top: 20px;
 
         &_link-sovet {
@@ -2674,7 +2630,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
     }
 }
-
 
 .footer {
     margin-left: 240px;
