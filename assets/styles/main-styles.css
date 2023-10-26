@@ -1261,16 +1261,17 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .dia-news-mobile {
   display: flex;
+  flex-direction: column;
   background-color: #F4EADE;
   color: #032a3f;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.5;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 100%;
   height: 160px;
-  padding: 20px 20px 30px 20px;
+  padding: 0px 20px 30px 20px;
 }
 @media screen and (min-width: 768px) {
   .dia-news-mobile {
@@ -1292,25 +1293,12 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   color: #032a3f;
 }
 
-@media screen and (min-width: 768px) {
-  .dia-news-mobile {
-    display: none;
-  }
-}
-
 .dia-news-item {
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
   color: #032a3f;
-  padding: 10px 20px 10px 20px;
   text-align: start;
+  text-decoration: none;
 }
-@media screen and (max-width: 992px) {
-  .dia-news-item {
-    font-size: 18px;
-  }
-}
-
 .slider-button {
   background-color: #FBD36C;
   border: solid 1px #FBD36C;
