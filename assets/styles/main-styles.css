@@ -2913,13 +2913,13 @@ button[type=submit]:not(:disabled):focus {
   width: 100%;
   margin-top: 20px;
   padding: 0px 15px 15px 15px;
-  font-size: 22px;
+  font-size: 18px;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.3;
 }
 @media screen and (max-width: 768px) {
   .insulin__text-container {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
