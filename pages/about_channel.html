@@ -176,6 +176,10 @@
                     <li>
                         <a href= 'measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
                     </li>
+
+                    <li>
+                        <a href= 'gadgets_settings.html' class="menu-burger__sub-link">Настройки</a>
+                    </li>
                 </ul>
                </li>
 
@@ -314,6 +318,7 @@
         <ul class="submenu">
             <li class="nav__item nav__item_link"><a href = 'insulin_injection.html'>Средства введения инсулина</a></li>
             <li class="nav__item nav__item_link"><a href = 'measure_devices.html'>Средства измерения</a></li>
+            <li class="nav__item nav__item_link"><a href = 'gadgets_settings.html'>Настройки</a></li>
         </ul>
         </li>
            <li class = "nav__item nav__item_primary"> <a>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
@@ -345,77 +350,33 @@
         </nav>
     
          <!-- nav End -->
+         <main>
+        </main>
+    
 
-    <div class="wrapper">
-        <div class="form">
-          <form action="#" id="form" class="form__body">
-            <h1 class="form__title">Отправка данных на почту</h1>
-            <div class="form__item">
-              <label for="formName" class="form__label">Name*:</label>
-              <input id = "formName" type="text" name="name" class="form__input _req">
-            </div>
-    
-            <div class="form__item">
-              <label for="formEmail" class="form__label">E-mail*:</label>
-              <input id = "formEmail" type="text" name="email" class="form__input _req _email">
-            </div>
-    
-            <div class="form__item">
-              <div class="form__label">Left or Right?</div>
-            <div class="options">
-              <div class="options__item">
-                <input id="formRightHanded" checked type="radio" value="right" name="hand" class="option__input">
-                <label for="formRightHanded" class="options__label"><span>Right</span></label>
+
+        <footer class="footer">
+
+           <br>
+              <div class = "footer__button-footer_donate">
+                  <button class = "button button__button-donate">Поддержать проект</button>
               </div>
-    
-              <div class="options__item">
-                <input id="formLeftHanded" type="radio" value="left" name="hand" class="option__input">
-                <label for="formLeftHanded" class="options__label"><span>Left</span></label>
+          
+              <br>
+          
+              <div class = footer__contacts> 
+                <div>Teл: +375 29 355-56-63, e-mail: diapeople.bel@gmail.com</div>  
+                <div> Адрес: 220090, Минск, Логойский тракт, 22А, ПОМ.44, офис 1 </div>
+               
               </div>
-    
-              <div class="form__item">
-                <label for="formMessage" class="form__label">Message:</label>
-                <textarea id="formMessage" name="message" id="formMessage" class="form__input"></textarea>
-              </div>
-    
-              <div class="form__item">
-                <div class="form__label">Age:</div>
-                <select name="age" class="select">
-                  <option value="18-25">Young</option>
-                  <option value="25-45">Old</option>
-                  <option value="more 45">Oldest</option>
-                </select>
-              </div>
-    
-              <div class="form__item">
-                <div class="form__label">Add Photo</div>
-                <div class="file">
-                  <div class="file__item">
-                    <input id="formImage" accept=".jpg, .png .gif" type="file" name="image" class="file__input">
-                    <div class="file__button">Select Photo</div>
-                  </div>
-    
-                  <div id="formPreview" class="file__preview"></div>
-                </div>
-              </div>
-    
-    
-            </div>   
-          </div>
-    
-    <div class="form__item">
-    <div class="checkbox">
-      <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-      <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие <a href="">File</a></span></label>
-    </div>
-    </div>
-    
-    <button type="submit" class="form__button">Send</button>
-    
-          </form>
-        </div>
-      </div>
-    
-      <script src='../assets/js/about-channel.js'></script>
-</body>
-</html>
+          
+              <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+          
+          
+          </footer>
+       
+       
+          <script src="../assets/js/index.js"></script>
+          <script src="../assets/js/insulin.js"></script>
+               </body>
+           </html>
