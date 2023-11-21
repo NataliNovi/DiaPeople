@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import "_thank_you.css";
 @import "_form-processing.css";
 @font-face {
   font-display: swap;
@@ -2162,6 +2161,15 @@ textarea {
   font-weight: bold;
 }
 
+.about-channel__image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-channel__image-container_diadzetka-img {
+  width: 50%;
+}
+
 .what-is-diabete__text-container {
   width: 100%;
   margin-top: 20px;
@@ -2372,38 +2380,30 @@ textarea {
 }
 
 .psyhology-start__entrance-part {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .psyhology-start__entrance-part {
-    display: block;
-  }
+  display: block;
 }
 .psyhology-start__entrance-part_text {
-  width: 55%;
-  font-size: 16px;
-  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  padding: 10px;
   line-height: 1.5;
 }
 .psyhology-start__entrance-part_confucious-img-container {
-  width: 45%;
-  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
   border-radius: 6px;
-}
-@media screen and (max-width: 768px) {
-  .psyhology-start__entrance-part_text {
-    width: 100%;
-    padding: 10px;
-  }
-  .psyhology-start__entrance-part_confucious-img-container {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-  }
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .confucious {
-  width: 100%;
+  width: 60%;
+  border-radius: 6px;
+}
+@media screen and (max-width: 992px) {
+  .confucious {
+    width: 100%;
+  }
 }
 
 .psyhology-articles {
