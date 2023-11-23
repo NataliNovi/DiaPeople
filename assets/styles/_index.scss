@@ -1155,7 +1155,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     margin-left: 240px;
     z-index: 1;
     width: calc(100% - 240px);
-    display: flex;
+    //display: flex;
     background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {

@@ -30,9 +30,15 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'none'"> -->
     
     <link rel="stylesheet" href="..//assets/styles/normalize.css">
     <link rel="stylesheet" href="..//assets/styles/main-styles.css">
+
+    <!-- <link rel="preconnect" href="https://clients1.google.com"> -->
+    <!-- <link rel="preconnect" href="https://www.google.com"> -->
+    <link rel="preconnect" href="https://cse.google.com">
 
     <!-- <link
     rel="stylesheet"
@@ -61,19 +67,19 @@
             <div class="container-header__social-links">
 
                 <div class="container-header__social-links_channel-box">
-                    <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                    <a class = "youtube container-header__social-links_diadzetka-link"  href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank" aria-label="See more on DiaDzetka YouTube channel">
                         DiaDzetka </a>
 
-                <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank">
+                <a class="youtube diadzetka-channel" href="https://www.youtube.com/channel/UCWES9vQnLPCWxvsgrsIRrXw" target="blank" aria-label="See more on DiaDzetka YouTube channel">
                     <img class="icon__youtube" src="./assets/images/youtube.png" alt="Channel DiaDzetka"/></a>
                 </div>
 
 
                      <div class="container-header__social-links_channel-box">
-                        <a class = "youtube container-header__social-links_school-link"  href= "https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+                        <a class = "youtube container-header__social-links_school-link"  href= "https://www.youtube.com/watch?v=nOZbxalygkI" target="blank" aria-label="See more about Diabet by simple words on YouTube channel">
                     Про диабет</a>
 
-                    <a class="youtube school-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank">
+                    <a class="youtube school-channel" href="https://www.youtube.com/watch?v=nOZbxalygkI" target="blank" aria-label="See more about Diabet by simple words on YouTube channel">
                         <img class="icon__youtube" src="./assets/images/youtube.png" alt="About diabete"/></a>
                     </div>
 
@@ -83,7 +89,7 @@
             <div class="container-header__button-complex">
 
             <div class = "button-header_donate">
-                <button class = "button button__button-donate">Поддержать проект</button>
+                <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button>
             </div>
 
 
@@ -282,7 +288,7 @@
                 </div>
 
                 <div class = "container-mobile__button-mobile_donate">
-                    <button class = "button button__button-donate">Поддержать проект</button>
+                    <button aria-label="Поддержать проект"  class = "button button__button-donate">Поддержать проект</button>
                 </div>
                 </div> 
 
@@ -398,8 +404,8 @@
                 </div>
 
                 <div class="slide1">   
-                  <div class = ""><img class="slider-img_mobile" src="./assets/images/girl.jpg"></div>
-                  <div class = ""><img class="slider-img_desktop" src="./assets/images/girl.jpg"></div>
+                  <div class = ""><img class="slider-img_mobile" src="./assets/images/girl.webp" alt="Main photo"></div>
+                  <div class = ""><img class="slider-img_desktop" src="./assets/images/girl.webp" alt="Main photo"></div>
               </div>
 
                 <div class="dia-news-desktop">
@@ -417,18 +423,6 @@
           </div>
           </div>
 
-          <!-- <div class="dia-news-mobile">
-            <a href="./pages/diabete_news.html">
-          <p class = "dia-news-item">59th Annual Meeting European Association for the Study of Diabetes (EASD 2023), 02 - 06 OCT 2023 - HAMBURG, GERMANY
-          </p>
-          <p class = "dia-news-item">Bigger, smarter, faster research into immunotherapy for type 1 diabetes, Professor Colin Dayan at Cardiff University</p>
-      </a>
-      <a href="../pages/diabete_news.html"><p class = "slider-button">Больше новостей <span> &#8594;</span> </p></a></div>
-    </div> -->
-
-             <!-- <div class="swiper-slide slide2"><a href="./pages/about_channel.html"><p class = "slider-button">О канале <span>&#8594;</span> <p></a></div> -->
-
-
               <div class="swiper-slide">
 
                 <div class="dia-news-mobile">
@@ -440,8 +434,8 @@
           </div>
 
                 <div class="slide2">   
-                  <div class = ""><img class="slider-img_mobile" src="./assets/images/forschoolandgarden.png"></div>
-                  <div class = ""><img class="slider-img_desktop" src="./assets/images/forschoolandgarden.png"></div>
+                  <div class = ""><img class="slider-img_mobile" src="./assets/images/forschoolandgarden.png" alt="About channel"></div>
+                  <div class = ""><img class="slider-img_desktop" src="./assets/images/forschoolandgarden.png" alt="About channel"></div>
                
               </div>
 
@@ -457,11 +451,6 @@
 
           </div>
     
-
-<!-- 
-          <div class="swiper-slide slide3"><a href="../pages/our_events.html"><p class = "slider-button">Наши события <span> &#8594;</span> </p></a></div>
-         -->
-
          <div class="swiper-slide">
           <div class="dia-news-mobile">
          
@@ -472,8 +461,8 @@
     </div>
 
           <div class="slide3">   
-            <div class = ""><img class="slider-img_mobile" src="./assets/images/forschoolandgarden.png"></div>
-            <div class = ""><img class="slider-img_desktop" src="./assets/images/forschoolandgarden.png"></div>
+            <div class = ""><img class="slider-img_mobile" src="./assets/images/forschoolandgarden.png" alt="Out meets"></div>
+            <div class = ""><img class="slider-img_desktop" src="./assets/images/forschoolandgarden.png" alt="Out meets"></div>
         </div>
           <div class="dia-news-desktop">
             <a href="https://www.instagram.com/diadzetka/" target="_blank">
@@ -484,7 +473,6 @@
     </div>
    </div>
       
-  
 
             </div>
             <div class="swiper-pagination"></div>
@@ -498,8 +486,6 @@
               
               
             </div> 
-
-               
 
             </div>
     
@@ -716,10 +702,9 @@
 <footer class="footer">
 
 
- 
  <br>
     <div class = "footer__button-footer_donate">
-        <button class = "button button__button-donate">Поддержать проект</button>
+        <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button>
     </div>
 
     <br>
