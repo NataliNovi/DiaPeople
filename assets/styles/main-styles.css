@@ -2223,16 +2223,20 @@ textarea {
 
 .insulin__text-container {
   width: 100%;
-  margin-top: 20px;
-  padding: 0px 15px 15px 15px;
+  padding: 5px 15px 15px 15px;
   font-size: 18px;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .insulin__text-container {
     font-size: 18px;
+    padding: 0px 15px 15px 15px;
   }
+}
+
+.page-title {
+  text-align: center;
 }
 
 .insulin-articles {
@@ -2348,19 +2352,6 @@ textarea {
 
 .button-read-article:hover {
   scale: 1.02;
-}
-
-.hypoglikemia__text-container {
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px;
-  font-size: 22px;
-  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  line-height: 1.3;
-}
-
-.page-title {
-  text-align: center;
 }
 
 .hyperglikemia__image-container_hyperglikemia-symptoms {
