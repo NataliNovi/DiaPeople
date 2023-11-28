@@ -1177,14 +1177,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 190px;
+        margin-top: 170px;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 180px;
+        margin-top: 160px;
 
     }
 
@@ -1332,15 +1332,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 //swiper 
 .swiper {
     width: 100%;
-    height: auto;
-    height: 420px;
+    height: 380px;
+    //height: 420px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         margin-top: 100px;
         //height: 420px;
         height: 620px;
+        margin-bottom: 20px;
 
 
     }

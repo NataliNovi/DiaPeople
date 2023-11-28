@@ -1030,7 +1030,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 100%;
     display: block;
     margin-left: 0px;
-    margin-top: 190px;
+    margin-top: 170px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1038,7 +1038,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 100%;
     display: block;
     margin-left: 0px;
-    margin-top: 180px;
+    margin-top: 160px;
   }
 }
 .container-main__main {
@@ -1174,15 +1174,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .swiper {
   width: 100%;
-  height: auto;
-  height: 420px;
+  height: 380px;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .swiper {
     margin-top: 100px;
     height: 620px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2231,7 +2230,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .insulin__text-container {
     font-size: 18px;
-    padding: 0px 15px 15px 15px;
+    padding: 10px 15px 5px 15px;
   }
 }
 
@@ -2359,6 +2358,10 @@ textarea {
   border: solid 1px #032a3f;
 }
 
+#read-more-article-NewPeople1 {
+  display: none;
+}
+
 .psyhology__text-container {
   width: 100%;
   margin-top: 20px;
@@ -2373,7 +2376,7 @@ textarea {
 }
 .psyhology-start__entrance-part_text {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   line-height: 1.5;
 }
 .psyhology-start__entrance-part_confucious-img-container {
