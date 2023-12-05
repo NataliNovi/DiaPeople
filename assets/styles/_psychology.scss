@@ -6,44 +6,17 @@
         padding: 20px;
         font-family: $font-family-different;
         font-size: $font-size-medium-plus;
-        line-height: 1.3;
+        line-height: 1.5;
     }
 }
 
 .psyhology-start {
 
     &__entrance-part {
-        // display: flex;
         display: block;
-
-        // @media screen and (max-width: $grid-breakpoint-md) {
-        //     display: block;
-        // }
-
-
-        // &_text {
-        //     width: 55%;
-        //     //margin-top: 20px;
-        //     //padding: 20px;
-        //     font-size: $font-size-small-plus;
-        //     font-family: $font-family-sans-serif;
-        //     line-height: 1.6;
-        //     padding-left: 10px;
-        // }
-
-        // &_confucious-img-container {
-        //     width: 45%;
-        //     //margin-top: 20px;
-        //     padding: 10px;
-        //     border-radius: 6px;
-
-        // }
-
-        // @media screen and (max-width: $grid-breakpoint-lg) {
 
         &_text {
             width: 100%;
-            //margin-top: 20px;
             padding: 0 10px 10px 10px;
             line-height: 1.5;
         }
@@ -51,14 +24,12 @@
         &_confucious-img-container {
             width: 100%;
             margin-top: 20px;
-            //padding: 10px;
             border-radius: 6px;
             display: flex;
             justify-content: flex-end;
             padding-right: 10px;
+            padding-left: 10px;
         }
-
-        // }
     }
 }
 
@@ -120,7 +91,7 @@
     border: solid 1px $color-blue-burger;
     background-color: $color-blue-burger;
     color: $color-main;
-    font-size: $font-size-medium;
+    font-size: $font-size-small-plus;
     display: flex;
     align-items: center;
     justify-content: center;
