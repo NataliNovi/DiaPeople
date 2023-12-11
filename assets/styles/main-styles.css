@@ -93,7 +93,7 @@ body._lock {
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
 }
 
 .header-burger {
@@ -661,7 +661,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 70px;
     z-index: 10;
   }
 }
@@ -990,6 +990,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   ul li a:hover {
     background-color: #62B4E0;
     color: #fff;
+    cursor: pointer;
   }
   ul li ul li:hover ul {
     display: block;
@@ -1038,7 +1039,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     width: 100%;
     display: block;
     margin-left: 0px;
-    margin-top: 160px;
+    margin-top: 150px;
   }
 }
 .container-main__main {
@@ -1181,12 +1182,12 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .swiper {
     margin-top: 100px;
     height: 620px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 576px) {
   .swiper {
-    margin-top: 140px;
+    margin-top: 130px;
     height: 520px;
   }
 }
@@ -1454,8 +1455,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 992px) {
   .white-background-desktop_about {
-    width: 100%;
-    margin-right: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1473,8 +1474,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 992px) {
   .white-background-desktop_important {
-    width: 100%;
-    margin-left: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2180,6 +2181,41 @@ textarea {
   text-align: center;
 }
 
+.what-is-diabete__symptoms {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .what-is-diabete__symptoms {
+    grid-template-columns: 100%;
+  }
+}
+.what-is-diabete__symptoms_text {
+  width: 100%;
+}
+.what-is-diabete__symptoms_video {
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .what-is-diabete__symptoms_video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.what-is-diabete__symptoms_preview-lesson {
+  width: 40%;
+}
+@media screen and (max-width: 992px) {
+  .what-is-diabete__symptoms_preview-lesson {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .what-is-diabete__symptoms_preview-lesson {
+    width: 100%;
+  }
+}
 .what-is-diabete__image-container {
   max-width: 100vw;
   display: flex;
@@ -2218,6 +2254,40 @@ textarea {
   .what-is-diabete__image-container_what-is-diabete-img2mobile {
     display: none;
   }
+}
+
+.preview_lesson {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .preview_lesson {
+    width: 100%;
+  }
+}
+.preview_glucose-level {
+  width: 30%;
+}
+@media screen and (max-width: 992px) {
+  .preview_glucose-level {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .preview_glucose-level {
+    width: 100%;
+  }
+}
+
+.background__orange {
+  background-color: rgba(247, 178, 119, 0.6);
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.no-link-decor {
+  text-decoration: none;
+  color: #032a3f;
 }
 
 .insulin__text-container {

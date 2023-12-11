@@ -19,6 +19,10 @@ body {
 
 }
 
+// p {
+//     text-indent: 30px;
+// }
+
 
 // .wrapper {
 //     max-width: 1420px;
@@ -43,8 +47,8 @@ body._lock {
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    //min-height: 90px;
-    height: 80px;
+    height: 70px;
+    //height: 80px;
 
 }
 
@@ -692,7 +696,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            margin-top: 80px;
+            //margin-top: 80px;
+            margin-top: 70px;
             z-index: 10;
 
         }
@@ -1131,6 +1136,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         //background-color: $color-sublink-burger;
         background-color: $color-blue-burger;
         color: $color-main;
+        cursor: pointer;
     }
 
     ul li ul li:hover ul {
@@ -1178,13 +1184,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         display: block;
         margin-left: 0px;
         margin-top: 170px;
+        //margin-top: 170px;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 160px;
+        margin-top: 150px;
+        //margin-top: 160px;
 
     }
 
@@ -1341,13 +1349,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-top: 100px;
         //height: 420px;
         height: 620px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
 
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        margin-top: 140px;
+        margin-top: 130px;
         //height: 320px;
         height: 520px;
 
@@ -1706,8 +1714,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (max-width: $grid-breakpoint-lg) {
-            width: 100%;
-            margin-right: 0%;
+            //width: 100%;
+            margin-left: 2%;
+            margin-right: 2%;
+            //margin-right: 0%;
 
         }
 
@@ -1728,8 +1738,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
         @media screen and (max-width: $grid-breakpoint-lg) {
-            width: 100%;
-            margin-left: 0%;
+            //width: 100%;
+            margin-left: 2%;
+            margin-right: 2%;
 
         }
 
