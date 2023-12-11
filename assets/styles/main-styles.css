@@ -2308,14 +2308,30 @@ textarea {
   text-align: center;
 }
 
+.insulin-articles-and-lessons-preview {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+@media screen and (max-width: 768px) {
+  .insulin-articles-and-lessons-preview {
+    grid-template-columns: 100%;
+  }
+}
+
 .insulin-articles {
+  width: 100%;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .insulin-articles {
+    width: 100%;
+  }
 }
 .insulin-articles__ins-article {
   background-color: #fff;
   border: solid 1px #62B4E0;
   margin: 10px;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   color: #032a3f;
   text-decoration: none;
   font-size: 18px;
@@ -2323,6 +2339,19 @@ textarea {
   border-radius: 6px;
 }
 
+.insulin__preview-lesson {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  padding: 0px 10px 0px 10px;
+}
+@media screen and (max-width: 768px) {
+  .insulin__preview-lesson {
+    grid-template-columns: 100%;
+    margin: 10px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+  }
+}
 .insulin__images {
   display: flex;
 }
@@ -2368,6 +2397,10 @@ textarea {
   .insulin__image-container_insulin-time-2 {
     width: 100%;
   }
+}
+
+.note {
+  font-size: 16px;
 }
 
 #read-more-article-ins0 {
