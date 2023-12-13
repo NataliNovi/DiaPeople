@@ -2292,30 +2292,20 @@ textarea {
 
 .insulin__text-container {
   width: 100%;
-  padding: 5px 15px 15px 15px;
-  font-size: 18px;
+  padding: 5px 20px 15px 20px;
+  font-size: 16px;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .insulin__text-container {
-    font-size: 18px;
-    padding: 10px 15px 5px 15px;
+    font-size: 16px;
+    padding: 10px 20px 5px 20px;
   }
 }
 
 .page-title {
   text-align: center;
-}
-
-.insulin-articles-and-lessons-preview {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-@media screen and (max-width: 768px) {
-  .insulin-articles-and-lessons-preview {
-    grid-template-columns: 100%;
-  }
 }
 
 .insulin-articles {
@@ -2339,18 +2329,42 @@ textarea {
   border-radius: 6px;
 }
 
+.lessons-preview_horizontal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .lessons-preview_horizontal {
+    grid-template-columns: 33% 33% 33%;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lessons-preview_horizontal {
+    grid-template-columns: 100%;
+    margin-right: 0px;
+  }
+}
+
 .insulin__preview-lesson {
-  width: 100%;
+  width: 99%;
   text-align: center;
   margin: 10px;
-  padding: 0px 10px 0px 10px;
 }
 @media screen and (max-width: 768px) {
   .insulin__preview-lesson {
     grid-template-columns: 100%;
     margin: 10px 0px 20px 0px;
     padding: 0px 10px 0px 10px;
+    width: 100%;
   }
+}
+.insulin__preview-lesson__preview-lesson:first-child {
+  margin: 0px 10px 0px 0px;
+}
+.insulin__preview-lesson__preview-lesson:last-child {
+  margin: 0px 0px 0px 10px;
 }
 .insulin__images {
   display: flex;
@@ -2363,12 +2377,13 @@ textarea {
 .insulin__image-container {
   max-width: 100vw;
   display: flex;
-  align-items: center;
   margin: 20px auto;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .insulin__image-container {
     flex-direction: column;
+    margin: 10px 10px 10px 10px;
   }
 }
 .insulin__image-container_insulin-action {
@@ -2397,6 +2412,10 @@ textarea {
   .insulin__image-container_insulin-time-2 {
     width: 100%;
   }
+}
+
+.insulin-link {
+  margin-left: 10px;
 }
 
 .note {
@@ -2456,6 +2475,16 @@ textarea {
   scale: 1.02;
 }
 
+.text-list {
+  background-color: #fff;
+  padding-left: 10px;
+  margin-left: 0px;
+  border: solid 1px #fff;
+  list-style: inside;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
@@ -2509,7 +2538,7 @@ textarea {
   background-color: #fff;
   border: solid 1px #62B4E0;
   margin: 10px;
-  padding: 10px;
+  padding: 0px 10px 0 10px;
   color: #032a3f;
   text-decoration: none;
   font-size: 16px;
@@ -2542,7 +2571,7 @@ textarea {
 }
 
 .button-read-article {
-  height: 60px;
+  height: 40px;
   border-radius: 6px;
   border: solid 1px #62B4E0;
   background-color: #62B4E0;
@@ -2552,9 +2581,8 @@ textarea {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 30%;
+  width: 25%;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 576px) {
   .button-read-article {
@@ -3156,4 +3184,20 @@ button[type=submit]:not(:disabled):focus {
   background-color: transparent;
   display: inline;
   padding: 0;
+}
+
+#read-more-article-donate {
+  display: none;
+}
+
+.donate__oferta {
+  background-color: #fff;
+  border: solid 1px #62B4E0;
+  padding: 0px 10px 0px 10px;
+  color: #032a3f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 6px;
+  height: 300px;
 }/*# sourceMappingURL=main-styles.css.map */

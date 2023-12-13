@@ -1,14 +1,14 @@
 .insulin {
     &__text-container {
         width: 100%;
-        padding: 5px 15px 15px 15px;
-        font-size: $font-size-medium;
+        padding: 5px 20px 15px 20px;
+        font-size: $font-size-small-plus;
         font-family: $font-family-sans-serif;
         line-height: 1.5;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            font-size: $font-size-medium;
-            padding: 10px 15px 5px 15px;
+            font-size: $font-size-small-plus;
+            padding: 10px 20px 5px 20px;
         }
     }
 }
@@ -18,14 +18,14 @@
 
 }
 
-.insulin-articles-and-lessons-preview {
-    display: grid;
-    grid-template-columns: 60% 40%;
+// .insulin-articles-and-lessons-preview {
+//     display: grid;
+//grid-template-columns: 60% 40%;
 
-    @media screen and (max-width: $grid-breakpoint-md) {
-        grid-template-columns: 100%;
-    }
-}
+//     @media screen and (max-width: $grid-breakpoint-md) {
+//         grid-template-columns: 100%;
+//     }
+// }
 
 
 .insulin-articles {
@@ -54,20 +54,46 @@
 
 }
 
+.lessons-preview {
+    &_horizontal {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-right: 20px;
+
+        @media screen and (min-width: $grid-breakpoint-xl) {
+            grid-template-columns: 33% 33% 33%;
+            margin-right: 20px;
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            grid-template-columns: 100%;
+            margin-right: 0px;
+        }
+    }
+}
+
 .insulin {
 
     &__preview-lesson {
-        width: 100%;
+        width: 99%;
         text-align: center;
         margin: 10px;
-        padding: 0px 10px 0px 10px;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             grid-template-columns: 100%;
             margin: 10px 0px 20px 0px;
             padding: 0px 10px 0px 10px;
+            width: 100%;
         }
 
+        &__preview-lesson:first-child {
+            margin: 0px 10px 0px 0px;
+        }
+
+        &__preview-lesson:last-child {
+            margin: 0px 0px 0px 10px;
+        }
     }
 
     &__images {
@@ -82,12 +108,13 @@
     &__image-container {
         max-width: 100vw;
         display: flex;
-
-        align-items: center;
         margin: 20px auto;
+        align-items: center;
+
 
         @media screen and (max-width: $grid-breakpoint-md) {
             flex-direction: column;
+            margin: 10px 10px 10px 10px;
         }
 
         &_insulin-action {
@@ -117,6 +144,10 @@
             }
         }
     }
+}
+
+.insulin-link {
+    margin-left: 10px;
 }
 
 .note {
