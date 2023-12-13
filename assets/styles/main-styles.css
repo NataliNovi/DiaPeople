@@ -73,7 +73,7 @@ a:any-link {
 html,
 body {
   height: 100vh;
-  background-color: #fff;
+  background-color: #aedcf4;
   margin: 0;
 }
 
@@ -375,6 +375,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 .container-header {
   width: 100vw;
+  max-width: 2160px;
   height: 90px;
   display: flex;
   flex-direction: row;
@@ -1010,6 +1011,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-left: 240px;
   z-index: 1;
   width: calc(100% - 240px);
+  max-width: 1920px;
   background-color: #fff;
 }
 @media screen and (min-width: 992px) {
@@ -1175,7 +1177,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .swiper {
   width: 100%;
-  height: 380px;
+  height: 420px;
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -1367,7 +1369,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .swiper-slide img {
-  width: 100%;
+  height: 100%;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
@@ -1387,6 +1390,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   bottom: 20px;
   right: 20px;
   z-index: 999;
+}
+@media screen and (min-width: 1200px) {
+  .scroll-to-top {
+    left: 1900px;
+  }
 }
 
 #scrollButton {
@@ -1418,6 +1426,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   z-index: 1;
   width: calc(100% - 240px);
   background-color: #fff;
+  max-width: 1920px;
 }
 @media screen and (min-width: 992px) {
   .articles {
@@ -2050,6 +2059,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .footer {
   margin-left: 240px;
   width: calc(100% - 240px);
+  max-width: 1920px;
   background-color: #ED8C72;
   color: #fff;
   display: flex;
@@ -2231,12 +2241,22 @@ textarea {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .what-is-diabete__image-container_what-is-diabete-img1 {
+    width: 50%;
+  }
+}
 .what-is-diabete__image-container_what-is-diabete-img2 {
   width: 98%;
 }
 @media screen and (max-width: 576px) {
   .what-is-diabete__image-container_what-is-diabete-img2 {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .what-is-diabete__image-container_what-is-diabete-img2 {
+    width: 50%;
   }
 }
 .what-is-diabete__image-container_what-is-diabete-img1mobile {
@@ -2262,6 +2282,11 @@ textarea {
 @media screen and (max-width: 576px) {
   .preview_lesson {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preview_lesson {
+    width: 30%;
   }
 }
 .preview_glucose-level {
@@ -2355,7 +2380,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .insulin__preview-lesson {
     grid-template-columns: 100%;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     padding: 0px 10px 0px 10px;
     width: 100%;
   }
@@ -2368,6 +2393,7 @@ textarea {
 }
 .insulin__images {
   display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .insulin__images {
@@ -2379,24 +2405,10 @@ textarea {
   display: flex;
   margin: 20px auto;
   align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .insulin__image-container {
-    flex-direction: column;
-    margin: 10px 10px 10px 10px;
-  }
-}
-.insulin__image-container_insulin-action {
-  width: 100%;
-  border: solid 1px #032a3f;
-}
-@media screen and (max-width: 768px) {
-  .insulin__image-container_insulin-action {
-    width: 100%;
-  }
+  justify-content: center;
 }
 .insulin__image-container_insulin-time-1 {
-  width: 30vw;
+  width: 80%;
   border: solid 1px #032a3f;
 }
 @media screen and (max-width: 768px) {
@@ -2404,13 +2416,23 @@ textarea {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .insulin__image-container_insulin-time-1 {
+    width: 50%;
+  }
+}
 .insulin__image-container_insulin-time-2 {
-  width: 32vw;
+  width: 80%;
   border: solid 1px #032a3f;
 }
 @media screen and (max-width: 768px) {
   .insulin__image-container_insulin-time-2 {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .insulin__image-container_insulin-time-2 {
+    width: 50%;
   }
 }
 
@@ -2488,6 +2510,11 @@ textarea {
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
+}
+@media screen and (min-width: 1200px) {
+  .hyperglikemia__image-container_hyperglikemia-symptoms {
+    width: 50%;
+  }
 }
 
 #read-more-article-NewPeople1 {

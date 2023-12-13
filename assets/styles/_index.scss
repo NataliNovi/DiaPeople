@@ -12,12 +12,17 @@
 html,
 body {
     height: 100vh;
-    background-color: $color-main;
+    // background-color: $color-main;
+    background-color: $color-sublink-burger;
     margin: 0;
     //font-family: $font-family-sans-serif;
     //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
+
+// .container-main {
+//     max-width: $container-max-width;
+// }
 
 // p {
 //     text-indent: 30px;
@@ -378,7 +383,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .container-header {
 
     width: 100vw;
-    //height: 140px;
+    max-width: $header-max-width;
     height: 90px;
     display: flex;
     flex-direction: row;
@@ -1161,7 +1166,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     margin-left: 240px;
     z-index: 1;
     width: calc(100% - 240px);
-    //display: flex;
+    max-width: $container-max-width;
     background-color: $color-main;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
@@ -1340,8 +1345,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 //swiper 
 .swiper {
     width: 100%;
-    height: 380px;
-    //height: 420px;
+    //height: 380px;
+    height: 420px;
     margin-top: 20px;
     //margin-bottom: 20px;
 
@@ -1473,24 +1478,18 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .dia-news-desktop {
-    // position: absolute;
-    // right: 0px;
-    // bottom: -20px;
-    // top: -20px;
+
     display: flex;
     flex-direction: column;
     background-color: $color-beige;
     color: $color-dark-text;
     justify-content: space-around;
-    //padding: 20px;
     font-size: $font-size-medium;
     font-family: $font-family-serif;
     line-height: 1.4;
-    //max-height: 50%;
     max-width: 40%;
     padding: 0 20px 0 20px;
     text-decoration: none;
-    //border-radius: 6px;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
@@ -1509,7 +1508,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-size: $font-size-medium;
     line-height: 1.5;
     font-family: $font-family-serif;
-    //max-height: 50%;
     max-width: 100%;
     height: 160px;
     padding: 0px 20px 20px 20px;
@@ -1549,10 +1547,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     }
 
-    //display: flex;
-    // justify-content: center;
-    // align-items: flex-start;
-    // text-align: center;
 }
 
 .slider-button {
@@ -1596,7 +1590,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .swiper-slide img {
-    width: 100%;
+    //width: 100%;
+    height: 100%;
+    width: 70%;
     object-fit: cover;
     border-radius: 6px;
     margin: 0 0 auto;
@@ -1634,9 +1630,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     right: 20px;
     z-index: 999;
 
-    // @media screen and (min-width: $grid-breakpoint-xxl) {
-    //     left: 1340px;
-    // }
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        left: 1900px;
+    }
 }
 
 #scrollButton {
@@ -1669,6 +1665,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     z-index: 1;
     width: calc(100% - 240px);
     background-color: $color-main;
+    max-width: $container-max-width;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
 
@@ -2458,7 +2455,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .footer {
     margin-left: 240px;
     width: calc(100% - 240px);
-    //height: 280px;
+    max-width: $container-max-width;
     background-color: $color-accent;
     color: $color-main;
     // display: grid;

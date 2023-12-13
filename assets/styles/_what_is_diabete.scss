@@ -71,6 +71,10 @@
                 display: none;
             }
 
+            @media screen and (min-width: $grid-breakpoint-xl) {
+                width: 50%;
+            }
+
         }
 
         &_what-is-diabete-img2 {
@@ -78,6 +82,10 @@
 
             @media screen and (max-width: $grid-breakpoint-sm) {
                 display: none;
+            }
+
+            @media screen and (min-width: $grid-breakpoint-xl) {
+                width: 50%;
             }
         }
 
@@ -106,6 +114,10 @@
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             width: 100%;
+        }
+
+        @media screen and (min-width: $grid-breakpoint-xl) {
+            width: 30%;
         }
     }
 
