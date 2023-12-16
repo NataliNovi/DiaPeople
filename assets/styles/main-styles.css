@@ -2662,6 +2662,16 @@ textarea {
   font-size: 22px;
 }
 
+.posobia-lgoty {
+  max-width: 1400px;
+  overflow-x: scroll;
+}
+
+.lgoty__posobia-lgoty {
+  width: 100%;
+  height: 600px;
+}
+
 .celiakia__add-materials {
   display: grid;
   grid-template-columns: 100%;
@@ -3275,4 +3285,7 @@ button[type=submit]:not(:disabled):focus {
   font-size: 18px;
   line-height: 1.5;
   border-radius: 6px;
+}
+.donate__public-oferta {
+  width: 100%;
 }/*# sourceMappingURL=main-styles.css.map */
