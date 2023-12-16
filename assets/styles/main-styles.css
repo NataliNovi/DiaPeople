@@ -1369,8 +1369,8 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .swiper-slide img {
+  width: 100%;
   height: 100%;
-  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
@@ -2176,6 +2176,20 @@ textarea {
 .about-channel__image-container_diadzetka-img {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .about-channel__image-container_diadzetka-img {
+    width: 100%;
+  }
+}
+
+.link-style-channel {
+  color: #032a3f;
+}
+
+.link-style-channel:hover {
+  cursor: pointer;
+  color: #62B4E0;
+}
 
 .what-is-diabete__text-container {
   width: 100%;
@@ -2406,6 +2420,26 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .insulin__image-container {
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+  }
+}
+.insulin__image-container_insulin-action {
+  width: 100%;
+  border: solid 1px #032a3f;
+}
+@media screen and (max-width: 768px) {
+  .insulin__image-container_insulin-action {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .insulin__image-container_insulin-action {
+    width: 60%;
+  }
+}
 .insulin__image-container_insulin-time-1 {
   width: 80%;
   border: solid 1px #032a3f;
@@ -2626,6 +2660,22 @@ textarea {
 
 .comments {
   font-size: 22px;
+}
+
+.celiakia__add-materials {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .celiakia__add-materials {
+    grid-template-columns: 100%;
+  }
+}
+.celiakia__add-materials_pdf-documents {
+  width: 90%;
+  height: 500px;
+  margin-bottom: 20px;
 }
 
 .pages__images {
@@ -3225,5 +3275,4 @@ button[type=submit]:not(:disabled):focus {
   font-size: 18px;
   line-height: 1.5;
   border-radius: 6px;
-  height: 300px;
 }/*# sourceMappingURL=main-styles.css.map */

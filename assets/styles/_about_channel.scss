@@ -6,6 +6,19 @@
 
         &_diadzetka-img {
             width: 50%;
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                width: 100%;
+            }
         }
     }
+}
+
+.link-style-channel {
+    color: $color-dark-text;
+}
+
+.link-style-channel:hover {
+    cursor: pointer;
+    color: $color-blue-burger;
 }

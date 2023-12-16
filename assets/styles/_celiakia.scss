@@ -1,0 +1,19 @@
+.celiakia {
+    &__add-materials {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            grid-template-columns: 100%;
+        }
+
+        &_pdf-documents {
+            width: 90%;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+}
