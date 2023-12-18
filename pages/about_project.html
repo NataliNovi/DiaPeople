@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="./favicons/manifest.json">
+    <link rel="manifest" href="../favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -68,7 +68,7 @@
             <div class="container-header__button-complex">
 
             <div class = "button-header_donate">
-                <button class = "button button__button-donate">Поддержать проект</button>
+                <a href="donate.html"> <button class = "button button__button-donate">Поддержать проект</button></a>
             </div>
 
 
@@ -134,13 +134,13 @@
             <ul class="menu-burger__list">
                <li><a href='/index.html' class = "menu-burger__link">Главная страница</a></li>
                <li>
-                <a class="menu-burger__link">О диабете </a>
+                <a href="about_diabetes.html" class="menu-burger__link">О диабете </a>
 
                 <span class="menu-burger__arrow"></span>
                
                 <ul class="menu-burger__sub-list">
                     <li>
-                        <a href='what_is_diabete.html' class="menu-burger__sub-link">Что такое диабет</a>
+                        <a href='what_is_diabetes.html' class="menu-burger__sub-link">Что такое диабет</a>
                     </li>
                     <li>
                         <a href='insulin.html' class="menu-burger__sub-link">Инсулин</a>
@@ -167,16 +167,15 @@
 
 
                <li>
-                <a class="menu-burger__link">Устройства и гаджеты</a>
+                <a href="gadgets.html" class="menu-burger__link">Устройства и гаджеты</a>
                 <span class="menu-burger__arrow"></span>
                 <ul class="menu-burger__sub-list">
                     <li>
-                        <a href='insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
-                    </li>
-                    <li>
                         <a href= 'measure_devices.html' class="menu-burger__sub-link">Средства измерения</a>
                     </li>
-
+                    <li>
+                        <a href='insulin_injection.html' class="menu-burger__sub-link">Средства введения инсулина</a>
+                    </li>
                     <li>
                         <a href= 'gadgets_settings.html' class="menu-burger__sub-link">Настройки</a>
                     </li>
@@ -185,7 +184,7 @@
 
 
                <li>
-                <a class="menu-burger__link">Нормативная база </a>
+                <a href="documents.html" class="menu-burger__link">Нормативная база </a>
                 <span class="menu-burger__arrow"></span>
                 <ul class="menu-burger__sub-list">
                     <li>
@@ -212,7 +211,7 @@
                </li>
 
              <li>
-                <a class="menu-burger__link">Диабет как образ жизни </a>
+                <a href="diabetes_lifestyle.html" class="menu-burger__link">Диабет как образ жизни </a>
 
                 <span class="menu-burger__arrow"></span>
                
@@ -227,7 +226,7 @@
                         <a href='for_students.html' class="menu-burger__sub-link">Школьникам и студентам</a>
                     </li>
                     <li>
-                        <a href='drivinghtml' class="menu-burger__sub-link">Вождение и диабет</a>
+                        <a href='driving.html' class="menu-burger__sub-link">Вождение и диабет</a>
                     </li>
                     <li>
                         <a href='recipes.html' class="menu-burger__sub-link">Рецепты и кухня</a>
@@ -247,7 +246,7 @@
                </li>
 
                <li>
-                <a href='world_diabete.html' class="menu-burger__link">Диабет в мире</a>
+                <a href='world_diabetes.html' class="menu-burger__link">Диабет в мире</a>
                </li>
 
                <li>
@@ -262,14 +261,14 @@
 
           <div class = "container-header__container-mobile">
 
-            <a class = "container-mobile__dialydi-mobile_dialydi-name" href='./pages/about_project.html'>ДиаЛюди <br> Беларусь</a>
+            <a class = "container-mobile__dialydi-mobile_dialydi-name" href='about_project.html'>ДиаЛюди <br> Беларусь</a>
 
                  <div class = "container-mobile__button-mobile_search">
                     <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openForm()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
                 </div>
 
                 <div class = "container-mobile__button-mobile_donate">
-                    <button class = "button button__button-donate">Поддержать проект</button>
+                    <a href="donate.html"> <button class = "button button__button-donate">Поддержать проект</button></a>
                 </div>
                 </div> 
 
@@ -294,16 +293,15 @@
     </header>
     <!-- header End -->
 
-
        <!-- nav Start -->
 
 
         <nav class = "main-menu" id="mainNav">
             <ul class="container-nav">
             <li class = "nav__item nav__item_primary"> <a href='/index.html'>Главная страница</a></li>
-                <li class = "nav__item nav__item_primary"> <a> О диабете<span>&#8594;</span></a>
+                <li class = "nav__item nav__item_primary"> <a href="about_diabetes.html"> О диабете<span>&#8594;</span></a>
             <ul class="submenu">
-                <li class="nav__item nav__item_link"><a href = 'what_is_diabete.html'>Что такое диабет</a></li>
+                <li class="nav__item nav__item_link"><a href = 'what_is_diabetes.html'>Что такое диабет</a></li>
                 <li class="nav__item nav__item_link"><a href = 'insulin.html'>Инсулин</a></li>
                 <li class="nav__item nav__item_link"><a href = 'hypoglikemia.html'>Гипогликемия</a></li>
                 <li class="nav__item nav__item_link"><a href = 'hyperglikemia.html'>Гипергликемия</a></li>
@@ -314,14 +312,14 @@
     
            <li class = "nav__item nav__item_primary"> <a href='psychology.html'>Страничка психолога</a></li>
     
-           <li class = "nav__item nav__item_primary"> <a>Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
+           <li class = "nav__item nav__item_primary"> <a href="gadgets.html">Устройства и гаджеты <span>&#8594;</span> <i class = "sub_gadgets"></i></a>
         <ul class="submenu">
-            <li class="nav__item nav__item_link"><a href = 'insulin_injection.html'>Средства введения инсулина</a></li>
             <li class="nav__item nav__item_link"><a href = 'measure_devices.html'>Средства измерения</a></li>
+            <li class="nav__item nav__item_link"><a href = 'insulin_injection.html'>Средства введения инсулина</a></li>
             <li class="nav__item nav__item_link"><a href = 'gadgets_settings.html'>Настройки</a></li>
         </ul>
         </li>
-           <li class = "nav__item nav__item_primary"> <a>Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
+           <li class = "nav__item nav__item_primary"> <a href="documents.html">Нормативная база <span>&#8594;</span> <i class = "sub_documents"></i></a>
             <ul class="submenu">
                 <li class="nav__item nav__item_link"><a href = 'posobia.html'>Пособия</a></li>
                 <li class="nav__item nav__item_link"><a href = 'lgoty.html'>Льготы</a></li>
@@ -331,7 +329,7 @@
            <li class = "nav__item nav__item_primary"> <a href='hospitals.html'>Медицинские учреждения</a></li>
            <li class = "nav__item nav__item_primary"> <a href='for-school.html'>Медработникам школ и детских садов</a></li>
 
-           <li class = "nav__item nav__item_primary"> <a href='diabete_lifestyle.html'>Диабет как образ жизни <span>&#8594;</span></a>
+           <li class = "nav__item nav__item_primary"> <a href='diabetes_lifestyle.html'>Диабет как образ жизни <span>&#8594;</span></a>
            <ul class="submenu">
             <li class="nav__item nav__item_link"><a href = 'sport.html'>Диабет и спорт</a></li>
             <li class="nav__item nav__item_link"><a href = 'jobs.html'>Диабет и профессии</a></li>
@@ -344,36 +342,34 @@
          
            <li class = "nav__item nav__item_primary"><a href='celiakia.html'>Диабет и целиакия</a></li>
            <li class = "nav__item nav__item_primary"> <a href='fakes.html'>Мифы, фейки, заблуждения</a></li>
-           <li class = "nav__item nav__item_primary"> <a href='world_diabete.html'>Диабет в мире</a></li>
+           <li class = "nav__item nav__item_primary"> <a href='world_diabetes.html'>Диабет в мире</a></li>
            <li class = "nav__item nav__item_primary"> <a href='community.html'>Сообщества, каналы, форумы </a></li>
         </ul>
         </nav>
     
          <!-- nav End -->
          <main>
+
+               <!-- scroll-to-top -->
+      <div class="scroll-to-top">
+        <button id = "scrollButton">&#8593;</button>
+      </div>
         </main>
     
 
-
         <footer class="footer">
-
-           <br>
-              <div class = "footer__button-footer_donate">
-                  <button class = "button button__button-donate">Поддержать проект</button>
-              </div>
-          
-              <br>
-          
-              <div class = footer__contacts> 
-                <div>Teл: +375 29 355-56-63, e-mail: diapeople.bel@gmail.com</div>  
-                <div> Адрес: 220090, Минск, Логойский тракт, 22А, ПОМ.44, офис 1 </div>
-               
-              </div>
-          
-              <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
-          
-          
-          </footer>
+            <br>
+               <div class = "footer__button-footer_donate">
+                 <a href="donate.html"> <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button></a>
+               </div>
+               <br>
+               <div class = footer__contacts> 
+                 <div>Teл: +375 29 355-56-63<br>
+                  e-mail: diapeople.bel@gmail.com</div> 
+                 <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
+               </div>
+               <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+           </footer>
        
        
           <script src="../assets/js/index.js"></script>

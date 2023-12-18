@@ -2536,8 +2536,13 @@ textarea {
   margin-left: 0px;
   border: solid 1px #fff;
   list-style: inside;
-  cursor: -webkit-grab;
-  cursor: grab;
+}
+
+.text-list:hover {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .hyperglikemia__image-container_hyperglikemia-symptoms {

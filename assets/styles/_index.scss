@@ -2468,6 +2468,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     align-items: center;
     font-size: $font-size-medium;
     font-family: $font-family-serif;
+    // position: fixed;
+    // bottom: 0px;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         margin-left: 240px;

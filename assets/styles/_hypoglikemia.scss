@@ -5,5 +5,11 @@
     margin-left: 0px;
     border: solid 1px $color-main;
     list-style: inside;
-    cursor: grab;
+    // cursor: grab;
+}
+
+.text-list:hover {
+    background-color: $color-main;
+    width: fit-content;
+
 }
