@@ -19,8 +19,6 @@ form {
 }
 
 
-
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -307,7 +305,7 @@ textarea.form-control {
 
 .form-check .form-check-input {
     float: left;
-    margin-left: -1.5em;
+    // margin-left: -1.5em;
 
     @media screen and (min-width: $grid-breakpoint-md) {
         margin-left: 240px;
@@ -332,6 +330,10 @@ textarea.form-control {
 
 .form-check-label {
     margin-bottom: 0;
+
+    @media screen and (min-width: $grid-breakpoint-md) {
+        margin-left: 240px;
+    }
 }
 
 .user-agreement {

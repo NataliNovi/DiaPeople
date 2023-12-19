@@ -2545,6 +2545,32 @@ textarea {
   width: fit-content;
 }
 
+.hypoglikemia__flex-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+  .hypoglikemia__flex-container {
+    grid-template-columns: 100%;
+  }
+}
+.hypoglikemia__flex-container_text {
+  width: 100%;
+}
+.hypoglikemia__flex-container_photo {
+  width: 100%;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .hypoglikemia__flex-container_photo {
+    margin-top: 0px;
+  }
+}
+
+.hypoglikemia-photo {
+  width: 100%;
+}
+
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
@@ -2971,7 +2997,6 @@ textarea.form-control {
 
 .form-check .form-check-input {
   float: left;
-  margin-left: -1.5em;
 }
 @media screen and (min-width: 768px) {
   .form-check .form-check-input {
@@ -2995,6 +3020,11 @@ textarea.form-control {
 
 .form-check-label {
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .form-check-label {
+    margin-left: 240px;
+  }
 }
 
 .user-agreement {
