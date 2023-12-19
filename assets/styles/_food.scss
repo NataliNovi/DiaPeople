@@ -1,0 +1,19 @@
+.food {
+    display: block;
+
+    &__pictures {
+        width: 100%;
+        padding: 0 10px 10px 10px;
+        line-height: 1.5;
+
+        &_food-pict-container {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: flex-start;
+            padding-right: 10px;
+            padding-left: 0px;
+        }
+    }
+}

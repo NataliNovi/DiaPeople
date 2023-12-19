@@ -77,6 +77,11 @@ body {
   margin: 0;
 }
 
+.blue-link {
+  color: #2988BC;
+  font-weight: 600;
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -2579,6 +2584,24 @@ textarea {
   .hyperglikemia__image-container_hyperglikemia-symptoms {
     width: 50%;
   }
+}
+
+.food {
+  display: block;
+}
+.food__pictures {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  line-height: 1.5;
+}
+.food__pictures_food-pict-container {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 10px;
+  padding-left: 0px;
 }
 
 #read-more-article-NewPeople1 {

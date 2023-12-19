@@ -35,6 +35,13 @@ body {
 
 //burger
 
+.blue-link {
+    //background-color: $color-sublink-burger;
+    color: $color-dark-blue;
+    font-weight: 600;
+    //color: $color-dark-text;
+}
+
 body._lock {
     overflow: hidden;
 }
