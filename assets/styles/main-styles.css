@@ -769,11 +769,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: 280px;
 }
 
-.flex-form-search {
-  display: flex;
-  justify-content: space-between;
-}
-
 .button {
   background-color: #FBD36C;
   border: solid 1px #FBD36C;
@@ -989,7 +984,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
   ul li a {
     color: #032a3f;
-    padding: 8px 8px 8px 10px;
+    padding: 6px 8px 6px 8px;
     display: block;
     text-decoration: none;
   }
@@ -1189,7 +1184,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .swiper {
     margin-top: 100px;
     height: 620px;
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1381,15 +1375,22 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   border-radius: 6px;
   margin: 0 0 auto;
 }
+@media screen and (min-width: 992px) {
+  .swiper-slide img {
+    width: 60%;
+  }
+}
 
 .swiper-button-next {
   left: auto;
   cursor: pointer;
 }
+
 .swiper-button-prev {
   right: auto;
   cursor: pointer;
 }
+
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -2603,6 +2604,21 @@ textarea {
   padding-right: 10px;
   padding-left: 0px;
 }
+@media screen and (min-width: 1200px) {
+  .food__pictures_food-pict-container {
+    width: 80%;
+  }
+}
+
+.hyperglikemia__image-container_hyperglikemia-symptoms {
+  width: 100%;
+  border: solid 1px #032a3f;
+}
+@media screen and (min-width: 1200px) {
+  .hyperglikemia__image-container_hyperglikemia-symptoms {
+    width: 50%;
+  }
+}
 
 #read-more-article-NewPeople1 {
   display: none;
@@ -2622,8 +2638,10 @@ textarea {
 }
 .psyhology-start__entrance-part_text {
   width: 100%;
-  padding: 0 10px 10px 10px;
+  padding: 0 0px 10px 0px;
   line-height: 1.5;
+  word-wrap: break-word;
+  text-align: justify;
 }
 .psyhology-start__entrance-part_confucious-img-container {
   width: 100%;
@@ -2631,8 +2649,6 @@ textarea {
   border-radius: 6px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .confucious {
@@ -2644,6 +2660,11 @@ textarea {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .confucious {
+    width: 50%;
+  }
+}
 
 .psyhology-articles {
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -2651,7 +2672,7 @@ textarea {
 .psyhology-articles__psy-article {
   background-color: #fff;
   border: solid 1px #62B4E0;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   padding: 0px 10px 0 10px;
   color: #032a3f;
   text-decoration: none;
@@ -2742,6 +2763,20 @@ textarea {
   margin-bottom: 20px;
 }
 
+#read-more-articleCeliakia1 {
+  display: none;
+}
+
+.magazin_pages {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.magazin_page {
+  width: 98%;
+  border: solid 1px #62B4E0;
+}
+
 .pages__images {
   display: flex;
   justify-content: center;
@@ -2764,6 +2799,24 @@ textarea {
   .pages__image-container_fakes {
     width: 100%;
   }
+}
+
+.partners-logo {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .partners-logo {
+    width: 50%;
+  }
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 form {

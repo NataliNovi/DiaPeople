@@ -73,30 +73,15 @@
 
 
             <div class = "button-header_search">
-              <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openFormDesktop()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
-          </div>
-
-          <div class="form-popup_desktop" id="myFormDesktop">
-            <div class="flex-form-search">
+                <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openFormDesktop()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
+            </div>
   
-             <form>
-              <div class = "button-header_search">
-                  <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
-                  <button type="submit" class="button__button-search_mobile">Искать</button>
-              </div>
-            </form>
+            <div class="form-popup_desktop" id="myFormDesktop">
+              <button class="small-button button__button-search_button-close-search" onclick="closeFormDesktop()">&#10006;</button>
+              <div class="gcse-search"></div>
 
-            <button class="small-button button__button-search_button-close-search" onclick="closeFormDesktop()">&#10006;</button>
           </div>
          </div>
-
-            <!-- <form>
-            <div class = "button-header_search">
-                <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
-                <button type="submit" class="button__button-search"><img class="button__button-search_lupa" src="./assets/images/white-lupa.png"/></button>
-            </div>
-          </form> -->
-
           
         </div>
 
@@ -274,17 +259,12 @@
 
             
                 <div class="form-popup_mobile" id="myForm">
-                  <div class="flex-form-search">
-        
-                   <form>
-                    <div class = "button-header_search">
-                        <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
-                        <button type="submit" class="button__button-search_mobile">Искать</button>
-                    </div>
-                  </form>
 
-                  <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
-                </div>
+        
+                        <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+  
+                        <div class="gcse-search"></div>
+ 
                </div>
     </div>
 
@@ -292,6 +272,7 @@
 </div>
     </header>
     <!-- header End -->
+
 
        <!-- nav Start -->
 
@@ -418,60 +399,35 @@
 <p><a href="https://t.me/+ROy3Wa0NnQcNgY_H" target="_blank"> Чат «Целиакия. Беларусь» в Telegram</a></p>
 
             <h3 class="page-title">Больше информации о целиакии</h3>
+
+            <div class="psyhology-articles">
+
+                <div class="psyhology-articles__psy-article"><h4>Информационный бюллетень «Под знаком перечеркнутого колоса». 31.05.2020, Выпуск N1.</h4>
+                
+                    <span id="dots-read-articleCeliakia1"></span>
+    
+                <span id="read-more-articleCeliakia1">
+                    <div class="magazin_pages">
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0001.jpg" alt="1 стр журнала"></div>
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0002.jpg" alt="2 стр журнала"></div>
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0003.jpg" alt="3 стр журнала"></div>
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0004.jpg" alt="4 стр журнала"></div>
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0005.jpg" alt="5 стр журнала"></div>
+   <div><img class="magazin_page" src="../assets/images/celiakia/kolos_jpg/NewsletterMay2020_page-0006.jpg" alt="6 стр журнала"></div>
+
+</div>
+                </span>
+            </p>
+                <div class="button-read-article button-read-articleCeliakia1" onclick="myFunctionReadArticleCeliakia1()" id="myBtnReadArticleCeliakia1">Читать<span>&#8594;</span></div>
+            </div>
+            </div>
+    
+    
             
-<!-- <div class="celiakia__add-materials">
 
 
-    <div><object><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/kolos_1.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/kolos_1.pdf">Download</a> instead.</p>
-    </object> <embed>
-    <p><a href="../assets/images/celiakia/kolos_1.pdf" download> Информационный бюллетень «Под знаком перечеркнутого колоса». 31.05.2020, Выпуск N1. Скачать</a></p> </div>
 
-
-    <div><object><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/kolos_2.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/kolos_2.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/kolos_2.pdf" download> Информационный бюллетень «Под знаком перечеркнутого колоса». 26.04.2021, Выпуск N2. Скачать</a></p></div>
-
-
-    <div><object ><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/garden-celiakia.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/garden-celiakiapdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/garden-celiakia.pdf" download> Целиакия в детском саду. Базовые сведения для детей и персонала. Скачать</a></p></div>
-
-
-    <div><object ><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/school-celiakia.pdf"type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/school-celiakia.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/school-celiakia.pdf" download> Целиакия в школе. Базовые сведения для детей и персонала. Скачать</a></p></div>
-
-
-    <div><object ><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/pamyatka_dlya_pacienta.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/pamyatka_dlya_pacienta.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/pamyatka_dlya_pacienta.pdf" download> Памятка для пациентов. Скачать</a></p></div>
-
-
-    <div><object ><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/bez-glutena.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/bez-glutena.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/bez-glutena.pdf" download> Безглютеновое питание - ДЛЯ КОГО И ПОЧЕМУ? Скачать</a></p></div>
-
-
-    <div><object ><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/kozhnaya_celiakia.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/kozhnaya_celiakia.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/kozhnaya_celiakia.pdf" download> Кожная целиакия. Скачать</a></p></div>
-
-    <div><object><embed class="celiakia__add-materials_pdf-documents" data="../assets/images/celiakia/social-food.pdf" type="application/pdf">
-        <p>Unable to display PDF file. <a href="../assets/images/celiakia/social-food.pdf">Download</a> instead.</p>
-    </object>  <embed>
-    <p><a href="../assets/images/celiakia/social-food.pdf" download> Памятка для сотрудников общественного питания. Скачать</a></p></div>
-
-        </div> -->
-
-
-        <div class="celiakia__add-materials">
+        <!-- <div class="celiakia__add-materials">
 
 
             <div><embed class="celiakia__add-materials_pdf-documents" src="../assets/images/celiakia/kolos_1.pdf"><embed>
@@ -509,7 +465,7 @@
         
                 </div>
 
-        </div>
+        </div> -->
     </div>
 
          </main>
@@ -530,7 +486,8 @@
         
         
            <script src="../assets/js/index.js"></script>
-           <!-- <script src="../assets/js/insulin.js"></script> -->
+           <script src="../assets/js/celiakia.js"></script>
+           <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
                 </body>
             </html>
 

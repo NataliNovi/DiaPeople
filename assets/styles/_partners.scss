@@ -1,0 +1,16 @@
+.partners-logo {
+    width: 50%;
+
+    @media screen and (min-width: $grid-breakpoint-md) {
+        width: 50%;
+    }
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

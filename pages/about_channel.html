@@ -73,30 +73,15 @@
 
 
             <div class = "button-header_search">
-              <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openFormDesktop()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
-          </div>
-
-          <div class="form-popup_desktop" id="myFormDesktop">
-            <div class="flex-form-search">
+                <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openFormDesktop()"><img class="button__button-search-sm_lupa-sm" src="../assets/images/white-lupa.png"/></button>
+            </div>
   
-             <form>
-              <div class = "button-header_search">
-                  <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
-                  <button type="submit" class="button__button-search_mobile">Искать</button>
-              </div>
-            </form>
+            <div class="form-popup_desktop" id="myFormDesktop">
+              <button class="small-button button__button-search_button-close-search" onclick="closeFormDesktop()">&#10006;</button>
+              <div class="gcse-search"></div>
 
-            <button class="small-button button__button-search_button-close-search" onclick="closeFormDesktop()">&#10006;</button>
           </div>
          </div>
-
-            <!-- <form>
-            <div class = "button-header_search">
-                <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
-                <button type="submit" class="button__button-search"><img class="button__button-search_lupa" src="./assets/images/white-lupa.png"/></button>
-            </div>
-          </form> -->
-
           
         </div>
 
@@ -274,7 +259,13 @@
 
             
                 <div class="form-popup_mobile" id="myForm">
-                  <div class="flex-form-search">
+
+        
+                        <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+  
+                        <div class="gcse-search"></div>
+                
+                  <!-- <div class="flex-form-search">
         
                    <form>
                     <div class = "button-header_search">
@@ -284,7 +275,7 @@
                   </form>
 
                   <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
-                </div>
+                </div> -->
                </div>
     </div>
 
@@ -292,6 +283,34 @@
 </div>
     </header>
     <!-- header End -->
+
+     
+
+         <!-- <div class = "container-header__container-mobile">
+
+            <a class = "container-mobile__dialydi-mobile_dialydi-name" href='./pages/about_project.html'>ДиаЛюди <br> Беларусь</a>
+
+                 <div class = "container-mobile__button-mobile_search">
+                    <button class="small-button button__button-search-sm_button-search-lupa"  onclick="openForm()"><img class="button__button-search-sm_lupa-sm" src="./assets/images/white-lupa.png"/></button>
+                </div>
+
+                <div class = "container-mobile__button-mobile_donate">
+                   <a href="./pages/donate.html"> <button aria-label="Поддержать проект"  class = "button button__button-donate">Поддержать проект</button></a>
+                </div>
+                </div> 
+
+                <div class="form-popup_mobile" id="myForm">
+        
+                      <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+
+                      <div class="gcse-search"></div>
+              
+    </div>
+    </div>
+    </div>
+</div>
+    </header> -->
+
 
 
        <!-- nav Start -->
@@ -443,5 +462,6 @@
            </footer>
        
           <script src="../assets/js/index.js"></script>
+          <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
                </body>
            </html>

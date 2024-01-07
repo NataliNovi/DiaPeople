@@ -17,3 +17,18 @@
 
 
 }
+
+
+#read-more-articleCeliakia1 {
+    display: none;
+}
+
+.magazin_pages {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.magazin_page {
+    width: 98%;
+    border: solid 1px $color-blue-burger;
+}
