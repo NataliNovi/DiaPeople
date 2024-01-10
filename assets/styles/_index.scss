@@ -1353,25 +1353,40 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .swiper {
     width: 100%;
     //height: 380px;
-    height: 420px;
+    height: 500px;
+    //height: 420px;
     margin-top: 20px;
     //margin-bottom: 20px;
+
+    // @media screen and (min-width: $grid-breakpoint-xxl) {
+    //     margin-top: 0px;
+    //     height: 650px;
+    // }
+
+    @media screen and (max-width: $grid-breakpoint-xxl) {
+        margin-top: 80px;
+        //height: 420px;
+        height: 420px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+        margin-top: 100px;
+        //height: 420px;
+        height: 420px;
+    }
 
     @media screen and (max-width: $grid-breakpoint-md) {
         margin-top: 100px;
         //height: 420px;
         height: 620px;
-        // margin-bottom: 10px;
-
-
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         margin-top: 130px;
         //height: 320px;
         height: 520px;
-
     }
+
 }
 
 .swiper-slide {
@@ -1410,19 +1425,23 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     // position: relative;
     //width: 100%;
     display: flex;
-    width: 64%;
+    // width: 64%;
     // padding-left: 20px;
     // margin-left: 2%;
     //justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
 
+
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        height: 100%;
+        width: auto;
+        padding-left: 0px;
+    }
+
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
         padding-left: 0px;
-        //height: 60%;
-        //border-right: solid 1px $color-beige;
-
     }
 
 }
@@ -1430,29 +1449,39 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .slide2 {
     // background-image: url('..//images/diadzetka.jpeg');
     display: flex;
-    width: 64%;
-    justify-content: center;
+    // width: 64%;
     align-items: center;
     //border-right: solid 1px $color-main;
 
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        height: 100%;
+        width: auto;
+        padding-left: 0px;
+    }
+
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
-        //border-right: solid 1px $color-beige;
-
+        padding-left: 0px;
     }
 }
 
 .slide3 {
     // background-image: url('..//images/diaschool.png');
     display: flex;
-    width: 64%;
+    //width: 64%;
     justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
 
 
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        width: 100%;
+        padding-left: 0px;
+    }
+
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
+        padding-left: 0px;
     }
 
 }
@@ -1479,10 +1508,10 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-.diadzetka-logo-slider {
-    height: 400px;
-    width: auto;
-}
+// .diadzetka-logo-slider {
+//     height: 400px;
+//     width: auto;
+// }
 
 .dia-news-desktop {
 
@@ -1494,9 +1523,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-size: $font-size-medium;
     font-family: $font-family-serif;
     line-height: 1.4;
-    max-width: 40%;
+    width: 40%;
     padding: 0 20px 0 20px;
     text-decoration: none;
+
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        width: 50%;
+        font-size: $font-size-large;
+
+
+    }
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
@@ -1596,15 +1632,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     scale: 1.05;
 }
 
+.slider-image-container {
+    display: flex;
+    justify-content: center;
+}
+
 .swiper-slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 6px;
     margin: 0 0 auto;
+    // margin-left: 40px;
 
-    @media screen and (min-width: $grid-breakpoint-lg) {
-        width: 60%;
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        width: 70%;
+        margin-left: 50px;
+
+    }
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        margin-left: 00px;
     }
 }
 
@@ -2385,8 +2433,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .a1-logo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+
+    &_zarga {
+        width: 100px;
+        height: auto;
+    }
 }
 
 .link {

@@ -1,3 +1,20 @@
 #read-more-article-NewPeople1 {
     display: none;
 }
+
+.book-preview {
+    width: 100px;
+}
+
+.blue-link {
+    color: $color-dark-blue;
+    text-decoration: underline;
+
+
+}
+
+.blue-link:hover {
+    color: $color-dark-text;
+    text-decoration: underline;
+
+}

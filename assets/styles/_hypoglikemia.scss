@@ -18,7 +18,8 @@
 
     &__flex-container {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
+
 
         @media screen and (max-width: $grid-breakpoint-md) {
             grid-template-columns: 100%;
@@ -32,10 +33,19 @@
             width: 100%;
             margin-top: 40px;
 
+
             @media screen and (max-width: $grid-breakpoint-md) {
                 margin-top: 0px;
+                width: 60%;
+            }
+
+            @media screen and (max-width: $grid-breakpoint-sm) {
+                margin-top: 0px;
+                width: 100%;
             }
         }
+
+
 
 
 

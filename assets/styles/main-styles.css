@@ -49,18 +49,6 @@ body {
   background-color: #fff;
 }
 
-a:-webkit-any-link {
-  text-decoration: none;
-}
-
-a:-moz-any-link {
-  text-decoration: none;
-}
-
-a:any-link {
-  text-decoration: none;
-}
-
 *:before,
 *:after {
   padding: 0;
@@ -1177,8 +1165,20 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .swiper {
   width: 100%;
-  height: 420px;
+  height: 500px;
   margin-top: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .swiper {
+    margin-top: 80px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .swiper {
+    margin-top: 100px;
+    height: 420px;
+  }
 }
 @media screen and (max-width: 768px) {
   .swiper {
@@ -1209,8 +1209,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .slide1 {
   display: flex;
-  width: 64%;
   align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .slide1 {
+    height: 100%;
+    width: auto;
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide1 {
@@ -1221,25 +1227,37 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 
 .slide2 {
   display: flex;
-  width: 64%;
-  justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .slide2 {
+    height: 100%;
+    width: auto;
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide2 {
     width: 100%;
+    padding-left: 0px;
   }
 }
 
 .slide3 {
   display: flex;
-  width: 64%;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .slide3 {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide3 {
     width: 100%;
+    padding-left: 0px;
   }
 }
 
@@ -1263,11 +1281,6 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .slider-img_desktop {
     display: none;
   }
-}
-
-.diadzetka-logo-slider {
-  height: 400px;
-  width: auto;
 }
 
 .dia-news-desktop {
@@ -1279,9 +1292,15 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 18px;
   font-family: "Philosopher", sans-serif;
   line-height: 1.4;
-  max-width: 40%;
+  width: 40%;
   padding: 0 20px 0 20px;
   text-decoration: none;
+}
+@media screen and (min-width: 1400px) {
+  .dia-news-desktop {
+    width: 50%;
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 768px) {
   .dia-news-desktop {
@@ -1367,17 +1386,28 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   scale: 1.05;
 }
 
+.slider-image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
   margin: 0 0 auto;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
   .swiper-slide img {
-    width: 60%;
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-slide img {
+    margin-left: 0px;
   }
 }
 
@@ -2011,8 +2041,12 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 
 .a1-logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+}
+.a1-logo_zarga {
+  width: 100px;
+  height: auto;
 }
 
 .link__for-school:hover, .link__dia-news:hover, .link__dia-shops:hover {
@@ -2553,7 +2587,7 @@ textarea {
 
 .hypoglikemia__flex-container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
 }
 @media screen and (max-width: 768px) {
   .hypoglikemia__flex-container {
@@ -2570,6 +2604,13 @@ textarea {
 @media screen and (max-width: 768px) {
   .hypoglikemia__flex-container_photo {
     margin-top: 0px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hypoglikemia__flex-container_photo {
+    margin-top: 0px;
+    width: 100%;
   }
 }
 
@@ -2622,6 +2663,20 @@ textarea {
 
 #read-more-article-NewPeople1 {
   display: none;
+}
+
+.book-preview {
+  width: 100px;
+}
+
+.blue-link {
+  color: #2988BC;
+  text-decoration: underline;
+}
+
+.blue-link:hover {
+  color: #032a3f;
+  text-decoration: underline;
 }
 
 .psyhology__text-container {
