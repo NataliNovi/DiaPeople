@@ -1358,21 +1358,29 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     margin-top: 20px;
     //margin-bottom: 20px;
 
-    // @media screen and (min-width: $grid-breakpoint-xxl) {
-    //     margin-top: 0px;
-    //     height: 650px;
-    // }
+    @media screen and (min-width: $grid-breakpoint-xxxl) {
+        margin-top: 0px;
+        height: 650px;
+    }
+
 
     @media screen and (max-width: $grid-breakpoint-xxl) {
         margin-top: 80px;
         //height: 420px;
-        height: 420px;
+        height: 500px;
+    }
+
+
+    @media screen and (max-width: $grid-breakpoint-lgg) {
+        margin-top: 80px;
+        //height: 420px;
+        height: 400px;
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
-        margin-top: 100px;
+        margin-top: 80px;
         //height: 420px;
-        height: 420px;
+        height: 400px;
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
@@ -1527,12 +1535,31 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 0 20px 0 20px;
     text-decoration: none;
 
-    @media screen and (min-width: $grid-breakpoint-xxl) {
+    @media screen and (min-width: $grid-breakpoint-xxxl) {
         width: 50%;
         font-size: $font-size-large;
+        margin-right: 100px;
+    }
 
+
+    @media screen and (max-width: $grid-breakpoint-xxxl) {
+        width: 50%;
+        font-size: $font-size-medium;
+        margin-right: 30px;
 
     }
+
+    @media screen and (max-width: $grid-breakpoint-xxl) {
+        width: 50%;
+        font-size: $font-size-medium;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+
+        font-size: $font-size-medium;
+    }
+
+
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
@@ -1665,6 +1692,17 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .swiper-button-prev {
     right: auto;
     cursor: pointer;
+}
+
+.black-link {
+    color: $color-dark-text;
+
+}
+
+.black-link:hover {
+    color: $color-dark-text;
+    text-decoration: underline;
+
 }
 
 

@@ -1168,16 +1168,28 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: 500px;
   margin-top: 20px;
 }
+@media screen and (min-width: 1900px) {
+  .swiper {
+    margin-top: 0px;
+    height: 650px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .swiper {
     margin-top: 80px;
-    height: 420px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .swiper {
+    margin-top: 80px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 992px) {
   .swiper {
-    margin-top: 100px;
-    height: 420px;
+    margin-top: 80px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1296,10 +1308,29 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding: 0 20px 0 20px;
   text-decoration: none;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1900px) {
   .dia-news-desktop {
     width: 50%;
     font-size: 26px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 1900px) {
+  .dia-news-desktop {
+    width: 50%;
+    font-size: 18px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .dia-news-desktop {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dia-news-desktop {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1419,6 +1450,15 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 .swiper-button-prev {
   right: auto;
   cursor: pointer;
+}
+
+.black-link {
+  color: #032a3f;
+}
+
+.black-link:hover {
+  color: #032a3f;
+  text-decoration: underline;
 }
 
 .scroll-to-top {
@@ -2666,7 +2706,7 @@ textarea {
 }
 
 .book-preview {
-  width: 100px;
+  width: 140px;
 }
 
 .blue-link {
@@ -2677,6 +2717,40 @@ textarea {
 .blue-link:hover {
   color: #032a3f;
   text-decoration: underline;
+}
+
+.dia-school-previews {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media screen and (max-width: 768px) {
+  .dia-school-previews {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dia-school-previews {
+    grid-template-columns: 100%;
+  }
+}
+.dia-school-previews__img-container {
+  width: 100%;
+  padding: 3px 3px 0px 3px;
+}
+.dia-school-previews__img-container_img {
+  width: 100%;
+}
+
+.dia-books-previews {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 24px;
+  padding: px 10px 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .dia-books-previews {
+    grid-template-columns: 100%;
+  }
 }
 
 .psyhology__text-container {
@@ -2707,7 +2781,7 @@ textarea {
 }
 
 .confucious {
-  width: 60%;
+  width: 40%;
   border-radius: 6px;
 }
 @media screen and (max-width: 992px) {
@@ -2786,6 +2860,20 @@ textarea {
 
 .psyh1-img {
   width: 94%;
+}
+
+.strange-deal {
+  width: 40%;
+}
+@media screen and (max-width: 992px) {
+  .strange-deal {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .strange-deal {
+    width: 100%;
+  }
 }
 
 .comments {

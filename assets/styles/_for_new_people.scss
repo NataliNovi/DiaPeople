@@ -3,7 +3,7 @@
 }
 
 .book-preview {
-    width: 100px;
+    width: 140px;
 }
 
 .blue-link {
@@ -16,5 +16,42 @@
 .blue-link:hover {
     color: $color-dark-text;
     text-decoration: underline;
+
+}
+
+.dia-school-previews {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    //gap: 2px;
+
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: 50% 50%
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: 100%
+    }
+
+    &__img-container {
+        width: 100%;
+        padding: 3px 3px 0px 3px;
+
+        &_img {
+            width: 100%;
+        }
+    }
+}
+
+.dia-books-previews {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 24px;
+    padding: px 10px 0 10px;
+
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: 100%
+    }
 
 }
