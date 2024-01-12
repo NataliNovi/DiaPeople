@@ -3543,4 +3543,34 @@ button[type=submit]:not(:disabled):focus {
 .donate__public-oferta {
   width: 100%;
   height: 400px;
+}
+
+.oferta__name {
+  text-align: center;
+}
+.oferta__minsk {
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-list {
+  background-color: #fff;
+}
+
+.white-list:hover {
+  background-color: #fff;
+}
+
+.rekvizity {
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .rekvizity {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rekvizity {
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=main-styles.css.map */

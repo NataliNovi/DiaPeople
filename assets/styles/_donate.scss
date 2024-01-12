@@ -19,3 +19,34 @@
         height: 400px;
     }
 }
+
+.oferta {
+    &__name {
+        text-align: center;
+    }
+
+    &__minsk {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.white-list {
+    background-color: $color-main;
+}
+
+.white-list:hover {
+    background-color: $color-main;
+}
+
+.rekvizity {
+    margin-left: 50px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        margin-left: 0px;
+    }
+}
