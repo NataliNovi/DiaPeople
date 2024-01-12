@@ -25,13 +25,10 @@
 
         &_confucious-img-container {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 0px;
             border-radius: 6px;
             display: flex;
             justify-content: flex-end;
-            // padding-right: 10px;
-            // padding-left: 10px;
-
         }
     }
 }
@@ -40,13 +37,12 @@
     width: 40%;
     border-radius: 6px;
 
-    @media screen and (max-width: $grid-breakpoint-lg) {
-        width: 100%;
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 30%;
     }
 
-
-    @media screen and (min-width: $grid-breakpoint-xl) {
-        width: 50%;
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
     }
 }
 
@@ -55,7 +51,6 @@
     font-family: $font-family-sans-serif;
 
     &__psy-article {
-        //height: 120px;
         background-color: $color-main;
         border: solid 1px $color-blue-burger;
         margin: 10px 0px 10px 0px;
@@ -106,13 +101,9 @@
     cursor: pointer;
     width: 25%;
     font-family: $font-family-sans-serif;
-    //margin-bottom: 20px;
-
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 50%;
-
-
     }
 }
 

@@ -2774,7 +2774,7 @@ textarea {
 }
 .psyhology-start__entrance-part_confucious-img-container {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   border-radius: 6px;
   display: flex;
   justify-content: flex-end;
@@ -2784,14 +2784,14 @@ textarea {
   width: 40%;
   border-radius: 6px;
 }
-@media screen and (max-width: 992px) {
-  .confucious {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .confucious {
-    width: 50%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .confucious {
+    width: 100%;
   }
 }
 
