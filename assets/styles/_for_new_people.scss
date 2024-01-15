@@ -4,19 +4,29 @@
 
 .book-preview {
     width: 140px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.book-preview img {
+    transition: 1s;
+    display: block;
+}
+
+
+.book-preview:hover {
+    transform: scale(1.3);
+    margin-left: 40px;
 }
 
 .blue-link {
     color: $color-dark-blue;
     text-decoration: underline;
-
-
 }
 
 .blue-link:hover {
     color: $color-dark-text;
     text-decoration: underline;
-
 }
 
 .dia-school-previews {
