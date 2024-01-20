@@ -2625,37 +2625,13 @@ textarea {
   width: fit-content;
 }
 
-.hypoglikemia__flex-container {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-@media screen and (max-width: 768px) {
-  .hypoglikemia__flex-container {
-    grid-template-columns: 100%;
-  }
-}
-.hypoglikemia__flex-container_text {
-  width: 100%;
-}
-.hypoglikemia__flex-container_photo {
-  width: 100%;
-  margin-top: 40px;
-}
-@media screen and (max-width: 768px) {
-  .hypoglikemia__flex-container_photo {
-    margin-top: 0px;
-    width: 60%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .hypoglikemia__flex-container_photo {
-    margin-top: 0px;
-    width: 100%;
-  }
-}
-
 .hypoglikemia-photo {
-  width: 100%;
+  float: left;
+  margin-right: 15px;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgb(207, 232, 220);
 }
 
 .hyperglikemia__image-container_hyperglikemia-symptoms {
@@ -2805,6 +2781,36 @@ textarea {
   }
 }
 
+.confucious-float-right {
+  float: right;
+  margin-left: 15px;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .confucious-float-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.confucious-float-left {
+  float: left;
+  margin-right: 15px;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .confucious-float-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .psyhology-articles {
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -2898,6 +2904,38 @@ textarea {
 .lgoty__posobia-lgoty {
   width: 80vw;
   height: 600px;
+}
+
+.legend {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.red-text {
+  color: red;
+  font-weight: 600;
+  clear: both;
+}
+
+.charlie {
+  width: 60%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .charlie {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .driving-lady {
+    width: 100%;
+  }
+}
+
+.float-clear {
+  clear: both;
 }
 
 .celiakia__add-materials {

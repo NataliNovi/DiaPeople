@@ -1,0 +1,31 @@
+.legend {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.red-text {
+    color: red;
+    font-weight: 600;
+    clear: both;
+}
+
+.charlie {
+    width: 60%;
+    margin-bottom: 20px;
+
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.driving-lady {
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+    }
+}
+
+.float-clear {
+    clear: both;
+}
