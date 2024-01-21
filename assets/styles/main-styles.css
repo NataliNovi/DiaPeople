@@ -2667,6 +2667,10 @@ textarea {
   }
 }
 
+#read-more-article-fruits1 {
+  display: none;
+}
+
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
