@@ -17,7 +17,6 @@ body {
     margin: 0;
     //font-family: $font-family-sans-serif;
     //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 }
 
 // .container-main {
@@ -28,18 +27,28 @@ body {
 //     text-indent: 30px;
 // }
 
-
 // .wrapper {
 //     max-width: 1420px;
 // }
-
 //burger
 
 .blue-link {
-    //background-color: $color-sublink-burger;
+    color: $color-dark-blue;
+
+}
+
+.blue-link {
     color: $color-dark-blue;
     font-weight: 600;
-    //color: $color-dark-text;
+    text-decoration: underline;
+}
+
+.blue-link:hover {
+    color: $color-accent;
+    text-decoration-color: $color-accent;
+
+
+
 }
 
 body._lock {
@@ -50,16 +59,15 @@ body._lock {
     min-height: 100%;
 }
 
-
 .header-burger-container {
     max-width: 100vw;
     margin: 0px auto;
     display: flex;
-    padding: 0px 20px 0px 0px;
+    padding: 10px 20px 0px 0px;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
     //height: 80px;
 
 }
@@ -102,12 +110,10 @@ body._lock {
         justify-content: center;
         align-items: center;
 
-
         &_diadzetka-link {
             cursor: pointer;
             color: $color-dark-blue;
             text-decoration: none;
-
         }
     }
 }
@@ -211,11 +217,9 @@ body._touch .menu-burger__arrow {
 
 }
 
-
 body._touch .menu-burger__arrow:hover {
     transform: scale(1.3);
     border-top: 20px solid $color-dark-blue;
-
 }
 
 body._touch .menu-burger__list>li._active .menu-burger__sub-list {
@@ -662,15 +666,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-right: 20px;
     }
 
-    //}
-
-    //mobile
-
-    //.container-header {
-
     &__container-mobile {
         width: 100vw;
-        //height: 90px;
         height: 80px;
         position: fixed;
         top: 0px;
@@ -694,7 +691,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            margin-top: 90px;
+            margin-top: 70px;
+            height: 60px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -781,7 +779,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     .button-header {
 
         display: flex;
-
 
         &_donate {
             margin-left: 20px;
@@ -967,7 +964,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .small-button {
-
     align-items: center;
     justify-content: center;
     font-weight: 400;
@@ -1007,47 +1003,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (min-width: $grid-breakpoint-sm) {
         width: 50vw;
     }
-
-
 }
-
-
-// .button::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     transition: all 0.3s;
-// }
-
-// .button:hover::before {
-//     opacity: 0;
-//     transform: scale(0.5, 0.5);
-// }
-
-// .button::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     opacity: 0;
-//     transition: all 0.6s;
-//     border: 1px solid $color-accent;
-//     border-radius: 6px;
-//     transform: scale(1.1, 1.1);
-// }
-
-// .button:hover::after {
-//     opacity: 1;
-//     transform: scale(1, 1);
-
-// }
 
 .button:hover {
     transform: scale(1.05);
@@ -1089,9 +1045,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width:769px) {
         display: none;
     }
-
 }
-
 
 @media screen and (min-width: $grid-breakpoint-md) {
 
@@ -1195,7 +1149,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 170px;
+        margin-top: 120px;
         //margin-top: 170px;
     }
 
@@ -1203,7 +1157,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         display: block;
         margin-left: 0px;
-        margin-top: 150px;
+        margin-top: 100px;
         //margin-top: 160px;
 
     }
@@ -1515,11 +1469,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
 }
-
-// .diadzetka-logo-slider {
-//     height: 400px;
-//     width: auto;
-// }
 
 .dia-news-desktop {
 
@@ -1917,7 +1866,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             background-color: $color-button;
             border: solid 1px $color-button;
             font-size: $font-size-medium;
-            //font-weight: 700;
 
         }
 
@@ -1926,10 +1874,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
     }
 
-
     &__links {
         display: flex;
-        //flex-direction: column;
         margin-top: 20px;
         margin-top: 20px;
         align-items: center;
@@ -1969,24 +1915,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             }
         }
     }
-
-
-    // &__confucius {
-    //     margin-top: 20px;
-    //     margin-bottom: 20px;
-    //     box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
-    //     padding: 20px;
-
-    //     @media screen and (min-width: $grid-breakpoint-sm) {
-
-    //         display: none;
-    //     }
-
-    //     &_confucius-photo {
-    //         width: 100%;
-    //     }
-
-    // }
 
     &__four-boxes-desktop {
         display: flex;

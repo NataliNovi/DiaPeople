@@ -53,6 +53,7 @@
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
+    z-index: 1000;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
@@ -68,6 +69,7 @@
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
+    z-index: 1000;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
