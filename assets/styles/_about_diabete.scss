@@ -8,6 +8,8 @@
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         grid-template-columns: 100%;
+        margin-top: -20px;
+
     }
 
     &__image-container {
