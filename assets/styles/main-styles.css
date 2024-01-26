@@ -2655,7 +2655,7 @@ textarea {
   padding-left: 10px;
   margin-left: 0px;
   border: solid 1px #fff;
-  list-style: inside;
+  list-style: disc;
 }
 
 .text-list:hover {

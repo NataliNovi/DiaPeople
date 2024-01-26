@@ -4,8 +4,8 @@
     padding-left: 10px;
     margin-left: 0px;
     border: solid 1px $color-main;
-    list-style: inside;
-    // cursor: grab;
+    list-style: disc;
+
 }
 
 .text-list:hover {
@@ -14,39 +14,7 @@
 
 }
 
-// .hypoglikemia {
 
-//     &__flex-container {
-//         display: grid;
-//         grid-template-columns: 60% 40%;
-
-
-//         @media screen and (max-width: $grid-breakpoint-md) {
-//             grid-template-columns: 100%;
-//         }
-
-//         &_text {
-//             width: 100%;
-//         }
-
-//         &_photo {
-//             width: 100%;
-//             margin-top: 40px;
-
-
-//             @media screen and (max-width: $grid-breakpoint-md) {
-//                 margin-top: 0px;
-//                 width: 60%;
-//             }
-
-//             @media screen and (max-width: $grid-breakpoint-sm) {
-//                 margin-top: 0px;
-//                 width: 100%;
-//             }
-//         }
-
-//     }
-// }
 
 .hypoglikemia-photo {
     float: left;
