@@ -2941,6 +2941,24 @@ textarea {
   height: 600px;
 }
 
+.for-school__information {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .for-school__information {
+    flex-direction: row;
+  }
+}
+.for-school__information_image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .for-school__information_image {
+    width: 50%;
+  }
+}
+
 .legend {
   font-style: italic;
   text-decoration: underline;
