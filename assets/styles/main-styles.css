@@ -2451,7 +2451,7 @@ textarea {
 
 .insulin__text-container {
   width: 100%;
-  padding: 5px 20px 15px 20px;
+  padding: 5px 10px 15px 10px;
   font-size: 16px;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
@@ -2459,7 +2459,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .insulin__text-container {
     font-size: 16px;
-    padding: 10px 20px 5px 20px;
+    padding: 10px 10px 5px 10px;
   }
 }
 
@@ -2479,7 +2479,7 @@ textarea {
 .insulin-articles__ins-article {
   background-color: #fff;
   border: solid 1px #62B4E0;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   padding: 0px 10px 0px 10px;
   color: #032a3f;
   text-decoration: none;
@@ -2515,7 +2515,6 @@ textarea {
   .insulin__preview-lesson {
     grid-template-columns: 100%;
     margin: 10px 0px 10px 0px;
-    padding: 0px 10px 0px 10px;
     width: 100%;
   }
 }
@@ -2588,10 +2587,6 @@ textarea {
   .insulin__image-container_insulin-time-2 {
     width: 50%;
   }
-}
-
-.insulin-link {
-  margin-left: 10px;
 }
 
 .note {
@@ -2723,7 +2718,7 @@ textarea {
 .news-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 20px;
+  gap: 15px;
 }
 @media screen and (min-width: 1200px) {
   .news-container {

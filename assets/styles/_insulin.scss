@@ -1,14 +1,14 @@
 .insulin {
     &__text-container {
         width: 100%;
-        padding: 5px 20px 15px 20px;
+        padding: 5px 10px 15px 10px;
         font-size: $font-size-small-plus;
         font-family: $font-family-sans-serif;
         line-height: 1.5;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             font-size: $font-size-small-plus;
-            padding: 10px 20px 5px 20px;
+            padding: 10px 10px 5px 10px;
         }
     }
 }
@@ -18,19 +18,7 @@
 
 }
 
-// .insulin-articles-and-lessons-preview {
-//     display: grid;
-//grid-template-columns: 60% 40%;
-
-//     @media screen and (max-width: $grid-breakpoint-md) {
-//         grid-template-columns: 100%;
-//     }
-// }
-
-
 .insulin-articles {
-
-
     width: 100%;
     font-family: $font-family-sans-serif;
 
@@ -43,7 +31,7 @@
         //height: 120px;
         background-color: $color-main;
         border: solid 1px $color-blue-burger;
-        margin: 10px;
+        margin: 10px 0px 10px 0px;
         padding: 0px 10px 0px 10px;
         color: $color-dark-text;
         text-decoration: none;
@@ -83,7 +71,7 @@
         @media screen and (max-width: $grid-breakpoint-md) {
             grid-template-columns: 100%;
             margin: 10px 0px 10px 0px;
-            padding: 0px 10px 0px 10px;
+            //padding: 0px 10px 0px 10px;
             width: 100%;
         }
 
@@ -160,9 +148,6 @@
     }
 }
 
-.insulin-link {
-    margin-left: 10px;
-}
 
 .note {
     font-size: $font-size-small-plus;
