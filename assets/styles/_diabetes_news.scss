@@ -1,0 +1,88 @@
+// .news {
+//     margin-bottom: 20px;
+
+//     &__photo {
+//         width: 40%;
+
+//         @media screen and (max-width: $grid-breakpoint-md) {
+//             grid-template-columns: 100%;
+//         }
+//     }
+
+//     &__photo2 {
+//         width: 60%;
+
+//         @media screen and (max-width: $grid-breakpoint-md) {
+//             grid-template-columns: 100%;
+//         }
+//     }
+// }
+
+// .news-container {
+//     display: grid;
+//     grid-template-columns: 100%;
+//     gap: 6px;
+
+//     @media screen and (max-width: $grid-breakpoint-md) {
+//         grid-template-columns: 100%;
+//     }
+
+// }
+
+// .news-short {
+//     cursor: pointer;
+// }
+
+// .news-short:hover {
+//     color: $color-dark-blue;
+// }
+
+// .news-full1 {
+//     display: none;
+
+// }
+
+// .news-full2 {
+//     display: none;
+
+// }
+
+.news-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: 100%;
+    }
+}
+
+.news-item {
+    border: 1px solid $color-dark-blue;
+    //margin: 10px 10px 0px 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news-item:last-child {
+    margin-bottom: 0px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        margin-bottom: 20px;
+    }
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-title {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.news-content {
+    display: none;
+    padding: 10px;
+}

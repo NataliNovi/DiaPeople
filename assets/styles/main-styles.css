@@ -2720,6 +2720,47 @@ textarea {
   }
 }
 
+.news-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .news-container {
+    grid-template-columns: 100%;
+  }
+}
+
+.news-item {
+  border: 1px solid #2988BC;
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-item:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .news-item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+}
+
+.news-title {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.news-content {
+  display: none;
+  padding: 10px;
+}
+
 #read-more-article-NewPeople1 {
   display: none;
 }
