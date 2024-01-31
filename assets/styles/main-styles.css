@@ -2725,6 +2725,11 @@ textarea {
   grid-template-columns: 50% 50%;
   gap: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .news-container {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
 @media screen and (max-width: 768px) {
   .news-container {
     grid-template-columns: 100%;
@@ -2753,6 +2758,11 @@ textarea {
 
 .news-title {
   margin: 10px;
+  cursor: pointer;
+}
+
+.news-title:hover {
+  color: #2988BC;
   cursor: pointer;
 }
 
