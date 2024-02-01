@@ -3020,6 +3020,11 @@ textarea {
   width: 60%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .charlie {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 576px) {
   .charlie {
     width: 100%;

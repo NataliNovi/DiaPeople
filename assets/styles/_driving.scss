@@ -13,6 +13,9 @@
     width: 60%;
     margin-bottom: 20px;
 
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 50%;
+    }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
