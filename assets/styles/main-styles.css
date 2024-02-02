@@ -2667,6 +2667,12 @@ textarea {
   border-radius: 5px;
   background-color: rgb(207, 232, 220);
 }
+@media screen and (max-width: 576px) {
+  .hypoglikemia-photo {
+    float: none;
+    width: 100%;
+  }
+}
 
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
@@ -2846,12 +2852,19 @@ textarea {
 }
 
 .confucious {
-  width: 40%;
+  width: auto;
   border-radius: 6px;
+  max-width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .confucious {
-    width: 30%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .confucious {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2864,7 +2877,6 @@ textarea {
   float: right;
   margin-left: 15px;
   width: 40%;
-  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
   z-index: 1000;
@@ -2873,6 +2885,8 @@ textarea {
   .confucious-float-right {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 0px;
+    float: none;
   }
 }
 
@@ -2880,7 +2894,6 @@ textarea {
   float: left;
   margin-right: 15px;
   width: 40%;
-  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
   z-index: 1000;
@@ -2889,6 +2902,8 @@ textarea {
   .confucious-float-left {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 0px;
+    float: none;
   }
 }
 
@@ -3040,6 +3055,38 @@ textarea {
 
 .float-clear {
   clear: both;
+}
+
+.small-size {
+  display: flex;
+}
+@media screen and (min-width: 576px) {
+  .small-size {
+    display: none;
+  }
+}
+
+.medium-size {
+  display: flex;
+}
+@media screen and (max-width: 576px) {
+  .medium-size {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .medium-size {
+    display: none;
+  }
+}
+
+.big-size {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .big-size {
+    display: none;
+  }
 }
 
 .celiakia__add-materials {

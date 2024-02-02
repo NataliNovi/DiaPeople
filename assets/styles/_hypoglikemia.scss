@@ -22,4 +22,9 @@
     border-radius: 5px;
     background-color: rgb(207, 232, 220);
 
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        float: none;
+        width: 100%;
+    }
+
 }
