@@ -2673,6 +2673,11 @@ textarea {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hypoglikemia-photo {
+    width: 40%;
+  }
+}
 
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
@@ -2721,19 +2726,40 @@ textarea {
   }
 }
 
-.news-container {
+.food__information {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .food__information {
+    grid-template-columns: 100%;
+  }
+}
+.food__information_image {
+  width: 99%;
+  border: solid 1px #fff;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+@media screen and (max-width: 1400px) {
   .news-container {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
   .news-container {
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .news-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -2741,6 +2767,11 @@ textarea {
   border: 1px solid #2988BC;
   width: 100%;
   overflow: hidden;
+  padding: 0.8rem 0.5rem;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .news-item:last-child {
@@ -2758,7 +2789,6 @@ textarea {
 }
 
 .news-title {
-  margin: 10px;
   cursor: pointer;
 }
 
@@ -2769,7 +2799,10 @@ textarea {
 
 .news-content {
   display: none;
-  padding: 10px;
+}
+
+.news-date {
+  font-weight: 400;
 }
 
 #read-more-article-NewPeople1 {
@@ -2856,11 +2889,6 @@ textarea {
   border-radius: 6px;
   max-width: 100%;
 }
-@media screen and (min-width: 1200px) {
-  .confucious {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 1200px) {
   .confucious {
     width: 100%;
@@ -2889,6 +2917,11 @@ textarea {
     float: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .confucious-float-right {
+    width: 40%;
+  }
+}
 
 .confucious-float-left {
   float: left;
@@ -2904,6 +2937,11 @@ textarea {
     margin-bottom: 20px;
     margin-left: 0px;
     float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confucious-float-left {
+    width: 40%;
   }
 }
 
@@ -3003,21 +3041,19 @@ textarea {
 }
 
 .for-school__information {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .for-school__information {
-    flex-direction: row;
+    grid-template-columns: 100%;
   }
 }
 .for-school__information_image {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .for-school__information_image {
-    width: 50%;
-  }
+  width: 99%;
+  border: solid 1px #2988BC;
+  border-radius: 6px;
+  margin-bottom: 5px;
 }
 
 .legend {
@@ -3057,35 +3093,16 @@ textarea {
   clear: both;
 }
 
-.small-size {
-  display: flex;
-}
-@media screen and (min-width: 576px) {
-  .small-size {
-    display: none;
-  }
-}
-
 .medium-size {
   display: flex;
 }
-@media screen and (max-width: 576px) {
-  .medium-size {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .medium-size {
-    display: none;
-  }
-}
 
-.big-size {
-  display: flex;
+.lila-moss {
+  width: 30%;
 }
-@media screen and (max-width: 992px) {
-  .big-size {
-    display: none;
+@media screen and (max-width: 576px) {
+  .lila-moss {
+    width: 100%;
   }
 }
 

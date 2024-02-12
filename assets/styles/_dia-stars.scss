@@ -1,27 +1,13 @@
-.small-size {
-    display: flex;
-
-    @media screen and (min-width: $grid-breakpoint-sm) {
-        display: none;
-    }
-}
-
 .medium-size {
     display: flex;
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        display: none;
-    }
-
-    @media screen and (min-width: $grid-breakpoint-md) {
-        display: none;
-    }
 }
 
-.big-size {
-    display: flex;
+.lila-moss {
+    width: 30%;
 
-    @media screen and (max-width: $grid-breakpoint-lg) {
-        display: none;
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
     }
+
 }

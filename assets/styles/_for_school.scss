@@ -1,21 +1,20 @@
 .for-school {
-    &__information {
-        display: flex;
-        flex-direction: column;
 
-        @media screen and (min-width: $grid-breakpoint-md) {
-            flex-direction: row;
+    &__information {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            grid-template-columns: 100%;
         }
 
 
-
-
         &_image {
-            width: 100%;
-
-            @media screen and (min-width: $grid-breakpoint-md) {
-                width: 50%;
-            }
+            width: 99%;
+            border: solid 1px $color-dark-blue;
+            border-radius: 6px;
+            margin-bottom: 5px;
         }
     }
 }

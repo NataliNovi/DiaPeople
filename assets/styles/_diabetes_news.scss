@@ -1,14 +1,18 @@
 .news-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 
-    @media screen and (min-width: $grid-breakpoint-xl) {
-        grid-template-columns: 33% 33% 33%;
+    @media screen and (max-width: $grid-breakpoint-xxl) {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -16,6 +20,11 @@
     border: 1px solid $color-dark-blue;
     width: 100%;
     overflow: hidden;
+    padding: 0.8rem 0.5rem;
+    font-size: $font-size-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .news-item:last-child {
@@ -32,7 +41,7 @@
 }
 
 .news-title {
-    margin: 10px;
+    //margin: 10px;
     cursor: pointer;
 }
 
@@ -43,5 +52,9 @@
 
 .news-content {
     display: none;
-    padding: 10px;
+    //padding: 10px;
+}
+
+.news-date {
+    font-weight: 400;
 }

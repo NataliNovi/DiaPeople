@@ -38,7 +38,7 @@
     max-width: 100%;
 
     @media screen and (min-width: $grid-breakpoint-xl) {
-        width: 100%;
+        // width: 100%;
     }
 
     @media screen and (max-width: $grid-breakpoint-xl) {
@@ -65,6 +65,10 @@
         margin-left: 0px;
         float: none;
     }
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 40%;
+    }
 }
 
 .confucious-float-left {
@@ -81,6 +85,10 @@
         margin-left: 0px;
         float: none;
 
+    }
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 40%;
     }
 }
 
