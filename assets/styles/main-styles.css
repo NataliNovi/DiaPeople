@@ -1391,6 +1391,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   text-align: center;
   text-decoration: none;
 }
+
 .slider-button {
   background-color: #FBD36C;
   border: solid 1px #FBD36C;
@@ -1589,13 +1590,13 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   padding-top: 20px;
   line-height: 1.5;
   font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .article__community-describe {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 0px;
   }
 }

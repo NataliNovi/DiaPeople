@@ -1551,21 +1551,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     color: $color-dark-text;
 }
 
-
 .dia-news-item {
     font-family: $font-family-serif;
-    //font-size: $font-size-medium;
     color: $color-dark-text;
-    //padding: 10px 20px 10px 20px;
     text-align: center;
     text-decoration: none;
-
-
-    @media screen and (max-width: $grid-breakpoint-lg) {
-        //font-size: $font-size-medium;
-
-    }
-
 }
 
 .slider-button {
@@ -1582,7 +1572,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-family: $font-family-serif;
     box-shadow: 8px 0 14px 0 rgba(0, 0, 0, .25);
     display: flex;
-    //padding-top: 5px;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -1592,8 +1581,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         right: 24px;
         height: 48px;
         width: 160px;
-        //padding-top: 12px;
-        //font-size: $font-size-medium;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
@@ -1619,7 +1606,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     object-fit: cover;
     border-radius: 6px;
     margin: 0 0 auto;
-    // margin-left: 40px;
 
     @media screen and (min-width: $grid-breakpoint-xxl) {
         width: 70%;
@@ -1716,10 +1702,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
     @media screen and (max-width: $grid-breakpoint-md) {
-
-        // margin-left: 180px;
-        // width: calc(100% - 180px);
-
         width: 100%;
         margin-left: 0px;
     }
@@ -1727,9 +1709,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
         margin-left: 0px;
-
     }
-
 }
 
 .white-background-desktop {
@@ -1738,18 +1718,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         background-color: $color-main;
         margin-bottom: 20px;
         border-radius: 6px;
-        //width: 80%;
         margin-left: 2%;
         margin-right: 2%;
         padding: 30px;
         box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (max-width: $grid-breakpoint-lg) {
-            //width: 100%;
             margin-left: 2%;
             margin-right: 2%;
-            //margin-right: 0%;
-
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -1761,7 +1737,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &_important {
         background-color: $color-main;
         border-radius: 6px;
-        //width: 80%;
         margin-left: 2%;
         margin-right: 2%;
         padding: 30px;
@@ -1769,7 +1744,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
         @media screen and (max-width: $grid-breakpoint-lg) {
-            //width: 100%;
             margin-left: 2%;
             margin-right: 2%;
 
@@ -1792,14 +1766,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         padding-top: 20px;
         line-height: 1.5;
         font-family: $font-family-sans-serif;
-        font-size: $font-size-medium;
-        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+        font-size: $font-size-small-plus;
         display: flex;
         flex-direction: column;
 
         @media screen and (max-width: $grid-breakpoint-md) {
 
-            font-size: $font-size-medium;
+            font-size: $font-size-small-plus;
             padding-bottom: 0px;
 
         }
@@ -1808,7 +1781,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__subscribe {
         display: block;
         margin-top: 20px;
-
     }
 
     &__viber-contact {
@@ -1842,9 +1814,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         background-color: $color-sublink-burger-old;
         font-family: $font-family-serif;
         text-align: center;
-        //margin-bottom: 20px;
         padding: 20px;
-        //box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
         @media screen and (min-width: $grid-breakpoint-md) {
             display: none;
@@ -1925,7 +1895,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-left: 2%;
         margin-right: 2%;
         text-align: center;
-        //box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
         text-decoration: none;
 
         @media screen and (max-width: $grid-breakpoint-lg) {
@@ -1971,9 +1940,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     &__two-boxes-desktop {
         display: flex;
         justify-content: space-between;
-        //background-color: $color-beige;
-        // margin-top: 20px;
-        // margin-bottom: 20px;
         margin-left: 2%;
         margin-right: 2%;
         padding: 20px;
@@ -2238,7 +2204,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     padding: 20px;
     border: solid $color-accent 1px;
     border-radius: 4px;
-    //margin-bottom: 20px;
 
     &__new-photo {
         width: 20%;
@@ -2258,8 +2223,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     border: solid $color-accent 1px;
     border-radius: 4px;
     position: relative;
-    //max-height: 400px;
-    // width: auto;
 
     &__event-text {
 
@@ -2366,7 +2329,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__dia-shops {
-        //display: block;
         display: flex;
         justify-content: center;
         margin-top: 20px;
@@ -2457,7 +2419,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             display: flex;
             flex-direction: row;
             align-items: center;
-            //width: 60%;
             height: 40px;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
@@ -2481,8 +2442,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     max-width: $container-max-width;
     background-color: $color-accent;
     color: $color-main;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2491,8 +2450,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     align-items: center;
     font-size: $font-size-medium;
     font-family: $font-family-serif;
-    // position: fixed;
-    // bottom: 0px;
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         margin-left: 240px;
@@ -2505,7 +2462,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width: $grid-breakpoint-lg) {
         margin-left: 240px;
         width: calc(100% - 240px);
-        //font-size: $font-size-small;
         font-size: $font-size-medium;
 
     }
