@@ -3050,10 +3050,15 @@ textarea {
   }
 }
 .for-school__information_image {
-  width: 99%;
+  width: 98%;
   border: solid 1px #2988BC;
   border-radius: 6px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 768px) {
+  .for-school__information_image {
+    width: 100%;
+  }
 }
 
 .legend {

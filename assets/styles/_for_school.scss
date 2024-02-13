@@ -11,10 +11,14 @@
 
 
         &_image {
-            width: 99%;
+            width: 98%;
             border: solid 1px $color-dark-blue;
             border-radius: 6px;
-            margin-bottom: 5px;
+            margin-bottom: 12px;
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                width: 100%;
+            }
         }
     }
 }
