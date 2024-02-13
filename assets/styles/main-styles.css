@@ -2885,15 +2885,9 @@ textarea {
 }
 
 .confucious {
-  width: auto;
+  width: 40%;
   border-radius: 6px;
   max-width: 100%;
-}
-@media screen and (max-width: 1200px) {
-  .confucious {
-    width: 100%;
-    height: auto;
-  }
 }
 @media screen and (max-width: 576px) {
   .confucious {
@@ -2907,7 +2901,6 @@ textarea {
   width: 40%;
   border-radius: 5px;
   margin-bottom: 20px;
-  z-index: 1000;
 }
 @media screen and (max-width: 576px) {
   .confucious-float-right {
@@ -2929,7 +2922,6 @@ textarea {
   width: 40%;
   border-radius: 5px;
   margin-bottom: 20px;
-  z-index: 1000;
 }
 @media screen and (max-width: 576px) {
   .confucious-float-left {

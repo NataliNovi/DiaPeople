@@ -32,19 +32,19 @@
 }
 
 .confucious {
-    // width: 40%;
-    width: auto;
+    width: 40%;
+    //width: auto;
     border-radius: 6px;
     max-width: 100%;
 
-    @media screen and (min-width: $grid-breakpoint-xl) {
-        // width: 100%;
-    }
+    // @media screen and (min-width: $grid-breakpoint-xl) {
+    //     // width: 100%;
+    // }
 
-    @media screen and (max-width: $grid-breakpoint-xl) {
-        width: 100%;
-        height: auto;
-    }
+    // @media screen and (max-width: $grid-breakpoint-xl) {
+    //     width: 100%;
+    //     height: auto;
+    // }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
@@ -57,7 +57,7 @@
     width: 40%;
     border-radius: 5px;
     margin-bottom: 20px;
-    z-index: 1000;
+    //z-index: 1000;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
@@ -77,7 +77,7 @@
     width: 40%;
     border-radius: 5px;
     margin-bottom: 20px;
-    z-index: 1000;
+    //z-index: 1000;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 100%;
