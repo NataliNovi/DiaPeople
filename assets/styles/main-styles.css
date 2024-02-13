@@ -2101,6 +2101,11 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   height: auto;
 }
 
+.gdb2-logo {
+  width: 100px;
+  margin-top: 20px;
+}
+
 .link__for-school:hover, .link__dia-news:hover, .link__dia-shops:hover {
   text-decoration: underline;
 }
@@ -2790,6 +2795,7 @@ textarea {
 
 .news-title {
   cursor: pointer;
+  font-size: 14px;
 }
 
 .news-title:hover {
@@ -3035,6 +3041,7 @@ textarea {
 .for-school__information {
   display: grid;
   grid-template-columns: 50% 50%;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .for-school__information {
@@ -3045,11 +3052,14 @@ textarea {
   width: 98%;
   border: solid 1px #2988BC;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  padding: 30px;
 }
 @media screen and (max-width: 768px) {
   .for-school__information_image {
     width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
   }
 }
 
@@ -3182,6 +3192,15 @@ textarea {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.logo-2gdkb {
+  width: 180px;
+}
+@media screen and (max-width: 768px) {
+  .logo-2gdkb {
+    width: 100px;
+  }
 }
 
 form {

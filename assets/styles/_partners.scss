@@ -14,3 +14,11 @@
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+.logo-2gdkb {
+    width: 180px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        width: 100px;
+    }
+}
