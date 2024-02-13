@@ -2285,7 +2285,7 @@ textarea {
 
 .navigate-page {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
 }
 @media screen and (min-width: 1200px) {
   .navigate-page {
@@ -3051,6 +3051,15 @@ textarea {
   .for-school__information_image {
     width: 100%;
   }
+}
+
+.navigate-page-image {
+  width: 100%;
+}
+
+.navigate-page-img-container {
+  width: 100%;
+  display: flex;
 }
 
 .legend {
