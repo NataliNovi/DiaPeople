@@ -16,13 +16,13 @@
         display: block;
 
         &_text {
-            width: 100%;
+            max-width: 100%;
             padding: 0 0px 10px 0px;
             line-height: 1.5;
         }
 
         &_confucious-img-container {
-            width: 100%;
+            //width: 100%;
             margin-top: 0px;
             border-radius: 6px;
             display: flex;
@@ -159,4 +159,8 @@
 
 .psyh1-img {
     width: 94%;
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 50%;
+    }
 }
