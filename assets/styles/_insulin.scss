@@ -59,6 +59,23 @@
             margin-right: 0px;
         }
     }
+
+    &_vertical {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 20px;
+
+        @media screen and (min-width: $grid-breakpoint-xl) {
+            grid-template-columns: repeat(6, 1fr);
+            margin-right: 20px;
+        }
+
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-right: 0px;
+        }
+    }
 }
 
 .insulin {

@@ -1,0 +1,20 @@
+.dia-shops {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+}
+
+.diashops-logo {
+    width: 100%;
+}

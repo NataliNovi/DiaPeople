@@ -2511,6 +2511,23 @@ textarea {
     margin-right: 0px;
   }
 }
+.lessons-preview_vertical {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .lessons-preview_vertical {
+    grid-template-columns: repeat(6, 1fr);
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lessons-preview_vertical {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 0px;
+  }
+}
 
 .insulin__preview-lesson {
   width: 99%;
@@ -3206,6 +3223,28 @@ textarea {
   .logo-2gdkb {
     width: 100px;
   }
+}
+
+.dia-shops {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .dia-shops {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dia-shops {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+}
+
+.diashops-logo {
+  width: 100%;
 }
 
 form {
