@@ -1354,10 +1354,15 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 .swiper-slide {
     text-align: center;
     font-size: $font-size-medium;
-    display: flex;
+    //display: flex;
+    background-color: $color-beige;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+
+
     //justify-content: space-between;
     //padding: 0 30px 0 30px;
-    background-color: $color-beige;
     // background-repeat: no-repeat;
     // background-size: auto;
     // background-position: 10% 100%;
@@ -1365,9 +1370,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     // width: 50%;
 
     @media screen and (max-width: $grid-breakpoint-md) {
+        display: block;
         padding-top: 20px;
         padding-bottom: 40px;
-        flex-direction: column;
 
     }
 }
@@ -1385,9 +1390,9 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     // background-size: auto;
     // background-position: 10% 50%;
     // position: relative;
-    //width: 100%;
+    width: 100%;
     display: flex;
-    // width: 64%;
+    //width: 64%;
     // padding-left: 20px;
     // margin-left: 2%;
     //justify-content: center;
@@ -1431,7 +1436,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     // background-image: url('..//images/diaschool.png');
     display: flex;
     //width: 64%;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     //border-right: solid 1px $color-main;
 
@@ -1480,26 +1485,26 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-size: $font-size-medium;
     font-family: $font-family-serif;
     line-height: 1.4;
-    width: 40%;
+    //width: 40%;
     padding: 0 20px 0 20px;
     text-decoration: none;
 
     @media screen and (min-width: $grid-breakpoint-xxxl) {
-        width: 50%;
+        //width: 50%;
         font-size: $font-size-large;
         margin-right: 100px;
     }
 
 
     @media screen and (max-width: $grid-breakpoint-xxxl) {
-        width: 50%;
+        //width: 50%;
         font-size: $font-size-medium;
         margin-right: 30px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-xxl) {
-        width: 50%;
+        //width: 50%;
         font-size: $font-size-medium;
     }
 
@@ -1596,25 +1601,28 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .slider-image-container {
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
 }
 
 .swiper-slide img {
     width: 100%;
+    //width: 60%;
     height: auto;
     object-fit: cover;
     border-radius: 6px;
-    margin: 0 0 auto;
+    //margin: 0 0 auto;
 
-    @media screen and (min-width: $grid-breakpoint-xxl) {
-        width: 70%;
-        margin-left: 50px;
+
+    @media screen and (min-width: $grid-breakpoint-lg) {
+        //width: 70%;
+        //margin-left: 50px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
         margin-left: 00px;
+
     }
 }
 
