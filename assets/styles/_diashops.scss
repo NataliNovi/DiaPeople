@@ -9,8 +9,10 @@
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        margin: 0 auto;
         padding: 20px;
+        width: 50%;
     }
 
 }

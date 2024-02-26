@@ -305,7 +305,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
     height: 100%;
     transform: translate(-100% 0px);
     background-color: #7dc1e5;
-    padding: 90px 30px 30px 10px;
+    padding: 80px 30px 30px 10px;
     transition: all 0.3s ease 0s;
     overflow: auto;
     align-content: center;
@@ -326,12 +326,12 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 768px) and (max-width: 768px) {
   .menu-burger__body::before {
-    height: 100px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 576px) {
   .menu-burger__body::before {
-    height: 90px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1693,6 +1693,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   margin-right: 2%;
   text-align: center;
   text-decoration: none;
+  font-family: "Philosopher", sans-serif;
 }
 @media screen and (max-width: 992px) {
   .article__four-boxes-desktop {
@@ -1751,7 +1752,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   color: #032a3f;
   padding: 10px;
   font-size: 22px;
-  font-family: "IBM Plex Sans", sans-serif, "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Philosopher", sans-serif;
   box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
@@ -3223,8 +3224,10 @@ textarea {
 }
 @media screen and (max-width: 576px) {
   .dia-shops {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    margin: 0 auto;
     padding: 20px;
+    width: 50%;
   }
 }
 
