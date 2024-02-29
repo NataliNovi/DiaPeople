@@ -2483,7 +2483,6 @@ textarea {
 .lessons-preview_horizontal {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-right: 20px;
 }
 @media screen and (min-width: 1200px) {
   .lessons-preview_horizontal {
@@ -2518,7 +2517,6 @@ textarea {
 .insulin__preview-lesson {
   width: 99%;
   text-align: center;
-  margin: 10px;
 }
 @media screen and (max-width: 768px) {
   .insulin__preview-lesson {
@@ -3016,6 +3014,10 @@ textarea {
   .psyh1-img {
     width: 50%;
   }
+}
+
+#read-more-article-GadgSet1 {
+  display: none;
 }
 
 .strange-deal {

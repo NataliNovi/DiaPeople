@@ -46,7 +46,7 @@
     &_horizontal {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-right: 20px;
+        //margin-right: 20px;
 
         @media screen and (min-width: $grid-breakpoint-xl) {
             grid-template-columns: 33% 33% 33%;
@@ -83,7 +83,7 @@
     &__preview-lesson {
         width: 99%;
         text-align: center;
-        margin: 10px;
+        //margin: 10px;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             grid-template-columns: 100%;
