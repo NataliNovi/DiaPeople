@@ -12,25 +12,9 @@
 html,
 body {
     height: 100vh;
-    // background-color: $color-main;
     background-color: $color-sublink-burger;
     margin: 0;
-    //font-family: $font-family-sans-serif;
-    //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-// .container-main {
-//     max-width: $container-max-width;
-// }
-
-// p {
-//     text-indent: 30px;
-// }
-
-// .wrapper {
-//     max-width: 1420px;
-// }
-//burger
 
 .blue-link {
     color: $color-dark-blue;
@@ -46,9 +30,6 @@ body {
 .blue-link:hover {
     color: $color-accent;
     text-decoration-color: $color-accent;
-
-
-
 }
 
 body._lock {
@@ -68,12 +49,9 @@ body._lock {
     align-content: center;
     justify-content: space-between;
     height: 60px;
-    //height: 80px;
-
 }
 
 .header-burger {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -81,7 +59,6 @@ body._lock {
     z-index: 100;
     background-color: $color-main;
     padding-left: 6px;
-    //height: 80px;
 
     &__logo {
         &_link {
@@ -136,14 +113,11 @@ body._lock {
 }
 
 .menu-burger__link {
-    //color: $color-accent;
     font-size: 30px;
     border-bottom: solid 0.6px $color-beige;
     margin-bottom: 6px;
     padding-bottom: 6px;
     text-decoration: none;
-    //height: auto;
-    //line-height: 1.6;
 }
 
 .menu-burger__link:hover {
@@ -166,7 +140,6 @@ body._lock {
     margin: 0px 10px 20px 0px;
 }
 
-
 .menu-burger__sub-list li:last-child {
     margin: 0;
 }
@@ -177,7 +150,6 @@ body._lock {
 }
 
 a.menu-burger__sub-link {
-
     margin-top: 20px;
 }
 
@@ -199,7 +171,6 @@ body._pc .menu-burger__list>li:hover .menu-burger__sub-list {
 
 body._touch .menu-burger__list>li {
     display: flex;
-    //align-items: center;
 }
 
 body._touch .menu-burger__link {
@@ -344,7 +315,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (max-width: $grid-breakpoint-sm) {
             height: 80px;
         }
-
     }
 
     .menu-burger__list>li {
@@ -365,7 +335,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     .menu-burger .menu-burger__link {
-        // font-size: $font-size-medium-plus;
         font-size: $font-size-mobile-menu;
         color: $color-dark-text;
     }
@@ -412,8 +381,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         height: 90px;
-        // max-width: 1920px;
-
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
@@ -422,9 +389,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
-
-        //height: 160px;
-        //height: 140px;
         height: 120px;
         display: grid;
         grid-template-columns: 1fr;
@@ -459,24 +423,19 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: block;
         }
-
     }
 
     &__logo {
-        //width: 8vw;
-        //padding: 6px;
         background-color: #fff;
         border-radius: 6px;
         height: 80px;
 
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            //width: 120px;
             display: none;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            //width: 120px;
             display: none;
         }
 
@@ -491,37 +450,29 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             }
 
             @media screen and (max-width: $grid-breakpoint-md) {
-                //width: 120px;
                 display: none;
-
             }
 
             @media screen and (max-width: $grid-breakpoint-sm) {
-                //width: 120px;
                 display: none;
 
             }
         }
 
         &_link {
-            //background-color: white;
             height: 116px;
             border-radius: 6px;
 
             @media screen and (max-width: $grid-breakpoint-lg) {
                 height: 110px;
-
             }
 
             @media screen and (max-width: $grid-breakpoint-md) {
-                //width: 120px;
                 display: none;
             }
 
             @media screen and (max-width: $grid-breakpoint-sm) {
-                //width: 120px;
                 display: none;
-
             }
         }
 
@@ -658,7 +609,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: none;
         }
-
     }
 
     &__social-links-with-button-complex {
@@ -687,7 +637,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         @media screen and (max-width: $grid-breakpoint-lg) {
             display: none;
-
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -698,7 +647,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             align-items: center;
             justify-content: space-around;
             z-index: 10;
-
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -706,17 +654,14 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            //margin-top: 80px;
             margin-top: 70px;
             z-index: 10;
-
         }
     }
 
     .container-header__container-mobile._inactive {
         display: none;
     }
-
 
     .container-mobile {
 
@@ -744,7 +689,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
             &_dialydi-name {
                 color: $color-main;
                 font-family: $font-family-serif;
-                //font-weight: bold;
                 font-stretch: extra-expanded;
                 display: flex;
                 flex-wrap: wrap;
@@ -752,7 +696,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
                 @media screen and (max-width: $grid-breakpoint-md) {
-                    // display: none;
                     display: flex;
                     font-size: $font-size-medium;
                 }
@@ -782,13 +725,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_donate {
             margin-left: 20px;
-            //margin-bottom: 20px;
             margin-right: 10px;
             font-weight: bold;
         }
 
         &_search {
-            //width: 360px;
             display: flex;
             flex-direction: row;
             align-items: stretch;
@@ -840,7 +781,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 
 .button {
-    //background-color: rgb(239, 193, 11);
     background-color: $color-button;
     border: solid 1px $color-button;
     height: 40px;
@@ -848,9 +788,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-family: $font-family-serif;
     font-size: $font-size-medium;
     width: 140px;
-    // -webkit-transition: all 150ms ease-in-out;
-    // transition: all 150ms ease-in-out;
-    //transition: all 0.5s;
     position: relative;
 
     &__button-donate {
@@ -894,10 +831,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         &_lupa {
             width: 30px;
-
-            // @media screen and (max-width: $grid-breakpoint-sm) {
-            //     display: none;
-            // }
         }
 
         &_mobile {
@@ -1384,21 +1317,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 //     padding: 0 0 80%;
 // }
 
-.slide1 {
-    // background-image: url('..//images/dianews.png');
-    // background-repeat: no-repeat;
-    // background-size: auto;
-    // background-position: 10% 50%;
-    // position: relative;
+.slide0 {
+
     width: 100%;
     display: flex;
-    //width: 64%;
-    // padding-left: 20px;
-    // margin-left: 2%;
-    //justify-content: center;
     align-items: center;
-    //border-right: solid 1px $color-main;
-
 
     @media screen and (min-width: $grid-breakpoint-xxl) {
         height: 100%;
@@ -1410,15 +1333,29 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 100%;
         padding-left: 0px;
     }
+}
 
+.slide1 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        height: 100%;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        width: 100%;
+        padding-left: 0px;
+    }
 }
 
 .slide2 {
-    // background-image: url('..//images/diadzetka.jpeg');
     display: flex;
-    // width: 64%;
     align-items: center;
-    //border-right: solid 1px $color-main;
 
     @media screen and (min-width: $grid-breakpoint-xxl) {
         height: 100%;
@@ -1433,13 +1370,8 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .slide3 {
-    // background-image: url('..//images/diaschool.png');
     display: flex;
-    //width: 64%;
-    //justify-content: center;
     align-items: center;
-    //border-right: solid 1px $color-main;
-
 
     @media screen and (min-width: $grid-breakpoint-xxl) {
         width: 100%;
@@ -1485,26 +1417,22 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     font-size: $font-size-medium;
     font-family: $font-family-serif;
     line-height: 1.4;
-    //width: 40%;
     padding: 0 20px 0 20px;
     text-decoration: none;
 
     @media screen and (min-width: $grid-breakpoint-xxxl) {
-        //width: 50%;
         font-size: $font-size-large;
         margin-right: 100px;
     }
 
 
     @media screen and (max-width: $grid-breakpoint-xxxl) {
-        //width: 50%;
         font-size: $font-size-medium;
         margin-right: 30px;
 
     }
 
     @media screen and (max-width: $grid-breakpoint-xxl) {
-        //width: 50%;
         font-size: $font-size-medium;
     }
 
@@ -1517,9 +1445,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
     @media screen and (max-width: $grid-breakpoint-md) {
         display: none;
-
     }
-
 }
 
 .dia-news-mobile {
@@ -2107,19 +2033,16 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         }
     }
 
-
     &__for-understand {
         position: relative;
 
         &_mobile {
 
             @media screen and (min-width: $grid-breakpoint-md) {
-
                 display: none;
             }
 
             @media screen and (max-width: $grid-breakpoint-md) {
-
                 display: block;
                 padding: 10px;
             }
@@ -2128,14 +2051,12 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         &_desktop {
 
             @media screen and (min-width: $grid-breakpoint-md) {
-
                 display: block;
                 padding: 10px;
 
             }
 
             @media screen and (max-width: $grid-breakpoint-md) {
-
                 display: none;
             }
         }
@@ -2172,26 +2093,20 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     display: block;
     border-radius: 4px;
     padding: 20px;
-    //margin-top: 10px;
     box-shadow: 0 8px 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
 
     @media screen and (min-width: $grid-breakpoint-lg) {
         width: 90vw;
-        //margin-top: 10px;
-        //margin-bottom: 10px;
-
     }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
         width: 90vw;
     }
 
-
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 90vw;
     }
 }
-
 
 .new-describe {
     display: flex;
@@ -2231,9 +2146,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         @media screen and (max-width: $grid-breakpoint-lg) {
             height: 160px;
             font-size: $font-size-medium-plus;
-
         }
-
 
         @media screen and (max-width: $grid-breakpoint-md) {
             height: auto;
@@ -2287,9 +2200,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
-
 .link {
-
     display: flex;
     flex-direction: column;
     color: $color-dark-text;
@@ -2331,7 +2242,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         height: 120px;
 
     }
-
 
     &__partners {
         &_company {
@@ -2391,7 +2301,6 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 }
 
 .subscribe {
-
     &__form {
         background-color: $color-connect;
         display: flex;
@@ -2401,14 +2310,11 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         width: 80%;
         margin-right: 20%;
 
-
         &_header {
             font-size: $font-size-large;
             font-style: italic;
             text-align: center;
             margin: 10px;
-
-
         }
 
         &_input-button {
@@ -2451,23 +2357,18 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
         margin-left: 240px;
         width: calc(100% - 240px);
         font-size: $font-size-medium;
-
     }
-
 
     @media screen and (max-width: $grid-breakpoint-lg) {
         margin-left: 240px;
         width: calc(100% - 240px);
         font-size: $font-size-medium;
-
     }
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
-        // height: 280px;
         margin-left: 0px;
         font-size: $font-size-medium-plus;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2529,19 +2430,6 @@ textarea {
     resize: vertical;
 }
 
-
-
-
-/* slider */
-
-/* стили для элемента body */
-// body {
-//     margin: 0;
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-//         sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-// }
-
-/* дополнительные стили для этого примера */
 .itcss__items {
     counter-reset: slide;
 }

@@ -1232,6 +1232,25 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   }
 }
 
+.slide0 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .slide0 {
+    height: 100%;
+    width: auto;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide0 {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+
 .slide1 {
   width: 100%;
   display: flex;
@@ -2230,9 +2249,6 @@ textarea {
   resize: vertical;
 }
 
-/* slider */
-/* стили для элемента body */
-/* дополнительные стили для этого примера */
 .itcss__items {
   counter-reset: slide;
 }
