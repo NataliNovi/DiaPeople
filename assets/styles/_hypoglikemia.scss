@@ -32,3 +32,19 @@
     }
 
 }
+
+.glucagon_page {
+    width: 49%;
+    // border: solid 1px $color-blue-burger;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        width: 100%;
+    }
+}
+
+.glucagon_page:hover {
+    transform: scale(1.4);
+    margin-left: 60px;
+    z-index: 200;
+    margin-left: 100px;
+}

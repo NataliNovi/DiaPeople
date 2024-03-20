@@ -2702,6 +2702,22 @@ textarea {
   }
 }
 
+.glucagon_page {
+  width: 49%;
+}
+@media screen and (max-width: 768px) {
+  .glucagon_page {
+    width: 100%;
+  }
+}
+
+.glucagon_page:hover {
+  transform: scale(1.4);
+  margin-left: 60px;
+  z-index: 200;
+  margin-left: 100px;
+}
+
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
@@ -2847,6 +2863,7 @@ textarea {
 .book-preview:hover {
   transform: scale(1.6);
   margin-left: 60px;
+  z-index: 200;
 }
 
 .dia-school-previews {

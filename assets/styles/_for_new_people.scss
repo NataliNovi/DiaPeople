@@ -17,23 +17,12 @@
 .book-preview:hover {
     transform: scale(1.6);
     margin-left: 60px;
+    z-index: 200;
 }
-
-// .blue-link {
-//     color: $color-dark-blue;
-//     text-decoration: underline;
-// }
-
-// .blue-link:hover {
-//     color: $color-dark-text;
-//     text-decoration: underline;
-// }
 
 .dia-school-previews {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    //gap: 2px;
-
 
     @media screen and (max-width: $grid-breakpoint-md) {
         grid-template-columns: 50% 50%
