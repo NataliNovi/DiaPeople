@@ -2711,13 +2711,6 @@ textarea {
   }
 }
 
-.glucagon_page:hover {
-  transform: scale(1.4);
-  margin-left: 60px;
-  z-index: 200;
-  margin-left: 100px;
-}
-
 .hyperglikemia__image-container_hyperglikemia-symptoms {
   width: 100%;
   border: solid 1px #032a3f;
