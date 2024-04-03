@@ -43,8 +43,8 @@ $mail->AddAttachment( $_FILES["attachment"]["tmp_name"], $_FILES["attachment"]["
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта-лендинга';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email.' ОТВЕТЫ: '. $answer .'.';
+$mail->Subject = 'Заявка с сайта diapeople.by';
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email.' Сообщение: '. $answer .'.';
 $mail->AltBody = '';
 
 

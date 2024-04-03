@@ -3145,6 +3145,10 @@ textarea {
   clear: both;
 }
 
+.driving-license {
+  width: 100%;
+}
+
 .medium-size {
   display: flex;
 }
