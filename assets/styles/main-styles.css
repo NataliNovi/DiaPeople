@@ -2502,8 +2502,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .lessons-preview_horizontal {
-    grid-template-columns: 33% 33% 33%;
-    margin-right: 20px;
+    grid-template-columns: 33.5% 33.5% 33.5%;
+    margin-right: 0px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3878,5 +3878,74 @@ button[type=submit]:not(:disabled):focus {
 @media screen and (max-width: 576px) {
   .rekvizity {
     margin-left: 0px;
+  }
+}
+
+.QR-code {
+  width: 80%;
+}
+
+.donate-table {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .donate-table {
+    grid-template-columns: 40% 33% 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .donate-table {
+    grid-template-columns: 100%;
+    margin-right: 0px;
+  }
+}
+
+.donate-info {
+  text-align: left;
+}
+.donate-info_erip {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.medium-size-display {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .medium-size-display {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .medium-size-display {
+    display: none;
+  }
+}
+
+.medium-size-display-none {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .medium-size-display-none {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .medium-size-display-none {
+    display: block;
+  }
+}
+
+.QR-code-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .QR-code-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main-styles.css.map */
