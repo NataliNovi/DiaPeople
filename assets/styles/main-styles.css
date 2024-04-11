@@ -3182,6 +3182,30 @@ textarea {
   display: none;
 }
 
+#read-more-articleCeliakiaGarden {
+  display: none;
+}
+
+#read-more-articleCeliakiaSchool {
+  display: none;
+}
+
+#read-more-articleCeliakiaPamyatka {
+  display: none;
+}
+
+#read-more-articleCeliakiaRestoran {
+  display: none;
+}
+
+#read-more-articleCeliakiaBezgluten {
+  display: none;
+}
+
+#read-more-articleCeliakiaSkin {
+  display: none;
+}
+
 .magazin_pages {
   display: grid;
   grid-template-columns: 50% 50%;
