@@ -3031,6 +3031,10 @@ textarea {
   display: none;
 }
 
+.resize {
+  width: 70%;
+}
+
 .strange-deal {
   width: 40%;
 }
