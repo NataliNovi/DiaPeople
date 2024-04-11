@@ -2549,7 +2549,6 @@ textarea {
 }
 .insulin__images {
   display: flex;
-  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .insulin__images {
@@ -2569,22 +2568,8 @@ textarea {
     margin: 10px 10px 10px 10px;
   }
 }
-.insulin__image-container_insulin-action {
-  width: 100%;
-  border: solid 1px #032a3f;
-}
-@media screen and (max-width: 768px) {
-  .insulin__image-container_insulin-action {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .insulin__image-container_insulin-action {
-    width: 60%;
-  }
-}
 .insulin__image-container_insulin-time-1 {
-  width: 80%;
+  width: 50%;
   border: solid 1px #032a3f;
 }
 @media screen and (max-width: 768px) {
@@ -2598,7 +2583,7 @@ textarea {
   }
 }
 .insulin__image-container_insulin-time-2 {
-  width: 80%;
+  width: 50%;
   border: solid 1px #032a3f;
 }
 @media screen and (max-width: 768px) {

@@ -102,12 +102,11 @@
 
     &__images {
         display: flex;
-        flex-direction: column;
+        //flex-direction: column;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             flex-direction: column;
         }
-
     }
 
     &__image-container {
@@ -117,27 +116,25 @@
         align-items: center;
         justify-content: center;
 
-
         @media screen and (max-width: $grid-breakpoint-md) {
             flex-direction: column;
             margin: 10px 10px 10px 10px;
         }
 
-        &_insulin-action {
-            width: 100%;
-            border: solid 1px $color-dark-text;
+        // &_insulin-action {
+        //     border: solid 1px $color-dark-text;
 
-            @media screen and (max-width: $grid-breakpoint-md) {
-                width: 100%;
-            }
+        //     @media screen and (max-width: $grid-breakpoint-md) {
+        //         width: 100%;
+        //     }
 
-            @media screen and (min-width: $grid-breakpoint-xl) {
-                width: 60%;
-            }
-        }
+        //     @media screen and (min-width: $grid-breakpoint-md) {
+        //         width: 50%;
+        //     }
+        // }
 
         &_insulin-time-1 {
-            width: 80%;
+            width: 50%;
             border: solid 1px $color-dark-text;
 
             @media screen and (max-width: $grid-breakpoint-md) {
@@ -150,7 +147,7 @@
         }
 
         &_insulin-time-2 {
-            width: 80%;
+            width: 50%;
             border: solid 1px $color-dark-text;
 
             @media screen and (max-width: $grid-breakpoint-md) {
