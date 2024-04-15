@@ -716,7 +716,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 576px) {
   .container-header .container-mobile__dialydi-mobile_dialydi-name {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .container-header .container-mobile__dialydi-mobile_dialydi-name:hover {
@@ -804,7 +804,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 @media screen and (max-width: 576px) {
   .button__button-donate {
     width: 130px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .button__button-search {
@@ -1222,12 +1222,12 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   font-size: 18px;
   background-color: #F4EADE;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
 }
 @media screen and (max-width: 768px) {
   .swiper-slide {
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
@@ -1388,7 +1388,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
 }
 @media screen and (max-width: 576px) {
   .dia-news-mobile {
-    height: 180px;
+    height: 210px;
     font-size: 16px;
   }
 }
