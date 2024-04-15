@@ -5,3 +5,12 @@
 .resize {
     width: 70%;
 }
+
+.board {
+    border: 1px solid $color-dark-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}

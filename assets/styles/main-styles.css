@@ -3035,6 +3035,15 @@ textarea {
   width: 70%;
 }
 
+.board {
+  border: 1px solid #032a3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
 .strange-deal {
   width: 40%;
 }
