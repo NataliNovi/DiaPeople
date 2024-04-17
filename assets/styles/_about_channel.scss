@@ -38,8 +38,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: $color-sublink-burger;
+    color: $color-dark-text;
     text-align: center;
     padding: 10px;
     z-index: 1000;
@@ -50,9 +50,9 @@
 }
 
 .cookie-consent-container button {
-    color: #4CAF50;
+    color: $color-main;
     background: none;
-    border: 1px solid #4CAF50;
+    border: 1px solid $color-main;
     padding: 5px 10px;
     margin: 0 5px;
     cursor: pointer;
