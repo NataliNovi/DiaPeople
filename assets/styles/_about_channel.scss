@@ -37,12 +37,18 @@
 .cookie-consent-container {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: $color-sublink-burger;
+    width: 80%;
+    background-color: $color-logo-pink;
     color: $color-dark-text;
     text-align: center;
     padding: 10px;
     z-index: 1000;
+    border-radius: 6px;
+    font-size: $font-size-small-plus;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+    }
 }
 
 .cookie-consent-container p {
@@ -50,10 +56,11 @@
 }
 
 .cookie-consent-container button {
-    color: $color-main;
+    color: $color-dark-blue;
     background: none;
-    border: 1px solid $color-main;
+    border: 1px solid $color-dark-blue;
     padding: 5px 10px;
     margin: 0 5px;
     cursor: pointer;
+    border-radius: 6px;
 }
