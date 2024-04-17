@@ -2291,6 +2291,30 @@ textarea {
   color: #62B4E0;
 }
 
+.cookie-consent-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.cookie-consent-container p {
+  margin: 10px 0;
+}
+
+.cookie-consent-container button {
+  color: #4CAF50;
+  background: none;
+  border: 1px solid #4CAF50;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
 .navigate-page {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -3042,6 +3066,18 @@ textarea {
   align-items: center;
   margin: 5px;
   padding: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .column {
+    font-size: 16px;
+  }
 }
 
 .strange-deal {

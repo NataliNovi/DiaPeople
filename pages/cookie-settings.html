@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="..//assets/images/about-diabetes/insulin-injection-400w"/>
     <title>DiaPeople</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
@@ -265,7 +264,18 @@
                         <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
   
                         <div class="gcse-search"></div>
-    
+                
+                  <!-- <div class="flex-form-search">
+        
+                   <form>
+                    <div class = "button-header_search">
+                        <input type ="search" placeholder="Поиск на сайте" class = "input input__search"></input>
+                        <button type="submit" class="button__button-search_mobile">Искать</button>
+                    </div>
+                  </form>
+
+                  <button class="small-button button__button-search_button-close-search" onclick="closeForm()">&#10006;</button>
+                </div> -->
                </div>
     </div>
 
@@ -273,7 +283,6 @@
 </div>
     </header>
     <!-- header End -->
-
 
        <!-- nav Start -->
 
@@ -337,43 +346,76 @@
         <button id = "scrollButton">&#8593;</button>
       </div>
 
+      <div class = "container-main">
+    
+        <div class="insulin__text-container">
 
-                <div class="container-main">
-                   <div class="insulin__text-container">
-                    <h2 class="page-title">О диабете</h2>
-                      <div class="navigate-page"> 
-                        <ul class="submenu text-list">
-                            <li class=" text-list nav__item nav__item_link"><a href = 'what_is_diabetes.html'>Что такое диабет</a></li>
-                            <li class=" text-list nav__item nav__item_link"><a href = 'insulin.html'>Инсулин</a></li>
-                            <li class=" text-list nav__item nav__item_link"><a href = 'hypoglikemia.html'>Гипогликемия</a></li>
-                            <li class=" text-list nav__item nav__item_link"><a href = 'hyperglikemia.html'>Гипергликемия</a></li>
-                            <li class=" text-list nav__item nav__item_link"><a href = 'food.html'>Питание</a></li>
-                        </ul>
-                        
-                        <div class="navigate-page-img-container">
-                            <img class="navigate-page-image" src="..//assets/images/about-diabetes/insulin-injection-400w.jpg" alt="Vegetables">
-                        </div>
-                          </div>
-    </main>
+            <h1>Настройки cookies</h1>
+<p>Мы используем cookies для улучшения работы нашего сайта и предоставления более персонализированных услуг. Вы можете изменить настройки или дать согласие на использование всех cookies.</p>
 
-    <footer class="footer">
-        <br>
-           <div class = "footer__button-footer_donate">
-             <a href="donate.html"> <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button></a>
-           </div>
-           <br>
-           <div class = footer__contacts> 
-             <div>Teл: +375 29 355-56-63<br>
-              e-mail: diapeople.bel@gmail.com</div> 
-             <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
-           </div>
-           <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
-       </footer>
+<h2>Необходимые cookies</h2>
+<p>Эти cookies необходимы для работы сайта и не могут быть отключены. Они устанавливаются только в ответ на действия, сделанные вами, например, на запросы о сервисах, таких как настройка конфиденциальности, вход в систему или заполнение форм.</p>
 
+<h2>Функциональные cookies</h2>
+<p>Эти cookies позволяют улучшить функциональность и персонализацию, например, воспроизведение видео и живые чаты. Они могут быть установлены нами или сторонними поставщиками, чьи услуги мы добавили на наши страницы.</p>
 
-    <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/psychology.js"></script>
-    <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe">
-    </script>
-   </body>
-</html>
+<h2>Аналитические cookies</h2>
+<p>С помощью этих cookies мы можем подсчитывать посещения и источники трафика, чтобы измерить и улучшить работу нашего сайта. Они помогают нам узнать, какие страницы наиболее и наименее популярны, и видеть, как посетители перемещаются по сайту.</p>
+
+<h2>Маркетинговые cookies</h2>
+<p>Эти cookies могут быть установлены через наш сайт нашими рекламными партнерами. Они могут использоваться этими компаниями для создания профиля ваших интересов и показа релевантных объявлений на других сайтах.</p>
+
+<div>
+    <input type="checkbox" id="functionalCookies" name="functionalCookies">
+    <label for="functionalCookies">Функциональные cookies</label>
+  </div>
+  <div>
+    <input type="checkbox" id="analyticalCookies" name="analyticalCookies">
+    <label for="analyticalCookies">Аналитические cookies</label>
+  </div>
+  <div>
+    <input type="checkbox" id="marketingCookies" name="marketingCookies">
+    <label for="marketingCookies">Маркетинговые cookies</label>
+  </div>
+  <button onclick="saveCookieSettings()">Сохранить настройки</button>
+
+   
+
+        </div>
+      </div>
+        </main>
+    
+
+        <footer class="footer">
+            <br>
+               <div class = "footer__button-footer_donate">
+                 <a href="donate.html"> <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button></a>
+               </div>
+               <br>
+               <div class = footer__contacts> 
+                 <div>Teл: +375 29 355-56-63<br>
+                  e-mail: diapeople.bel@gmail.com</div> 
+                 <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
+               </div>
+               <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+           </footer>
+
+           <script>function saveCookieSettings() {
+            var functional = document.getElementById('functionalCookies').checked;
+            var analytical = document.getElementById('analyticalCookies').checked;
+            var marketing = document.getElementById('marketingCookies').checked;
+            
+            document.cookie = "functionalCookies=" + functional + ";path=/;max-age=" + 60*60*24*365;
+            document.cookie = "analyticalCookies=" + analytical + ";path=/;max-age=" + 60*60*24*365;
+            document.cookie = "marketingCookies=" + marketing + ";path=/;max-age=" + 60*60*24*365;
+            
+            alert('Настройки сохранены.');
+          }</script>
+       
+       
+          <script src="../assets/js/index.js"></script>
+          <script src="../assets/js/insulin.js"></script>
+          <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
+        
+               </body>
+           </html>

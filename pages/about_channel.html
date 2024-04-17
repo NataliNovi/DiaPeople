@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>DiaPeople</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaPeople</title>
-
+    <meta property="og:title" content="Diadzetka - канал обо всем на свете и о сахарном диабете!"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="diapeople.by" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:image" content="..//assets/images/about-channel/Arina-Diadzetka.png"/>
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
@@ -412,7 +416,68 @@
                  <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
                </div>
                <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
+
+               <div id="cookieConsentContainer" class="cookie-consent-container" style="display: none;">
+                <p>Этот сайт использует файлы cookie для улучшения работы. Продолжая использовать наш сайт, вы соглашаетесь на использование нами файлов cookie.</p>
+                <button id="acceptCookieConsent">Принять всё</button>
+                <button id="declineCookieConsent">Отказаться</button>
+                <button id="settingsCookieConsent">Настройки</button>
+              </div>
+
+        
            </footer>
+
+           <script>
+            document.addEventListener('DOMContentLoaded', function() {
+  var consentContainer = document.getElementById('cookieConsentContainer');
+  var acceptBtn = document.getElementById('acceptCookieConsent');
+  var declineBtn = document.getElementById('declineCookieConsent');
+  var settingsBtn = document.getElementById('settingsCookieConsent');
+
+  function showConsentContainer() {
+    if (!getCookie('cookieConsent')) {
+      consentContainer.style.display = 'block';
+    }
+  }
+
+  acceptBtn.onclick = function() {
+    setCookie('cookieConsent', 'accept', 365);
+    consentContainer.style.display = 'none';
+  };
+
+  declineBtn.onclick = function() {
+    setCookie('cookieConsent', 'decline', 365);
+    consentContainer.style.display = 'none';
+  };
+
+  settingsBtn.onclick = function() {
+    window.location.href = '..//pages/cookie-settings.html'; // Ссылка на вашу страницу настроек cookies
+  };
+
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+
+  showConsentContainer();
+});
+           </script>
        
           <script src="../assets/js/index.js"></script>
           <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>

@@ -22,3 +22,38 @@
     cursor: pointer;
     color: $color-blue-burger;
 }
+
+// .cookie-consent-container {
+//     position: fixed;
+//     bottom: 20px;
+//     left: 20px;
+//     background-color: white;
+//     padding: 20px;
+//     border: 1px solid #ccc;
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+//     z-index: 1000;
+// }
+
+.cookie-consent-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.cookie-consent-container p {
+    margin: 10px 0;
+}
+
+.cookie-consent-container button {
+    color: #4CAF50;
+    background: none;
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}

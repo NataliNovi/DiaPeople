@@ -14,3 +14,15 @@
     margin: 5px;
     padding: 5px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: $font-size-medium;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        font-size: $font-size-small-plus;
+
+    }
+}
