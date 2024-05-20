@@ -2268,6 +2268,18 @@ textarea {
   font-weight: bold;
 }
 
+#cookieConsent {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
 .about-channel__image-container {
   width: 100%;
   display: flex;
