@@ -2268,16 +2268,47 @@ textarea {
   font-weight: bold;
 }
 
-#cookieConsent {
+.cookie-consent {
   display: none;
   position: fixed;
+  align-self: center;
   bottom: 0;
+  left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: #1d658c;
+  color: #fff;
   text-align: center;
   padding: 10px;
+  border-radius: 6px;
   z-index: 1000;
+  font-size: 16px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.cookie-consent .buttons {
+  margin-top: 10px;
+}
+
+.cookie-consent button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  color: #1d658c;
+  cursor: pointer;
+}
+
+.cookie-consent button:hover {
+  background-color: #ddd;
+}
+
+.cookie-text {
+  text-align: center;
+}
+
+.white-link {
+  color: #fff;
 }
 
 .about-channel__image-container {

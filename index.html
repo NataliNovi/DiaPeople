@@ -811,34 +811,19 @@
       <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
     </div>
     <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
-
-    <div id="cookieConsent">
-      Этот сайт использует файлы cookie для улучшения работы пользователя. Продолжая использовать наш сайт, вы соглашаетесь с нашим использованием файлов cookie.
-      <a href="#" style="color:#CCCCCC;">Подробнее</a>.
-      <button onclick="hideCookieBanner();" style="margin-left:10px;">Принять</button>
+    <div id="cookieConsent" class="cookie-consent">
+      <p>Этот сайт использует файлы cookie для улучшения работы. Продолжая использовать наш сайт, вы соглашаетесь на использование нами файлов cookie. <a class="white-link" href="../assets/documents/Политика конфидециальности diapeople.by.pdf">Политика конфиденциальности</a></p>
+      <div class="buttons">
+          <button id="acceptCookies">Принять</button>
+          <button id="rejectCookies">Отклонить</button>
+          <button id="cookieSettings">Настройки</button>
+      </div>
   </div>
 </footer>
-
  </div>
-
-
+<script src="../assets/js/cookie.js"></script>
 <script src="./assets/js/index.js"></script>
 <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
-<script>
-  window.onload = function() {
-      if (!localStorage.getItem('cookieConsent')) {
-          document.getElementById('cookieConsent').style.display = 'block';
-      }
-  }
-  
-  function hideCookieBanner() {
-      document.getElementById('cookieConsent').style.display = 'none';
-      localStorage.setItem('cookieConsent', 'true');
-  }
-  </script>
-
-
-<!-- <script src=".assets/js/form-processing.js"></script> -->
 
 </body>
 </html>

@@ -74,6 +74,7 @@ $header-max-width: 2160px;
 
 $color-main: #fff;
 $color-dark-blue: #2988BC;
+$color-dark-blue-cookie: #1d658c;
 $color-blue-burger: #62B4E0;
 $color-blue-burger-mobile: #7dc1e5;
 $color-sublink-burger-old: #9ACEEB;
@@ -133,9 +134,7 @@ body {
     background-color: $color-main;
 }
 
-a:any-link {
-    // text-decoration: none;
-}
+
 
 
 
