@@ -2365,6 +2365,10 @@ textarea {
   border-radius: 6px;
 }
 
+.join-us {
+  width: 100%;
+}
+
 .navigate-page {
   display: grid;
   grid-template-columns: 50% 50%;
