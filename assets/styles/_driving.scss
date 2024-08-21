@@ -9,6 +9,22 @@
     clear: both;
 }
 
+.container_for_logo_and_lesson13 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: 100%;
+    }
+}
+
+.driving_logo {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
 .charlie {
     width: 60%;
     margin-bottom: 20px;
