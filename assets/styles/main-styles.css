@@ -3267,6 +3267,40 @@ textarea {
   }
 }
 
+.dia-school-video-sourses {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .dia-school-video-sourses {
+    grid-template-columns: 100%;
+  }
+}
+.dia-school-video-sourses__logo-container {
+  width: 99%;
+  display: flex;
+  border: solid 1px #2988BC;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.dia-school-video-sourses__logo-container_youtube-logo {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.dia-school-logos {
+  width: 120px;
+}
+
+.dia-school-main-img {
+  width: 100%;
+}
+
 .celiakia__add-materials {
   display: grid;
   grid-template-columns: 100%;

@@ -1,0 +1,36 @@
+.dia-school-video-sourses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: 100%;
+    }
+
+    &__logo-container {
+        width: 99%;
+        display: flex;
+        border: solid 1px $color-dark-blue;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+
+        &_youtube-logo {
+            width: 70%;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.dia-school-logos {
+    width: 120px;
+}
+
+.dia-school-main-img {
+    width: 100%;
+}
