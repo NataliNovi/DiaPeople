@@ -11,17 +11,23 @@
 
     &__logo-container {
         width: 99%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 50% 50%;
         border: solid 1px $color-dark-blue;
         border-radius: 6px;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 2px;
 
 
         &_youtube-logo {
             width: 70%;
             margin-right: 10px;
+
+        }
+
+        &_vk-video-logo {
+            width: 70%;
         }
     }
 }
@@ -33,4 +39,8 @@
 
 .dia-school-main-img {
     width: 100%;
+}
+
+.video-logos {
+    text-align: center;
 }

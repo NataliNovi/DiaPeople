@@ -3281,16 +3281,20 @@ textarea {
 }
 .dia-school-video-sourses__logo-container {
   width: 99%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   border: solid 1px #2988BC;
   border-radius: 6px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2px;
 }
 .dia-school-video-sourses__logo-container_youtube-logo {
   width: 70%;
   margin-right: 10px;
+}
+.dia-school-video-sourses__logo-container_vk-video-logo {
+  width: 70%;
 }
 
 .dia-school-logos {
@@ -3299,6 +3303,10 @@ textarea {
 
 .dia-school-main-img {
   width: 100%;
+}
+
+.video-logos {
+  text-align: center;
 }
 
 .celiakia__add-materials {
