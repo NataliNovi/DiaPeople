@@ -1300,6 +1300,24 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 }
 
+.slide001 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $grid-breakpoint-xxl) {
+        height: 100%;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
 .slide0 {
 
     width: 100%;
