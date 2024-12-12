@@ -1,0 +1,11 @@
+.libre-problem {
+    width: 60%;
+
+    @media screen and (min-width: $grid-breakpoint-sm) {
+        width: 30%;
+    }
+
+    @media screen and (min-width: $grid-breakpoint-md) {
+        width: 20%;
+    }
+}

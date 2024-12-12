@@ -4138,4 +4138,18 @@ button[type=submit]:not(:disabled):focus {
     align-items: flex-start;
     justify-content: center;
   }
+}
+
+.libre-problem {
+  width: 60%;
+}
+@media screen and (min-width: 576px) {
+  .libre-problem {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .libre-problem {
+    width: 20%;
+  }
 }/*# sourceMappingURL=main-styles.css.map */
