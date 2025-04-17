@@ -2842,6 +2842,38 @@ textarea {
   margin-bottom: 5px;
 }
 
+.food-book-preview {
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .food-book-preview {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .food-book-preview {
+    width: 50%;
+  }
+}
+
+.food-book-preview img {
+  transition: 1s;
+  display: block;
+}
+
+.food-book-preview:hover {
+  transform: scale(2);
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  z-index: 1000;
+}
+
 .news-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2911,9 +2943,21 @@ textarea {
 }
 
 .book-preview {
-  width: 140px;
+  width: 50%;
   display: inline-block;
   overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .book-preview {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .book-preview {
+    width: 50%;
+  }
 }
 
 .book-preview img {
@@ -2922,7 +2966,7 @@ textarea {
 }
 
 .book-preview:hover {
-  transform: scale(1.6);
+  transform: scale(1.8);
   margin-left: 60px;
   z-index: 200;
 }
@@ -3165,6 +3209,58 @@ textarea {
 .lgoty__posobia-lgoty {
   width: 80vw;
   height: 600px;
+}
+
+.voicing_pump {
+  margin-left: 15px;
+  width: 40%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .voicing_pump {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .voicing_pump {
+    width: 40%;
+  }
+}
+
+.file-preview {
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .file-preview {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .file-preview {
+    width: 50%;
+  }
+}
+
+.file-preview img {
+  transition: 1s;
+  display: block;
+}
+
+.file-preview:hover {
+  transform: scale(2);
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  z-index: 1000;
 }
 
 .for-school__information {

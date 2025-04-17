@@ -3,9 +3,19 @@
 }
 
 .book-preview {
-    width: 140px;
+    width: 50%;
     display: inline-block;
     overflow: hidden;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-bottom: 20px;
+        float: none;
+    }
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 50%;
+    }
 }
 
 .book-preview img {
@@ -15,7 +25,7 @@
 
 
 .book-preview:hover {
-    transform: scale(1.6);
+    transform: scale(1.8);
     margin-left: 60px;
     z-index: 200;
 }

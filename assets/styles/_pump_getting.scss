@@ -1,0 +1,49 @@
+.voicing_pump {
+    margin-left: 15px;
+    width: 40%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        float: none;
+    }
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 40%;
+    }
+}
+
+
+.file-preview {
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 100%;
+        margin-bottom: 20px;
+        float: none;
+    }
+
+    @media screen and (min-width: $grid-breakpoint-xl) {
+        width: 50%;
+    }
+}
+
+.file-preview img {
+    transition: 1s;
+    display: block;
+}
+
+
+.file-preview:hover {
+    transform: scale(2);
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    z-index: 1000;
+}
