@@ -3291,7 +3291,17 @@ textarea {
 }
 
 .flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.mogilev-quest {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .mogilev-quest {
+    width: 100%;
+  }
 }
 
 .for-school__information {
