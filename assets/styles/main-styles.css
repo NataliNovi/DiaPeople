@@ -3154,6 +3154,22 @@ textarea {
   }
 }
 
+.psyho {
+  display: flex;
+}
+
+.increase {
+  height: 300px;
+  width: auto;
+  margin: 10px;
+}
+
+.decrease {
+  height: 300px;
+  width: auto;
+  margin: 10px;
+}
+
 #read-more-article-GadgSet1 {
   display: none;
 }
@@ -3213,7 +3229,7 @@ textarea {
 
 .voicing_pump {
   margin-left: 15px;
-  width: 40%;
+  width: 50%;
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -3227,7 +3243,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .voicing_pump {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -3256,11 +3272,26 @@ textarea {
 
 .file-preview:hover {
   transform: scale(2);
-  margin-left: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 40px;
+  padding: 20px;
   z-index: 1000;
+}
+@media screen and (max-width: 576px) {
+  .file-preview:hover {
+    transform: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    z-index: 1000;
+  }
+}
+
+.flex {
+  display: flex;
 }
 
 .for-school__information {
