@@ -166,7 +166,12 @@
 }
 
 .psyho {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: 100%;
+    }
 }
 
 .increase {
