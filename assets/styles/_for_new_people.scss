@@ -3,7 +3,7 @@
 }
 
 .book-preview {
-    width: 50%;
+    width: 20%;
     display: inline-block;
     overflow: hidden;
 
@@ -25,7 +25,7 @@
 
 
 .book-preview:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
     margin-left: 60px;
     z-index: 200;
 }
@@ -40,6 +40,28 @@
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         grid-template-columns: 100%
+    }
+
+    &__img-container {
+        width: 100%;
+        padding: 3px 3px 0px 3px;
+
+        &_img {
+            width: 100%;
+        }
+    }
+}
+
+.dia-school-previews-vertical {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        grid-template-columns: 50% 50%
     }
 
     &__img-container {

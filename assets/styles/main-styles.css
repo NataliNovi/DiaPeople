@@ -2943,7 +2943,7 @@ textarea {
 }
 
 .book-preview {
-  width: 50%;
+  width: 20%;
   display: inline-block;
   overflow: hidden;
 }
@@ -2966,7 +2966,7 @@ textarea {
 }
 
 .book-preview:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
   margin-left: 60px;
   z-index: 200;
 }
@@ -2990,6 +2990,28 @@ textarea {
   padding: 3px 3px 0px 3px;
 }
 .dia-school-previews__img-container_img {
+  width: 100%;
+}
+
+.dia-school-previews-vertical {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+@media screen and (max-width: 768px) {
+  .dia-school-previews-vertical {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dia-school-previews-vertical {
+    grid-template-columns: 50% 50%;
+  }
+}
+.dia-school-previews-vertical__img-container {
+  width: 100%;
+  padding: 3px 3px 0px 3px;
+}
+.dia-school-previews-vertical__img-container_img {
   width: 100%;
 }
 
@@ -3030,11 +3052,11 @@ textarea {
 }
 
 .confucious {
-  width: 40%;
+  width: 50%;
   border-radius: 6px;
   max-width: 100%;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .confucious {
     width: 100%;
   }
@@ -3498,6 +3520,14 @@ textarea {
 }
 
 #read-more-articleCeliakiaSkin {
+  display: none;
+}
+
+#read-more-articleWhatIsCeliakia {
+  display: none;
+}
+
+#read-more-articleControlCeliakia {
   display: none;
 }
 

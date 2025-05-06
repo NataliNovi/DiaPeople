@@ -32,7 +32,7 @@
 }
 
 .confucious {
-    width: 40%;
+    width: 50%;
     //width: auto;
     border-radius: 6px;
     max-width: 100%;
@@ -46,7 +46,7 @@
     //     height: auto;
     // }
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
+    @media screen and (max-width: $grid-breakpoint-md) {
         width: 100%;
     }
 }

@@ -151,3 +151,47 @@ function myFunctionReadArticleCeliakiaSkin() {
     moreReadArticleCeliakiaSkin.style.display = "inline";
   }
 }
+
+function myFunctionReadArticleWhatIsCeliakia() {
+  var dotsReadArticleWhatIsCeliakia = document.getElementById(
+    "dots-read-articleWhatIsCeliakia"
+  );
+  var moreReadArticleWhatIsCeliakia = document.getElementById(
+    "read-more-articleWhatIsCeliakia"
+  );
+  var btnReadArticleWhatIsCeliakia = document.getElementById(
+    "myBtnReadArticleWhatIsCeliakia"
+  );
+
+  if (dotsReadArticleWhatIsCeliakia.style.display === "none") {
+    dotsReadArticleWhatIsCeliakia.style.display = "inline";
+    btnReadArticleWhatIsCeliakia.innerHTML = "Читать";
+    moreReadArticleWhatIsCeliakia.style.display = "none";
+  } else {
+    dotsReadArticleWhatIsCeliakia.style.display = "none";
+    btnReadArticleWhatIsCeliakia.innerHTML = "Свернуть";
+    moreReadArticleWhatIsCeliakia.style.display = "inline";
+  }
+}
+
+function myFunctionReadArticleControlCeliakia() {
+  var dotsReadArticleControlCeliakia = document.getElementById(
+    "dots-read-articleControlCeliakia"
+  );
+  var moreReadArticleControlCeliakia = document.getElementById(
+    "read-more-articleControlCeliakia"
+  );
+  var btnReadArticleControlCeliakia = document.getElementById(
+    "myBtnReadArticleControlCeliakia"
+  );
+
+  if (dotsReadArticleControlCeliakia.style.display === "none") {
+    dotsReadArticleControlCeliakia.style.display = "inline";
+    btnReadArticleControlCeliakia.innerHTML = "Читать";
+    moreReadArticleControlCeliakia.style.display = "none";
+  } else {
+    dotsReadArticleControlCeliakia.style.display = "none";
+    btnReadArticleControlCeliakia.innerHTML = "Свернуть";
+    moreReadArticleControlCeliakia.style.display = "inline";
+  }
+}
