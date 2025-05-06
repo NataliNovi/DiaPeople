@@ -2993,28 +2993,6 @@ textarea {
   width: 100%;
 }
 
-.dia-school-previews-vertical {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-@media screen and (max-width: 768px) {
-  .dia-school-previews-vertical {
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .dia-school-previews-vertical {
-    grid-template-columns: 50% 50%;
-  }
-}
-.dia-school-previews-vertical__img-container {
-  width: 100%;
-  padding: 3px 3px 0px 3px;
-}
-.dia-school-previews-vertical__img-container_img {
-  width: 100%;
-}
-
 .dia-books-previews {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -3196,6 +3174,28 @@ textarea {
   height: 300px;
   width: auto;
   margin: 10px;
+}
+
+.dia-school-previews-vertical {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .dia-school-previews-vertical {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dia-school-previews-vertical {
+    grid-template-columns: 50% 50%;
+  }
+}
+.dia-school-previews-vertical__img-container {
+  width: 100%;
+  padding: 3px 3px 0px 3px;
+}
+.dia-school-previews-vertical__img-container_img {
+  width: 100%;
 }
 
 #read-more-article-GadgSet1 {

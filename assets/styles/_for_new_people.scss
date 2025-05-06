@@ -52,27 +52,6 @@
     }
 }
 
-.dia-school-previews-vertical {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        grid-template-columns: 50% 50%
-    }
-
-    &__img-container {
-        width: 100%;
-        padding: 3px 3px 0px 3px;
-
-        &_img {
-            width: 100%;
-        }
-    }
-}
 
 .dia-books-previews {
     display: grid;
