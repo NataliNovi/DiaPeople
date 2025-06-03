@@ -14,7 +14,7 @@ $question2 = $_POST['question2'];
 $question3 = $_POST['question3'];
 $question4 = $_POST['question4'];
 $question5 = $_POST['question5'];
-$question4 = $_POST['question6'];
+$question6 = $_POST['question6'];
 
 $mail->SMTPDebug = 1;  // Enable verbose debug output
 // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -28,7 +28,7 @@ $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; //587 TCP port to connect to
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'aquarel.novik@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'afvs lrit ceqt xwts'; 
+$mail->Password = 'gueb iofo yzzm ncxt'; 
 //$mail->Password = 'qoth rxar mxjq wdvy'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->setFrom('aquarel.novik@gmail.com'); // от кого будет уходить письмо?
 $mail->addReplyTo('aquarel.novik@gmail.com', 'Valery Test'); # адрес для ответа
