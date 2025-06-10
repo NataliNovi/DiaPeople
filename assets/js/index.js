@@ -117,6 +117,22 @@ function myFunctionUnderstand() {
   }
 }
 
+function myFunctionVoices() {
+  var dotsVoices = document.getElementById("dots-voices");
+  var moreTextVoices = document.getElementById("more-voices");
+  var btnTextVoices = document.getElementById("myBtnVoices");
+
+  if (dotsVoices.style.display === "none") {
+    dotsVoices.style.display = "inline";
+    btnTextVoices.innerHTML = "Поддержать обращение";
+    moreTextVoices.style.display = "none";
+  } else {
+    dotsVoices.style.display = "none";
+    btnTextVoices.innerHTML = "Свернуть";
+    moreTextVoices.style.display = "inline";
+  }
+}
+
 //open/close search form in header
 function openForm() {
   document.getElementById("myForm").style.display = "block";

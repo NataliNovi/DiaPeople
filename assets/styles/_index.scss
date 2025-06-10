@@ -1675,6 +1675,27 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
         }
     }
+
+    &_voices {
+        background-color: $color-main;
+        border-radius: 6px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 30px;
+        box-shadow: 8px 0 0 0 #fff, 0 0 14px 0 rgba(0, 0, 0, .25);
+
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            margin-left: 2%;
+            margin-right: 2%;
+
+        }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: none;
+
+        }
+    }
 }
 
 .article {
@@ -1988,13 +2009,17 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
 
 }
 
-//кнопка читать больше О нас и Важно понимать
+//кнопки читать больше О нас, Важно понимать, Подписи
 
 #more-about {
     display: none;
 }
 
 #more-understand {
+    display: none;
+}
+
+#more-voices {
     display: none;
 }
 
@@ -2034,6 +2059,35 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     }
 
     &__for-understand {
+        position: relative;
+
+        &_mobile {
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+                display: none;
+            }
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        &_desktop {
+
+            @media screen and (min-width: $grid-breakpoint-md) {
+                display: block;
+                padding: 10px;
+
+            }
+
+            @media screen and (max-width: $grid-breakpoint-md) {
+                display: none;
+            }
+        }
+    }
+
+    &__voices {
         position: relative;
 
         &_mobile {

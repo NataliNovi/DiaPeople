@@ -14,8 +14,21 @@ form {
         margin-top: 180px;
         width: 100%;
     }
+}
 
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
+}
 
+.error-visible {
+    display: block;
+}
+
+input.is-invalid {
+    border: 1px solid red;
 }
 
 
@@ -226,54 +239,6 @@ textarea.form-control {
     font-size: 0.75rem;
 }
 
-/* Стили секции, в которой выводится капча */
-// .form-captcha {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: 2rem;
-// }
-
-// .form-captcha__image {
-//     border-radius: 4px;
-//     margin-right: 0.5rem;
-// }
-
-// .form-captcha__refresh {
-//     padding: 0.5rem 0.75rem;
-//     line-height: 1;
-//     border: 1px solid #ced4da;
-//     margin-right: 0.5rem;
-//     border-radius: 4px;
-//     cursor: pointer;
-// }
-
-// .form-captcha__refresh:hover {
-//     background-color: #eee;
-// }
-
-// .form-captcha__input {
-//     flex-grow: 1;
-//     position: relative;
-//     margin-bottom: 0;
-// }
-
-// @media (max-width: 400px) {
-//     .form-captcha {
-//         flex-wrap: wrap;
-//     }
-
-//     .form-captcha__input {
-//         min-width: 200px;
-//         margin-top: 0.5rem;
-//     }
-// }
-
-// .form-captcha__input .invalid-feedback {
-//     position: absolute;
-//     bottom: -1.5rem;
-// }
-
-/* CSS для секции "Пользовтельское соглашение" */
 .form-check {
     display: block;
     min-height: 1.5rem;

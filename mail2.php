@@ -27,12 +27,12 @@ $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
 // $mail->SMTPSecure = 'tls'; # шифрование
 $mail->Port = 465; //587 TCP port to connect to
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'aquarel.novik@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'gueb iofo yzzm ncxt'; 
+$mail->Username = 'diapeople.bel@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'hsda qcqs ymck qshs'; 
 //$mail->Password = 'qoth rxar mxjq wdvy'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->setFrom('aquarel.novik@gmail.com'); // от кого будет уходить письмо?
-$mail->addReplyTo('aquarel.novik@gmail.com', 'Valery Test'); # адрес для ответа
-$mail->addAddress('aquarel.novik@gmail.com');     // Кому будет уходить письмо
+$mail->setFrom('diapeople.bel@gmail.com'); // от кого будет уходить письмо?
+$mail->addReplyTo('diapeople.bel@gmail.com', 'Valery Test'); # адрес для ответа
+$mail->addAddress('diapeople.bel@gmail.com');     // Кому будет уходить письмо
    // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 // $mail->addCC('cc@example.com');

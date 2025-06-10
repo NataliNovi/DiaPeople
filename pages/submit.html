@@ -567,7 +567,7 @@
       <div class="form-container">
         <div class="row">
           <div class="col-sm-4">
-            <form action="../mail2.php" method="POST" enctype="multipart/form-data">
+            <form id="contact-form" action="../mail2.php" method="POST" enctype="multipart/form-data">
               <!-- Имя -->
               <div class="form-group">
                 <label for="user_name">Введите ваше имя</label>
@@ -577,11 +577,9 @@
               <!-- Телефон -->
               <div class="form-group">
                 <label for="user_phone">Введите номер телефона</label>
-                <input type="tel" id ="user_phone" class="form-control" name="user_phone"
-                       placeholder="+12345678901"
-                       pattern="^[\d\s\-\+\(\)]{7,20}$"
-                       title="Введите корректный номер телефона: только цифры, +, -, пробелы, скобки"
-                       required>
+                <input type="tel" id="user_phone" class="form-control" name="user_phone"
+                       placeholder="+12345678901" required>
+                <div id="phone-error" class="error-message">Введите корректный номер телефона: только цифры, +, -, скобки, пробелы</div>
               </div>
       
               <!-- Текст -->
@@ -618,10 +616,17 @@
           </div>
         </div>
       </div>
-     
-
         </main>
 
+           <!-- <script> 
+            form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                alert('Пожалуйста, введите корректный номер телефона');
+              }
+            });
+            </script> -->
         <footer class="footer">
           <br>
              <div class = "footer__button-footer_donate">
@@ -643,45 +648,62 @@
               </div>
           </div>
            </footer>
-           <script src="../assets/js/index.js"></script>
-     <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
-</body>
-</html>
+           <!--валидация номера телефона в подписке!-->
+<!-- <script>
 
+("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const phoneInput = form.querySelector('input[name="user_phone"]');
 
-<script> form = document.querySelector('form');
-form.addEventListener('submit', function(event) {
-  if (!form.checkValidity()) {
-    event.preventDefault();
-    alert('Пожалуйста, введите корректный номер телефона');
-  }
+  form.addEventListener("submit", function (event) {
+    const phonePattern = /^[\d\s\-\+\(\)]{7,20}$/;
+
+    if (!phonePattern.test(phoneInput.value)) {
+      event.preventDefault();
+      alert("Пожалуйста, введите корректный номер телефона.");
+      phoneInput.focus();
+    }
+  });
 });
-</script>
-        
-        </main>
-
-        <footer class="footer">
-          <br>
-             <div class = "footer__button-footer_donate">
-               <a href="donate.html"> <button aria-label="Поддержать проект" class = "button button__button-donate">Поддержать проект</button></a>
-             </div>
-             <br>
-             <div class = footer__contacts> 
-               <div>Teл: +375 29 355-56-63<br>
-                e-mail: diapeople.bel@gmail.com</div> 
-               <div> Адрес: 220090, Минск, Логойский тракт, 22А, пом.44, офис 1 </div>
-             </div>
-             <p class = "footer__community-name">Учреждение «Социальные коммуникации и взаимопомощь диабетиков «ДиаЛюди» <br> УНП 193673611</p>
-             <div id="cookieConsent" class="cookie-consent">
-                <p>Этот сайт использует файлы cookie для улучшения работы. Продолжая использовать наш сайт, вы соглашаетесь на использование нами файлов cookie. <a class="white-link" href="../assets/documents/Политика конфидециальности diapeople.by.pdf">Политика конфиденциальности</a></p>
-                <div class="buttons">
-                  <button id="acceptCookies">Принять</button>
-                  <button id="rejectCookies">Отклонить</button>
-                  <button id="cookieSettings">Настройки</button>
-              </div>
-          </div>
-           </footer>
+</script> -->
            <script src="../assets/js/index.js"></script>
      <script async src="https://cse.google.com/cse.js?cx=93ea3efbff0f74efe"></script>
+     <!-- <script>document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+        const phoneInput = document.getElementById('user_phone');
+        const phoneError = document.getElementById('phone-error');
+      
+        form.addEventListener('submit', function (e) {
+          const phonePattern = /^[\d\s\-\+\(\)]+$/;
+      
+          if (!phonePattern.test(phoneInput.value.trim())) {
+            e.preventDefault();
+            phoneError.classList.add('error-visible');
+            phoneInput.classList.add('is-invalid');
+          } else {
+            phoneError.classList.remove('error-visible');
+            phoneInput.classList.remove('is-invalid');
+          }
+        });
+      });</script> -->
+
+      <script>document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+        const phoneInput = document.getElementById('user_phone');
+        const phoneError = document.getElementById('phone-error');
+      
+        form.addEventListener('submit', function (e) {
+          const phonePattern = /^[\d\s\-\+\(\)]+$/;
+      
+          if (!phonePattern.test(phoneInput.value.trim())) {
+            e.preventDefault(); // не отправляем
+            phoneError.classList.add('error-visible');
+            phoneInput.classList.add('is-invalid');
+          } else {
+            phoneError.classList.remove('error-visible');
+            phoneInput.classList.remove('is-invalid');
+          }
+        });
+      });</script>
 </body>
 </html>
