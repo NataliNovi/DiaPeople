@@ -1417,7 +1417,7 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   background-color: #FBD36C;
   border: solid 1px #FBD36C;
   border-radius: 6px;
-  width: 200px;
+  width: 220px;
   height: 48px;
   position: absolute;
   right: 20px;
@@ -1435,14 +1435,14 @@ body._touch .menu-burger__list > li._active .menu-burger__arrow {
   .slider-button {
     right: 24px;
     height: 48px;
-    width: 160px;
+    width: 180px;
   }
 }
 @media screen and (max-width: 576px) {
   .slider-button {
     right: 24px;
     height: 48px;
-    width: 130px;
+    width: 150px;
   }
 }
 

@@ -1493,7 +1493,7 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     background-color: $color-button;
     border: solid 1px $color-button;
     border-radius: 6px;
-    width: 200px;
+    width: 220px;
     height: 48px;
     position: absolute;
     right: 20px;
@@ -1511,13 +1511,13 @@ body._touch .menu-burger__list>li._active .menu-burger__arrow {
     @media screen and (max-width: $grid-breakpoint-md) {
         right: 24px;
         height: 48px;
-        width: 160px;
+        width: 180px;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         right: 24px;
         height: 48px;
-        width: 130px;
+        width: 150px;
     }
 }
 
